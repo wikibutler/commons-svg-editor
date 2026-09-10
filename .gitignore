@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+# Commons media is NOT redistributed here: corpus files are referenced by title/URL/sha1 only
+fixtures/
+test-results/exports/
+test-results/*.png
+test-results/debug-*.svg
+corpus/candidates.json

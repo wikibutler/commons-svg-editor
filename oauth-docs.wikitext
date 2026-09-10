@@ -1,0 +1,686 @@
+<languages />
+<translate>
+<!--T:1-->
+This page explains how to develop applications that can integrate with a wiki running <tvar name=1>{{ll|Extension:OAuth}}</tvar> (an extension which turns MediaWiki into an [[w:OAuth|OAuth]] server) to securely request permission to act on the user's behalf.
+</translate>
+{{Note|1=<translate><!--T:2--> If you are developing a bot or similar application that always uses the same account, you might prefer the simpler [[<tvar name=1>Special:MyLanguage/OAuth/Owner-only_consumers</tvar>|owner-only consumers]].</translate>}}
+<translate>
+== OAuth in a nutshell == <!--T:3-->
+
+<!--T:22-->
+OAuth allows an application to request permission from a user to act through that user's wiki account, without knowing the user's password, and without being able to do everything the user could (e.g. the app might be able to edit articles but not delete them, so even users with extended permissions can safely use OAuth-enabled tools).
+
+<!--T:23-->
+This happens via the <tvar name=1>[https://oauth.net/2/ OAuth 2.0]</tvar> or <tvar name=2>[https://oauth.net/core/1.0a/ OAuth 1.0a]</tvar> protocol, and consists of three stages:
+</translate>
+
+# <translate><!--T:24--> The developer must register the application (often called "consumer" in the OAuth terminology) on the wiki, possibly go through some sort of review process, and will receive some credentials.</translate>
+# <translate><!--T:25--> When a user wants to use it, the application must initiate an authorisation process.</translate> <translate><!--T:26--> This will involve sending the user to a special page on the wiki, which will display an authorisation dialog.</translate> <translate><!--T:27--> If the user accepts, the application will receive another set of credentials (which are specific to that user, and can be revoked by the user at any time).</translate>
+# <translate><!--T:28--> When the application actually needs to make an action (API request) on the user's behalf, it can combine the credentials received in steps 1 and 2 to sign the request.</translate>
+
+<translate><!--T:29--> OAuth is a widely used open standard (you can see it on sites like Google or Facebook or GitHub, e.g. when using accounts at those sites to log in elsewhere).</translate>
+
+{{info|1=<translate><!--T:30--> OAuth should not be confused with:</translate>
+
+* <translate><!--T:109--> [[w:Initiative for Open Authentication|OATH]] (a second-factor authentication protocol family, commonly known as "type the six numbers you see on your mobile app", now enabled on Wikimedia sites)</translate>
+* <translate><!--T:110--> [[w:OpenID Connect|OpenID Connect]] (an authentication protocol based on OAuth 2.0, which the OAuth MediaWiki extension partially supports).</translate>
+}}
+
+<translate>
+== Registration == <!--T:5-->
+</translate>
+
+<translate><!--T:32--> The registration is basically the same for OAuth 1.0a and OAuth 2, with the difference being only the presence of a few form fields. The remaining parts differ significantly depending on the OAuth version.</translate>
+<translate><!--T:111--> Generally, OAuth 2 is recommended if available in your environment.</translate>
+
+<translate><!--T:39--> To register a new OAuth application, submit the form at <tvar name=1><code>[[m:Special:OAuthConsumerRegistration/propose|Special:OAuthConsumerRegistration/propose]]</code></tvar>.</translate>
+<translate><!--T:40--> Try to give sufficient information about the application for admins and users to decide whether it can be trusted.</translate>
+<translate><!--T:41--> URLs to places with more information (such as the application itself, the source code or on-wiki documentation) can be useful.</translate>
+<translate><!--T:42--> For OAuth applications to be used on Wikimedia projects, see [[<tvar name=1>meta:Special:MyLanguage/OAuth app guidelines</tvar>|app guidelines]].</translate>
+
+<translate><!--T:43--> Besides the descriptive ones, the fields have the following meaning:</translate>
+
+* <code>This consumer is for use only by {{tag|user|open|plain=1}}</code>: <translate><!--T:54--> whether you use [[<tvar name=1>Special:MyLanguage/OAuth/Owner-only_consumers</tvar>|owner-only consumers]] (which do not need to be reviewed or authorised but are only usable by yourself).</translate>
+* <code>callback URL</code> (<translate><!--T:107--> irrelevant to owner-only consumers</translate>): <translate><!--T:55--> the URL where the user returns after authorisation is checked against this.</translate> <translate><!--T:56--> (This is an extra layer of security against an attacker trying to steal credentials during authorisation.)</translate> <translate><!--T:57--> If the <code>use as prefix</code> option is enabled, the URL must start with this (the check is dumb so make sure to add at least a <tvar name=1><code>/</code></tvar> after the domain name), otherwise it must be an exact match.</translate> <translate><!--T:58--> If you are developing/testing your local machine, specify [[w:Localhost|Localhost]] in this field (e.g. <tvar name=1><code><nowiki>http://localhost:8080/</nowiki></code></tvar>).</translate>
+* <code>Applicable project</code> (<translate><!--T:104--> for wiki farms only</translate>): <translate><!--T:105--> project(s) on which to use your application.</translate> <translate><!--T:59--> You can limit the application to a single wiki or have it work everywhere.</translate>
+* <code>Types of grants</code> / <code>Applicable grants</code>: <translate><!--T:60--> the permissions needed by your application (be conservative). The actual permissions will be an intersection of this and what permissions the user has.</translate> <translate><!--T:61--> Currently, the user must authorise grouped permissions, not individual ones (<tvar name=1>[[Phab:T59505|T59505]]</tvar>).</translate>‎ <translate><!--T:234--> OAuth applications to be used on public Wikimedia projects that only require identification (with or without email and real name) will be automatically approved.‎</translate>
+* <code>Allowed IP ranges</code>: <translate><!--T:62--> an optional specification of the IP ranges that you use, where OAuth requests not matching this will be rejected.</translate> <translate><!--T:63--> This is an extra layer of security against an attacker stealing your application's credentials and trying to impersonate it.</translate> <translate><!--T:64--> This is one of the few settings that you'll be able to change later.</translate>
+* <code>Public RSA key</code> (<translate><!--T:106--> <tvar name=1>OAuth 1.0a</tvar> only</translate>): <translate><!--T:65--> public key used by your application for signing requests.</translate> <translate><!--T:66--> You can just leave this empty (most applications do) to use a slightly simpler shared-secret mechanism instead.</translate> <translate><!--T:67--> This is one of the few settings that you'll be able to change later.</translate> <translate><!--T:68--> After registration, you'll receive the credentials needed to use OAuth.</translate> <translate><!--T:69--> You will be able to use it immediately with your own user account (this is meant for testing); others will only be able to use it once it is approved by an administrator.</translate>
+
+<translate>
+<!--T:45-->
+The list of applications (approved or otherwise) is public and can be browsed at <tvar name=1><code>[[m:Special:OAuthListConsumers|Special:OAuthListConsumers]]</code></tvar>.
+
+== OAuth 1.0a == <!--T:33-->
+
+<!--T:31-->
+For a slightly larger nutshell on OAuth 1.0a, see [<tvar name=url>https://docs.google.com/presentation/d/1537HnwSaSzH-b8hINcz48SNhT8ElAUPC39to0_O1iNA/edit#slide=id.g15105b408d_0_287</tvar> these slides].
+
+=== Authorisation === <!--T:6-->
+</translate>
+
+[[File:OAuth authorization interface.png|thumb|<translate><!--T:70--> Authorisation dialog shown to users</translate>]]
+
+<translate>
+<!--T:71-->
+When registering the application, you receive two pieces of credentials: the application token (a public ID for the application) and the application secret (sort of like a password).
+</translate>
+
+<translate><!--T:72--> To be able to identify a user or make API requests in their name, you need to get another set of credentials (these ones specific to that user): the access token and access secret.</translate><ref>
+<translate><!--T:73--> With an RSA key the credentials are slightly different.</translate> <translate><!--T:74--> It is assumed that people choosing to use an RSA key know what they are doing, so this tutorial will assume you have chosen the non-RSA option.</translate>
+</ref>
+
+<translate><!--T:75--> To get them, you need to go through the authorisation process, which consists of three steps:</translate><ref>
+<translate><!--T:76--> This is sometimes called three-legged OAuth flow. In certain circumstances a simpler, one-step alternative (one-legged OAuth) is also available.</translate>
+<translate><!--T:77--> See {{<tvar name=1>ll|OAuth/Owner-only consumers</tvar>|owner-only consumers}} for that.</translate>
+</ref>
+
+# <translate><!--T:78--> Get a request token from the wiki by sending a GET request to <tvar name=1><code>Special:OAuth/initiate</code></tvar>, signed with the application key and secret, with the callback URL (where the user will be sent after a successful authorisation) passed as the <tvar name=2><code>oauth_callback</code></tvar> query parameter (if you have set a constant URL at registration, the value of the parameter ''must'' be <tvar name=3><code>oob</code></tvar>).</translate><ref name="non-nice-url"><translate><!--T:79--> Due to <tvar name=3>[[phab:T59500]]</tvar> you must currently use a non-nice URL such as <tvar name=2><code>en.wikipedia.org/w/index.php?title=Special:OAuth/initiate</code></tvar>.</translate></ref> <translate><!--T:80--> If you are successful, the response will be a JSON object with <tvar name=1><code>token</code></tvar> and <tvar name=2><code>key</code></tvar> fields—the request token and request secret.</translate> <translate><!--T:81--> (If not, it will have an <tvar name=3><code>error</code></tvar> field.)</translate>
+# <translate><!--T:82--> Ask the user to authorise the application by sending them to <tvar name=1><code>Special:OAuth/authorize</code></tvar>, with the application token and request token passed as query parameters (<tvar name=2><code>oauth_consumer_key</code></tvar> and <tvar name=3><code>oauth_token</code></tvar>, respectively).</translate> <translate><!--T:84--> The user will see an authorisation dialog with some basic information about the application and the list of grants, and can decide to authorise or cancel.</translate>
+# <translate><!--T:85--> If the user did choose to authorise, they will be redirected to the callback URL you have given (at registration, or as a URL parameter in step 1).</translate> <translate><!--T:86--> A query parameter called <tvar name=1><code>oauth_verifier</code></tvar> will contain the verification code that you can use to exchange the request token and secret for the access token and secret.</translate> <translate><!--T:87--> To do this, send a request to <tvar name=1><code>Special:OAuth/token</code><ref name="non-nice-url" /></tvar> which includes the <tvar name=2><code>oauth_verifier</code></tvar> parameter you just received and is signed with the application token and secret and the request token and secret.</translate> <translate><!--T:88--> The response will contain the access token/secret (in the same format as the request token/secret in step 1).</translate>
+
+<translate><!--T:46--> The access token and secret is what you'll need to sign API requests.</translate>
+<translate><!--T:47--> The request token and secret is not useful anymore and can be discarded.</translate>
+<translate><!--T:48--> The access token will remain valid indefinitely, unless the user revokes it.</translate>
+<translate><!--T:49--> (If you prefer not to store it, you can just repeat the authorisation process at any time though.)</translate>
+
+<translate><!--T:50--> Applications which only need minimal privileges (have been registered as ''User identity verification only'') can use <tvar name=1><code>/authenticate</code></tvar> instead of <tvar name=2><code>/authorize</code></tvar> in step 2.</translate>
+<translate><!--T:51--> This works the same way, but the user will only see the authorisation dialog if they have not authorised this application before; otherwise the authorisation will silently succeed.</translate>
+
+<translate><!--T:52--> Chances are whatever language/framework you are using will have a library to support this procedure, so you don't have to implement it manually—each step will be a single function call.</translate>
+<translate><!--T:53--> See below for examples.</translate>
+
+<translate>
+=== Making requests on the user's behalf === <!--T:7-->
+</translate>
+<translate><!--T:89--> To take advantage of the authorisation, requests have to be signed with the application token/secret and access token/secret.</translate>
+<translate><!--T:90--> When that's successfully done, the wiki will treat the request as if it was made by the authorising user.</translate>
+<translate><!--T:91--> Only API requests can be made via OAuth, with one exception (see next section).</translate>
+<translate><!--T:108--> Certain API modules which would not make sense with OAuth (such as login/logout) or would allow privilege escalation (such as the centralauthtoken API) are disabled.</translate>
+
+<translate>
+<!--T:92-->
+Applications registered as ''User identity verification only'' cannot use the API at all.
+</translate>
+
+{{note|1=<translate><!--T:233--> To avoid {{<tvar name=1>ll|Wikimedia APIs/Rate limits</tvar>|strict rate limits being imposed}} by the API gateway or CDN layer, clients that use OAuth 1 to act on behalf of users should implement support for [[w:HTTP cookie|returning cookies to the server]], with separate cookie jars for each user.</translate>}}
+
+<translate>
+=== Identifying the user === <!--T:8-->
+</translate>
+<translate><!--T:93--> The OAuth extension includes a custom protocol (similar to OpenID Connect) for authenticating the user.</translate>
+<translate><!--T:94--> To use this, send a signed OAuth request to <tvar name=1><code>Special:OAuth/identify</code></tvar>:</translate><ref name="non-nice-url" />
+<translate><!--T:95--> the response will be a [[w:JSON Web Token|JWT]] (<tvar name=1>JSON Web Token</tvar> &ndash; a signed JSON object) signed with the client secret using HS256. It will contain the name of the user, their {{<tvar name=2>ll|Manual:Central ID</tvar>|central ID}} (under the key <tvar name=3><code>sub</code></tvar>) and various other information (such as their user groups and whether they are blocked; also the email address if the application was registered with the right grant type).</translate>
+<translate><!--T:96--> This is more secure than using the API (e.g. the userinfo module) for authentication, which could be subject to [[w:Man-in-the-middle attack|man-in-the-middle attacks]]; always use this if you need to identify a user!</translate>
+<translate><!--T:97--> Also, make sure you properly validate the JWT (there are many libraries which can help with that).</translate>
+<translate><!--T:98--> You should check each of the following: the issuer (<tvar name=1><code>iss</code></tvar>) matches the domain name of the wiki, the audience (<tvar name=2><code>aud</code></tvar>) matches your application key, the issued-at time (<tvar name=3><code>iat</code></tvar>) is in the past and reasonably close to current time, the expiration time (<tvar name=4><code>exp</code></tvar>) is in the future, the nonce (<tvar name=5><code>nonce</code></tvar>) matches the one you sent in the request.</translate>
+
+<translate>
+
+=== Signing requests === <!--T:9-->
+</translate>
+<translate><!--T:99--> Steps 1 and 3 of the authorisation process require signing the request; API requests and <tvar name=1><code>Special:OAuth/identify</code></tvar> must likewise be signed.</translate>
+<translate><!--T:100--> The signing process is detailed in [<tvar name=url>https://oauth.net/core/1.0a/#signing_process</tvar> section 9 of the OAuth spec], but it is cumbersome to implement by hand and [<tvar name=url2>https://oauth.net/1/</tvar> many libraries] are available.</translate>
+<translate><!--T:101--> You can find code samples and an overview of how to do it by hand in the {{<tvar name=1>ll|OAuth/Owner-only_consumers</tvar>|owner-only consumer}} documentation.</translate>
+(<translate><!--T:102--> That is for signing with the consumer token/secret and access token/secret.</translate>
+<translate><!--T:103--> Modify as appropriate to sign with the consumer token/secret and request token/secret (authorisation step 3) or consumer token/secret only (authorisation step 1).</translate>)
+
+<translate>
+== OAuth 2.0 == <!--T:34-->
+
+=== Authorisation === <!--T:35-->
+</translate>
+<translate><!--T:112--> When registering the application, you receive two pieces of credentials: the client application key (a public ID for the application, also called the client ID or consumer key) and the client application secret (a confidential password).</translate>
+<translate><!--T:113--> To be able to identify a user or make API requests in their name, you need to get another credential (this one specific to that user): the access token.</translate>
+<translate><!--T:114--> To get it, you need to go through the [<tvar name=url>https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/</tvar> the OAuth 2 Authorization Code flow], which consists of two steps:</translate><ref><translate><!--T:115--> This is sometimes called three-legged OAuth flow. In certain circumstances a simpler, one-step alternative (one-legged OAuth) is also available.</translate> <translate><!--T:116--> See [[<tvar name=1>Special:MyLanguage/OAuth/Owner-only consumers</tvar>|owner-only consumers]] for that.</translate></ref>
+# <translate><!--T:117--> Ask the user to authorise the application by sending them to <tvar name=1><code>oauth2/authorize</code></tvar> under the wiki's REST endpoint (usually <tvar name=2><code>rest.php</code></tvar>), with <tvar name=3><code>response_type=code</code></tvar> and the consumer key (also called the client application key) as the <tvar name=4><code>client_id</code></tvar>, possibly a <tvar name=5><code>state</code></tvar> if you want, and optionally the <tvar name=6><code>redirect_uri</code></tvar> (if yes, it must be the same as in your application request).</translate> <translate><!--T:118--> If your consumer is non-confidential, you'll also need to include a [<tvar name=url>https://www.oauth.com/oauth2-servers/pkce/authorization-request/</tvar> PKCE code challenge] (<tvar name=1><code>code_challenge</code></tvar> and <tvar name=2><code>code_challenge_method=S256</code></tvar>).</translate><ref>PKCE &mdash; Proof Key for Code Exchange</ref> <translate><!--T:119--> The user will see an authorisation dialog with some basic information about the application and the list of grants, and can decide to authorise or cancel.</translate>
+# <translate><!--T:120--> If the user did choose to authorise, they will be redirected to the callback URL you have given (at registration, or as a URL parameter in step 1).</translate> <translate><!--T:121--> A query parameter called <tvar name=1><code>code</code></tvar> will contain the authorisation code that you can use to fetch the access token.</translate> <translate><!--T:122--> To do this, send a POST request to <tvar name="access"><code>oauth2/access_token</code></tvar> under the wiki's REST endpoint (usually <tvar name=1><code>rest.php</code></tvar>), including <tvar name=3><code>grant_type=authorization_code</code></tvar>, the <tvar name=4><code>code</code></tvar> parameter you just received, your client authentication (typically as <tvar name=5><code>client_id</code></tvar> and, for confidential clients, <tvar name=6><code>client_secret</code></tvar>), the <tvar name=7><code>redirect_uri</code></tvar> if and only if you specified it in the previous step (must be the same value for both), and if non-confidential the PKCE <tvar name=8><code>code_verifier</code></tvar> and <tvar name=9><code>code_challenge_method</code></tvar>.</translate> <translate><!--T:123--> The response will contain the access token and a refresh token.</translate>
+
+<translate><!--T:124--> The access token is what you'll need to send future API requests.</translate>
+<translate><!--T:125--> The refresh token can be used to [<tvar name=url>https://www.oauth.com/oauth2-servers/making-authenticated-requests/refreshing-an-access-token/</tvar> fetch a new access token] if the original access token expires.</translate>
+<translate><!--T:126--> If you prefer not to store either token, you can just repeat the authorisation process at any time.</translate>
+<translate><!--T:127--> (Before MediaWiki 1.46, non-confidential clients could only use refresh tokens using their client secret keys, not using their client IDs only, see <tvar name=1>[[phabricator:T323855|T323855]]</tvar>.)</translate>
+
+<translate><!--T:128--> Chances are whatever language/framework you are using will have a library to support this procedure so you don't have to implement it manually - each step will be a single function call.</translate>
+<translate><!--T:129--> See below for examples.</translate>
+
+<translate>
+=== Making requests on the user's behalf === <!--T:36-->
+</translate>
+<translate><!--T:130--> To take advantage of the authorisation, requests have to include the access token.</translate>
+<translate><!--T:131--> When that's successfully done, the wiki will treat the request as if it was made by the authorising user.</translate>
+<translate><!--T:132--> Only API requests can be made via OAuth 2.</translate>
+<translate><!--T:133--> Certain API modules which would not make sense with OAuth (such as login/logout) or would allow privilege escalation (such as the centralauthtoken API) are disabled.</translate>
+<translate><!--T:134--> If the access token is used to fetch a CSRF token or other tokens, the access token must still be passed (as a header) with requests that use those tokens.</translate>
+
+<translate>
+<!--T:135-->
+Applications which need minimal privileges (have been registered as ''User identity verification only'') cannot use the API at all.
+
+<!--T:136-->
+API requests including <tvar name=1><code>rest.php/oauth2/resource/profile</code></tvar> must be authenticated with an HTTP Authorization header containing the access token, like:
+</translate>
+
+<pre>
+Authorization: Bearer abcde....n=== Identifying the user === <!--T:37-->
+</translate>
+<translate><!--T:137--> The OAuth extension includes a somewhat incomplete implementation of OpenID Connect for authenticating the user.</translate><ref><translate><!--T:138--> See <tvar name=1>[[phab:T254063|T254063]]</tvar> for details.</translate></ref> 
+<translate><!--T:139--> To use this, send an authenticated OAuth GET request to the <tvar name=1><code>oauth2/resource/profile</code></tvar> API (MediaWiki's implementation of what the OIDC spec calls the UserInfo endpoint) under the wiki's REST endpoint (usually <tvar name=2><code>rest.php</code></tvar>); the response will include the name of the user and various other information.</translate>
+<translate><!--T:140--> Note that the GET request must use the HTTP <code>Authorization</code> header, not a query string token.</translate>
+
+* '''sub''' <translate><!--T:155--> (central user ID)</translate>
+* '''username'''
+* '''editcount'''
+* '''confirmed_email'''
+* '''blocked'''
+* '''registered'''
+* '''groups'''
+* '''rights'''
+* '''realname''' <translate><!--T:141--> (only if user granted permission)</translate>
+* '''email''' <translate><!--T:142--> (only if user granted permission)</translate>
+
+<translate>
+== Setting up a development environment == <!--T:10-->
+
+<!--T:156-->
+You can register an OAuth application on [<tvar name=url>https://meta.wikimedia.beta.wmflabs.org/wiki/Special:OAuthConsumerRegistration/propose</tvar> beta meta] and test your code against that.
+</translate>
+
+<translate><!--T:157--> If you want to improve the extension itself, or debug protocol issues in detail, OAuth is available in the <tvar name=1>{{ll|MediaWiki-Vagrant}}</tvar> development environment.</translate>
+<translate><!--T:158--> Add the <tvar name=1><code>oauth</code></tvar> role, and your local wiki will be able to authorise OAuth apps.</translate>
+
+<syntaxhighlight lang="shell-session">
+$ vagrant roles enable oauth
+$ vagrant provision
+</syntaxhighlight>
+
+<translate><!--T:159--> Once the code is nearly ready, you can register an OAuth application on the real wiki.</translate>
+<translate><!--T:160--> You will be able to test it with the same user account used for registering, even before it gets reviewed by admins.</translate>
+
+<translate>
+<!--T:161-->
+If you are creating an application for Wikimedia projects, consider hosting it at [[<tvar name=1>Wikitech:Portal:Toolforge</tvar>|Wikimedia Toolforge]], a free tool forge and hosting platform for Wikimedia-related services.
+
+== Security benefits and trade-offs == <!--T:11-->
+</translate>
+* <translate><!--T:162--> Unlike password-based authentication, the OAuth 1.0 protocol prevents any [[w:Man-in-the-middle attack|man-in-the-middle attack]] even if the wiki does not require HTTPS: all interactions between MediaWiki and the application are signed with either a shared secret (using HMAC-SHA1), or a [[w:Public-key cryptography|public key]] (RSA).</translate> <translate><!--T:163--> HTTPS is still required for certain steps though (for obtaining the shared secret in the second step of authorisation when not using RSA, and during app registration).</translate> <translate><!--T:164--> OAuth 2.0 does not involve signing and relies on HTTPS for security.</translate>
+* <translate><!--T:165--> Actions via OAuth happen under the user's name but will be [[<tvar name=1>Special:MyLanguage/Manual:Tags</tvar>|tagged]] with the application's name as well so rogue applications can be identified.</translate> <translate><!--T:166--> Wiki admins can revoke the application's permissions (and thus bar it from any further action) if needed.</translate>
+* <translate><!--T:167--> The user can revoke the permission of the application to use that specific user account if they don't like how it works or don't trust it anymore.</translate> <translate><!--T:168--> Unlike a password change, this is not disruptive for the user.</translate>
+* <translate><!--T:169--> Sufficiently flexible applications might allow users to circumvent IP blocks (since MediaWiki will see the IP of the application server, not that of the user).</translate> <translate><!--T:170--> This can be handled the same way proxies are, by trusting XFF headers set by the application (see <tvar name=1>[[Phab:T159889|T159889]]</tvar> for some limitations).</translate>
+* <translate><!--T:171--> The application secret must be kept secret.</translate> <translate><!--T:172--> Submitting it to source control or putting it into user-accessible code (such as mobile app or desktop application; even if it is obfuscated) undermines the security model and will result in admins forcefully disabling the application.</translate> <translate><!--T:173--> Exceptions are made for example applications demoing OAuth usage, if they are explicitly labeled as such and request limited rights.</translate>
+
+<translate>
+== Libraries == <!--T:12-->
+</translate>
+
+=== PHP ===
+* [[oauthclient-php]] – <translate><!--T:174--> OAuth 1.0a client library maintained by Wikimedia</translate>
+* [https://php.net/book.oauth OAuth] – <translate><!--T:175--> PECL client library</translate>
+* [https://github.com/firebase/php-jwt firebase/php-jwt] – <translate><!--T:176--> a popular JWT library</translate>
+* [https://sr.ht/~taavi/laravel-socialite-mediawiki/ laravel-socialite-mediawiki] – <translate><!--T:177--> MediaWiki driver for [[w:Laravel|Laravel]]'s [<tvar name=url>https://laravel.com/docs/7.x/socialite</tvar> Socialite] library.</translate>
+
+===  Python ===
+
+* [https://github.com/valhallasw/flask-mwoauth flask-mwoauth] – <translate><!--T:178--> a Flask blueprint to run OAuth against MediaWiki's Extension:OAuth (See tutorial: [<tvar name=url>https://wikitech.wikimedia.org/wiki/Help:Tool_Labs/My_first_Flask_OAuth_tool</tvar> My first Flask OAuth tool])</translate>
+* [https://github.com/wikimedia/MediaWiki-OAuth MediaWiki-OAuth (mwoauth)] – <translate><!--T:179--> OAuth 1.0a on top of [<tvar name=url>http://requests-oauthlib.readthedocs.org/en/latest/oauth1_workflow.html</tvar> requests-oauthlib]</translate>
+* [https://github.com/python-social-auth/social-core python-social-auth] – <translate><!--T:180--> auth framework that includes a [<tvar name=url1>https://github.com/python-social-auth/social-core/blob/master/social_core/backends/mediawiki.py</tvar> MediaWiki backend] (Example tutorial: [<tvar name=url2>https://wikitech.wikimedia.org/wiki/Help:Tool_Labs/My_first_Django_OAuth_tool</tvar> My first Django OAuth tool])</translate>
+* [https://docs.authlib.org/en/latest/index.html authlib] – <translate><!--T:181--> auth framework to interact with Wikimedia OAuth 2.0 API (Full minimal Django OAuth 2.0 [<tvar name=url>https://code.basabuuka.org/alpcentaur/wmde_oauth_django_example</tvar> example])</translate>
+* [https://github.com/jpadilla/pyjwt pyjwt] – <translate><!--T:182--> a JWT library</translate>
+
+=== Ruby ===
+
+* [https://github.com/timwaters/omniauth-mediawiki omniauth-mediawiki] – <translate><!--T:183--> a MediaWiki strategy for OmniAuth (also available as a [<tvar name=url>https://rubygems.org/gems/omniauth-mediawiki</tvar> gem])</translate>
+
+=== Rust ===
+* [https://crates.io/crates/mediawiki MediaWiki crate] <translate><!--T:184--> implements both OAuth1 and OAuth2 login mechanisms.</translate>
+* [https://crates.io/crates/oauth2 oauth2 crate]
+
+=== Node.js ===
+
+* [https://www.npmjs.com/package/passport-mediawiki-oauth passport-mediawiki-oauth] – <translate><!--T:185--> MediaWiki strategy for the Passport auth framework (which can be used effortlessly as a middleware with Express JS and similar frameworks)</translate>
+* [https://www.npmjs.com/package/oauth-fetch-json oauth-fetch-json] – <translate><!--T:186--> library for signing OAuth requests</translate>
+* [https://www.npmjs.com/package/m3api-oauth2 m3api-oauth2] – <translate><!--T:232--> an extension package for <tvar name=1>[https://www.npmjs.com/package/m3api m3api]</tvar>, making it easy to make requests authenticated via <tvar name=2>{{ll|Help:OAuth|OAuth 2.0}}</tvar></translate>
+
+=== Go ===
+
+* [https://github.com/mrjones/oauth mrjones/oauth] (OAuth 1.0)
+* [https://pkg.go.dev/golang.org/x/oauth2 golang.org/x/oauth2] <translate><!--T:187--> (OAuth 2.0, [<tvar name=url>https://pkg.go.dev/golang.org/x/oauth2#example-Config</tvar> example])</translate>
+
+=== Java ===
+
+* [https://github.com/scribejava/scribejava ScribeJava] <translate><!--T:188--> since version 5.5.0 ([<tvar name=url>https://github.com/scribejava/scribejava/pull/852</tvar> pull request])</translate>
+
+<translate>
+== Example code == <!--T:13-->
+
+=== PHP client without using any libraries === <!--T:14-->
+</translate>
+[[toollabs:oauth-hello-world|OAuth Hello World]] – <translate><!--T:143--> easy to understand demo application written in PHP without any libraries.</translate>
+
+<translate>
+=== PHP command-line client with RSA keys, using oauthclient-php === <!--T:144-->
+</translate>
+<translate><!--T:145--> PHP application using classes from the OAuth extension codebase.</translate>
+{{Todo|1=<translate><!--T:146--> convert this to actually use <tvar name=1>oauthclient-php</tvar>! Probably just a bunch of <tvar name=2><code>use</code></tvar> declarations.</translate>}}
+
+<translate><!--T:147--> Before Starting:</translate>
+
+<syntaxhighlight lang="shell-session">
+$ openssl genrsa -out appkey.pem 4096
+$ openssl rsa -in appkey.pem -pubout > appkey.pub
+</syntaxhighlight>
+
+{{Collapse_top|title=<translate><!--T:148--> PHP source code</translate>}}
+<syntaxhighlight lang="php">
+<?php
+
+if ( PHP_SAPI !== 'cli' ) {
+	die( "CLI-only test script\n" );
+}
+
+/**
+ * <translate nowrap><!--T:189--> A basic client for overall testing</translate>
+ */
+
+function wfDebugLog( $method, $msg) {
+	//echo "[$method] $msg\n";
+}
+
+
+require 'OAuth.php';
+require 'MWOAuthSignatureMethod.php';
+
+$consumerKey = '';
+#$consumerSecret = ''; // <translate nowrap><!--T:190--> We don't need this, since we're using RSA, except to validate the /identify call</translate>
+
+$privateKey = file_get_contents( 'appkey.pem' );
+
+$baseurl = 'http://<wiki>/wiki/Special:OAuth';
+$endpoint_req = $baseurl . '/initiate?format=json&oauth_callback=oob'; // <translate nowrap><!--T:191--> <tvar name=1>format=json</tvar> makes php a little easier</translate>
+$endpoint_acc = $baseurl . '/token?format=json';
+$endpoint_id = $baseurl . '/identify';
+
+$c = new OAuthConsumer( $consumerKey, $privateKey );
+
+// <translate nowrap><!--T:192--> Make sure we sign title and format</translate>
+$parsed = parse_url( $endpoint_req );
+$extraSignedParams = array();
+parse_str($parsed['query'], $extraSignedParams);
+$extraSignedParams['title'] = 'Special:OAuth/initiate';
+
+$init_req = OAuthRequest::from_consumer_and_token(
+	$c,                // <translate nowrap><!--T:193--> OAuthConsumer for your app</translate>
+	NULL,              // <translate nowrap><!--T:194--> User token, NULL for calls to initiate</translate>
+	"GET",             // <translate nowrap><!--T:195--> http method</translate>
+	$endpoint_req,     // <translate nowrap><!--T:196--> endpoint url (this is signed)</translate>
+	$extraSignedParams // <translate nowrap><!--T:197--> extra parameters we want to sign (must include title)</translate>
+);
+
+$rsa_method = new MWOAuthSignatureMethod_RSA_SHA1( new OAuthDataStore(), $privateKey );
+$init_req->sign_request(
+	$rsa_method, // OAuthSignatureMethod
+	$c,          // <translate nowrap><!--T:198--> OAuthConsumer for your app</translate>
+	NULL         // <translate nowrap><!--T:199--> User token, NULL for calls to initiate</translate>
+);
+
+echo "Getting request token with: $init_req\n";
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, (string) $init_req ); // <translate nowrap><!--T:200--> Pass OAuth in GET params</translate>
+curl_setopt( $ch, CURLOPT_HTTPGET, true );
+curl_setopt( $ch, CURLOPT_HEADER, false );
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+$data = curl_exec( $ch );
+
+if( !$data ) {
+	'Curl error: ' . curl_error( $ch );
+}
+
+echo "Returned: $data\n\n";
+
+
+$requestToken = json_decode( $data );
+print "Visit $baseurl/authorize?oauth_token={$requestToken->key}&oauth_consumer_key=$consumerKey\n";
+
+// <translate nowrap><!--T:201--> ACCESS TOKEN</translate>
+print "Enter the verification code:\n";
+$fh = fopen( "php://stdin", "r" );
+$line = fgets( $fh );
+
+$rc = new OAuthToken( $requestToken->key, $requestToken->secret );
+$parsed = parse_url( $endpoint_acc );
+parse_str($parsed['query'], $params);
+$params['oauth_verifier'] = trim($line);
+$params['title'] = 'Special:OAuth/token';
+
+$acc_req = OAuthRequest::from_consumer_and_token(
+	$c,
+	$rc,
+	"GET",
+	$endpoint_acc,
+	$params
+);
+$acc_req->sign_request($rsa_method, $c, $rc);
+
+echo "Calling: $acc_req\n";
+
+unset( $ch );
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, $endpoint_acc );
+curl_setopt( $ch, CURLOPT_HEADER, 0 );
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+curl_setopt( $ch, CURLOPT_HTTPHEADER, array( $acc_req->to_header() ) ); // <translate nowrap><!--T:202--> Set the Authorization Header</translate>
+$data = curl_exec( $ch );
+if( !$data ) {
+	'Curl error: ' . curl_error( $ch );
+}
+
+echo "Returned: $data\n\n";
+$acc = json_decode( $data );
+$accessToken = new OAuthToken( $acc->key, $acc->secret );
+
+/**
+ * <translate nowrap><!--T:203--> Insecurely call the api for information about the user.</translate> 
+ * <translate nowrap><!--T:204--> A MITM can forge a response from the server, so don't rely on this for identity!</translate>
+ */
+$apiurl = 'http://<wiki>/w/api.php';
+$apiParams = array(
+	'action' => 'query',
+	'meta' => 'userinfo',
+	'uiprop' => 'rights',
+	'format' => 'json',
+);
+
+$api_req = OAuthRequest::from_consumer_and_token(
+	$c,           // Consumer
+	$accessToken, // User Access Token
+	"GET",        // HTTP Method
+	$apiurl,      // Endpoint url
+	$apiParams    // Extra signed parameters
+);
+$api_req->sign_request( $rsa_method, $c, $accessToken );
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, $apiurl . "?" . http_build_query( $apiParams ) );
+curl_setopt( $ch, CURLOPT_HEADER, 0 );
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+curl_setopt( $ch, CURLOPT_HTTPHEADER, array( $api_req->to_header() ) ); // <translate nowrap><!--T:205--> Authorization header required for api</translate>
+$data = curl_exec( $ch );
+if( !$data ) {
+	'Curl error: ' . curl_error( $ch );
+}
+echo "Returned: $data\n\n";
+
+
+/**
+ * <translate nowrap><!--T:206--> Securely get the identity of the user</translate>
+ */
+$consumerSecret = '';
+
+$extraSignedParams = array(
+	'title' => 'Special:OAuth/identify'
+);
+
+$req = OAuthRequest::from_consumer_and_token(
+	$c,
+	$accessToken,
+	"GET",
+	$endpoint_id,
+	$extraSignedParams
+);
+$req->sign_request( $rsa_method, $c, $accessToken );
+
+echo "Calling:  '$endpoint_id'\nHeader: {$req->to_header()}\n\n";
+
+$ch = curl_init();
+curl_setopt( $ch, CURLOPT_URL, $endpoint_id );
+curl_setopt( $ch, CURLOPT_HEADER, 0 );
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+curl_setopt( $ch, CURLOPT_HTTPHEADER, array( $req->to_header() ) );
+$data = curl_exec( $ch );
+if( !$data ) {
+	'Curl error: ' . curl_error( $ch );
+}
+
+$identity = JWT::decode( $data, $consumerSecret );
+
+// <translate nowrap><!--T:207--> Validate the JWT</translate>
+if ( !validateJWT( $identity, $consumerKey, $req->get_parameter( 'oauth_nonce' ) ) ) {
+	print "The JWT did not validate";
+} else {
+	print "We got a valid JWT, describing the user as:\n";
+	print " * Username: {$identity->username}\n";
+	print " * User's current groups: " . implode( ',', $identity->groups ) . "\n";
+	print " * User's current rights: " . implode( ',', $identity->rights ) . "\n";
+}
+
+
+/**
+ * <translate nowrap><!--T:208--> Validate a JWT, to ensure this isn't a reply, spoof, etc.</translate>
+ * @param $identity <translate nowrap><!--T:209--> the decoded JWT</translate>
+ * @param $consumerKey <translate nowrap><!--T:210--> your App's Key</translate>
+ * @param $nonce <translate nowrap><!--T:211--> the nonce sent with your request, which should be returned</translate>
+ */
+function validateJWT( $identity, $consumerKey, $nonce ) {
+
+	$expectedConnonicalServer = 'http://<wiki>';
+
+	// <translate nowrap><!--T:212--> Verify the issuer is who we expect (server sends <tvar name=1>$wgCanonicalServer</tvar>)</translate>
+	if ( $identity->iss !== $expectedConnonicalServer ) {
+		print "Invalid Issuer";
+		return false;
+	}
+
+	// <translate nowrap><!--T:213--> Verify we are the intended audience</translate>
+	if ( $identity->aud !== $consumerKey ) {
+		print "Invalid Audience";
+		return false;
+	}
+
+	// <translate nowrap><!--T:214--> Verify we are within the time limits of the token.</translate>
+	// <translate nowrap><!--T:215--> Issued at (iat) should be in the past,</translate>
+	// <translate nowrap><!--T:216--> Expiration (exp) should be in the future.</translate>
+	$now = time();
+	if ( $identity->iat > $now || $identity->exp < $now ) {
+		print "Invalid Time";
+		return false;
+	}
+
+	// <translate nowrap><!--T:217--> Verify we haven't seen this nonce before, which would indicate a replay attack</translate>
+	if ( $identity->nonce !== $nonce ) {
+		print "Invalid Nonce";
+		return false;
+	}
+
+	return true;
+}
+
+</syntaxhighlight>
+{{Collapse_bottom}}
+
+<translate>
+===  Python command-line client using mwoauth === <!--T:15-->
+</translate>
+{{Collapse_top|title=<translate><!--T:149--> Python source code</translate>}}
+<syntaxhighlight lang="python">
+from mwoauth import ConsumerToken, Handshaker
+import requests
+from requests_oauthlib import OAuth1
+from six.moves import input  # <translate nowrap><!--T:218--> For compatibility between python 2 and 3</translate>
+
+# <translate nowrap><!--T:219--> Consruct a "consumer" from the key/secret provided by MediaWiki</translate>
+import config  # <translate nowrap><!--T:220--> You'll need to provide this</translate>
+
+
+# <translate nowrap><!--T:221--> Create a file called <tvar name=3>config.py</tvar> somewhere where it will be found by python, e.g. in the same directory as this script, with the following content (not including the <tvar name=4>#</tvar> characters!)</translate>
+# consumer_key = "<translate nowrap><!--T:229--> the consumer token you got when you registered your applicaton</translate>"
+# consumer_secret = "<translate nowrap><!--T:230--> the secret token you got when you registered your application</translate>"
+
+# <translate nowrap><!--T:222--> For example:</translate>
+# consumer_key = "20bc67da5081a30c736340c493f60d14"
+# consumer_secret = "af4313371bb2fb38e81fe7d300080085f52849f9"
+
+consumer_token = ConsumerToken(config.consumer_key, config.consumer_secret)
+
+# <translate nowrap><!--T:223--> Construct handshaker with wiki URI and consumer</translate>
+handshaker = Handshaker("https://en.wikipedia.org/w/index.php",
+                        consumer_token)
+
+# <translate nowrap><!--T:224--> Step 1: Initialise -- ask MediaWiki for a temporary key/secret for user</translate>
+redirect, request_token = handshaker.initiate()
+
+# <translate nowrap><!--T:225--> Step 2: Authorise -- send user to MediaWiki to confirm authorisation</translate>
+print("Point your browser to: %s" % redirect)  #
+response_qs = input("Response query string: ")
+
+# <translate nowrap><!--T:226--> Step 3: Complete -- obtain authorised key/secret for "resource owner"</translate>
+access_token = handshaker.complete(request_token, response_qs)
+
+# <translate nowrap><!--T:227--> Construct an auth object with the consumer and access tokens</translate>
+auth1 = OAuth1(consumer_token.key,
+               client_secret=consumer_token.secret,
+               resource_owner_key=access_token.key,
+               resource_owner_secret=access_token.secret)
+
+# <translate nowrap><!--T:228--> Now, accessing the API on behalf of a user</translate>
+print("Reading top 10 watchlist items")
+response = requests.get(
+    "https://en.wikipedia.org/w/api.php",
+    params={
+        'action': "query",
+        'list': "watchlist",
+        'wllimit': 10,
+        'wlprop': "title|comment",
+        'format': "json"
+    },
+    auth=auth1
+)
+for item in response.json()['query']['watchlist']:
+    print("{title}\t{comment}".format(**item))
+</syntaxhighlight>
+{{Collapse_bottom}}
+
+<translate>
+===  Python Toolforge tutorial using mwoauth === <!--T:16-->
+
+<!--T:17-->
+See:
+</translate>
+[[wikitech:Help:Toolforge/My first Flask OAuth tool]]
+
+<translate>
+=== Go command-line client using mrjones/auth (OAuth 1.0) === <!--T:18-->
+
+<!--T:19-->
+Before you begin:
+</translate>
+
+<syntaxhighlight lang="shell-session">
+$ go get github.com/mrjones/oauth
+</syntaxhighlight>
+
+{{Collapse_top|title=<translate><!--T:150--> Go source code</translate>}}
+<syntaxhighlight lang="go">
+package main
+
+import (
+	"fmt"
+	"os"
+	"github.com/mrjones/oauth"
+	"io/ioutil"
+	"strconv"
+)
+
+func main() {
+
+	var consumerKey string = ""
+	var consumerSecret string = ""
+
+	if len(consumerKey) == 0 || len(consumerSecret) == 0 {
+		os.Exit(1)
+	}
+
+	c := oauth.NewConsumer(
+		consumerKey,
+		consumerSecret,
+		oauth.ServiceProvider{
+			RequestTokenUrl:   "http://<wiki>/wiki/index.php/Special:OAuth/initiate",
+			AuthorizeTokenUrl: "http://<wiki>/wiki/index.php/Special:OAuth/authorize",
+			AccessTokenUrl:    "http://<wiki>/wiki/index.php/Special:OAuth/token",
+		})
+
+	c.Debug(true)
+
+	c.AdditionalParams = map[string]string{
+		"title":   "Special:OAuth/initiate",
+	}
+
+	c.AdditionalAuthorizationUrlParams = map[string]string{
+		"oauth_consumer_key": consumerKey,
+	}
+
+	requestToken, url, err := c.GetRequestTokenAndUrl("oob")
+	if err != nil {
+		fmt.Println( err )
+	}
+
+	fmt.Println( "Got token " + requestToken.Token )
+
+	fmt.Println("(1) Go to: " + url)
+	fmt.Println("(2) Grant access, you should get back a verification code.")
+	fmt.Println("(3) Enter that verification code here: ")
+
+	verificationCode := ""
+	fmt.Scanln(&verificationCode)
+
+	c.AdditionalParams = map[string]string{
+		"title":   "Special:OAuth/token",
+	}
+
+	accessToken, err := c.AuthorizeToken(requestToken, verificationCode)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println( "Got access token " + accessToken.Token )
+
+	c.AdditionalParams = map[string]string{}
+
+	response, err := c.Get(
+		"http://<wiki>/wiki/api.php",
+		map[string]string{
+			"action": "query",
+			"meta": "userinfo",
+			"uiprop": "rights",
+			"format": "json",
+		},
+		accessToken)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println( "\tResponse Status: '" + response.Status + "'\n" )
+	fmt.Println( "\tResponse Code: " + strconv.Itoa(response.StatusCode) + "\n" )
+	bytes, _ := ioutil.ReadAll(response.Body)
+	fmt.Println( "\tResponse Body: " + string(bytes) + "\n" )
+
+}
+</syntaxhighlight>
+{{Collapse_bottom}}
+
+<translate>
+=== JavaScript applications using OAuth 2 === <!--T:151-->
+</translate>
+* [https://github.com/wikimedia/apiclient-wiki wikimedia/apiclient-wiki] – <translate><!--T:152--> entire application in 520 lines of code</translate>
+
+<translate>
+=== Full applications using OAuth === <!--T:20-->
+</translate>
+* [https://github.com/jdlrobson/weekipedia/blob/master/libs/server/app.js Weekipedia], <translate><!--T:153--> A full scale <tvar name=1>React.js</tvar> port of the Wikipedia mobile site uses both.</translate>
+* <translate><!--T:154--> many [<tvar name=url>https://toolhub.wikimedia.org/search?keywords__term=oauth</tvar> Toolforge tools]</translate>
+
+<translate>
+==Notes== <!--T:21-->
+</translate>
+<references />

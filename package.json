@@ -1,0 +1,11 @@
+{
+  "name": "commons-svg-edit-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-based SVG editor wired to Wikimedia Commons (SVG-Edit + OAuth 2.0 PKCE + upload-as-new-version)",
+  "scripts": {
+    "serve": "node tests/serve.mjs",
+    "test:roundtrip": "node tests/roundtrip.mjs"
+  }
+}

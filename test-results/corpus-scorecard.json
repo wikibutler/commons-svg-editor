@@ -1,0 +1,143 @@
+{
+ "startedAt": "2026-09-10T14:07:28.559Z",
+ "diffWidth": 500,
+ "files": [
+  {
+   "title": "File:Little Moreton Hall - ground floor coloured.svg",
+   "loadMs": 591,
+   "integrity": true,
+   "bytes": 264489,
+   "canvasElements": 561,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 1,
+    "defsRewritten": 1,
+    "defsCorrupted": 0,
+    "defsMissing": 7,
+    "defsRestored": 1,
+    "framingRestored": [],
+    "bytesOut": 128082,
+    "pixelDiffPercent": 0.08
+   },
+   "idempotent": false,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#ffff5a",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 515,
+    "bytesOut": 128082,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 0.08
+   },
+   "nonFinite": 0,
+   "domain": "technical/plan",
+   "corpusBytes": 264489,
+   "wallMs": 2037
+  },
+  {
+   "title": "File:Languages-Europe.svg",
+   "loadMs": 515,
+   "integrity": true,
+   "bytes": 415528,
+   "canvasElements": 613,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 2,
+    "defsRewritten": 142,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 142,
+    "framingRestored": [
+     "viewBox",
+     "width",
+     "height"
+    ],
+    "bytesOut": 377939,
+    "pixelDiffPercent": 0.03
+   },
+   "idempotent": false,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#111111",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 570,
+    "bytesOut": 377939,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 0.03
+   },
+   "nonFinite": 0,
+   "domain": "map",
+   "corpusBytes": 415528,
+   "wallMs": 2197
+  },
+  {
+   "title": "File:2022 Russian invasion of Ukraine.svg",
+   "loadMs": 3560,
+   "integrity": true,
+   "bytes": 4295332,
+   "canvasElements": 16749,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 2,
+    "defsRewritten": 101,
+    "defsCorrupted": 0,
+    "defsMissing": 136,
+    "defsRestored": 101,
+    "framingRestored": [
+     "width",
+     "height"
+    ],
+    "bytesOut": 3687781,
+    "pixelDiffPercent": 4.96
+   },
+   "idempotent": false,
+   "edit": {
+    "edited": true,
+    "fillBefore": "none",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 1054,
+    "switchesAfter": 1054,
+    "verdict": "overwrite-ok",
+    "exportMs": 1564,
+    "bytesOut": 3687784,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 4.96
+   },
+   "nonFinite": 0,
+   "domain": "map/longtail",
+   "corpusBytes": 4352401,
+   "wallMs": 12216
+  }
+ ],
+ "pageErrors": []
+}

@@ -1,0 +1,281 @@
+[
+ {
+  "title": "File:Flag of Japan.svg",
+  "srcBytes": 209,
+  "plainBytes": 322,
+  "fixedBytes": 322,
+  "definitions": {
+   "total": 0,
+   "rewritten": 0,
+   "corrupted": 0,
+   "missing": 0
+  },
+  "corruptedExample": "",
+  "restored": 0,
+  "framingRestored": [],
+  "infinityPlain": 0,
+  "infinityFixed": 0,
+  "errorsPlain": [],
+  "errorsFixed": [],
+  "warningsPlain": [],
+  "stats": {
+   "bytes": 322,
+   "elements": 4,
+   "groups": 1,
+   "namedLayers": 0,
+   "texts": 0,
+   "switches": 0,
+   "languages": [],
+   "paths": 0,
+   "longestPathData": 0,
+   "images": 0,
+   "defs": 0,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 0,
+   "plain": 0,
+   "defsRestored": 0,
+   "defsAndFraming": 0
+  }
+ },
+ {
+  "title": "File:Osmotic pressure on blood cells diagram.svg",
+  "srcBytes": 56454,
+  "plainBytes": 51921,
+  "fixedBytes": 52194,
+  "definitions": {
+   "total": 2,
+   "rewritten": 2,
+   "corrupted": 0,
+   "missing": 0
+  },
+  "corruptedExample": "",
+  "restored": 2,
+  "framingRestored": [
+   "viewBox"
+  ],
+  "infinityPlain": 0,
+  "infinityFixed": 0,
+  "errorsPlain": [],
+  "errorsFixed": [],
+  "warningsPlain": [],
+  "stats": {
+   "bytes": 52194,
+   "elements": 347,
+   "groups": 35,
+   "namedLayers": 0,
+   "texts": 118,
+   "switches": 7,
+   "languages": [
+    "zh-hans",
+    "en",
+    "ca",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "lv",
+    "pl",
+    "ru",
+    "sk",
+    "sv",
+    "ta",
+    "uk",
+    "id",
+    "hi"
+   ],
+   "paths": 162,
+   "longestPathData": 834,
+   "images": 0,
+   "defs": 0,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 57.99,
+   "plain": 57.99,
+   "defsRestored": 57.99,
+   "defsAndFraming": 1.64
+  }
+ },
+ {
+  "title": "File:Flagellum base diagram-en.svg",
+  "srcBytes": 124363,
+  "plainBytes": 112142,
+  "fixedBytes": 113883,
+  "definitions": {
+   "total": 16,
+   "rewritten": 16,
+   "corrupted": 0,
+   "missing": 0
+  },
+  "corruptedExample": "",
+  "restored": 16,
+  "framingRestored": [
+   "viewBox"
+  ],
+  "infinityPlain": 0,
+  "infinityFixed": 0,
+  "errorsPlain": [],
+  "errorsFixed": [],
+  "warningsPlain": [],
+  "stats": {
+   "bytes": 113883,
+   "elements": 415,
+   "groups": 34,
+   "namedLayers": 0,
+   "texts": 0,
+   "switches": 0,
+   "languages": [],
+   "paths": 234,
+   "longestPathData": 1830,
+   "images": 0,
+   "defs": 0,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 1.68,
+   "plain": 1.68,
+   "defsRestored": 0.06,
+   "defsAndFraming": 0.06
+  }
+ },
+ {
+  "title": "File:Ancient Egypt map-en.svg",
+  "srcBytes": 845295,
+  "plainBytes": 434371,
+  "fixedBytes": 434371,
+  "definitions": {
+   "total": 3,
+   "rewritten": 0,
+   "corrupted": 0,
+   "missing": 3
+  },
+  "corruptedExample": "",
+  "restored": 0,
+  "framingRestored": [],
+  "infinityPlain": 0,
+  "infinityFixed": 0,
+  "errorsPlain": [],
+  "errorsFixed": [],
+  "warningsPlain": [
+   "font-family not in the Wikimedia font list: dejavu sans condensed — text may be substituted in the render."
+  ],
+  "stats": {
+   "bytes": 434371,
+   "elements": 1734,
+   "groups": 8,
+   "namedLayers": 0,
+   "texts": 1488,
+   "switches": 102,
+   "languages": [
+    "hi",
+    "ta",
+    "ca",
+    "ms",
+    "he",
+    "sv",
+    "eu"
+   ],
+   "paths": 130,
+   "longestPathData": 35310,
+   "images": 0,
+   "defs": 0,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 0.07,
+   "plain": 0.07,
+   "defsRestored": 0.07,
+   "defsAndFraming": 0.07
+  }
+ },
+ {
+  "title": "File:BlankMap-World.svg",
+  "srcBytes": 1101799,
+  "plainBytes": 1004149,
+  "fixedBytes": 1004105,
+  "definitions": {
+   "total": 1,
+   "rewritten": 1,
+   "corrupted": 0,
+   "missing": 0
+  },
+  "corruptedExample": "",
+  "restored": 1,
+  "framingRestored": [],
+  "infinityPlain": 0,
+  "infinityFixed": 0,
+  "errorsPlain": [],
+  "errorsFixed": [],
+  "warningsPlain": [
+   "longest path \"d\" attribute is 47548 chars — heavy geometry; the editor may feel slow."
+  ],
+  "stats": {
+   "bytes": 1004105,
+   "elements": 2794,
+   "groups": 213,
+   "namedLayers": 0,
+   "texts": 0,
+   "switches": 0,
+   "languages": [],
+   "paths": 2213,
+   "longestPathData": 47548,
+   "images": 0,
+   "defs": 0,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 0,
+   "plain": 0,
+   "defsRestored": 0,
+   "defsAndFraming": 0
+  }
+ },
+ {
+  "title": "File:Subduction-en.svg",
+  "srcBytes": 2449739,
+  "plainBytes": 2037541,
+  "fixedBytes": 2078871,
+  "definitions": {
+   "total": 264,
+   "rewritten": 261,
+   "corrupted": 3,
+   "missing": 0
+  },
+  "corruptedExample": "linearGradient#path9652_2_: <linearGradient id=\"path9652_2_\" x1=\"Infinity\" x2=\"Infinity\" y1=\"-Infini",
+  "restored": 262,
+  "framingRestored": [
+   "viewBox",
+   "width",
+   "height"
+  ],
+  "infinityPlain": 12,
+  "infinityFixed": 0,
+  "errorsPlain": [
+   "non-finite numeric value(s) in the markup — renderers will fail on these: x1=\"Infinity\", x2=\"Infinit"
+  ],
+  "errorsFixed": [],
+  "warningsPlain": [],
+  "stats": {
+   "bytes": 2078871,
+   "elements": 6534,
+   "groups": 531,
+   "namedLayers": 0,
+   "texts": 0,
+   "switches": 0,
+   "languages": [],
+   "paths": 4517,
+   "longestPathData": 14110,
+   "images": 0,
+   "defs": 37,
+   "hasInkscapeMeta": false
+  },
+  "pixelDiffPercent": {
+   "baseline": 39.23,
+   "plain": 39.23,
+   "defsRestored": 39.16,
+   "defsAndFraming": 3.79
+  }
+ }
+]

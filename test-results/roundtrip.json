@@ -1,0 +1,193 @@
+{
+ "startedAt": "2026-09-10T14:11:50.553Z",
+ "base": "http://127.0.0.1:4181/",
+ "files": [
+  {
+   "title": "File:Flag of Japan.svg",
+   "ok": true,
+   "apiSha1": "bda514e7fbea77ed21b325dec24b920cd42e31dd",
+   "size": 209,
+   "user": "Zscout370",
+   "bytes": 209,
+   "integrity": true,
+   "localSha1": "bda514e7fbea77ed21b325dec24b920cd42e31dd",
+   "canvasContentElements": 4,
+   "canvasLayers": 1,
+   "drift": {
+    "elements": [
+     2,
+     4
+    ],
+    "geometryChanged": 2,
+    "textChanged": 0
+   },
+   "fidelityOriginal": {
+    "g": 0,
+    "path": 0,
+    "rect": 1,
+    "circle": 1,
+    "polygon": 0,
+    "polyline": 0,
+    "ellipse": 0,
+    "text": 0,
+    "tspan": 0,
+    "switch": 0,
+    "use": 0,
+    "defs": 0,
+    "linearGradient": 0,
+    "radialGradient": 0,
+    "filter": 0,
+    "clipPath": 0,
+    "mask": 0,
+    "style": 0,
+    "image": 0,
+    "inkscape:": 0,
+    "sodipodi:": 0
+   },
+   "fidelityBaseline": {
+    "g": 1,
+    "path": 0,
+    "rect": 1,
+    "circle": 1,
+    "polygon": 0,
+    "polyline": 0,
+    "ellipse": 0,
+    "text": 0,
+    "tspan": 0,
+    "switch": 0,
+    "use": 0,
+    "defs": 0,
+    "linearGradient": 0,
+    "radialGradient": 0,
+    "filter": 0,
+    "clipPath": 0,
+    "mask": 0,
+    "style": 0,
+    "image": 0,
+    "inkscape:": 0,
+    "sodipodi:": 0
+   },
+   "loadMs": 231,
+   "edit": {
+    "edited": true,
+    "tag": "rect",
+    "fillBefore": "#fff",
+    "fillAfter": "#ff00aa"
+   },
+   "panel": {
+    "bytes": 337,
+    "rawBytes": 337,
+    "hasFillEdit": true,
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+     "bytes": 337,
+     "elements": 4,
+     "groups": 1,
+     "namedLayers": 0,
+     "texts": 0,
+     "switches": 0,
+     "languages": [],
+     "paths": 0,
+     "longestPathData": 0,
+     "images": 0,
+     "defs": 0,
+     "hasInkscapeMeta": false
+    },
+    "rawErrors": [],
+    "defsRestored": 0,
+    "framingRestored": [],
+    "change": {
+     "elementsBefore": 4,
+     "elementsAfter": 4,
+     "elementDelta": 0,
+     "geometryChanged": 1,
+     "shapeChanged": 0,
+     "textChanged": 0,
+     "ratio": 0.25,
+     "switchesBefore": 0,
+     "switchesAfter": 0,
+     "switchesLost": 0,
+     "textTotal": 0,
+     "structuralChange": false,
+     "editedNothing": false,
+     "verdict": "overwrite-ok"
+    },
+    "verdict": "overwrite-ok",
+    "editedNothing": false,
+    "saveButtonDisabled": true,
+    "saveButtonLabel": "Save to Commons",
+    "saveWhy": "Blocked: not connected to Commons — press “Connect to Commons”.",
+    "conflictText": "Conflict guard✔ latest Commons sha1 bda514e7 still matches the revision you loaded — safe to overwrite.",
+    "renders": true,
+    "thumbError": null
+   },
+   "checks": {
+    "fetchedAndSha1Verified": true,
+    "canvasPopulated": true,
+    "editLanded": true,
+    "exportValid": true,
+    "exportRenders": true,
+    "changeDetected": true,
+    "saveGateCorrect": true
+   },
+   "totalMs": 800
+  }
+ ],
+ "pageErrors": [
+  "Failed to load resource: the server responded with a status of 404 (Not Found)",
+  "Failed to load resource: the server responded with a status of 401 ()",
+  "Failed to load resource: the server responded with a status of 401 ()"
+ ],
+ "failedRequests": [
+  "401 https://commons.wikimedia.org/w/api.php?action=query&meta=tokens&type=csrf&format=json&crossorigin=",
+  "401 https://commons.wikimedia.org/w/api.php?action=upload&format=json&formatversion=2&crossorigin="
+ ],
+ "uploadBoundary": {
+  "requests": [
+   {
+    "kind": "GET meta=tokens (bearer)",
+    "status": 401,
+    "cors": "cors",
+    "body": "{\"httpCode\":401,\"httpReason\":\"Jwt is not in the form of Header.Payload.Signature with two dots and 3 sections\"}"
+   },
+   {
+    "kind": "POST action=upload (bearer)",
+    "status": 401,
+    "cors": "cors",
+    "body": "{\"httpCode\":401,\"httpReason\":\"Jwt is not in the form of Header.Payload.Signature with two dots and 3 sections\"}"
+   }
+  ],
+  "reachedServer": true
+ },
+ "unit": {
+  "verifierLength": 64,
+  "verifierIsBase64Url": true,
+  "challengeIsSha256OfVerifier": true,
+  "authorizeUrl": "https://commons.wikimedia.org/w/rest.php/oauth2/authorize?response_type=code&client_id=CLIENT123&redirect_uri=https%3A%2F%2Ftools.example%2Fapp%2F&state=st4te&code_challenge=1KQXMvnl45qIiSVai9jAng1Yupftk-xcG3Pw064o8n4&code_challenge_method=S256&scope=basic+uploadfile",
+  "normalized": [
+   "File:Flag of Japan.svg",
+   "File:Flag of Japan.svg",
+   "File:Subduction-en.svg",
+   "File:BlankMap-World.svg"
+  ],
+  "nonSvgRejected": "Only .svg files can be edited here (got: File:Picture.jpg).",
+  "sha1OfAbc": "a9993e364706816aba3e25717850c26c9cd0d89d",
+  "staleSha1Detected": true,
+  "liveSha1": "bda514e7fbea77ed21b325dec24b920cd42e31dd"
+ },
+ "noEditGuard": {
+  "editedNothing": true,
+  "disabled": true,
+  "label": "Edit something first",
+  "why": "Blocked: nothing has been edited in the canvas yet — saving now would only add the editor's own normalisation to the file; not connected to Commons — press “Connect to Commons”.",
+  "drift": {
+   "geometryChanged": 2,
+   "elements": [
+    2,
+    4
+   ]
+  }
+ }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commons SVG Editor — prototype</title>
+<link rel="stylesheet" href="vendor/svgedit/svgedit.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <span class="logo">◧</span>
+    <div>
+      <div class="title">Commons SVG Editor</div>
+      <div class="sub">prototype · edits Wikimedia Commons <code>.svg</code> files in the browser</div>
+    </div>
+  </div>
+
+  <form id="loadForm" class="loader" autocomplete="off">
+    <input id="fileInput" type="text" list="samples" placeholder="File:Example.svg or Commons URL"
+           aria-label="Commons file title" spellcheck="false">
+    <datalist id="samples">
+      <option value="File:Flag of Japan.svg"></option>
+      <option value="File:Flagellum base diagram-en.svg"></option>
+      <option value="File:Subduction-en.svg"></option>
+      <option value="File:BlankMap-World.svg"></option>
+    </datalist>
+    <button id="loadBtn" class="btn primary" type="submit">Load from Commons</button>
+    <label class="btn ghost" title="Edit a file from your device (no upload)">
+      Open local…<input id="localInput" type="file" accept=".svg,image/svg+xml" hidden>
+    </label>
+  </form>
+
+  <div class="spacer"></div>
+
+  <button id="authBtn" class="btn ghost" type="button">Connect to Commons</button>
+  <button id="saveBtn" class="btn primary" type="button" disabled>Save to Commons…</button>
+</header>
+
+<div id="filebar" class="hidden">
+  <span id="fileTitle" class="ftitle"></span>
+  <span class="fmeta" id="fileMeta"></span>
+  <span class="spacer"></span>
+  <span id="freshPill" class="pill hidden"></span>
+  <a id="fileLink" class="flink" target="_blank" rel="noopener">open file page ↗</a>
+</div>
+
+<main id="stage">
+  <div id="svgcontainer"></div>
+  <div id="welcome">
+    <h2>Load a Commons SVG, edit it here, save it back as a new version.</h2>
+    <p>No download to disk, no Inkscape, no re-upload. Pick one of the samples:</p>
+    <div class="chips">
+      <button class="chip" data-title="File:Flag of Japan.svg">Flag of Japan</button>
+      <button class="chip" data-title="File:Flagellum base diagram-en.svg">Flagellum diagram</button>
+      <button class="chip" data-title="File:Subduction-en.svg">Subduction map (2.4 MB)</button>
+      <button class="chip" data-title="File:BlankMap-World.svg">BlankMap-World (1.1 MB)</button>
+    </div>
+    <p class="dim">Saving to Commons requires an OAuth 2.0 connection (one-time setup, see <em>Connect</em>).
+      Loading, editing, local import/export and the preview all work without an account.</p>
+  </div>
+  <div id="busy" class="hidden"><div class="spinner"></div><span id="busyText">working…</span></div>
+</main>
+
+<aside id="drawer" class="hidden" aria-label="Save panel">
+  <div class="drawer-head">
+    <strong id="drawerTitle">Save to Commons</strong>
+    <button id="drawerClose" class="iconbtn" type="button">✕</button>
+  </div>
+  <div id="drawerBody"></div>
+</aside>
+
+<div id="toasts"></div>
+
+<script src="vendor/svgedit/iife-Editor.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{{Update|librsvg got updated}}
+{{Lowercase title}}
+Wikimedia Commons currently uses '''{{w|librsvg}} 2.60'''<ref name="2.60"/> for rendering images. It's a fast renderer (compared to Inkscape or Apache Batik), but its results are unreliable, especially in older Versions ≤2.40.21 . There is a discussion about re-evaluating the SVG renderer on [[phab:T40010]].
+
+Some files may be fixed now. If there are any files that were uploaded earlier and have an error in displaying, you can try [[Help:Purge|purging]] the file to force a re-render. You should check all the resolutions, since the bugs can show up differently in different resolutions.
+
+If you see a buggy image, tag it with {{T|Rsvg bug}}. This puts it in [[:Category:Pictures showing a librsvg bug]]. Some more bugs are reported at [[Commons:Commons SVG Checker#Checks]].
+
+{| class="wikitable"
+|+ librsvg-Version history on Wikimedia
+|-
+!colspan=2| librsvg-Version || Debian !!colspan=2| Usage on Wikimedia
+|-
+! number !! Release date<ref>https://gitlab.gnome.org/GNOME/librsvg/-/tags?page=5&sort=updated_desc</ref>  !! Version !! begin !! end
+|-
+|2.3.93<ref name="2.3.93">[[User:Brion Vibber (WMF)]] on [[phab:T6976#94122]]</ref> || || || &ndash; || 2006<ref name="2.14"/>
+|-
+|2.14.0<ref name="2.14">[[User:Brion Vibber (WMF)]] on [[phab:T6976#94135]]</ref> || ||  || 2006<ref name="2.14"/> || at least 2007<ref>[[phab:T12207]]</ref>
+|-
+|2.40.16<ref name="2.40.16">[[User:Kaldari]] on [[phab:T65703#2434426]]</ref> || 2016-06 || || 2016<ref name="2.40.16"/> || 2017<ref name="2.40.18"/>
+|-
+|2.40.18<ref name="2.40.18">[[:mw:User:MMuhlenhoff (WMF)]] on [[phab:T170810#3679484]]</ref> || 2017-07 || || 2017<ref name="2.40.18"/> || 2019<ref name="April2019"/>
+|-
+|2.40.20-3<ref>[[User:EMouzeli (WMF)]] on [[phab:T68672#5110846]]</ref> || 2017-12 || || 2019<ref name="April2019">[[User:JoKalliauer]] on [[phab:T68672#5109579]]</ref> || 2020<ref name="clone">[[User:JoKalliauer]] on [[phab:T276684]]</ref>
+|-
+|2.40.21<ref name="2.40.21">https://gitlab.gnome.org/GNOME/librsvg/-/issues/725#note_1105591</ref> || 2020-02 || || 2020<ref name="clone"/> || 2023-05-16<ref name="T193352">[[phab:T193352]]</ref>
+|-
+|2.44.10<ref name="T193352" /> || 2018-12 || Buster<ref>https://packages.debian.org/source/buster/librsvg</ref> || 2023-05-16<ref name="T193352" /> || 2024-06-06<ref name="2.50.3">[[phab:T265549#9867973]]</ref>
+|-
+|2.50.3 || 2021-01<ref>https://github.com/GNOME/librsvg/releases/tag/2.50.3</ref> || Bullseye<ref>https://packages.debian.org/source/bullseye/librsvg</ref> || 2024-06-06<ref name="2.50.3"/> || 2024-07<ref name="2.54"/>
+|-
+|'''2.54.7''' || 2023-07<ref>https://github.com/GNOME/librsvg/releases/tag/2.54.7</ref> || Bookworm<ref>https://packages.debian.org/source/bookworm/librsvg</ref> || 2024-07<ref name="2.54">[[phab:T381674#10389812]]</ref> || 2026-08-17<ref name="2.60"/>
+|-
+|2.60<ref name="2.60"/> || 2025-03<ref>https://github.com/GNOME/librsvg/releases/tag/2.60.0</ref> || Trixie<ref>https://packages.debian.org/source/trixie/librsvg</ref> || 2026-08-17<ref name="2.60">[[phab:T246003#12222586]]</ref>||
+|}
+
+== Rendering of text ==
+<gallery showfilename perrow="6">
+  Text-positioning.svg|Multiple x-/y-/dx-/dy-coordinates positioning text characters [[Bugzilla:33245]]
+  Text-positioning fixed.svg|Correct positioning (solution to achieve the fix is in the image description)
+  Manfeild_Autocourse_track_map_(New_Zealand).svg|[[phab:T11420]] (text with <code>textPath</code> not displayed)
+  Fort_Hall_Location_Map.svg|[[phab:T11420]] (text with <code>textPath</code> not displayed)
+  T236398.svg|[[phab:T236398]] <code>tspan</code> <code>text-decoration="overline"</code> does not have overline
+</gallery>
+
+== Hairline cracks ==
+'''[[phab:T20936]]''': This bug appears also in modern browsers on zooming levels.
+{|
+|[[File:Hairline crack.svg|299px|thumb|White gap visible at odd px sizes (299px)]]
+|[[File:Hairline crack.svg|300px|thumb|Same pic 1px larger rendered (300px)]]
+|}
+Merging the intersecting paths or slightly overlapping them can work around this issue:
+* [https://jakearchibald.github.io/svgomg/ Merge Path tool (svgomg)]
+* [https://graphicdesign.stackexchange.com/questions/45611/how-do-i-merge-these-two-objects-in-inkscape-such-that-the-space-in-between-is-g Inkscape path merge]
+
+== Pattern ==
+'''[[phab:T20463]]''': The libRSVG's handling of SVG pattern is only rudimentary. Some fixed examples (bug in file history):
+
+<gallery>
+File:Provinzen kastilien.svg|Only on small thumbnail size
+</gallery>
+
+== List of outstanding SVG bugs ==
+Incomplete (please add missing ones e.g. from https://phabricator.wikimedia.org/tag/wikimedia-svg-rendering/)
+
+=== Can be solved using svgworkaroundbot.toolforge.org ===
+*[[phab:T35245|T35245: ''SVG files: text (and tspan) elements misplaced when rasterizing to PNG thumbnails/previews (multi-valued x/y, dx/dy attributes)'']]
+
+=== Solution not yet determined ===
+* [[phab:T261192|T261192: ''Rendering multilingual (systemLanguage) SVG files fails after upgrading librsvg from 2.40.21 to 2.44.10'']]
+
+== References ==
+{{reflist|30em}}
+
+[[Category:Pictures showing a librsvg bug| ]]
+[[Category:SVG galleries]]
+[[Category:SVG help]]
+
+[[de:Wikipedia:Probleme mit SVGs]]
+[[en:Wikipedia:SVG help]]
+[[es:Wikiproyecto:Ilustración/Taller gráfico/Problemas típicos con SVG en Wikimedia]]
+[[fr:Wikipédia:Atelier graphique/FAQ SVG]]

@@ -1,0 +1,539 @@
+{{Update|it tests software predating June 2021.}}
+
+== SVG test suites ==
+
+=== Summary ===
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!
+!librsvg 2.50
+!resvg 0.14.0
+!Inkscape 1.0
+! Batik 1.13; 1.14{{Clarify|date=October 2024|Which version is it?}}
+|-
+|[[#W3C_SVG_1.1_test_suite|Correctness according to the W3C test suite]]
+| style="background-color:red;"|0,662
+| style="background-color:#6B8E23;"|0,831
+|0,745
+|0,801
+|-
+|[[#W3C_SVG_1.1_test_suite|cpu-time taken in the W3C test suite]] (512 px)
+|1m 46,776s
+| style="background-color:#6B8E23;"|1m 04,490s
+|7m 57,465s
+|6m 51,560s
+|-
+|[[#resvg test suite|Correctness according to resvg test suite]]
+|0.754<!-- version 2.50.2 -->
+| style="background-color:#6B8E23;"|0.956
+|0.729<!-- version 1.0 -->
+| style="background-color:red;"|0.703<!-- version 1.13 -->
+|-
+|[[#resvg test suite|Time measured by resvg test suite]]
+|4min 05sek<!-- one file did not teriminate within hours, https://gitlab.gnome.org/GNOME/librsvg/-/issues/698 (counted as 0sek) --> 
+| style="background-color:#6B8E23;"|2min 30sek
+|46min 22sek
+| style="background-color:red;"|61min 29sek
+|-
+|[[#Category:Featured_pictures_on_Wikimedia_Commons_-_vector|Correctness with Wikimedia featured pictures]]
+|0.92
+| style="background-color:#6B8E23;"|1.00
+|-
+|[[#Category:Featured_pictures_on_Wikimedia_Commons_-_vector|Time with Wikimedia featured pictures]]<!-- see #Time-measurement for hardware-specification -->
+|5m 17,701s 
+| style="background-color:#6B8E23;"|4m 46,639s
+| style="background-color:red;"|15m 28,202s<!-- does not terminate for https://commons.wikimedia.org/wiki/File:Cone_clutch.svg (counted as 0sek by all) -->
+|11m 30,768s
+|-
+|time [[:mw:SVG_benchmarks/test_20080112#Test_files| 2006-MediaWiki-collection ]] (512px)
+|23.129s
+| style="background-color:#6B8E23;"|9.551s
+| style="background-color:red;"|186.809s
+|87.313s
+|-
+|solved [[phab:]]-tasks relative to all tasks<ref>[[:mw:User:JoKalliauer/phab/wikimedia-svg-rendering]]</ref>{{Clarify|date=October 2024}}
+| style="background-color:red;"|0.55<ref>This number is a bit unfair since all bugs are c-librsvg2.40-bugs</ref>
+| style="background-color:#6B8E23;"|0.88
+|0.78
+|}
+
+=== commands ===
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!command
+! librsvg
+! resvg
+! Inkscape
+! Batik
+|-
+|width 512px
+|<code>-w 512</code><ref>https://helpmanual.io/help/rsvg-convert/</ref>
+|<code>-w 512</code><ref>https://github.com/RazrFalcon/resvg/issues/376#issue-859203339</ref>
+|<code>-w 512</code><ref>https://inkscape.org/de/doc/inkscape-man.html</ref>
+|<code>-w 512</code><ref>https://xmlgraphics.apache.org/batik/tools/rasterizer.html</ref>
+|-
+|dpi 96
+|<code>-a -d 96dpi -p 96dpi</code><ref>https://helpmanual.io/help/rsvg-convert/</ref>
+|<code>--dpi 96</code><ref>https://github.com/RazrFalcon/resvg/issues/376#issue-859203339</ref>
+|<code>-d 96</code><ref>https://inkscape.org/de/doc/inkscape-man.html</ref>
+|<code>-dpi 96</code><ref>https://xmlgraphics.apache.org/batik/tools/rasterizer.html</ref>
+|-
+|lang=de-AT, de, en
+|Unix $LANG environment<ref name="langGlrx">[[phab:T40010#7032149]]</ref>
+|<code>--languages 'de-AT, de, en'</code><ref>https://github.com/RazrFalcon/resvg/issues/376#issue-859203339</ref>
+|Unix $LANG environment<ref name="langGlrx"/>
+|<code>-lang</code><ref name="langGlrx"/> (not working)
+|}
+
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[User:JoKalliauer/SVG test suites/scripts|which commands are used]]</strong>
+|-
+| {{/scripts}}
+|}
+
+
+<!--
+=== Time-measurement ===
+The rendering-time is an approximate estimate of time. If a file renders correctly, the maximal time should be limited to 1-Minutes, if a file is not rendered correctly a penalty of 10 times of the slowest renderer (max. 10Minutes) but at least 1Minute should be counted. For unclear (e.g. unprecise) renderings the rendertime should be set to the slowest (correct) renderer. Runs should be limited to one CPU.
+
+This indices should be used for the times
+# However current times by [[User:JoKalliauer]] do not account for those penalties, therefore renderer which do not support features pretend to be fast, because they don't support computationally intensive features. The tests were done on a 4-CPU-Notebook with AMD A12-9700P RADEON R7; 1.3GHz-2.5GHz on Ferdora 33 (Linux). The processes were not limited to one CPU. The time is the difference between the modified time of the first and the last file, so the rendering of the first PNG is not included.
+# https://raw.githubusercontent.com/RazrFalcon/resvg-test-suite/master/official.csv (from Jun 2020)
+-->
+
+=== Differences that are no mistake ===
+
+* Different [[w:d:Antialiasing_(Computergrafik)|Antialising]]
+* Different [[Help:SVG#fallback|font-fallback]]
+* 90dpi or 96dpi, see [[User:JoKalliauer/SVG_units]], this can be fixed for some render e.g. [https://github.com/RazrFalcon/resvg/issues/223 resvg]; [https://gitlab.gnome.org/GNOME/librsvg/-/issues/646 librsvg 2.52 librsv2.52 will change from 90dpi to 96dpi]
+
+=== W3C SVG 1.1 test suite ===
+https://www.w3.org/Graphics/SVG/Test/20110816/
+
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!SVG
+!librsvg
+!resvg
+!Inkscape
+!batik
+!chrome
+!firefox
+!svgnet
+!wxsvg
+!qtsvg
+|-
+|correctness [https://raw.githubusercontent.com/RazrFalcon/resvg-test-suite/master/official.csv 2]
+|0,662
+|0,831
+|0,745
+|0,801
+|0,866
+|0,855
+|0,614
+|0,193
+|0,418
+|-
+|user+sys time (natural resolution)
+|13m 23.399s 
+|0m 42.104s
+|22m 55.256s
+|70m 16.007s
+|-
+|time (300px)
+|13m 12,446s
+|1m 7,044s
+|<!--coding mistake-->
+|<!--coding mistake-->
+|-
+|time (512px)
+|14m 43,146s
+|1m 12,591s
+|21m 14,825s (4m 13.46s<ref name="continuous"/>)
+|29m 46,446s
+|-
+|time (512px)
+|1m52,417s
+|
+|}
+
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[User:JoKalliauer/SVG_test_suites/w3c_details|Where resvg is superior to librsvg]]</strong>
+|-
+| {{/w3c details}}
+|}
+
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[User:JoKalliauer/SVG_test_suites/w3c_details_resvg_fails|Where librsvg is superior to resvg]]</strong>
+|-
+| {{/w3c details_resvg_fails}}
+|}
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[/w3c_details_both_fails|Where both fail]]</strong>
+|-
+| {{/w3c details_both_fails}}
+|}
+
+=== resvg test suite ===
+1338 files from https://github.com/RazrFalcon/resvg-test-suite/tree/master/tests, uploaded in [[:Category:Rendersvg_test_suite]].
+
+[[File:Results_of_the_resvg_test_suite.svg]]
+
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!SVG
+!librsvg 2.50<!-- version 2.50.2 -->
+!resvg 0.14.0
+!Inkscape 1.0
+!Batik 1.13; 1.14
+!Chromium r818858
+!Firefox 83
+!SVG.NET 3.0.102
+!wxSVG 1.5.11
+|-
+|correctness<ref>https://github.com/RazrFalcon/resvg#svg-support</ref>
+|0.754
+|0.956
+|0.729<!-- version 1.0 -->
+|0.703<!-- version 1.13 -->
+|0.886
+|0.872
+|0.450
+|0.254
+|-
+|time<!-- see #Time-measurement for hardware-specification -->
+|4min 05sek<!-- one file did not teriminate within hours, https://gitlab.gnome.org/GNOME/librsvg/-/issues/698 (counted as 0sek) --> 
+|2min 30sek
+|46min 22sek
+|61min 29sek
+|-
+|time (300px)
+|4m 26,674s
+|2m 14,276s
+|27m 17,977s
+|45m 1,809s<!-- e-use-005 did terminate after a long pause -->
+|-
+|time (512px)
+|6m 13,054s
+|2m 35,135s
+|38m 5,628s (17m 8.889s<ref name="continuous"/>/ 2m 22.970s<ref>removing [[:File:test_suite_resvg_e-feImage-015.svg]] and [[:File:test_suite_resvg_e-feImage-016.svg]]</ref>)
+|63m 36,648s
+|}
+{{Clarify|date=October 2024|What is the measurement unit?}}
+
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[User:JoKalliauer/SVG_test_suites/all Images|all Images]]</strong>
+|-
+| {{/all Images}}
+|}
+
+=== [[:Category:Featured pictures on Wikimedia Commons - vector]] ===
+141 files in https://commons.wikimedia.org/wiki/Category:Featured_pictures_on_Wikimedia_Commons_-_vector
+
+This category represents the most qualitative SVG-files on Commons. Different font-fallbacks are not considered as mistake.
+
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!SVG
+!librsvg 2.50
+!resvg 0.14.0
+!Inkscape 1.0
+!batik 1.14
+|-
+|correctness
+|0.92
+|1.00
+|-
+|real time (limited to 1CPU)<!-- see #Time-measurement for hardware-specification -->
+|5m 17,701s 
+|4m 46,639s
+|15m 28,202s<!-- does not terminate for https://commons.wikimedia.org/wiki/File:Cone_clutch.svg (counted as 0sek by all) -->
+|11m 30,768s
+|-
+|real time (300px)<!-- see #Time-measurement for hardware-specification -->
+|3m 44,533s
+|0m 50,908s
+|3m 37,714s<!-- does not terminate for https://commons.wikimedia.org/wiki/File:Cone_clutch.svg (counted as 0sek by all) -->
+|8m 29,825s
+|-
+|time (512px)
+|4m 28,886s
+|1m 15,307s
+|5m 9,164s (2m 27,598s<ref name="continuous">without restarting inkscape</ref>)
+|10m 8,168s
+|}
+
+{{/Featured details}}
+<!--
+=== Interesting SVG-files ===
+This is a collection by [[User:JoKalliauer]] for special interesting files.
+-->
+
+=== [[:Category:SVG_test_suite_files_by_Glrx|test files by User:Glrx]] ===
+[[User:Glrx]] might be one of the experts about special SVG-features and details about SVG-standard, they are known for contributing useful test files.
+
+Supporting SVG 2.0 features is not considered as a mistake, even if rendered as SVG 1.1 would be different. Since SVG 2.0 is not released, so such features do not count as mistakes, even if implemented wrong.
+
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+!SVG
+!librsvg 2.50.3 - 2.54.3 
+!resvg 0.14.0 - 0.22.0
+!Inkscape 1.0.2 - 1.2
+! Batik 1.14
+|-
+|[[File:SVG_Test_TextAlign.svg|100px]]
+| style="background-color:red;"|[[File:SVG_Text_Alignment_Tests_librsvg.png|100px]]
+1 [https://www.w3.org/TR/SVG11/text.html#AlignmentBaselineProperty alignment-baseline]<br/>
+2 [https://www.w3.org/TR/SVG11/text.html#DominantBaselineProperty dominant-baseline]<br/>
+3 [https://www.w3.org/TR/SVG11/text.html#TextElementTextLengthAttribute textLength]<br/>
+4 [[phab:T11420]] textPath is not supported
+| style="background-color:red;"|[[File:SVG_Text_Alignment_Tests_rendersvg.png|100px]]
+1 [https://www.w3.org/TR/SVG11/text.html#AlignmentBaselineProperty alignment-baseline]<br/>
+2 [https://www.w3.org/TR/SVG11/text.html#DominantBaselineProperty dominant-baseline]<br/>
+3 [https://www.w3.org/TR/SVG11/text.html#TextElementTextLengthAttribute textLength]
+| style="background-color:red;"|[[File:SVG_Text_Alignment_Tests_Inkscape.png|100px]]
+1 [https://www.w3.org/TR/SVG11/text.html#AlignmentBaselineProperty alignment-baseline]<br/>
+2 no Chinese fallback-font<br/>
+3 [https://www.w3.org/TR/SVG11/text.html#TextAnchorProperty text-anchor]
+| style="background-color:red;"|[[File:SVG_Text_Alignment_Tests_batik.png|100px]]
+1 [https://www.w3.org/TR/SVG11/text.html#AlignmentBaselineProperty alignment-baseline]<br/>
+2 [https://www.w3.org/TR/SVG11/text.html#DominantBaselineProperty dominant-baseline]
+|-
+|[[File:SVG_CSS_Test.svg|100px]]
+| style="background-color:red;"|[[File:SVG_CSS_Test_librsvg.png|100px]]
+| style="background-color:red;"|[[File:SVG_CSS_Test_rendersvg.png|100px]]
+| style="background-color:red;"|[[File:SVG_CSS_Test_Inkscape.png|100px]]
+| style="background-color:red;"|[[File:SVG_CSS_Test_batik.png|100px]]
+|-
+|[[File:SVG Text Chunk.svg|100px]]
+| style="background-color:red;"|[[File:SVG Text Chunks librsvg.png|100px]]<br/>
+# Left 2 wrong
+# Right 2 wrong
+# Right 3 wrong
+# Right 4 wrong
+| style="background-color:#6B8E23;"|[[File:SVG Text Chunks rendersvg.png|100px]]
+| style="background-color:red;"|[[File:SVG Text Chunks Inkscape.png|100px]]<br/>
+# Left 2 wrong
+# Left 3 wrong
+# Right 1 wrong
+# Right 2 wrong
+# Right 3 wrong
+# Right 4 wrong
+| style="background-color:red;"|[[File:SVG Text Chunks batik.png|100px]]<br/>
+# nonquadratitic viewBox not supported
+# Left 2 wrong
+# Left 3 wrong
+# Right 1 wrong
+# Right 2 wrong
+# Right 3 wrong
+# Right 4 wrong
+|-
+|[[File:SVG_Gradient.svg|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Gradient Test librsvg.png|100px]]
+|[[File:SVG Gradient Test rendersvg.png|100px]]<br/>
+undefined behavior for SVG1.1<br/>
+[[phab:T228321]], [https://github.com/RazrFalcon/resvg/issues/235 resvg], [https://github.com/w3c/svgwg/issues/781 w3c]
+| style="background-color:#6B8E23;"|[[File:SVG Gradient Test Inkscape.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Gradient Test batik.png|100px]]
+|-
+|[[File:SVG Phab T298811.svg|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Phab T298811 librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Phab T298811 rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Phab T298811 Inkscape.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Phab T298811 batik.png|100px]]
+|-
+|[[File:SVG_Translate_Test_-_Conic_Sections.svg|100px|lang=de-AT]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_Conic_Sections librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_Conic_Sections rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_Conic_Sections Inkscape.png|100px]]
+|-
+|[[File:SVG_Translate_Test_-_bad_langtags.svg|100px|lang=de-AT]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_bad_langtags_librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_bad_langtags_rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Translate_Test_-_bad_langtags_Inkscape.png|100px]]
+|-
+|[[File:SVG test symbol.svg|100px|lang=de-AT]]
+| style="background-color:red;"|[[File:SVG test symbol_librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG test symbol_rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG test symbol_Inkscape.png|100px]]
+|-
+|[[File:SVG test dasharray.svg|100px|lang=de-AT]]
+| style="background-color:#6B8E23;"|[[File:SVG test dasharray_librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG test dasharray_rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG test dasharray_Inkscape.png|100px]]
+|-
+|[[File:SVG test vertical.svg|100px|lang=de-AT]]
+| style="background-color:red;"|[[File:SVG test vertical_librsvg.png|100px]]
+| style="background-color:red;"|[[File:SVG test vertical_rendersvg.png|100px]]
+| style="background-color:red;"|[[File:SVG test vertical_Inkscape.png|100px]]
+|-
+|[[File:SVG Translate textpath.svg|100px|lang=de-AT]]
+| style="background-color:red;"|[[File:SVG Translate textpath_librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Translate textpath_rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG Translate textpath_Inkscape.png|100px]]
+|-
+|[[File:SVG_Switch_Test.svg|100px|lang=de-AT]]
+| style="background-color:red;"|[[File:SVG_Switch_Test_librsvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Switch_Test_rendersvg.png|100px]]
+| style="background-color:#6B8E23;"|[[File:SVG_Switch_Test_Inkscape.png|100px]]
+|}
+
+=== selected files from [[:Category:Pictures showing a librsvg bug]] ===
+This files are known to be difficult to render and are relevant features on commons. However here a comparison about correctness might be missleading.
+
+see [[Librsvg_bugs]] for most important ones
+
+see {{C|Pictures_demonstrating_a_librsvg_bug|+}} for simple minimal working examples
+<!--
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>Known rsvg-issues and workarounds</strong>
+|-
+| {{/rsvg Issues details}}
+|}
+-->
+
+==== textPath ====
+There exist no renderer and no browser (at least neither Chrome nor Firefox) that fully suppport <code>textPath</code>: e.g:
+#librsvg does not support it at all(!)
+#resvg not in combination with <code>textLength</code>
+#Inkscape supports negative offsets wrong
+#batik chrashes sometimes, here it is difficult to find out what's wrong
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[User:JoKalliauer/SVG_test_suites/textPath]]</strong>
+|-
+| {{/textPath}}
+|}
+
+=== files showing a resvg-bug ===
+This files are known to be difficult to render and are relevant features on commons. However here a comparison about correctness might be missleading, since they are taken from [https://github.com/RazrFalcon/resvg/issues?q=is%3Aissue resvg Bugreports] .
+
+{| role="presentation" class="wikitable mw-collapsible mw-collapsed"
+| <strong>[[/resvg Issues details|Known resvg-issues and workarounds]]</strong>
+|-
+| {{/resvg Issues details}}
+|}
+<!--
+=== selected files from [[:Category:Oxygen_icons]] ===
+This contain difficult svg-files and is often used by benchmarks. Since it contains 5000files
+
+=== further svg test suites times ===
+{| class="wikitable"
+!Collection
+!librsvg ≥2.50.3
+!resvg ≥0.14.0
+!Inkscape ≥1.0.2
+!batik ≥1.14
+|-
+|[https://github.com/KDE/breeze-icons Breeze icons theme]
+|
+|
+|
+|
+|-
+|[https://github.com/Nitrux/ardis-icon-theme Ardis icons theme]
+|
+|
+|
+|
+|-
+|[https://wiki.ubuntu.com/Artwork/Incoming/Karmic/Humanity_Icons?action=AttachFile&do=view&target=humanity_2.1.tar.gz Humanity icons theme]
+|
+|
+|
+|
+|-
+|[https://sourceforge.net/projects/openiconlibrary/ Open Icon Library]
+|
+|
+|
+|
+|-
+|[https://github.com/elementary/icons Elementary icons theme]
+|
+|
+|
+|
+|-
+|[https://github.com/GNOME/adwaita-icon-theme Adwaita icons theme]
+|
+|
+|
+|
+|-
+|[https://github.com/csharris/faience-icon-theme Faience icon theme]
+|
+|
+|
+|
+|-
+|[https://cloud.google.com/icons/files/google-cloud-icons.zip GCP Icons]
+|
+|
+|
+|
+|}
+-->
+=== requested files by others ===
+<div style="background:#FFFFFF; padding: .2em .5em 0 .5em; margin:10px auto; width:98%; border:1px solid #AAAAAA; font-size:96%; overflow:auto; border-radius: 12px; box-shadow: 1px 2px 3px rgba(0,17,85,0.6);">
+<div class="noviewer" style="width:50px; float:left;" aria-hidden="true" role="presentation">[[File:Vista-gaim.svg|44px]]</div>
+<div style="overflow:auto; text-align:center; background:#EEEEEE; border:2px solid #FFFFFF; border-radius: 9px; font-weight:bold;"><div style="position:relative; left:-50px;">Note: You are allowed to edit this page!</div></div>
+<div style="max-width:95%; text-align:center;">Here everyone can add svg-files, which they want to check renderings by different software engines. Generally it should only be valid SVG 1.1-files.</div>
+</div>
+
+{| role="presentation" class="wikitable"
+|- class="hintergrundfarbe5"
+! style="width:1.3em;" | !!SVG !!resvg!!librsvg!!Ink!!batik
+|-
+|{{Vertical header|[[phab:T40010#6894103|Glrx]]}}
+|[[File:SVG_CSS_Test.svg|100px]]
+|[[File:SVG_CSS_Test_rendersvg.png|100px]]
+|[[File:SVG_CSS_Test_librsvg.png|100px]]
+|[[File:SVG_CSS_Test_Inkscape.png|100px]]
+|[[File:SVG_CSS_Test_batik.png|100px]]
+|-
+|{{Vertical header|[[Special:Diff/542369764|Glrx]]}}
+|[[File:SVG Text Chunk.svg|100px]]
+|[[File:SVG Text Chunks rendersvg.png|100px]]
+|[[File:SVG Text Chunks librsvg.png|100px]]
+|[[File:SVG Text Chunks Inkscape.png|100px]]
+|[[File:SVG Text Chunks batik.png|100px]]
+|-
+|{{Vertical header|[[User_talk:Sarang#User:JoKalliauer/SVG_test_suites|Sarang]]}}
+|[[File:Manfeild_Autocourse_track_map_(New_Zealand).svg|100px]]
+|[[File:Track map for Manfield Autocourse in New Zealand_rendersvg.png|100px]]
+|[[File:Track map for Manfield Autocourse in New Zealand_librsvg.png|100px]]
+|[[File:Track map for Manfield Autocourse in New Zealand_Inkscape.png|100px]]
+|[[File:Track map for Manfield Autocourse in New Zealand_batik.png|100px]]
+|}
+
+== Renderers ==
+
+Tested:
+* [[:w:librsvg]], a small, simple viewer to preview how SVG files will look when rendered by MediaWiki
+* [https://github.com/RazrFalcon/resvg/ resvg], one of the fastest and most correct SVG renderers<ref>[[User:JoKalliauer/SVG_test_suites]]</ref>, implemented in Rust
+* [[:w:Inkscape|Inkscape]], which also supports some Inkscape-specific (non-standard) SVG features
+* [https://xmlgraphics.apache.org/batik/ Apache Batik], an SVG toolkit implemented in Java
+
+Others (not tested here):
+* [https://github.com/tibold/svg-explorer-extension svg-explorer-extension], a free software extension for {{w|Windows Explorer}} that generates thumbnails for SVG files
+* [https://github.com/shakiba/svgexport svgexport], a Node.js rasterizing module
+* [https://cairosvg.org/ CairoSVG], a Python converter using Cairo
+* [[w:ImageMagick|ImageMagick]], a leading free software imaging software suite
+* [https://github.com/svg-net/SVG SVG.NET], a cross-platform C# library which can render SVG
+* [https://doc.qt.io/qt-6/qtsvg-index.html Qt SVG], a C++ module for Qt
+* [http://wxsvg.sourceforge.net/ wxSVG], a C++ library to create, manipulate and render SVG files with the [[w:wxWidgets|wxWidgets]] toolkit
+* [https://pypi.org/project/svglib/ svglib], a Python library
+* [https://products.aspose.com/svg/net Aspose.SVG], a commercial SVG library for .NET
+* [[:w:GPAC Project on Advanced Content|GPAC Project on Advanced Content]], for animated SVG
+* [[:w:Gecko (software)|Gecko]], Mozilla Firefox's engine
+* [[:w:WebKit|WebKit]], the engine of Apple's Safari browser
+* [[:w:Blink (browser_engine)|Blink]], Chromium's engine
+** [https://github.com/RazrFalcon/resvg-test-suite/tree/master/tools/chrome-svgrender chrome-svgrender], a wrapper around Google Chrome (headless) to render SVG files like Chrome would
+* [https://api.kde.org/frameworks/ksvg/html/index.html KSvg], part of the discontinued KHTML browser engine, formerly used by [[w:Konqueror|Konqueror]]
+* [[:w:Trident (software)|Trident]], Microsoft's deprecated browser engine
+* [[:w:Prince (software)|Prince]], a commercial converter to PDF{{Clarify|date=October 2024|Is this relevant? Can this convert to bitmap files?}}
+* [https://github.com/Brooooooklyn/canvas/ skr canvas] (This project is in pre-release stage.)
+
+== References ==
+<references/>

@@ -1,0 +1,364 @@
+{
+ "generated": "2026-09-10",
+ "purpose": "Starter acceptance corpus for browser SVG editors / any tool that round-trips Commons SVG files.",
+ "rubric": {
+  "A": "loads without errors; sha1 of fetched bytes matches the API (integrity)",
+  "B": "element census / group depth preserved",
+  "C": "definitions (gradients, patterns, filters, clipPaths, masks, markers) survive verbatim",
+  "D": "root framing (viewBox, preserveAspectRatio, width/height) preserved",
+  "E": "text stays text: tspan/switch/systemLanguage/flowRoot/textPath not rewritten or dropped",
+  "F": "namespaces + metadata (inkscape:, sodipodi:, dc/cc/rdf) preserved; no editor cruft added",
+  "G": "no invalid values introduced (non-finite numbers, undefined prefixes)",
+  "H": "CSS <style>/class styling preserved",
+  "I": "atomically editable structure retained (shapes not all flattened to one path; ids stable)",
+  "J": "no-op save guard: refuses to save when nothing was edited",
+  "K": "visual equivalence: pixel diff of the saved file vs the current revision below threshold (<=2% pass, <=5% warn)",
+  "L": "load+export time budget respected on multi-megabyte files"
+ },
+ "pass_rule": "PASS = no A/G failure, definitions + framing restored, no-op pixel diff <=2%, edit survives, second round-trip byte-identical; WARN = <=5%; FAIL = above",
+ "corpus": [
+  {
+   "title": "File:Flag of Japan.svg",
+   "domain": "baseline",
+   "exercises": [
+    "A",
+    "J"
+   ],
+   "note": "flat flag, no defs, no text",
+   "bytes": 209,
+   "sha1": "bda514e7fbea77ed21b325dec24b920cd42e31dd",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
+   "features": {
+    "provenance": "unknown"
+   }
+  },
+  {
+   "title": "File:SVG mask gradient bug.svg",
+   "domain": "feature-dense",
+   "exercises": [
+    "A",
+    "C",
+    "D"
+   ],
+   "note": "gradients + gradientTransform + userSpaceOnUse + clipPath + mask in 1.9 KB",
+   "bytes": 1949,
+   "sha1": "13cf66626c5a1ac9d933bce031f8dfa4188e6365",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/SVG_mask_gradient_bug.svg",
+   "features": {
+    "linearGradient": 2,
+    "gradientTransform": 2,
+    "userSpaceOnUse": 2,
+    "clipPath": 2,
+    "mask": 2,
+    "use": 4,
+    "provenance": "unknown"
+   }
+  },
+  {
+   "title": "File:Logo of IAB.svg",
+   "domain": "logo/icon",
+   "exercises": [
+    "A",
+    "F"
+   ],
+   "note": "CSS <style> block + class-based styling",
+   "bytes": 2118,
+   "sha1": "0c2a5521205c80435c51de45fff58aa6b4b94317",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Logo_of_IAB.svg",
+   "features": {
+    "styleEl": 1,
+    "classAttr": 8,
+    "provenance": "Illustrator"
+   }
+  },
+  {
+   "title": "File:SVGtextPath01.svg",
+   "domain": "typography",
+   "exercises": [
+    "A",
+    "E"
+   ],
+   "note": "textPath \u2014 unsupported by librsvg; must survive untouched",
+   "bytes": 1539,
+   "sha1": "b0eb2c1548c6c814af465e17d780f7c0c9624000",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/SVGtextPath01.svg",
+   "features": {}
+  },
+  {
+   "title": "File:Pittsburgh newspaper consolidation timeline.svg",
+   "domain": "chart/graph",
+   "exercises": [
+    "A",
+    "C",
+    "D",
+    "K"
+   ],
+   "note": "pattern + filter + feGaussianBlur + mask (data graphic)",
+   "bytes": 13623,
+   "sha1": "b16285b8e4c914822b9044e002ad4bd7683fa34a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Pittsburgh_newspaper_consolidation_timeline.svg",
+   "features": {
+    "linearGradient": 3,
+    "userSpaceOnUse": 4,
+    "pattern": 1,
+    "filter": 2,
+    "feGaussianBlur": 2,
+    "mask": 2,
+    "use": 1,
+    "styleEl": 1,
+    "classAttr": 39,
+    "provenance": "unknown"
+   }
+  },
+  {
+   "title": "File:Biological classification L Pengo vflip.svg",
+   "domain": "diagram",
+   "exercises": [
+    "A",
+    "E"
+   ],
+   "note": "i18n <switch>, hand-built diagram",
+   "bytes": 30615,
+   "sha1": "322b79b0abd1eb5de9445324aa2032ff7e304172",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Biological_classification_L_Pengo_vflip.svg",
+   "features": {
+    "switch": 9,
+    "provenance": "unknown"
+   }
+  },
+  {
+   "title": "File:Brain diagram fr.svg",
+   "domain": "diagram",
+   "exercises": [
+    "A",
+    "E",
+    "G"
+   ],
+   "note": "Inkscape <flowRoot> flowed text + CSS",
+   "bytes": 33809,
+   "sha1": "5f50727bb5f502ffd9bf0d6d99fe2839f39536f0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Brain_diagram_fr.svg",
+   "features": {
+    "styleEl": 1,
+    "flowRoot": 1,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:MCM Margolin.svg",
+   "domain": "illustration",
+   "exercises": [
+    "A",
+    "C",
+    "I"
+   ],
+   "note": "radial + linear gradients, clipPath, artwork shading",
+   "bytes": 121187,
+   "sha1": "22b62d2b9e2957524f74e9ae6d7593532dd2af91",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/MCM_Margolin.svg",
+   "features": {
+    "linearGradient": 87,
+    "radialGradient": 235,
+    "userSpaceOnUse": 18,
+    "clipPath": 1,
+    "provenance": "unknown"
+   }
+  },
+  {
+   "title": "File:Flagellum base diagram-en.svg",
+   "domain": "diagram",
+   "exercises": [
+    "A",
+    "C",
+    "D"
+   ],
+   "note": "classic diagram, 16 gradient definitions",
+   "bytes": 124363,
+   "sha1": "b822e31150487709c53ef8b4e4352d435a4a9d34",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Flagellum_base_diagram-en.svg",
+   "features": {
+    "linearGradient": 16,
+    "gradientTransform": 1,
+    "userSpaceOnUse": 16,
+    "provenance": "Illustrator"
+   }
+  },
+  {
+   "title": "File:Little Moreton Hall - ground floor coloured.svg",
+   "domain": "technical/plan",
+   "exercises": [
+    "A",
+    "C",
+    "G",
+    "H"
+   ],
+   "note": "filters, blurs, markers, flowRoot, 264 KB",
+   "bytes": 264489,
+   "sha1": "8b487c694a8aa5e8699da07d68fd04f74b91d75b",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Little_Moreton_Hall_-_ground_floor_coloured.svg",
+   "features": {
+    "filter": 1,
+    "feGaussianBlur": 2,
+    "marker": 7,
+    "flowRoot": 2,
+    "inkscapeMeta": 1034,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:Bergen County, NJ municipalities labeled.svg",
+   "domain": "map",
+   "exercises": [
+    "A",
+    "D",
+    "F",
+    "H"
+   ],
+   "note": "markers + CSS + non-zero viewBox + unit dims",
+   "bytes": 377639,
+   "sha1": "fb76139b8b5fbbd09f3e166494b412ee51026f75",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bergen_County%2C_NJ_municipalities_labeled.svg",
+   "features": {
+    "marker": 1,
+    "styleEl": 1,
+    "classAttr": 38,
+    "inkscapeMeta": 13,
+    "nonZeroViewBox": true,
+    "unitDims": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:Languages-Europe.svg",
+   "domain": "map",
+   "exercises": [
+    "A",
+    "C",
+    "H"
+   ],
+   "note": "patterns + mega-path + unit dims",
+   "bytes": 415528,
+   "sha1": "764dd3827cb759ac6770a8cd95bb5c498fb6ace1",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Languages-Europe.svg",
+   "features": {
+    "userSpaceOnUse": 35,
+    "pattern": 142,
+    "inkscapeMeta": 108,
+    "megaPath": true,
+    "unitDims": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:CPTM.svg",
+   "domain": "logo/system",
+   "exercises": [
+    "A",
+    "C",
+    "F",
+    "G"
+   ],
+   "note": "clipPath + symbol + CSS classes + flowRoot",
+   "bytes": 454251,
+   "sha1": "fb53143c03810741dc1c06bc89bdae5c53a45c63",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/CPTM.svg",
+   "features": {
+    "userSpaceOnUse": 8,
+    "clipPath": 8,
+    "symbol": 1,
+    "styleEl": 1,
+    "classAttr": 397,
+    "flowRoot": 1,
+    "inkscapeMeta": 129,
+    "unitDims": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:Ancient Egypt map-en.svg",
+   "domain": "map",
+   "exercises": [
+    "A",
+    "C",
+    "H"
+   ],
+   "note": "849 KB, Inkscape, mega-path, markers",
+   "bytes": 849375,
+   "sha1": "7d091095deef0f57027cd6087fcb11f56ef9756e",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ancient_Egypt_map-en.svg",
+   "features": {
+    "marker": 3,
+    "inkscapeMeta": 28,
+    "megaPath": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:Subduction-en.svg",
+   "domain": "map/longtail",
+   "exercises": [
+    "A",
+    "C",
+    "D",
+    "G",
+    "L"
+   ],
+   "note": "2.4 MB, 264 gradients, filters, px units, non-zero viewBox",
+   "bytes": 2449997,
+   "sha1": "3c05f9e363effc789f4e1ada967ab172788656c6",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Subduction-en.svg",
+   "features": {
+    "filter": 9,
+    "feGaussianBlur": 4,
+    "symbol": 5,
+    "inkscapeMeta": 12,
+    "nonZeroViewBox": true,
+    "unitDims": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:2022 Russian invasion of Ukraine.svg",
+   "domain": "map/longtail",
+   "exercises": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "L"
+   ],
+   "note": "4.35 MB: i18n + gradients + filters + symbols + CSS + units",
+   "bytes": 4352401,
+   "sha1": "8e536cac6773e2beaae5b35dfeced104a0617bd0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg",
+   "features": {
+    "switch": 108,
+    "linearGradient": 1,
+    "filter": 3,
+    "clipPath": 1,
+    "use": 21,
+    "symbol": 1,
+    "styleEl": 1,
+    "classAttr": 102,
+    "inkscapeMeta": 23,
+    "unitDims": true,
+    "provenance": "Inkscape"
+   }
+  },
+  {
+   "title": "File:Leonardo da Vinci monument in Milan.svg",
+   "domain": "raster-in-svg",
+   "exercises": [
+    "A",
+    "C"
+   ],
+   "note": "embedded data:URI raster inside an SVG",
+   "bytes": 1931582,
+   "sha1": "99985f8d6d267f2822b11ee329fed77f8ca5ea07",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Leonardo_da_Vinci_monument_in_Milan.svg",
+   "features": {}
+  }
+ ]
+}
