@@ -1,4 +1,4 @@
-node_modules/
+/node_modules/
 package-lock.json
 # Commons media is NOT redistributed here: corpus files are referenced by title/URL/sha1 only
 fixtures/
@@ -6,3 +6,7 @@ test-results/exports/
 test-results/*.png
 test-results/debug-*.svg
 corpus/candidates.json
+
+# SVG-Edit's extension bundles carry their own vendored deps — commit them, don't ignore them
+!/docs/vendor/svgedit/extensions/node_modules/
+!/docs/vendor/svgedit/extensions/_virtual/
