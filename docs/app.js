@@ -198,7 +198,20 @@ async function openSaveDrawer () {
   const report = V.inspect(text);
   // user edits are measured against the canvas baseline (see snapshotBaseline), not the raw source
   const change = V.changeProfile(state.baseline ?? state.originalText, plain);
-  state.draft = { text, plain, report, change, defDrift, defsRestored, defsSkipped, framing };
+  // preservation meter: (a) what the tool did to the file with no user edits at all — the
+  // transmogrification axis — and (b) what the file you'd save looks like versus the source.
+  let diffSaved = null; let diffNoop = null;
+  if (state.originalText) {
+    try { diffSaved = (await V.pixelDiff(state.originalText, text, 500)).percentDifferent; } catch { /* render is best-effort */ }
+    if (state.baseline && state.baseline !== text) {
+      try { diffNoop = (await V.pixelDiff(state.originalText, state.baseline, 500)).percentDifferent; } catch { /* best-effort */ }
+    }
+  }
+  const preservation = state.originalText
+    ? V.preservationReport(state.originalText, text, state.baseline, { pixelDiffPercent: diffSaved, diffWidth: 500 }) : null;
+  const noopPreservation = (state.originalText && state.baseline)
+    ? V.preservationReport(state.originalText, state.baseline, null, { pixelDiffPercent: diffNoop, diffWidth: 500 }) : null;
+  state.draft = { text, plain, report, change, defDrift, defsRestored, defsSkipped, framing, preservation, noopPreservation };
   drawer(true);
   $('#drawerBody').innerHTML = '<p class="dim">Checking the export against the live file…</p>';
   let fresh = null;
@@ -206,15 +219,41 @@ async function openSaveDrawer () {
     try { fresh = await C.checkFreshness(state.file.sha1, state.file.title); }
     catch (e) { fresh = { error: e.message }; }
   }
-  renderSavePanel({ report, change, fresh, drift: state.drift, defDrift, defsRestored, defsSkipped, framing });
+  renderSavePanel({ report, change, fresh, drift: state.drift, defDrift, defsRestored, defsSkipped, framing, preservation, noopPreservation });
 }
 
-function renderSavePanel ({ report, change, fresh, drift, defDrift, defsRestored, defsSkipped = 0, framing = { applied: false, attributes: [] } }) {
+function meterHtml (pr, title, subtitle) {
+  if (!pr) return '';
+  const tone = pr.grade === 'A' ? 'ok' : pr.grade === 'B' ? 'ok' : pr.grade === 'C' ? 'warn' : 'err';
+  return `<div class="meter ${tone}">
+    <div class="meter-head">
+      <span class="meter-grade">${pr.grade}</span>
+      <div><strong>${esc(title)}</strong><div class="dim">${esc(subtitle || pr.verdict)}</div></div>
+      <span class="meter-score">${pr.score}/100</span>
+    </div>
+    <div class="meter-bar"><span style="width:${pr.score}%"></span></div>
+    <details class="meter-detail"><summary>how this was measured (${pr.components.length} components)</summary>
+      <ul class="report">${pr.components.map((c) => `<li class="${c.ratio >= 0.995 ? 'ok' : c.ratio >= 0.9 ? 'info' : c.ratio >= 0.6 ? 'warn' : 'err'}'>${esc(c.label)} <strong>${c.score}/${c.weight}</strong> — ${esc(c.detail)}</li>`).join('')}</ul>
+    </details>
+  </div>`;
+}
+
+function renderSavePanel ({ report, change, fresh, drift, defDrift, defsRestored, defsSkipped = 0, framing = { applied: false, attributes: [] }, preservation = null, noopPreservation = null }) {
   const f = state.file;
   const outSha1 = null; // filled asynchronously below
   const modeOverwrite = change.verdict === 'overwrite-ok';
   const body = $('#drawerBody');
   body.innerHTML = `
+    <div class="sec">
+      <h4>Preservation</h4>
+      ${meterHtml(preservation, 'How minimally was your file rewritten?', preservation?.verdict)}
+      ${noopPreservation ? `<div style="margin-top:10px">${meterHtml(noopPreservation, 'Test: load and save with no edits at all', 'The purest measure of what this editor does to a Commons file — an intermediate-format editor scores far worse here.')}</div>` : ''}
+      <ul class="report" style="margin-top:8px">
+        ${(preservation?.findings || []).map((f) => `<li class="${f.level}">${f.level === 'err' ? '✖' : f.level === 'warn' ? '▲' : 'ℹ'} ${esc(f.text)}</li>`).join('')}
+        ${preservation && !preservation.findings.length ? '<li class="ok">✔ no preservation problems detected</li>' : ''}
+      </ul>
+    </div>
+
     <div class="sec">
       <h4>Before / after</h4>
       <div class="preview" id="previewRow">
@@ -559,6 +598,7 @@ async function boot () {
     cleanExport: V.cleanExport,
     definitionDrift: V.definitionDrift, preserveDefinitions: V.preserveDefinitions, pixelDiff: V.pixelDiff,
     ensureNamespaces: V.ensureNamespaces, preserveRootFraming: V.preserveRootFraming,
+    preservationReport: V.preservationReport,
     renderThumb: V.renderThumb, normalizeTitle: C.normalizeTitle, getFileInfo: C.getFileInfo,
     sha1Hex: C.sha1Hex, uploadSvg: C.uploadSvg, checkFreshness: C.checkFreshness,
     buildAuthorizeUrl: O.buildAuthorizeUrl, pkceChallenge: O.pkceChallenge, randomVerifier: O.randomVerifier,

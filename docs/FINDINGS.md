@@ -68,3 +68,53 @@ restoring the declarations they depend on — is exactly the class of bug an acc
   "diagrams with images".
 - Corpus growth needs throttled sampling: 25 of 368 candidates could be feature-profiled before Commons
   rate-limited the burst.
+
+
+## 5. Preservation meter (added 2026-09-10)
+
+The save panel now scores every save on two independent axes and shows a grade + component breakdown:
+
+- **How minimally was your file rewritten?** — source → the file that would be saved (after this repo's
+  definition/framing repair).
+- **Test: load and save with no edits at all** — source → the editor's own load-time export. This is the purest
+  measure of the *transmogrification* axis; a tool that converts to an intermediate model and back scores badly
+  here even when the result "looks fine".
+
+Components (weights sum to 100): definitions 20 · structure 20 · **visual consistency 20** · framing 12 ·
+text and translations 12 · namespaces and editor metadata 8 · attribute churn outside your edit 8.
+Differences attributable to your own edit (baseline → saved) are excluded from the churn counts, and every
+component reports its measured value, so the number is auditable rather than a black box.
+Grades: A ≥95 (minimal), B ≥85 (house style added), C ≥70 (noticeable normalisation), D ≥50 (heavy rewrite),
+F <50 (do not overwrite).
+
+Measured (source → saved file with no edits; 500 px browser render):
+
+| File | tool churn | saved file | pixel diff | what dominates the penalty |
+|---|---|---|---|---|
+| Flag of Japan | 81 (C) | 91 (B) | 0% | editor wraps content in `<g class="layer">` + assigns ids |
+| Flagellum diagram | 67 (D) | 94 (B) | 0.04% | 16 gradients regenerated (repaired on save) |
+| Egypt map | 60 (D) | 70 (C) | 0.07% | Inkscape/Sodipodi element metadata dropped; 3 unreferenced markers dropped |
+| Logo of IAB (CSS) | 77 (C) | 80 (C) | 6.84% | class-based styling not reproduced faithfully |
+| textPath sample | 77 (C) | 79 (C) | 8.1% | `textPath` geometry changes |
+| Pittsburgh timeline (pattern+filter) | 62 (D) | 77 (C) | 10.03% | 2 definitions lost; filter/pattern output differs |
+| **Subduction map (2.4 MB)** | **28 (F)** | 75 (C) | 3.77% | **all 13 `<switch>` blocks and their text dropped** |
+| **Leonardo monument (data-URI raster)** | 63 (D) | **72 (C)** | **93.79%** | **visual component 0/20 — the embedded image does not survive** |
+
+## 6. Two corrections to earlier findings in this repo (prefix-blind measurement error)
+
+The first version of the corpus harness counted SVG elements with regular expressions on raw text
+(`/<switch/`, `/<text/`). That silently misses documents that write the same elements with a namespace prefix
+(`<svg:switch>`, `<svg:text>`), which made two earlier statements wrong:
+
+1. **"`<switch>` translation blocks are preserved."** Only when the file uses the *default* namespace.
+   Verified with DOM-based counts (2026-09-10): `File:Ancient Egypt map-en.svg` (unprefixed) **preserves
+   732 text / 756 tspan / 102 switch / 7 languages**; `File:Subduction-en.svg` (prefixed) loses **all 13
+   `<switch>` blocks and every one of its `<text>`/`<tspan>` elements** — its labels in Turkish, Korean, Slovak
+   and the rest simply disappear from the saved file. n=2 for this specific question; replicate before
+   generalising, but the meter now flags it as a hard error either way.
+2. **"Inkscape metadata stays."** Partly false: for `File:Ancient Egypt map-en.svg`, `sodipodi:nodetypes`
+   goes **35 → 0** and `inkscape:label` **1 → 0**. Element-level editor hints are stripped (the
+   `sodipodi:namedview` block too), even though the drawing itself is untouched.
+
+Lesson, applied to the harness: **count elements through the DOM, never through regexes on serialised XML** —
+and treat a "preserved" claim as unverified until the counter can see namespaced documents.

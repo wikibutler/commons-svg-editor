@@ -112,3 +112,15 @@ textarea.w{min-height:64px;resize:vertical}
 
 /* ---------- svgedit fit ---------- */
 #svgcontainer svg{max-width:100%}
+
+/* ---------- preservation meter ---------- */
+.meter{border:1px solid var(--line);border-radius:var(--radius);padding:8px 10px;background:#fff}
+.meter.ok{border-left:4px solid var(--ok)} .meter.warn{border-left:4px solid var(--warn)} .meter.err{border-left:4px solid var(--err)}
+.meter-head{display:flex;align-items:center;gap:10px}
+.meter-grade{font-size:26px;font-weight:800;line-height:1;min-width:30px;text-align:center}
+.meter.ok .meter-grade{color:var(--ok)} .meter.warn .meter-grade{color:var(--warn)} .meter.err .meter-grade{color:var(--err)}
+.meter-score{margin-left:auto;font-weight:700;color:var(--muted)}
+.meter-bar{height:7px;background:#eaecf0;border-radius:99px;margin:7px 0 4px;overflow:hidden}
+.meter-bar span{display:block;height:100%;background:var(--blue)}
+.meter.ok .meter-bar span{background:var(--ok)} .meter.warn .meter-bar span{background:var(--warn)} .meter.err .meter-bar span{background:var(--err)}
+.meter-detail summary{cursor:pointer;font-size:12px;color:var(--muted);margin-bottom:4px}

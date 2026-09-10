@@ -192,10 +192,9 @@ function signatureList (svgText) {
 }
 
 function textsOf (svgText) {
-  try {
-    const { root } = parseSvg(svgText);
-    return [...root.querySelectorAll('text,tspan')].map((el) => (el.textContent || '').replace(/\s+/g, ' ').trim());
-  } catch { return []; }
+  return elementsOf(svgText)
+    .filter((el) => el.localName === 'text' || el.localName === 'tspan')
+    .map((el) => (el.textContent || '').replace(/\s+/g, ' ').trim());
 }
 
 /** Rasterise an SVG string in-page (used for the before/after thumbnails). */
@@ -318,6 +317,184 @@ export function preserveDefinitions (originalText, exportText, baselineText = nu
     });
   }
   return { text: out, restored, skippedEdited };
+}
+
+
+/* ---------------------------------------------------------------------------
+ * Preservation meter — "did the tool do the minimum, or did it transmogrify the file?"
+ *
+ * Two different questions, deliberately kept apart:
+ *   1. TOOL CHURN  — what the editor rewrote on load/save with no user edits at all
+ *      (this is the transmogrification axis: intermediate-format editors score terribly here).
+ *   2. FILE MINIMALITY — how much the *saved* file differs from the *source* beyond the user's edit.
+ *
+ * Churn is attributed, not guessed: differences between source and saved that are also explained by
+ * (baseline → saved) are treated as the user's edit and excluded. Every component is reported with its
+ * measured value, so the number can be audited rather than trusted.
+ */
+
+const CENSUS_TAGS = ['g', 'path', 'rect', 'circle', 'ellipse', 'polygon', 'polyline', 'line', 'text', 'tspan',
+  'switch', 'use', 'symbol', 'defs', 'linearGradient', 'radialGradient', 'pattern', 'filter', 'clipPath',
+  'mask', 'marker', 'style', 'image', 'metadata'];
+
+/** DOM-based counting: matches by localName regardless of the prefix used in the document
+ *  (`<text>` and `<svg:text>` are the same element; a regex on raw text counts only one of them). */
+function elementsOf (svgText) {
+  try { return [...parseSvg(svgText).root.querySelectorAll('*')]; } catch { return []; }
+}
+
+function censusOf (svgText) {
+  const out = {};
+  for (const t of CENSUS_TAGS) out[t] = 0;
+  for (const el of elementsOf(svgText)) if (out[el.localName] !== undefined) out[el.localName]++;
+  return out;
+}
+
+function counted (svgText, prop, value) {
+  return elementsOf(svgText).filter((el) => el.localName === prop || (value && el.getAttribute(prop) === value)).length;
+}
+
+function languageValues (svgText) {
+  return new Set(elementsOf(svgText).map((el) => el.getAttribute('systemLanguage')).filter(Boolean));
+}
+
+function prefixSet (svgText) {
+  const root = (svgText.match(/<svg\b[^>]*>/) || [''])[0];
+  return new Set([...root.matchAll(/xmlns:([\w-]+)=/g)].map((m) => m[1]));
+}
+
+function usedPrefixes (svgText) {
+  return new Set([...svgText.matchAll(/([\w-]+):[\w-]+=/g)].map((m) => m[1])
+    .filter((p) => !['xml', 'xmlns', 'xlink', 'svg'].includes(p)));
+}
+
+/** element-level signature list, used to attribute differences to the user's edit */
+function elementSignatures (svgText) {
+  let root;
+  try { ({ root } = parseSvg(svgText)); } catch { return []; }
+  return [...root.querySelectorAll('*')].map((el) => ({
+    tag: el.localName,
+    attrs: [...el.attributes].map((a) => a.name).sort().join(','),
+    vals: [...el.attributes].sort((a, b) => a.name.localeCompare(b.name)).map((a) => a.name + '=' + a.value).join('|'),
+    depth: (() => { let d = 0; let n = el; while (n.parentElement) { d++; n = n.parentElement; } return d; })()
+  }));
+}
+
+export function preservationReport (sourceText, savedText, baselineText = null, opts = {}) {
+  const components = [];
+  const findings = [];
+  const add = (key, label, weight, ratio, detail) => {
+    const score = Math.max(0, Math.min(1, ratio)) * weight;
+    components.push({ key, label, weight, score: +score.toFixed(1), ratio: +Math.max(0, Math.min(1, ratio)).toFixed(3), detail });
+  };
+
+  // what the user's own edit touched (excluded from churn attribution)
+  const editedIdx = new Set();
+  if (baselineText) {
+    const b = elementSignatures(baselineText); const s = elementSignatures(savedText);
+    for (let i = 0; i < Math.max(b.length, s.length); i++) {
+      if (!b[i] || !s[i] || b[i].vals !== s[i].vals) editedIdx.add(i);
+    }
+  }
+
+  /* 1. definitions — 25 */
+  const dd = definitionDrift(sourceText, savedText);
+  const defTotal = dd.total + (dd.rewritten.length + dd.corrupted.length + dd.missing.length === 0 ? 0 : 0);
+  const defSources = DEF_TAGS.reduce((n, t) => n + defBlocks(sourceText, t).filter((b) => b.id).length, 0);
+  const touched = dd.rewritten.length + dd.corrupted.length + dd.missing.length;
+  add('definitions', 'Definition preservation', 20, defSources ? 1 - (touched / defSources) : 1,
+    defSources ? `${touched} of ${defSources} definitions rewritten/corrupted/missing` : 'no id-bearing definitions in source');
+  if (dd.corrupted.length) {
+    const cap = Math.min(6, dd.corrupted.length * 3);
+    components[components.length - 1].score = Math.max(0, components[components.length - 1].score - cap);
+    findings.push({ level: 'err', text: `${dd.corrupted.length} definition(s) corrupted (non-finite values) — the saved file will not render as intended.` });
+  }
+  if (dd.missing.length) findings.push({ level: 'warn', text: `${dd.missing.length} definition(s) present in the source are absent from the saved file.` });
+
+  /* 2. framing — 15 */
+  const rTag = (t) => (t.match(/<svg\b[^>]*>/) || [''])[0];
+  const rAttrs = (t) => Object.fromEntries([...rTag(t).matchAll(/([\w:-]+)="([^"]*)"/g)].map((m) => [m[1], m[2]]));
+  const src = rAttrs(sourceText); const saved = rAttrs(savedText);
+  const frameKeys = ['viewBox', 'preserveAspectRatio', 'width', 'height'];
+  const frameOk = frameKeys.filter((k) => (src[k] || '') === (saved[k] || '')).length;
+  add('framing', 'Framing (viewBox, size, aspect)', 12, frameOk / frameKeys.length,
+    frameKeys.map((k) => `${k}: ${src[k] === saved[k] ? '=' : `“${src[k] || '—'}” → “${saved[k] || '—'}”`}`).join(' · '));
+  if (frameOk < frameKeys.length) findings.push({ level: 'warn', text: 'Root framing differs from the source: the drawing may be reframed on Commons.' });
+
+  /* 3. structure — 25 (census + wrapping + depth), excluding the user's own edit */
+  const cs = censusOf(sourceText); const cd = censusOf(savedText);
+  let censusChanged = 0; let censusTotal = 0;
+  for (const t of CENSUS_TAGS) { censusTotal += Math.max(cs[t], 1); if (cs[t] !== cd[t]) censusChanged += Math.abs(cd[t] - cs[t]); }
+  const structuralRatio = censusTotal ? 1 - (censusChanged / censusTotal) : 1;
+  add('structure', 'Structure (element census, wrapping)', 20, structuralRatio,
+    CENSUS_TAGS.filter((t) => cs[t] !== cd[t]).map((t) => `${t} ${cs[t]}→${cd[t]}`).join(', ') || 'element counts identical');
+  const newRootWrapper = !baselineText && /<g class="layer">/.test(savedText) && !/<g class="layer">/.test(sourceText);
+  if (/\bclass="layer"/.test(savedText) && !/\bclass="layer"/.test(sourceText)) findings.push({ level: 'info', text: 'The saved file wraps the drawing in a <g class="layer"> element that the source did not have (editor house style, mostly inert, still a source-level change).' });
+
+  /* 4. text and translation — 15 */
+  const sTexts = textsOf(sourceText); const dTexts = textsOf(savedText);
+  const textKept = sTexts.length ? 1 - Math.abs(dTexts.length - sTexts.length) / Math.max(sTexts.length, 1) : 1;
+  const swSrc = counted(sourceText, 'switch'); const swSaved = counted(savedText, 'switch');
+  const langSrc = languageValues(sourceText);
+  const langSaved = languageValues(savedText);
+  const langsLost = [...langSrc].filter((l) => !langSaved.has(l));
+  const textRatio = Math.min(textKept, swSrc ? (swSaved / swSrc) : 1);
+  add('text', 'Text and translations', 12, textRatio,
+    `${sTexts.length}→${dTexts.length} text/tspan · <switch> ${swSrc}→${swSaved} · ${langSaved.size} language value(s)`);
+  if (langsLost.length) findings.push({ level: 'err', text: `${langsLost.length} translation language(s) lost: ${langsLost.slice(0, 4).join(', ')}` });
+  else if (swSrc && swSaved < swSrc) findings.push({ level: 'warn', text: `<switch> blocks reduced ${swSrc}→${swSaved}; translations may be gone.` });
+
+  /* 5. namespaces, metadata, cruft — 10 */
+  const needPfx = usedPrefixes(savedText); const havePfx = prefixSet(savedText);
+  const undeclared = [...needPfx].filter((p) => !havePfx.has(p));
+  const mkSrc = (sourceText.match(/inkscape:[\w-]+=/g) || []).length + (sourceText.match(/sodipodi:[\w-]+=/g) || []).length;
+  const mkSaved = (savedText.match(/inkscape:[\w-]+=/g) || []).length + (savedText.match(/sodipodi:[\w-]+=/g) || []).length;
+  const cruft = (savedText.match(/\sse:[\w-]+=|contenteditable="/g) || []).length + (/xmlns:se=/.test(savedText) ? 1 : 0);
+  let nsRatio = 1;
+  if (undeclared.length) { nsRatio -= 0.6; findings.push({ level: 'err', text: `Namespace prefix used but not declared: ${undeclared.join(', ')} — the file is not well-formed XML.` }); }
+  if (mkSrc && mkSaved < mkSrc) { nsRatio -= 0.3 * (1 - mkSaved / mkSrc); findings.push({ level: 'warn', text: `Editor metadata reduced: ${mkSrc}→${mkSaved} inkscape:/sodipodi: attributes (that metadata is what makes a file easy to edit again).` }); }
+  if (cruft) { nsRatio -= 0.2; findings.push({ level: 'warn', text: `${cruft} editor artefact(s) (se:, contenteditable) added to the file.` }); }
+  add('namespaces', 'Namespaces and editor metadata', 8, nsRatio,
+    `prefixes ${[...havePfx].length} declared, ${needPfx.size} used${undeclared.length ? `, ${undeclared.length} UNDECLARED` : ''} · inkscape/sodipodi ${mkSrc}→${mkSaved} · cruft ${cruft}`);
+
+  /* 6. attribute churn outside the user's edit — 10 */
+  const sigS = elementSignatures(sourceText); const sigD = elementSignatures(savedText);
+  let attrChanged = 0; let compared = 0;
+  for (let i = 0; i < Math.max(sigS.length, sigD.length); i++) {
+    const a = sigS[i]; const b = sigD[i];
+    if (!a || !b) continue;
+    compared++;
+    if (editedIdx.has(i)) continue;                      // the user's own edit is not churn
+    if (a.tag !== b.tag || a.attrs !== b.attrs) attrChanged++;
+  }
+  const churnRatio = compared ? 1 - Math.min(1, attrChanged / compared) : 1;
+  add('attributes', 'Attribute churn outside your edit', 8, churnRatio,
+    compared ? `${attrChanged} of ${compared} elements had attributes added/removed by the tool (your ${editedIdx.size} edited element(s) excluded)` : 'no elements to compare');
+
+  /* 7. visual consistency — 20. Structure can be perfect while the drawing is destroyed
+     (measured: an embedded-raster SVG kept every element yet 93.8% of pixels changed). */
+  if (typeof opts.pixelDiffPercent === 'number') {
+    const pd = opts.pixelDiffPercent;
+    // 0% -> full marks; 2% (the acceptance threshold) -> 0.9; 20% and above -> 0
+    const ratio = pd <= 2 ? 1 - (pd / 2) * 0.1 : Math.max(0, 0.9 - ((pd - 2) / 18) * 0.9);
+    add('visual', 'Visual consistency (rendered)', 20, ratio, `${pd}% of pixels differ between the source and the saved file (browser render at ${opts.diffWidth || 500}px)`);
+    if (pd > 20) findings.push({ level: 'err', text: `${pd}% of pixels changed — the saved file does not look like the source; do not overwrite.` });
+    else if (pd > 5) findings.push({ level: 'warn', text: `${pd}% of pixels differ from the source (threshold 2%) — check the before/after previews.` });
+  } else {
+    add('visual', 'Visual consistency (rendered)', 20, 0.5, 'not measured yet — press “compare renders (pixel diff)”');
+  }
+
+  const score = Math.round(components.reduce((n, c) => n + c.score, 0));
+  const grade = score >= 95 ? 'A' : score >= 85 ? 'B' : score >= 70 ? 'C' : score >= 50 ? 'D' : 'F';
+  const verdict = score >= 95 ? 'Minimal edit — the tool changed essentially only what you changed.'
+    : score >= 85 ? 'Low-normalisation save — the tool added its own house style (ids, layer grouping) but preserved the file.'
+    : score >= 70 ? 'Noticeable normalisation — definitions or attributes were regenerated; review the diff before overwriting.'
+    : score >= 50 ? 'Heavy rewrite — the saved file is structurally different from the source; per COM:OVERWRITE prefer a new file.'
+    : 'Do not overwrite — the saved file is corrupted or materially restructured.';
+  return { score, grade, verdict, components, findings, churn: {
+    definesTouched: touched, defsCorrupted: dd.corrupted.length, defsMissing: dd.missing.length,
+    censusChanged, langsLost: langsLost.length, undeclaredPrefixes: undeclared, cruft,
+    attrChanged, compared, editedElements: editedIdx.size, newRootWrapper } };
 }
 
 /* ------------------------------------------------------------ visual compare */
