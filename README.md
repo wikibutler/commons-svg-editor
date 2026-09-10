@@ -67,9 +67,17 @@ that by design — nothing here posts, edits, uploads, comments, or tags anythin
 (a test upload, a proposal on a village pump, a talk-page review of the criteria) is a decision for a human
 editor to make and execute.
 
-## Licence
+## Licence and third-party disclosure
 
-- Code in `docs/`, `tests/`, `corpus/*.json`, `*.md`: **MIT** (see `LICENSE`).
-- `docs/vendor/svgedit/` is [SVG-Edit](https://github.com/SVG-Edit/svgedit) v7.4.2, MIT.
-- The corpus **references** Commons files by title, URL and sha1 and does **not** redistribute them; each file's
-  own licence and attribution apply on Commons. Downloaded copies are git-ignored on purpose.
+**Read [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) first — it is not a formality here.** The vendored
+editor is *not* plain MIT: SVG-Edit's package declares `(MIT AND Apache-2.0 AND ISC AND LGPL-3.0-or-later AND
+X11)`, and the prebuilt bundle in `docs/vendor/svgedit/` contains code under all of those, including an
+LGPL-3.0-or-later plugin. Upstream's per-file inventory (`licenseInfo.json`) and every licence text ship in
+`docs/vendor/svgedit/LICENSES/`. That file also lists the development-only tools (Playwright, Chromium,
+esbuild, Node) that are used but not redistributed.
+
+- This repository's own code (`docs/*.js|css|html`, `tests/*.mjs`, `corpus/*`, the docs): **MIT** — see `LICENSE`.
+- The corpus **references** Commons files by title, URL and SHA-1 and does **not** redistribute them; each
+  file's own licence and attribution apply on Commons. Downloaded copies are git-ignored deliberately.
+- The disclosure is not legal advice and does not certify compliance; a production deployment (especially on
+  Wikimedia infrastructure) should ship a rebuildable build and get a proper licence review.
