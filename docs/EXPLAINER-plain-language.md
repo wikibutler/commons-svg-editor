@@ -19,7 +19,7 @@ that model. Anything the model can't hold is lost. We loaded and re-saved 44 rea
 all**: 10 changed by more than 10% of their pixels, 25 by more than 2%. Feature classes that failed *every time*:
 gradients, filters, patterns, markers, embedded images, `<switch>` blocks. One map lost all 13 `<switch>` blocks and
 every label — a multilingual map became unlabelled. The Egypt map lost its `sodipodi`/`inkscape` data (35 attributes
-→ 0). The damage lands where the community cares most: maps, charts, diagrams, multilingual files, and
+→ 0). Damage lands where the community cares most: maps, charts, diagrams, multilingual files, and
 Inkscape-maintained files.
 
 **Why the community is right to object.** That data isn't decoration: it keeps files re-editable and often carries
@@ -38,5 +38,5 @@ byte alone; Wikimedia's own Parsoid does this for wikitext ("selective serializa
 tools** like SVG Translate. (3) **Source diffs for SVG** — requested since 2012, never built. (4) **Plain-text
 editing**, already recommended.
 
-**The test that decides everything:** open a file, save it untouched, get the identical file back. Almost no editor
+**The test that decides everything:** open a file, save it untouched, get the identical file back — almost no editor
 passes.
