@@ -1,3 +1,11 @@
+# NOTE (added after the run; the run itself is unmodified below)
+# The FAIL/WARN labels in this log are WRONG and must not be quoted: this run was started before the
+# runner's verdict block was fixed, so every row printed the fallback label FAIL while the collected
+# data was fine. Correct verdicts, computed from test-results/corpus-scorecard.json afterwards:
+#   16 PASS / 4 WARN / 16 FAIL / 8 INFRA   (the 8 INFRA rows are HTTP 429 from our own burst, not tool failures)
+# The runner now assigns verdicts itself and marks un-fetchable files INFRA; re-run to regenerate this log.
+# -----------------------------------------------------------------------------------------------------
+
 FAIL                File:T7792 Example of baseline-shift using explicit  load   445ms  no-op diff   6.32%  edited diff   6.88%  
 FAIL                File:Xclamation blue 2.svg                           load   210ms  no-op diff   4.39%  edited diff  69.84%  
 FAIL                File:Radar Mac black gradient.svg                    load   224ms  no-op diff   0.82%  edited diff   3.26%  
