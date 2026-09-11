@@ -1,0 +1,3090 @@
+[
+ {
+  "title": "File:T7792 Example of baseline-shift using explicit value.svg",
+  "stratum": "known-hard",
+  "bytes": 661,
+  "elements": 10,
+  "definitions": 0,
+  "visibleShapes": 2,
+  "safeStyleTargets": 2,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 3,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "geometry": 6,
+   "metadata": 3,
+   "style": 3,
+   "definition-param": 1,
+   "identity": 3
+  },
+  "topTags": [
+   [
+    "tspan",
+    6
+   ],
+   [
+    "text",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": {
+   "tag": "text",
+   "id": null,
+   "address": "2:text:svg/text",
+   "attr": "font-size",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 7,
+  "diffPctOfFile": 1.059,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Xclamation blue 2.svg",
+  "stratum": "svg2-features",
+  "bytes": 807,
+  "elements": 5,
+  "definitions": 2,
+  "visibleShapes": 1,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 1,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 6,
+   "metadata": 1,
+   "identity": 1,
+   "style": 5
+  },
+  "topTags": [
+   [
+    "stop",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "linearGradient",
+    1
+   ],
+   [
+    "path",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "linearGradient",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "4:path:svg/path",
+   "attr": "stroke",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 6,
+  "diffPctOfFile": 0.7435,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Radar Mac black gradient.svg",
+  "stratum": "svg2-features",
+  "bytes": 1562,
+  "elements": 12,
+  "definitions": 5,
+  "visibleShapes": 4,
+  "safeStyleTargets": 3,
+  "referenceAttrs": 2,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 1,
+   "geometry": 16,
+   "identity": 2,
+   "style": 12,
+   "filter-param": 2,
+   "reference": 1
+  },
+  "topTags": [
+   [
+    "path",
+    4
+   ],
+   [
+    "stop",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "linearGradient",
+    1
+   ],
+   [
+    "filter",
+    1
+   ],
+   [
+    "feGaussianBlur",
+    1
+   ],
+   [
+    "g",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "linearGradient",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "9:path:g/path",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 7,
+  "diffPctOfFile": 0.4481,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Oresundskraft rgb.svg",
+  "stratum": "icon/logo",
+  "bytes": 2921,
+  "elements": 16,
+  "definitions": 0,
+  "visibleShapes": 13,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 1,
+  "cssClassRisk": 13,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "identity": 14,
+   "geometry": 16,
+   "inline-style": 1,
+   "unknown": 1
+  },
+  "topTags": [
+   [
+    "path",
+    13
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "style",
+    1
+   ],
+   [
+    "g",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Goomi nyarly.svg",
+  "stratum": "known-hard",
+  "bytes": 3692,
+  "elements": 22,
+  "definitions": 9,
+  "visibleShapes": 7,
+  "safeStyleTargets": 4,
+  "referenceAttrs": 5,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 42,
+   "metadata": 1,
+   "identity": 5,
+   "filter-param": 6,
+   "style": 28,
+   "reference": 3
+  },
+  "topTags": [
+   [
+    "path",
+    7
+   ],
+   [
+    "stop",
+    6
+   ],
+   [
+    "filter",
+    3
+   ],
+   [
+    "feGaussianBlur",
+    3
+   ],
+   [
+    "linearGradient",
+    2
+   ],
+   [
+    "svg",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "filter",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "16:path:svg/path",
+   "attr": "stroke",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 6,
+  "diffPctOfFile": 0.1625,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:No free image woman.svg",
+  "stratum": "multilingual",
+  "bytes": 5062,
+  "elements": 90,
+  "definitions": 0,
+  "visibleShapes": 23,
+  "safeStyleTargets": 1,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 1,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 1,
+   "geometry": 135,
+   "inline-style": 1,
+   "style": 6,
+   "definition-param": 1,
+   "conditional": 22
+  },
+  "topTags": [
+   [
+    "tspan",
+    65
+   ],
+   [
+    "text",
+    22
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "path",
+    1
+   ],
+   [
+    "switch",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": {
+   "tag": "text",
+   "id": null,
+   "address": "58:text:switch/text",
+   "attr": "font-size",
+   "reason": "editable: inside a <switch> branch, which is exactly what the SVG Translate tool edits (text/attributes per language)"
+  },
+  "editApplied": true,
+  "changedBytes": 7,
+  "diffPctOfFile": 0.1383,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:SystemLanguage MediaWiki internal code.svg",
+  "stratum": "multilingual",
+  "bytes": 6026,
+  "elements": 140,
+  "definitions": 0,
+  "visibleShapes": 138,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "style": 3,
+   "geometry": 2,
+   "metadata": 1,
+   "conditional": 136
+  },
+  "topTags": [
+   [
+    "text",
+    138
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "switch",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Skew lines shortest distance.svg",
+  "stratum": "known-hard",
+  "bytes": 6266,
+  "elements": 81,
+  "definitions": 17,
+  "visibleShapes": 34,
+  "safeStyleTargets": 1,
+  "referenceAttrs": 2,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 49,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "geometry": 133,
+   "identity": 62,
+   "definition-param": 13,
+   "style": 12,
+   "reference": 21
+  },
+  "topTags": [
+   [
+    "path",
+    25
+   ],
+   [
+    "use",
+    21
+   ],
+   [
+    "text",
+    10
+   ],
+   [
+    "rect",
+    9
+   ],
+   [
+    "g",
+    4
+   ],
+   [
+    "pattern",
+    3
+   ],
+   [
+    "circle",
+    2
+   ],
+   [
+    "marker",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "title",
+    1
+   ],
+   [
+    "desc",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "pattern",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": {
+   "tag": "circle",
+   "id": null,
+   "address": "22:circle:svg/circle",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 4,
+  "diffPctOfFile": 0.0638,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:PayPa Plane Logo.svg",
+  "stratum": "icon/logo",
+  "bytes": 6814,
+  "elements": 16,
+  "definitions": 2,
+  "visibleShapes": 11,
+  "safeStyleTargets": 11,
+  "referenceAttrs": 1,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 17,
+   "style": 15,
+   "metadata": 1,
+   "reference": 1,
+   "identity": 1
+  },
+  "topTags": [
+   [
+    "path",
+    11
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "g",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "clipPath",
+    1
+   ],
+   [
+    "rect",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "clipPath",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "2:path:g/path",
+   "attr": "fill-rule",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 7,
+  "diffPctOfFile": 0.1027,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Wikivoyage oversight draft 4.svg",
+  "stratum": "inkscape-native",
+  "bytes": 7549,
+  "elements": 41,
+  "definitions": 32,
+  "visibleShapes": 3,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 6,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 40,
+   "identity": 36,
+   "geometry": 10,
+   "inline-style": 6,
+   "unknown": 31,
+   "filter-param": 75
+  },
+  "topTags": [
+   [
+    "feComposite",
+    6
+   ],
+   [
+    "filter",
+    3
+   ],
+   [
+    "feTurbulence",
+    3
+   ],
+   [
+    "feColorMatrix",
+    3
+   ],
+   [
+    "feMorphology",
+    3
+   ],
+   [
+    "feDisplacementMap",
+    3
+   ],
+   [
+    "feBlend",
+    3
+   ],
+   [
+    "feConvolveMatrix",
+    3
+   ],
+   [
+    "path",
+    3
+   ],
+   [
+    "g",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:PAES logo.svg",
+  "stratum": "icon/logo",
+  "bytes": 8377,
+  "elements": 28,
+  "definitions": 0,
+  "visibleShapes": 27,
+  "safeStyleTargets": 3,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 1,
+   "style": 4,
+   "geometry": 28
+  },
+  "topTags": [
+   [
+    "path",
+    27
+   ],
+   [
+    "svg",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "24:path:svg/path",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 5,
+  "diffPctOfFile": 0.0597,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:PghLFilms profile.svg",
+  "stratum": "icon/logo",
+  "bytes": 8955,
+  "elements": 16,
+  "definitions": 0,
+  "visibleShapes": 11,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 2,
+   "geometry": 15,
+   "style": 4
+  },
+  "topTags": [
+   [
+    "path",
+    11
+   ],
+   [
+    "g",
+    4
+   ],
+   [
+    "svg",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Types of Sentences-pa.svg",
+  "stratum": "inkscape-native",
+  "bytes": 10796,
+  "elements": 37,
+  "definitions": 5,
+  "visibleShapes": 19,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 24,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 44,
+   "geometry": 53,
+   "identity": 32,
+   "unknown": 12,
+   "inline-style": 24
+  },
+  "topTags": [
+   [
+    "path",
+    10
+   ],
+   [
+    "text",
+    5
+   ],
+   [
+    "tspan",
+    5
+   ],
+   [
+    "g",
+    4
+   ],
+   [
+    "ellipse",
+    3
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:MEITEI free-file(1)(1).svg",
+  "stratum": "icon/logo",
+  "bytes": 11325,
+  "elements": 17,
+  "definitions": 0,
+  "visibleShapes": 14,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 2,
+   "geometry": 19,
+   "style": 2
+  },
+  "topTags": [
+   [
+    "path",
+    14
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "g",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Teilmengen R2.svg",
+  "stratum": "chart/graph",
+  "bytes": 12727,
+  "elements": 35,
+  "definitions": 2,
+  "visibleShapes": 20,
+  "safeStyleTargets": 20,
+  "referenceAttrs": 1,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 3,
+   "geometry": 36,
+   "identity": 1,
+   "style": 97,
+   "reference": 1,
+   "unknown": 12
+  },
+  "topTags": [
+   [
+    "path",
+    20
+   ],
+   [
+    "g",
+    11
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "clipPath",
+    1
+   ],
+   [
+    "rect",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "clipPath",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": {
+   "tag": "rect",
+   "id": null,
+   "address": "6:rect:g/rect",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 16,
+  "diffPctOfFile": 0.1257,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Intismeran-development-timeline.svg",
+  "stratum": "diagram",
+  "bytes": 13770,
+  "elements": 163,
+  "definitions": 0,
+  "visibleShapes": 160,
+  "safeStyleTargets": 160,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 1,
+   "geometry": 480,
+   "style": 327,
+   "definition-param": 21
+  },
+  "topTags": [
+   [
+    "text",
+    88
+   ],
+   [
+    "rect",
+    32
+   ],
+   [
+    "line",
+    27
+   ],
+   [
+    "circle",
+    12
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "title",
+    1
+   ],
+   [
+    "desc",
+    1
+   ],
+   [
+    "path",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": null,
+  "target": {
+   "tag": "rect",
+   "id": null,
+   "address": "3:rect:svg/rect",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 4,
+  "diffPctOfFile": 0.029,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Strateo-logo.svg",
+  "stratum": "embedded-raster",
+  "bytes": 15030,
+  "elements": 15,
+  "definitions": 0,
+  "visibleShapes": 11,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 1,
+  "cssClassRisk": 11,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "identity": 12,
+   "geometry": 14,
+   "inline-style": 1,
+   "unknown": 1
+  },
+  "topTags": [
+   [
+    "path",
+    11
+   ],
+   [
+    "g",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Mittelwert- und Median Einkommen NE 1996-2017 EU-SILC.svg",
+  "stratum": "chart/graph",
+  "bytes": 16946,
+  "elements": 118,
+  "definitions": 5,
+  "visibleShapes": 81,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 80,
+  "inlineStyleAttrs": 81,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 3,
+   "geometry": 130,
+   "inline-style": 81,
+   "identity": 2,
+   "reference": 80,
+   "definition-param": 56
+  },
+  "topTags": [
+   [
+    "polyline",
+    48
+   ],
+   [
+    "g",
+    28
+   ],
+   [
+    "text",
+    28
+   ],
+   [
+    "line",
+    4
+   ],
+   [
+    "defs",
+    3
+   ],
+   [
+    "rect",
+    3
+   ],
+   [
+    "clipPath",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "clipPath",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:ERB vs frequency deutsch.svg",
+  "stratum": "chart/graph",
+  "bytes": 27317,
+  "elements": 63,
+  "definitions": 2,
+  "visibleShapes": 35,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 2,
+  "cssClassRisk": 36,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "identity": 39,
+   "geometry": 107,
+   "inline-style": 2,
+   "unknown": 1,
+   "reference": 1
+  },
+  "topTags": [
+   [
+    "g",
+    21
+   ],
+   [
+    "line",
+    16
+   ],
+   [
+    "text",
+    14
+   ],
+   [
+    "polyline",
+    4
+   ],
+   [
+    "rect",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "style",
+    1
+   ],
+   [
+    "desc",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "clipPath",
+    1
+   ],
+   [
+    "use",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:El Manchar logo.svg",
+  "stratum": "embedded-raster",
+  "bytes": 28066,
+  "elements": 132,
+  "definitions": 113,
+  "visibleShapes": 10,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 31,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 51,
+   "identity": 127,
+   "geometry": 16,
+   "unknown": 51,
+   "inline-style": 31,
+   "filter-param": 270,
+   "a11y": 2
+  },
+  "topTags": [
+   [
+    "feComposite",
+    36
+   ],
+   [
+    "filter",
+    18
+   ],
+   [
+    "feFlood",
+    18
+   ],
+   [
+    "feGaussianBlur",
+    18
+   ],
+   [
+    "feOffset",
+    18
+   ],
+   [
+    "path",
+    10
+   ],
+   [
+    "g",
+    4
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Photovoltaics Installed Capacity and Production in Brazil.svg",
+  "stratum": "multilingual",
+  "bytes": 29582,
+  "elements": 268,
+  "definitions": 14,
+  "visibleShapes": 82,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 21,
+  "inlineStyleAttrs": 109,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 236,
+   "unknown": 1,
+   "identity": 116,
+   "inline-style": 109,
+   "reference": 45,
+   "conditional": 25
+  },
+  "topTags": [
+   [
+    "g",
+    136
+   ],
+   [
+    "text",
+    48
+   ],
+   [
+    "path",
+    37
+   ],
+   [
+    "use",
+    24
+   ],
+   [
+    "defs",
+    5
+   ],
+   [
+    "switch",
+    5
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "date",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "g",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Comparison radiated field magnitude of hwd to esd.svg",
+  "stratum": "diagram",
+  "bytes": 30381,
+  "elements": 113,
+  "definitions": 87,
+  "visibleShapes": 14,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 104,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 174,
+   "identity": 108,
+   "geometry": 125,
+   "unknown": 11,
+   "inline-style": 104,
+   "definition-param": 123
+  },
+  "topTags": [
+   [
+    "path",
+    46
+   ],
+   [
+    "marker",
+    41
+   ],
+   [
+    "g",
+    5
+   ],
+   [
+    "circle",
+    4
+   ],
+   [
+    "text",
+    3
+   ],
+   [
+    "tspan",
+    3
+   ],
+   [
+    "ellipse",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Tradex Logo Wiki Mesa de trabajo 1.svg",
+  "stratum": "svg2-features",
+  "bytes": 33328,
+  "elements": 83,
+  "definitions": 6,
+  "visibleShapes": 70,
+  "safeStyleTargets": 1,
+  "referenceAttrs": 2,
+  "inlineStyleAttrs": 5,
+  "cssClassRisk": 70,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "geometry": 85,
+   "identity": 72,
+   "style": 50,
+   "definition-param": 1,
+   "reference": 2,
+   "inline-style": 5
+  },
+  "topTags": [
+   [
+    "path",
+    70
+   ],
+   [
+    "g",
+    5
+   ],
+   [
+    "stop",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "style",
+    1
+   ],
+   [
+    "linearGradient",
+    1
+   ],
+   [
+    "mask",
+    1
+   ],
+   [
+    "image",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "linearGradient",
+   "isShape": false,
+   "inDefinition": true
+  },
+  "target": {
+   "tag": "path",
+   "id": null,
+   "address": "9:path:g/path",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 5,
+  "diffPctOfFile": 0.015,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Australia.svg",
+  "stratum": "multilingual",
+  "bytes": 33450,
+  "elements": 357,
+  "definitions": 14,
+  "visibleShapes": 102,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 48,
+  "inlineStyleAttrs": 139,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 258,
+   "unknown": 1,
+   "identity": 165,
+   "inline-style": 139,
+   "reference": 82,
+   "conditional": 15
+  },
+  "topTags": [
+   [
+    "g",
+    195
+   ],
+   [
+    "path",
+    64
+   ],
+   [
+    "text",
+    41
+   ],
+   [
+    "use",
+    34
+   ],
+   [
+    "defs",
+    5
+   ],
+   [
+    "switch",
+    5
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "date",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "g",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Portugal.svg",
+  "stratum": "multilingual",
+  "bytes": 35886,
+  "elements": 359,
+  "definitions": 14,
+  "visibleShapes": 106,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 41,
+  "inlineStyleAttrs": 144,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 286,
+   "unknown": 1,
+   "identity": 161,
+   "inline-style": 144,
+   "reference": 76,
+   "conditional": 25
+  },
+  "topTags": [
+   [
+    "g",
+    192
+   ],
+   [
+    "path",
+    57
+   ],
+   [
+    "text",
+    52
+   ],
+   [
+    "use",
+    35
+   ],
+   [
+    "defs",
+    5
+   ],
+   [
+    "switch",
+    5
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "date",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "g",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Finland.svg",
+  "stratum": "multilingual",
+  "bytes": 37254,
+  "elements": 376,
+  "definitions": 14,
+  "visibleShapes": 108,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 41,
+  "inlineStyleAttrs": 149,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 302,
+   "unknown": 1,
+   "identity": 170,
+   "inline-style": 149,
+   "reference": 79,
+   "conditional": 25
+  },
+  "topTags": [
+   [
+    "g",
+    204
+   ],
+   [
+    "path",
+    57
+   ],
+   [
+    "text",
+    54
+   ],
+   [
+    "use",
+    38
+   ],
+   [
+    "defs",
+    5
+   ],
+   [
+    "switch",
+    5
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "date",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "g",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Boerse.de Logo 10.2022.svg",
+  "stratum": "icon/logo",
+  "bytes": 52250,
+  "elements": 72,
+  "definitions": 0,
+  "visibleShapes": 68,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 68,
+  "cssClassRisk": 68,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 20,
+   "identity": 140,
+   "geometry": 73,
+   "unknown": 5,
+   "inline-style": 68
+  },
+  "topTags": [
+   [
+    "path",
+    68
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:How many Democratic positions do people take?.svg",
+  "stratum": "chart/graph",
+  "bytes": 68347,
+  "elements": 276,
+  "definitions": 81,
+  "visibleShapes": 49,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 3,
+  "inlineStyleAttrs": 69,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 23,
+   "identity": 267,
+   "geometry": 424,
+   "unknown": 8,
+   "inline-style": 69,
+   "reference": 55
+  },
+  "topTags": [
+   [
+    "path",
+    106
+   ],
+   [
+    "g",
+    71
+   ],
+   [
+    "use",
+    52
+   ],
+   [
+    "defs",
+    20
+   ],
+   [
+    "clipPath",
+    7
+   ],
+   [
+    "rect",
+    7
+   ],
+   [
+    "title",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Auftragung nach dem OWRK-Verfahren.svg",
+  "stratum": "chart/graph",
+  "bytes": 93344,
+  "elements": 234,
+  "definitions": 16,
+  "visibleShapes": 213,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 212,
+  "inlineStyleAttrs": 212,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 242,
+   "geometry": 442,
+   "identity": 229,
+   "definition-param": 6,
+   "unknown": 6,
+   "reference": 213,
+   "inline-style": 212
+  },
+  "topTags": [
+   [
+    "path",
+    217
+   ],
+   [
+    "clipPath",
+    5
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "pattern",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "title",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Milkproducts v2.svg",
+  "stratum": "diagram",
+  "bytes": 97560,
+  "elements": 585,
+  "definitions": 15,
+  "visibleShapes": 282,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 326,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 22,
+   "geometry": 1624,
+   "identity": 580,
+   "unknown": 96,
+   "inline-style": 326,
+   "reference": 117,
+   "filter-param": 23
+  },
+  "topTags": [
+   [
+    "text",
+    138
+   ],
+   [
+    "tspan",
+    138
+   ],
+   [
+    "use",
+    117
+   ],
+   [
+    "line",
+    106
+   ],
+   [
+    "g",
+    29
+   ],
+   [
+    "path",
+    23
+   ],
+   [
+    "rect",
+    16
+   ],
+   [
+    "symbol",
+    5
+   ],
+   [
+    "polygon",
+    4
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+  "stratum": "chart/graph",
+  "bytes": 99900,
+  "elements": 750,
+  "definitions": 141,
+  "visibleShapes": 24,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 13,
+  "inlineStyleAttrs": 55,
+  "cssClassRisk": 0,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 731,
+   "unknown": 1,
+   "identity": 217,
+   "inline-style": 55,
+   "reference": 441
+  },
+  "topTags": [
+   [
+    "use",
+    428
+   ],
+   [
+    "path",
+    154
+   ],
+   [
+    "g",
+    134
+   ],
+   [
+    "defs",
+    21
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "date",
+    1
+   ],
+   [
+    "format",
+    1
+   ],
+   [
+    "creator",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "g",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:DistAmbDGT esquema.svg",
+  "stratum": "diagram",
+  "bytes": 107287,
+  "elements": 101,
+  "definitions": 20,
+  "visibleShapes": 63,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 73,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 83,
+   "geometry": 95,
+   "identity": 81,
+   "unknown": 20,
+   "inline-style": 73,
+   "a11y": 10
+  },
+  "topTags": [
+   [
+    "path",
+    57
+   ],
+   [
+    "g",
+    13
+   ],
+   [
+    "rect",
+    5
+   ],
+   [
+    "title",
+    4
+   ],
+   [
+    "permits",
+    3
+   ],
+   [
+    "requires",
+    3
+   ],
+   [
+    "Agent",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:GOZ structure diagram.svg",
+  "stratum": "diagram",
+  "bytes": 210491,
+  "elements": 757,
+  "definitions": 169,
+  "visibleShapes": 50,
+  "safeStyleTargets": 50,
+  "referenceAttrs": 4,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 1097,
+   "metadata": 4,
+   "identity": 757,
+   "unknown": 43,
+   "style": 486,
+   "reference": 464
+  },
+  "topTags": [
+   [
+    "use",
+    460
+   ],
+   [
+    "g",
+    159
+   ],
+   [
+    "path",
+    132
+   ],
+   [
+    "clipPath",
+    4
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": {
+   "tag": "path",
+   "id": "path256",
+   "address": "171:path:path256",
+   "attr": "fill-rule",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 7,
+  "diffPctOfFile": 0.0033,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Languages-Europe edit.svg",
+  "stratum": "known-hard",
+  "bytes": 240970,
+  "elements": 905,
+  "definitions": 64,
+  "visibleShapes": 272,
+  "safeStyleTargets": 178,
+  "referenceAttrs": 68,
+  "inlineStyleAttrs": 6,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 739,
+   "metadata": 27,
+   "identity": 905,
+   "unknown": 10,
+   "definition-param": 482,
+   "reference": 419,
+   "style": 376,
+   "inline-style": 6
+  },
+  "topTags": [
+   [
+    "pattern",
+    451
+   ],
+   [
+    "path",
+    248
+   ],
+   [
+    "text",
+    88
+   ],
+   [
+    "tspan",
+    88
+   ],
+   [
+    "g",
+    27
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": {
+   "tag": "path",
+   "id": "path11430",
+   "address": "519:path:path11430",
+   "attr": "fill",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 6,
+  "diffPctOfFile": 0.0025,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:BasePairing.svg",
+  "stratum": "inkscape-native",
+  "bytes": 277103,
+  "elements": 148,
+  "definitions": 8,
+  "visibleShapes": 81,
+  "safeStyleTargets": 29,
+  "referenceAttrs": 11,
+  "inlineStyleAttrs": 0,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 17,
+   "geometry": 157,
+   "identity": 9,
+   "unknown": 13,
+   "definition-param": 18,
+   "style": 125,
+   "filter-param": 3,
+   "reference": 14
+  },
+  "topTags": [
+   [
+    "path",
+    69
+   ],
+   [
+    "tspan",
+    34
+   ],
+   [
+    "text",
+    15
+   ],
+   [
+    "g",
+    14
+   ],
+   [
+    "marker",
+    5
+   ],
+   [
+    "filter",
+    3
+   ],
+   [
+    "feGaussianBlur",
+    3
+   ],
+   [
+    "image",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "use",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "marker",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": {
+   "tag": "text",
+   "id": null,
+   "address": "18:text:svg/text",
+   "attr": "font-family",
+   "reason": "literal style value on a rendered element: byte-minimal splice, no model needed"
+  },
+  "editApplied": true,
+  "changedBytes": 15,
+  "diffPctOfFile": 0.0054,
+  "resolveAfterEdit": true
+ },
+ {
+  "title": "File:Krzyś development chart.svg",
+  "stratum": "diagram",
+  "bytes": 281026,
+  "elements": 168,
+  "definitions": 17,
+  "visibleShapes": 72,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 141,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 322,
+   "metadata": 102,
+   "identity": 168,
+   "unknown": 34,
+   "inline-style": 141,
+   "definition-param": 13,
+   "reference": 6
+  },
+  "topTags": [
+   [
+    "tspan",
+    60
+   ],
+   [
+    "path",
+    36
+   ],
+   [
+    "text",
+    26
+   ],
+   [
+    "g",
+    16
+   ],
+   [
+    "rect",
+    13
+   ],
+   [
+    "linearGradient",
+    6
+   ],
+   [
+    "marker",
+    4
+   ],
+   [
+    "stop",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "pattern",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Hidrografía Galicia Cunca Mariña Oriental gl.svg",
+  "stratum": "inkscape-native",
+  "bytes": 530740,
+  "elements": 433,
+  "definitions": 16,
+  "visibleShapes": 296,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 322,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 479,
+   "geometry": 743,
+   "identity": 424,
+   "unknown": 97,
+   "inline-style": 322,
+   "definition-param": 2,
+   "reference": 2
+  },
+  "topTags": [
+   [
+    "path",
+    182
+   ],
+   [
+    "tspan",
+    99
+   ],
+   [
+    "text",
+    85
+   ],
+   [
+    "rect",
+    33
+   ],
+   [
+    "g",
+    15
+   ],
+   [
+    "title",
+    2
+   ],
+   [
+    "textPath",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "linearGradient",
+    1
+   ],
+   [
+    "stop",
+    1
+   ],
+   [
+    "pattern",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Francisco Beltrao Localizacao.svg",
+  "stratum": "map",
+  "bytes": 836620,
+  "elements": 554,
+  "definitions": 5,
+  "visibleShapes": 536,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 2,
+  "cssClassRisk": 536,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 22,
+   "unknown": 9,
+   "geometry": 545,
+   "inline-style": 2,
+   "identity": 1086
+  },
+  "topTags": [
+   [
+    "path",
+    534
+   ],
+   [
+    "g",
+    9
+   ],
+   [
+    "rect",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
+  "stratum": "map",
+  "bytes": 1140445,
+  "elements": 2794,
+  "definitions": 0,
+  "visibleShapes": 2316,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 27,
+  "cssClassRisk": 430,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 4,
+   "geometry": 2524,
+   "identity": 3224,
+   "unknown": 1,
+   "inline-style": 27
+  },
+  "topTags": [
+   [
+    "path",
+    2213
+   ],
+   [
+    "title",
+    263
+   ],
+   [
+    "g",
+    212
+   ],
+   [
+    "circle",
+    103
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "style",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Map of countries with Lindex stores.svg",
+  "stratum": "map",
+  "bytes": 1319446,
+  "elements": 2365,
+  "definitions": 5,
+  "visibleShapes": 2171,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 711,
+  "cssClassRisk": 385,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 2429,
+   "geometry": 2579,
+   "identity": 2745,
+   "unknown": 14,
+   "inline-style": 711
+  },
+  "topTags": [
+   [
+    "path",
+    2091
+   ],
+   [
+    "g",
+    184
+   ],
+   [
+    "circle",
+    79
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "title",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Red Sea map TH.svg",
+  "stratum": "map",
+  "bytes": 1863599,
+  "elements": 3254,
+  "definitions": 478,
+  "visibleShapes": 2313,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 234,
+  "inlineStyleAttrs": 2763,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "geometry": 3823,
+   "identity": 3748,
+   "metadata": 2616,
+   "definition-param": 234,
+   "inline-style": 2763,
+   "unknown": 28,
+   "reference": 234
+  },
+  "topTags": [
+   [
+    "path",
+    2209
+   ],
+   [
+    "title",
+    243
+   ],
+   [
+    "clipPath",
+    234
+   ],
+   [
+    "rect",
+    234
+   ],
+   [
+    "g",
+    205
+   ],
+   [
+    "circle",
+    92
+   ],
+   [
+    "text",
+    12
+   ],
+   [
+    "tspan",
+    12
+   ],
+   [
+    "permits",
+    3
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "defs",
+    1
+   ],
+   [
+    "namedview",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Vergleich zwischen Manga und Foto (nur Zeichnung).svg",
+  "stratum": "inkscape-native",
+  "bytes": 2084600,
+  "elements": 13073,
+  "definitions": 11514,
+  "visibleShapes": 1540,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 36,
+  "inlineStyleAttrs": 1634,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 1988,
+   "geometry": 3074,
+   "identity": 13069,
+   "inline-style": 1634,
+   "unknown": 88,
+   "definition-param": 33,
+   "reference": 49,
+   "filter-param": 5674
+  },
+  "topTags": [
+   [
+    "filter",
+    5668
+   ],
+   [
+    "feGaussianBlur",
+    5658
+   ],
+   [
+    "path",
+    1573
+   ],
+   [
+    "stop",
+    46
+   ],
+   [
+    "clipPath",
+    30
+   ],
+   [
+    "linearGradient",
+    29
+   ],
+   [
+    "path-effect",
+    19
+   ],
+   [
+    "g",
+    15
+   ],
+   [
+    "perspective",
+    9
+   ],
+   [
+    "feBlend",
+    9
+   ],
+   [
+    "feColorMatrix",
+    4
+   ],
+   [
+    "mask",
+    3
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Elección presidencial Chile 2017 por país.svg",
+  "stratum": "map",
+  "bytes": 2584366,
+  "elements": 3796,
+  "definitions": 4,
+  "visibleShapes": 3180,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 3547,
+  "cssClassRisk": 0,
+  "hasStyleBlock": false,
+  "attributeKinds": {
+   "metadata": 717,
+   "geometry": 4145,
+   "unknown": 452,
+   "identity": 3792,
+   "inline-style": 3547
+  },
+  "topTags": [
+   [
+    "path",
+    2936
+   ],
+   [
+    "g",
+    345
+   ],
+   [
+    "tspan",
+    263
+   ],
+   [
+    "text",
+    241
+   ],
+   [
+    "line",
+    2
+   ],
+   [
+    "svg",
+    1
+   ],
+   [
+    "metadata",
+    1
+   ],
+   [
+    "RDF",
+    1
+   ],
+   [
+    "Work",
+    1
+   ],
+   [
+    "format",
+    1
+   ],
+   [
+    "type",
+    1
+   ],
+   [
+    "defs",
+    1
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "svg",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ },
+ {
+  "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+  "stratum": "map",
+  "bytes": 2805294,
+  "elements": 3589,
+  "definitions": 247,
+  "visibleShapes": 2566,
+  "safeStyleTargets": 0,
+  "referenceAttrs": 0,
+  "inlineStyleAttrs": 113,
+  "cssClassRisk": 2994,
+  "hasStyleBlock": true,
+  "attributeKinds": {
+   "metadata": 7,
+   "geometry": 3619,
+   "inline-style": 113,
+   "unknown": 2,
+   "conditional": 1,
+   "reference": 88,
+   "definition-param": 1,
+   "identity": 3214
+  },
+  "topTags": [
+   [
+    "path",
+    2035
+   ],
+   [
+    "g",
+    413
+   ],
+   [
+    "polyline",
+    290
+   ],
+   [
+    "tspan",
+    209
+   ],
+   [
+    "polygon",
+    131
+   ],
+   [
+    "line",
+    100
+   ],
+   [
+    "defs",
+    86
+   ],
+   [
+    "clipPath",
+    86
+   ],
+   [
+    "use",
+    86
+   ],
+   [
+    "text",
+    71
+   ],
+   [
+    "stop",
+    24
+   ],
+   [
+    "ellipse",
+    24
+   ]
+  ],
+  "addressAlignErrors": 0,
+  "allAddressable": true,
+  "firstIdTarget": {
+   "tag": "pattern",
+   "isShape": false,
+   "inDefinition": false
+  },
+  "target": null,
+  "editApplied": false
+ }
+]

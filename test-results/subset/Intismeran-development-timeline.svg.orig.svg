@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 695" width="1240" height="695" font-family="Liberation Sans, Arial, Helvetica, sans-serif">
+<title>Clinical development timeline of intismeran autogene (mRNA-4157/V940)</title>
+<desc>Gantt chart of the 12 registered clinical trials of intismeran autogene, an individualized neoantigen therapy developed by Moderna and Merck. Each bar runs from the trial's start date to its primary completion date, shaded by trial phase. Programme milestones from 2017 to 2026 are marked along the time axis. Data from ClinicalTrials.gov via the AACT database, as of 19 August 2026.</desc>
+<rect width="1240" height="695" fill="#ffffff"/>
+<text x="14" y="34" font-size="19" font-weight="bold" fill="#1a1a19">Clinical development of intismeran autogene (mRNA-4157/V940)</text>
+<text x="14" y="56" font-size="12.5" fill="#52514e">All 12 registered trials. Each bar spans the trial's start date to its primary completion date; shading indicates phase.</text>
+<text x="14" y="74" font-size="12.5" fill="#52514e">Dates after August 2026 are sponsor estimates and are routinely revised.</text>
+<rect x="643.1" y="112" width="372.9" height="442" fill="#f5f5f3"/>
+<line x1="214.0" y1="112" x2="214.0" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="214.0" y="104" font-size="11" fill="#52514e" text-anchor="middle">2017</text>
+<line x1="258.5" y1="112" x2="258.5" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="303.1" y1="112" x2="303.1" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="303.1" y="104" font-size="11" fill="#52514e" text-anchor="middle">2019</text>
+<line x1="347.6" y1="112" x2="347.6" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="392.2" y1="112" x2="392.2" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="392.2" y="104" font-size="11" fill="#52514e" text-anchor="middle">2021</text>
+<line x1="436.8" y1="112" x2="436.8" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="481.3" y1="112" x2="481.3" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="481.3" y="104" font-size="11" fill="#52514e" text-anchor="middle">2023</text>
+<line x1="525.8" y1="112" x2="525.8" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="570.5" y1="112" x2="570.5" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="570.5" y="104" font-size="11" fill="#52514e" text-anchor="middle">2025</text>
+<line x1="615.0" y1="112" x2="615.0" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="659.5" y1="112" x2="659.5" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="659.5" y="104" font-size="11" fill="#52514e" text-anchor="middle">2027</text>
+<line x1="704.1" y1="112" x2="704.1" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="748.7" y1="112" x2="748.7" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="748.7" y="104" font-size="11" fill="#52514e" text-anchor="middle">2029</text>
+<line x1="793.2" y1="112" x2="793.2" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="837.8" y1="112" x2="837.8" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="837.8" y="104" font-size="11" fill="#52514e" text-anchor="middle">2031</text>
+<line x1="882.3" y1="112" x2="882.3" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="926.9" y1="112" x2="926.9" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="926.9" y="104" font-size="11" fill="#52514e" text-anchor="middle">2033</text>
+<line x1="971.5" y1="112" x2="971.5" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="1016.0" y1="112" x2="1016.0" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<line x1="241.4" y1="138" x2="241.4" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="241.4" cy="130" r="8.5" fill="#1a1a19"/>
+<text x="241.4" y="134" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<line x1="273.2" y1="138" x2="273.2" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="273.2" cy="130" r="8.5" fill="#1a1a19"/>
+<text x="273.2" y="134" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<line x1="479.0" y1="138" x2="479.0" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="479.0" cy="130" r="8.5" fill="#1a1a19"/>
+<text x="479.0" y="134" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<line x1="487.6" y1="158" x2="487.6" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="487.6" cy="150" r="8.5" fill="#1a1a19"/>
+<text x="487.6" y="154" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<line x1="492.3" y1="178" x2="492.3" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="492.3" cy="170" r="8.5" fill="#1a1a19"/>
+<text x="492.3" y="174" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<line x1="643.1" y1="138" x2="643.1" y2="554" stroke="#52514e" stroke-width="1" stroke-dasharray="2 3" opacity="0.45"/>
+<circle cx="643.1" cy="130" r="8.5" fill="#1a1a19"/>
+<text x="643.1" y="134" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<line x1="643.1" y1="112" x2="643.1" y2="554" stroke="#c0392b" stroke-width="1.5"/>
+<text x="648.1" y="568" font-size="10.5" fill="#c0392b">19 Aug 2026</text>
+<text x="14" y="213" font-size="11" font-weight="bold" fill="#52514e">P1</text>
+<text x="62" y="213" font-size="12" fill="#1a1a19">KEYNOTE-603</text>
+<rect x="241.5" y="202" width="401.6" height="14" rx="4" fill="#86b6ef"/>
+<rect x="643.1" y="202" width="56.0" height="14" rx="4" fill="#86b6ef" opacity="0.38"/>
+<text x="1028" y="210" font-size="11.5" fill="#1a1a19">Solid tumors</text>
+<text x="1028" y="221" font-size="9.5" fill="#52514e">active, not recruiting</text>
+<text x="14" y="243" font-size="11" font-weight="bold" fill="#52514e">P2</text>
+<text x="62" y="243" font-size="12" fill="#1a1a19">KEYNOTE-942</text>
+<rect x="327.2" y="232" width="315.8" height="14" rx="4" fill="#2a78d6"/>
+<rect x="643.1" y="232" width="280.0" height="14" rx="4" fill="#2a78d6" opacity="0.38"/>
+<text x="1028" y="240" font-size="11.5" fill="#1a1a19">Melanoma</text>
+<text x="1028" y="251" font-size="9.5" fill="#52514e">active, not recruiting</text>
+<text x="14" y="273" font-size="11" font-weight="bold" fill="#52514e">P3</text>
+<text x="62" y="273" font-size="12" fill="#1a1a19">INTerpath-001</text>
+<rect x="505.6" y="262" width="137.5" height="14" rx="4" fill="#104281"/>
+<rect x="643.1" y="262" width="142.0" height="14" rx="4" fill="#104281" opacity="0.38"/>
+<text x="1028" y="270" font-size="11.5" fill="#1a1a19">Melanoma</text>
+<text x="1028" y="281" font-size="9.5" fill="#52514e">active, not recruiting</text>
+<text x="14" y="303" font-size="11" font-weight="bold" fill="#52514e">P3</text>
+<text x="62" y="303" font-size="12" fill="#1a1a19">INTerpath-002</text>
+<rect x="522.7" y="292" width="120.4" height="14" rx="4" fill="#104281"/>
+<rect x="643.1" y="292" width="171.6" height="14" rx="4" fill="#104281" opacity="0.38"/>
+<text x="1028" y="300" font-size="11.5" fill="#1a1a19">NSCLC</text>
+<text x="1028" y="311" font-size="9.5" fill="#52514e">recruiting</text>
+<text x="14" y="333" font-size="11" font-weight="bold" fill="#52514e">P1/2</text>
+<text x="62" y="333" font-size="12" fill="#1a1a19">INTerpath-005</text>
+<rect x="536.5" y="322" width="106.6" height="14" rx="4" fill="#5598e7"/>
+<rect x="643.1" y="322" width="30.2" height="14" rx="4" fill="#5598e7" opacity="0.38"/>
+<text x="1028" y="330" font-size="11.5" fill="#1a1a19">Bladder cancer</text>
+<text x="1028" y="341" font-size="9.5" fill="#52514e">active, not recruiting</text>
+<text x="14" y="363" font-size="11" font-weight="bold" fill="#52514e">P2</text>
+<text x="62" y="363" font-size="12" fill="#1a1a19">INTerpath-004</text>
+<rect x="538.1" y="352" width="105.0" height="14" rx="4" fill="#2a78d6"/>
+<rect x="643.1" y="352" width="61.9" height="14" rx="4" fill="#2a78d6" opacity="0.38"/>
+<text x="1028" y="360" font-size="11.5" fill="#1a1a19">Renal cell carcinoma</text>
+<text x="1028" y="371" font-size="9.5" fill="#52514e">active, not recruiting</text>
+<text x="14" y="393" font-size="11" font-weight="bold" fill="#52514e">P2/3</text>
+<text x="62" y="393" font-size="12" fill="#1a1a19">INTerpath-007</text>
+<rect x="539.0" y="382" width="83.7" height="14" rx="4" fill="#9ca3af"/>
+<path d="M 617.7 384.0 L 627.7 394.0 M 627.7 384.0 L 617.7 394.0" stroke="#c0392b" stroke-width="2" stroke-linecap="round"/>
+<text x="1028" y="390" font-size="11.5" fill="#1a1a19">Cutaneous SCC</text>
+<text x="1028" y="401" font-size="9.5" fill="#52514e">terminated</text>
+<text x="14" y="423" font-size="11" font-weight="bold" fill="#52514e">P3</text>
+<text x="62" y="423" font-size="12" fill="#1a1a19">NCT06623422</text>
+<rect x="561.7" y="412" width="81.3" height="14" rx="4" fill="#104281"/>
+<rect x="643.1" y="412" width="300.4" height="14" rx="4" fill="#104281" opacity="0.38"/>
+<text x="1028" y="420" font-size="11.5" fill="#1a1a19">NSCLC</text>
+<text x="1028" y="431" font-size="9.5" fill="#52514e">recruiting</text>
+<text x="14" y="453" font-size="11" font-weight="bold" fill="#52514e">P2</text>
+<text x="62" y="453" font-size="12" fill="#1a1a19">NCT06833073</text>
+<rect x="578.9" y="442" width="64.1" height="14" rx="4" fill="#2a78d6"/>
+<rect x="643.1" y="442" width="224.6" height="14" rx="4" fill="#2a78d6" opacity="0.38"/>
+<text x="1028" y="450" font-size="11.5" fill="#1a1a19">Bladder cancer (NMIBC)</text>
+<text x="1028" y="461" font-size="9.5" fill="#52514e">recruiting</text>
+<text x="14" y="483" font-size="11" font-weight="bold" fill="#52514e">P2</text>
+<text x="62" y="483" font-size="12" fill="#1a1a19">NCT06961006</text>
+<rect x="588.6" y="472" width="54.5" height="14" rx="4" fill="#2a78d6"/>
+<rect x="643.1" y="472" width="85.8" height="14" rx="4" fill="#2a78d6" opacity="0.38"/>
+<text x="1028" y="480" font-size="11.5" fill="#1a1a19">Melanoma</text>
+<text x="1028" y="491" font-size="9.5" fill="#52514e">recruiting</text>
+<text x="14" y="513" font-size="11" font-weight="bold" fill="#52514e">P2</text>
+<text x="62" y="513" font-size="12" fill="#1a1a19">INTerpath-13</text>
+<rect x="612.6" y="502" width="30.5" height="14" rx="4" fill="#2a78d6"/>
+<rect x="643.1" y="502" width="127.9" height="14" rx="4" fill="#2a78d6" opacity="0.38"/>
+<text x="1028" y="510" font-size="11.5" fill="#1a1a19">NSCLC (squamous)</text>
+<text x="1028" y="521" font-size="9.5" fill="#52514e">recruiting</text>
+<text x="14" y="543" font-size="11" font-weight="bold" fill="#52514e">P3</text>
+<text x="62" y="543" font-size="12" fill="#1a1a19">INTerpath-014</text>
+<rect x="630.0" y="532" width="13.0" height="14" rx="4" fill="#104281"/>
+<rect x="643.1" y="532" width="356.9" height="14" rx="4" fill="#104281" opacity="0.38"/>
+<text x="1028" y="540" font-size="11.5" fill="#1a1a19">NSCLC</text>
+<text x="1028" y="551" font-size="9.5" fill="#52514e">recruiting</text>
+<line x1="214" y1="554" x2="1016" y2="554" stroke="#e0dfdb" stroke-width="1"/>
+<text x="14" y="598" font-size="11" fill="#52514e">Phase:</text>
+<rect x="62" y="589" width="16" height="11" rx="3" fill="#86b6ef"/>
+<text x="83" y="598" font-size="11" fill="#1a1a19">P1</text>
+<rect x="140" y="589" width="16" height="11" rx="3" fill="#5598e7"/>
+<text x="161" y="598" font-size="11" fill="#1a1a19">P1/2</text>
+<rect x="218" y="589" width="16" height="11" rx="3" fill="#2a78d6"/>
+<text x="239" y="598" font-size="11" fill="#1a1a19">P2</text>
+<rect x="296" y="589" width="16" height="11" rx="3" fill="#1c5cab"/>
+<text x="317" y="598" font-size="11" fill="#1a1a19">P2/3</text>
+<rect x="374" y="589" width="16" height="11" rx="3" fill="#104281"/>
+<text x="395" y="598" font-size="11" fill="#1a1a19">P3</text>
+<rect x="452" y="589" width="16" height="11" rx="3" fill="#9ca3af"/>
+<text x="473" y="598" font-size="11" fill="#1a1a19">terminated</text>
+<rect x="560" y="589" width="16" height="11" rx="3" fill="#2a78d6" opacity="0.38"/>
+<text x="581" y="598" font-size="11" fill="#1a1a19">projected</text>
+<circle cx="21" cy="610" r="7" fill="#1a1a19"/>
+<text x="21" y="614" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<text x="34" y="614" font-size="11" fill="#1a1a19">Aug 2017 — First-in-human study begins</text>
+<circle cx="21" cy="627" r="7" fill="#1a1a19"/>
+<text x="21" y="631" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<text x="34" y="631" font-size="11" fill="#1a1a19">May 2018 — Moderna–Merck collaboration</text>
+<circle cx="21" cy="644" r="7" fill="#1a1a19"/>
+<text x="21" y="648" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<text x="34" y="648" font-size="11" fill="#1a1a19">Dec 2022 — KEYNOTE-942 meets endpoint</text>
+<circle cx="621" cy="610" r="7" fill="#1a1a19"/>
+<text x="621" y="614" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<text x="634" y="614" font-size="11" fill="#1a1a19">Feb 2023 — FDA Breakthrough Therapy</text>
+<circle cx="621" cy="627" r="7" fill="#1a1a19"/>
+<text x="621" y="631" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<text x="634" y="631" font-size="11" fill="#1a1a19">Apr 2023 — EMA PRIME designation</text>
+<circle cx="621" cy="644" r="7" fill="#1a1a19"/>
+<text x="621" y="648" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<text x="634" y="648" font-size="11" fill="#1a1a19">Aug 2026 — INTerpath-001 meets RFS + DMFS</text>
+<text x="14" y="683" font-size="10.5" fill="#52514e">Data: ClinicalTrials.gov, via the AACT database (Clinical Trials Transformation Initiative). Trial records as of 19 August 2026.</text>
+</svg>

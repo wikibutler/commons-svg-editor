@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="600">
+<path style="fill:#000" d="M121.5 854.95c0-8.67 5.4-160.98 6.64-187.31l.55-11.69-7.08-5.34c-10.13-7.63-74.42-71.25-74.42-73.63 0-1.1-.95-2.55-2.12-3.23-2.47-1.44-10.26-17.4-10.26-21.03 0-1.36-.6-2.84-1.33-3.3-.73-.45-2.57-8.52-4.09-17.93-1.51-9.4-3.35-17.48-4.08-17.93-.74-.45-1.34-3.88-1.34-7.6 0-3.74-.58-7.16-1.3-7.6-.73-.45-1.8-15.67-2.4-33.83-.59-18.15-2.18-39.6-3.53-47.65a305.58 305.58 0 0 1-3.17-30.5c-.48-10.6-1.31-15.87-2.5-15.87-1.6 0-7.8-6.84-10.87-11.97-.63-1.05.26-3.82 1.99-6.19 1.71-2.36 6.66-13.7 10.98-25.19 11.67-31 13.16-33.05 38.72-53.4 30.87-24.59 36.06-32.67 47.75-74.3 14.56-51.87 20.95-82.16 24.98-118.42 2.02-18.2 4.89-26.49 13.78-39.88 11.43-17.21 28.95-29.43 50.48-35.22 5.08-1.37 20.73-3.26 34.78-4.21L249.2 0l10.62 5.08c12 5.73 21.4 14.44 32.66 30.22 14.4 20.17 13.54 15.3 12.14 69.73-.68 26.4-1.15 51.12-1.04 54.95.23 8.43 8.4 44.2 12.53 54.96 6.46 16.8 22.73 36.41 38.74 46.72 7.42 4.78 8.12 5.73 8.1 10.99-.01 3.35-1.6 8.34-3.81 11.94-2.08 3.41-4.4 7.59-5.16 9.3-3.57 8.08-7.28 174.75-3.99 178.95.93 1.18 7.78 19.92 15.22 41.63 7.44 21.7 16.7 46.43 20.56 54.95 3.87 8.51 8.26 19.03 9.76 23.38a82.96 82.96 0 0 0 6.77 14.3l4.03 6.4-6.23 1c-7.98 1.27-9.08 3.08-2.62 4.29 8.34 1.56 11.21 4.63 13.5 14.38 1.17 4.95 2.56 9.35 3.1 9.78.53.42 2.43 8.08 4.22 17.02l4.98 24.77c2.57 12.76 7.7 67.01 7.76 82.12.02 7.28.65 13.9 1.38 14.7 2.66 2.93 4.99 12.56 6.34 26.23 2.17 21.87 1.66 23.1-15.41 37.5-25.13 21.2-6.12 19.01-164.8 19.01H121.5v-9.35z
+m13.65-272.66c-2.62-19.16-13.1-52.43-23.88-75.83-4.57-9.94-10.16-24.56-12.4-32.5-2.26-7.95-5.05-15.55-6.21-16.9-1.17-1.33-2.12-3.25-2.12-4.25s-.7-1.81-1.55-1.81c-.85 0-1.56 4-1.56 8.9l-.13 43.73c-.09 27.41.38 35.96 2.17 40.16 2.4 5.6 42.42 48.06 45.31 48.07 1.17 0 1.28-2.92.37-9.57z"/>
+<switch font-size="60px" fill="#fff" text-anchor="middle" font-family="Helvetica" transform="translate(200,228)">
+<text systemLanguage="be"><tspan x="0" y="61">Вольная</tspan><tspan x="0" y="122">выява</tspan><tspan x="0" y="183">адсутнічае</tspan></text>
+<text systemLanguage="bs"><tspan x="0" y="61">NEMA</tspan><tspan x="0" y="122">SLOBODNE</tspan><tspan x="0" y="183">SLIKA</tspan></text>
+<text systemLanguage="ca"><tspan x="0" y="61">CAP</tspan><tspan x="0" y="122">IMATGE</tspan><tspan x="0" y="183">LLIURE</tspan></text>
+<text systemLanguage="cs"><tspan x="0" y="80">NEMÁME</tspan><tspan x="-16" y="141">SVOBODNÝ</tspan><tspan x="-20" y="202">OBRÁZEK</tspan></text>
+<text systemLanguage="da"><tspan x="0" y="61">INTED</tspan><tspan x="0" y="122">FRIT</tspan><tspan x="0" y="183">BILLEDE</tspan></text>
+<text systemLanguage="de" y="30">KEIN<tspan x="0" y="91">BILD</tspan><tspan x="-22" y="152" font-size="55px">VERFÜGBAR</tspan></text>
+<text systemLanguage="en">NO<tspan x="0" y="61">FREE</tspan><tspan x="0" y="122">IMAGE</tspan><tspan x="-16" y="183">AVAILABLE</tspan></text>
+<text systemLanguage="eo"><tspan x="0" y="61">NENIU</tspan><tspan x="0" y="122">LIBERA</tspan><tspan x="0" y="183">BILDO</tspan></text>
+<text systemLanguage="es"><tspan x="0" y="61">SIN</tspan><tspan x="0" y="122">IMAGEN</tspan><tspan x="0" y="183">LIBRE</tspan></text>
+<text systemLanguage="fi">EI<tspan x="12" y="63">VAPAATA</tspan><tspan x="0" y="125">KUVAA</tspan><tspan x="-20" y="186" font-size="55px">SAATAVILLA</tspan></text>
+<text systemLanguage="fr"><tspan x="0" y="61">SANS</tspan><tspan x="0" y="122">PHOTO</tspan><tspan x="0" y="183">LIBRE</tspan></text>
+<text systemLanguage="he"><tspan x="0" y="61">אין</tspan><tspan x="0" y="122">תמונה</tspan><tspan x="0" y="183">חופשית</tspan></text>
+<text systemLanguage="hu">NINCS<tspan x="0" y="61">SZABAD</tspan><tspan x="0" y="122">KÉPÜNK</tspan><tspan x="0" y="183">RÓLA</tspan></text>
+<text systemLanguage="mk"><tspan x="0" y="61">нема</tspan><tspan x="0" y="122">слободна</tspan><tspan x="0" y="183">слика</tspan></text>
+<text systemLanguage="nl" font-size="46px">GEEN<tspan x="0" y="61">VRIJE</tspan><tspan x="-16" y="122">AFBEELDING</tspan><tspan x="-18" y="183">BESCHIKBAAR</tspan></text>
+<text systemLanguage="pt"><tspan x="0" y="61">SEM</tspan><tspan x="0" y="122">IMAGEM</tspan><tspan x="0" y="183">LIVRE</tspan></text>
+<text systemLanguage="ro"><tspan x="0" y="61">Imagine</tspan><tspan x="0" y="122">liberă</tspan><tspan x="-18" y="183">indisponibilă</tspan></text>
+<text systemLanguage="sr"><tspan x="0" y="81">НЕМА </tspan><tspan x="-20" y="142">СЛОБОДНА</tspan><tspan x="0" y="203">СЛИКА</tspan></text>
+<text systemLanguage="sv"><tspan x="0" y="61">FRITT</tspan><tspan x="0" y="122">PORTRÄTT</tspan><tspan x="0" y="183">SAKNAS</tspan></text>
+<text systemLanguage="tr"><tspan x="0" y="61"></tspan><tspan x="0" y="122"></tspan><tspan x="0" y="183"></tspan></text>
+<text systemLanguage="vi"><tspan x="0" y="61">có</tspan><tspan x="0" y="122">hình</tspan><tspan x="0" y="183">tự do</tspan></text>
+<text systemLanguage="zh">缺少<tspan x="0" y="61">自由</tspan><tspan x="0" y="122">版權</tspan><tspan x="0" y="183">圖像</tspan></text>
+</switch>
+</svg>
