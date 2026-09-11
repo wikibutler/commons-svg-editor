@@ -152,3 +152,28 @@ node tests/corpus.mjs --corpus corpus/sample.json \
 "C: definitions rewritten and not restored"), so offline runs currently under-report what the save path
 actually repairs. Until that is fixed, treat offline numbers as measuring *the editor*, and the online path as
 measuring *the editor plus the repair layer*.
+
+
+## 10. How high is the failure rate? (threshold sensitivity, 43 scored files)
+
+"High" is only meaningful next to a criterion, and the criterion is a choice. Computed from
+`test-results/corpus-scorecard.json` (offline run, 43 scored files):
+
+No-op pixel threshold → pass rate: **0% → 3/43 (7%) · 0.5% → 12/43 (28%) · 2% → 16/43 (37%) ·
+5% → 20/43 (47%) · 10% → 20/43 (47%)**. Choosing a friendlier threshold does not rescue the result.
+Distribution of damage caused by loading and saving a file **with no user edits at all**:
+
+- 3 files identical · 10 files under 0.5% · 4 files 0.5–2% · **15 files 2–10% · 10 files above 10%**
+  (one unmeasurable)
+
+That is the headline number, and it survives any threshold argument: **10 of 43 files (23%) are visibly
+altered by a load-and-save that changes nothing**, and 25 of 43 (58%) move more than 2% of their pixels.
+
+Whose failure is it? Earlier drafts of this document guessed that the repair layer accounted for six or seven
+of the failures. Per-file attribution says otherwise: **21 files fail on engine-level damage** (pixel diff,
+idempotence, or a lost edit), **2 fail only on repairable structural damage**, 1 fails both ways. The repair
+layer removes real defects but it is not carrying the failure rate — the editor is.
+
+Even with the repair layer fully engaged the picture does not change qualitatively: ~23/43 (53%) at a 2%
+threshold, ~32/43 (74%) at 10%. A tool that fails a quarter of Commons files at the strictest,
+policy-relevant threshold cannot be offered as an overwrite-the-original button without per-file review.
