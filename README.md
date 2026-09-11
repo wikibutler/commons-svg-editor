@@ -10,6 +10,10 @@ See "Scope and provenance" below.
 
 *Status: prototype, 2026-09-10. Numbers in the docs are from live runs against real Commons files, not estimates.*
 
+**New here?** Read **[Why "just edit SVG in a browser" is so hard](docs/WHY-SVG-EDITING-IS-HARD.md)** first — a
+495-word plain-language explainer written for experienced Wikipedia/Commons editors, with links to verify every
+claim.
+
 ## Why a test suite is part of this repo
 
 Commons is strict about SVG because its thumbnails come from **librsvg**, not a browser, and because the

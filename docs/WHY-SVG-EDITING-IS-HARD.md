@@ -39,3 +39,16 @@ editing**, already recommended.
 
 **The test that decides everything:** open a file, save it untouched, get the identical file back — almost no editor
 passes.
+
+---
+
+*Everything above is 495 words. If you want to check the claims rather than take them on trust:*
+
+- *the 44-file sample and how it was drawn — [`corpus/sample.json`](../corpus/sample.json) (seeded, each file pinned by SHA-1)*
+- *the per-file results, including the zero-edit pixel differences — [`test-results/corpus-scorecard.json`](../test-results/corpus-scorecard.json)*
+- *the full research behind the claims, with sources — [`RESEARCH-ROUNDTRIP-LANDSCAPE.md`](RESEARCH-ROUNDTRIP-LANDSCAPE.md)*
+- *the proposed pass/fail contract — [`SVG-ACCEPTANCE-SUITE.md`](../corpus/SVG-ACCEPTANCE-SUITE.md)*
+
+*Caveat worth stating plainly: these measurements are ours alone. No published equivalent was found, the sample is
+44 files from one seeded draw, and the pixel comparisons used a browser renderer rather than librsvg, which is what
+Commons actually uses. Treat the direction as solid and the percentages as provisional.*
