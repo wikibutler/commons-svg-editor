@@ -1339,7 +1339,7 @@
    "wallMs": 1977
   },
   {
-   "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+   "title": "File:HIV AIDS in Brazil \u2013 AIDS related mortality 1985\u20132023.svg",
    "loadMs": 338,
    "integrity": true,
    "bytes": 99900,
@@ -1531,7 +1531,7 @@
     "saveButtonDisabled": true,
     "checksOk": false,
     "errors": [
-     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+     "non-finite numeric value(s) in the markup \u2014 renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
     ],
     "warnings": 0,
     "defsRewritten": 8,
@@ -1552,7 +1552,7 @@
     "present": true,
     "checksOk": false,
     "errors": [
-     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+     "non-finite numeric value(s) in the markup \u2014 renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
     ],
     "elementChangePercent": 1,
     "textRunsChanged": 0,
@@ -1569,7 +1569,7 @@
    "wallMs": 1930
   },
   {
-   "title": "File:Krzyś development chart.svg",
+   "title": "File:Krzy\u015b development chart.svg",
    "loadMs": 367,
    "integrity": true,
    "bytes": 281026,
@@ -1615,53 +1615,90 @@
    "wallMs": 2035
   },
   {
-   "title": "File:Hidrografía Galicia Cunca Mariña Oriental gl.svg",
+   "title": "File:Hidrograf\u00eda Galicia Cunca Mari\u00f1a Oriental gl.svg",
    "fatal": "http-429: ",
    "corpusBytes": 530771,
-   "wallMs": 29
+   "wallMs": 29,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
    "title": "File:Francisco Beltrao Localizacao.svg",
    "fatal": "http-429: ",
    "corpusBytes": 836625,
-   "wallMs": 32
+   "wallMs": 32,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
    "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
    "fatal": "http-429: ",
    "corpusBytes": 1140447,
-   "wallMs": 29
+   "wallMs": 29,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
    "title": "File:Map of countries with Lindex stores.svg",
    "fatal": "http-429: ",
    "corpusBytes": 1319446,
-   "wallMs": 27
+   "wallMs": 27,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
    "title": "File:Red Sea map TH.svg",
    "fatal": "http-429: ",
    "corpusBytes": 1863775,
-   "wallMs": 31
+   "wallMs": 31,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
    "title": "File:Vergleich zwischen Manga und Foto (nur Zeichnung).svg",
    "fatal": "http-429: ",
    "corpusBytes": 2084600,
-   "wallMs": 26
+   "wallMs": 26,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
-   "title": "File:Elección presidencial Chile 2017 por país.svg",
+   "title": "File:Elecci\u00f3n presidencial Chile 2017 por pa\u00eds.svg",
    "fatal": "http-429: ",
    "corpusBytes": 2584366,
-   "wallMs": 25
+   "wallMs": 25,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   },
   {
-   "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+   "title": "File:Chyhyryn-2-eng \u041c\u043e\u043d\u0442\u0430\u0436\u043d\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c 1.svg",
    "fatal": "http-429: ",
    "corpusBytes": 2805845,
-   "wallMs": 27
+   "wallMs": 27,
+   "verdict": "INFRA",
+   "fails": [
+    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
+   ]
   }
  ],
- "pageErrors": []
+ "pageErrors": [],
+ "note": "INFRA = the file could not be fetched during this run (HTTP 429 from our own burst). Excluded from tool PASS/WARN/FAIL.",
+ "verdicts": {
+  "?": 36,
+  "INFRA": 8
+ }
 }

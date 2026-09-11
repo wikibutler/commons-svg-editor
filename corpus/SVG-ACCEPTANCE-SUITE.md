@@ -80,3 +80,40 @@ The scorecard currently marks a file FAIL whenever the no-op guard, idempotence 
 - `tests/corpus.mjs` — the acceptance runner (scorecard + incremental JSON output).
 - `tests/fidelity.mjs` — the narrower load→save fidelity measurement used for §3's numbers.
 - `tests/roundtrip.mjs` — the end-to-end editor test (load, edit, export, save-gate, upload-endpoint boundary).
+
+
+## 8. Scale: is a Commons-wide suite too big? No — but the constraint is politeness, not size
+
+Measured 2026-09-10 on this host, not estimated.
+
+- **5,283,832** SVG files on Commons (`list=search&srsearch=filetype:svg` totalhits). Sampling all of them is
+  neither possible nor useful; a **stratified sample of a few hundred** is both.
+- **Bulk metadata is cheap.** Category membership and `imageinfo` come back 50/40 titles per request; a
+  9-stratum sample of 44 files cost **9 API calls** with responses cached to disk.
+- **Bulk content fetching is the limiting factor.** A 16-thread burst got rate-limited after ~25 files, and a
+  paced run (2 fetches per file, ~1.1 s apart) still hit **HTTP 429 on 8 of 44 files** (all in the consecutive
+  map stratum). Those records are now marked `INFRA` so a rate-limited run can never masquerade as tool failures.
+- **Runtime is not the problem.** 44 files scored in roughly 4 minutes of wall clock including browser
+  start/stop; per-file load times were 200–620 ms for everything up to 241 KB.
+- **The fix, and the next commit:** fetch each file **once** into a local, git-ignored cache
+  (`corpus/files-cache/`, keyed by sha1), then run the browser against `http://127.0.0.1/…`. That turns a run
+  from *2 network fetches per file per run* into *one fetch ever*, which is both polite to Commons and makes
+  results reproducible after a file changes on-wiki. Until that lands, size the sample to what one paced run
+  can fetch (≈40 files here) rather than to what you would like to test.
+
+### What the first 44-file sample says (36 scored; 8 rate-limited)
+
+Verdicts: **16 PASS · 4 WARN · 16 FAIL** (8 INFRA). Pass rate by stratum, worst first — the failures cluster
+exactly where the community's stake is highest:
+
+- embedded-raster **0/2** · map **0/6** · multilingual **1/6** · inkscape-native **1/5** · known-hard **1/4**
+- svg2-features **1/3** · diagram **3/6** · chart/graph **4/6** · icon/logo **5/6**
+
+Worst load-and-save damage with **no user edits at all** (pixel diff, source vs saved):
+
+- 89.68% — Tradex Logo (33 KB) · 27.65% — PAES logo · 14.85% — a household-income chart
+- 8.79% / 8.71% / 7.58% — three *Wind power installed capacity* charts (same generator, same defect)
+- 6.69% — the community's own `File:SystemLanguage MediaWiki internal code.svg` · 5.12% — `Languages-Europe edit`
+
+Also newly visible at sample scale: **5 of 36 files are not idempotent** (feeding the saved file back through
+the editor produces a different file), which a single-file test would never have surfaced.
