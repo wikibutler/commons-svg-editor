@@ -1,0 +1,3358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="1323"
+   height="780.4574"
+   id="svg2960"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Milkproducts_v2.svg" fill="#ff00aa">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1014"
+     inkscape:window-height="558"
+     id="namedview581"
+     showgrid="false"
+     inkscape:zoom="0.31508796"
+     inkscape:cx="1075.4932"
+     inkscape:cy="461.05812"
+     inkscape:window-x="122"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2960" />
+  <metadata
+     id="metadata584">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2962">
+    <symbol
+       id="Oval"
+       style="overflow:visible">
+      <path
+         d="m 20,-20 65,0 c 11.045695,0 20,8.954305 20,20 0,11.045695 -8.954305,20 -20,20 L 20,20 C 8.954305,20 0,11.045695 0,0 0,-11.045695 8.954305,-20 20,-20 l 0,0 z"
+         id="path2965"
+         style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    </symbol>
+    <symbol
+       id="Pfeilspitze-l"
+       style="overflow:visible">
+      <polygon
+         points="10,5 0,0 0,0 10,-5 "
+         id="polygon2968"
+         style="fill:#000000;stroke:#000000" />
+    </symbol>
+    <symbol
+       id="Pfeilspitze-r"
+       style="overflow:visible">
+      <polygon
+         points="-10,5 0,0 0,0 -10,-5 "
+         id="polygon2971"
+         style="fill:#000000;stroke:#000000" />
+    </symbol>
+    <symbol
+       id="Pfeilspitze-o"
+       style="overflow:visible">
+      <polygon
+         points="-5,10 0,0 0,0 5,10 "
+         id="polygon2974"
+         style="fill:#000000;stroke:#000000" />
+    </symbol>
+    <symbol
+       id="Pfeilspitze-u"
+       style="overflow:visible">
+      <polygon
+         points="-5,-10 0,0 0,0 5,-10 "
+         id="polygon2977"
+         style="fill:#000000;stroke:#000000" />
+    </symbol>
+  </defs>
+  <rect
+     width="1240"
+     height="780"
+     x="40.329018"
+     y="0.45738536"
+     id="BG"
+     style="fill:#ffffff;stroke:none" />
+  <rect
+     width="466"
+     height="270.35358"
+     x="1.3290176"
+     y="0.10383197"
+     id="Kaeseprodukte"
+     style="fill:#d73027;stroke:none;fill-opacity:1" />
+  <rect
+     width="856"
+     height="130"
+     x="467.32901"
+     y="0.45738536"
+     id="Butterprodukte"
+     style="fill:#ffffbf;stroke:none;fill-opacity:1" />
+  <rect
+     width="855.5"
+     height="140.00002"
+     x="467.32901"
+     y="130.45738"
+     id="Rahmprodukte"
+     style="fill:#4575b4;stroke:none;fill-opacity:1" />
+  <rect
+     width="490"
+     height="80"
+     x="40.329018"
+     y="270.4574"
+     id="Molkeprodukte"
+     style="fill:#fee090;stroke:none;fill-opacity:1" />
+  <rect
+     width="792.25"
+     height="420"
+     x="530.32904"
+     y="270.4574"
+     id="Milchprodukte"
+     style="fill:#91bfdb;stroke:none;fill-opacity:1" />
+  <rect
+     width="529.59796"
+     height="340"
+     x="0.73103786"
+     y="350.4574"
+     id="Sauermilchprodukte"
+     style="fill:#fc8d59;stroke:none;fill-opacity:1" />
+  <rect
+     width="1322.098"
+     height="92.778809"
+     x="0.73103786"
+     y="687.67859"
+     id="Milchpulver"
+     style="fill:#e0f3f8;stroke:none;fill-opacity:1" />
+  <text
+     x="470.32901"
+     y="35.457401"
+     id="Titel"
+     style="font-size:36px;font-weight:bold;fill:#000000;stroke:none;font-family:Tahoma">Milk products<tspan
+   x="500.32901"
+   id="tspan2990"
+   style="font-size:18px;fill:#000000" />
+</text>
+  <use
+     transform="translate(540.329,380.457)"
+     id="use2999"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <use
+     transform="translate(715.329,330.457)"
+     id="use3006"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <use
+     transform="translate(715.329,420.457)"
+     id="use3015"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <use
+     transform="translate(715.329,470.457)"
+     id="use3024"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <use
+     transform="translate(715.329,520.457)"
+     id="use3033"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="742.68298"
+     y="523.06403"
+     id="H-Milch"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">UHT milk</text>
+  <use
+     transform="translate(715.329,570.457)"
+     id="use3042"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="728.96503"
+     y="573.76099"
+     id="Sterilmilch"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">Sterilized milk<tspan
+   x="748.96503"
+   id="tspan3047"
+   style="font-size:10px;fill:#ff1b1b" />
+</text>
+  <use
+     transform="translate(557.291,598.839)"
+     id="use3049"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="568.87701"
+     y="600.72803"
+     id="Kondensmilch"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="580.87701"
+       dy="12"
+       id="tspan3054"
+       style="font-size:10px;fill:#ff1b1b">7.5 %–15 %</tspan>
+  </text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3523">
+    <use
+       transform="translate(522.83,729.18)"
+       id="use3056"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="534.92401"
+       y="730.59198"
+       id="text3058"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3060">Powdered milk</tspan>
+    </text>
+  </g>
+  <use
+     transform="translate(920.329,330.457)"
+     id="use3062"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="923.55603"
+     y="331.22"
+     id="fettarmeRohmilch"
+     style="font-size:12px;font-weight:normal;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">Lowfat to skimmed</text>
+  <use
+     transform="translate(840.329,420.457)"
+     id="use3071"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="854.32898"
+     y="419.457"
+     id="fettarmemilch"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="865.32898"
+       dy="12"
+       id="tspan3076"
+       style="font-size:10px;fill:#ff1b1b">1.5 %–1.8 %</tspan>
+  </text>
+  <use
+     transform="translate(840.329,650.457)"
+     id="use3085"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="866.28302"
+     y="656.03998"
+     id="entrahmteKondensmilch"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;stroke:none;font-family:Arial">
+    <tspan
+       x="863.28302"
+       dy="10"
+       id="tspan3090"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;font-family:Arial">1.5 %–7.5 %</tspan>
+  </text>
+  <use
+     transform="translate(1000.33,420.457)"
+     id="use3094"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1020.33"
+     y="419.457"
+     id="Magermilch"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="1040.33"
+       dy="12"
+       id="tspan3099"
+       style="font-size:10px;fill:#ff1b1b">0.1 %</tspan>
+  </text>
+  <use
+     transform="translate(1000.33,650.457)"
+     id="use3101"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <use
+     transform="translate(1000.33,730.457)"
+     id="use3110"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3508">
+    <use
+       transform="translate(360,660)"
+       id="use3117"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="381.76801"
+       y="659"
+       id="Buttermilch"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">Buttermilk<tspan
+   x="401.76801"
+   dy="12"
+   id="tspan3122"
+   style="font-size:10px;fill:#ff1b1b">&lt; 1 %</tspan>
+</text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3486">
+    <use
+       transform="translate(360,430)"
+       id="use3131"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="399"
+       y="434"
+       id="Kefir"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3134">Kefir</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3497">
+    <use
+       transform="translate(360,530)"
+       id="use3143"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="389"
+       y="534"
+       id="Joghurt"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3146">Yoghurt</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3502">
+    <use
+       transform="translate(360,600)"
+       id="use3148"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="371.11099"
+       y="598.354"
+       id="Sahnejoghurt"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3151">Cream yoghurt</tspan>
+      <tspan
+         x="396.11099"
+         dy="12"
+         id="tspan3153"
+         style="font-size:10px;fill:#ff1b1b">&gt; 10 %</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3409">
+    <use
+       transform="translate(200,320)"
+       id="use3162"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="223.067"
+       y="321.80899"
+       id="Sauermolke"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3165">Sour whey</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3513">
+    <use
+       transform="translate(285,730)"
+       id="use3174"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="291.979"
+       y="732.586"
+       id="Molkepulver"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3177">Powdered whey</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3398">
+    <use
+       transform="translate(50,380)"
+       id="use3179"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="84"
+       y="378"
+       id="Quark"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3182">Quark</tspan>
+      <tspan
+         x="75"
+         dy="12"
+         id="tspan3184"
+         style="font-size:10px;fill:#ff1b1b">10 %–40 %</tspan>
+    </text>
+  </g>
+  <use
+     transform="translate(920.329,230.457)"
+     id="use3186"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="955.01501"
+     y="241.03"
+     id="Rahm"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3189">cream</tspan>
+  </text>
+  <use
+     transform="translate(1140.33,230.457)"
+     id="use3191"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1141.13"
+     y="228.896"
+     id="Kondenssahne"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">Condensed cream<tspan
+   x="1157.13"
+   dy="12"
+   id="tspan3196"
+   style="font-size:10px;fill:#ff1b1b">15 %–23 %</tspan>
+</text>
+  <use
+     transform="translate(1140.33,160.457)"
+     id="use3198"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1139.0601"
+     y="157.58099"
+     id="CremeDouble"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="1169.0601"
+       dy="12"
+       id="tspan3203"
+       style="font-size:10px;text-align:start;text-anchor:start;fill:#ff1b1b">43 %–48 %</tspan>
+  </text>
+  <use
+     transform="translate(1030.33,160.457)"
+     id="use3205"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1059.35"
+     y="162.097"
+     id="Schlagsahne"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="1054.35"
+       dy="10"
+       id="tspan3212"
+       style="font-size:10px;fill:#ff1b1b">30 %–36 %+</tspan>
+  </text>
+  <use
+     transform="translate(920.329,160.457)"
+     id="use3216"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="957.08197"
+     y="172.916"
+     id="Sahne"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="949.08197"
+       id="tspan3221"
+       style="font-size:10px;fill:#ff1b1b">18 %–30 %</tspan>
+  </text>
+  <use
+     transform="translate(810.329,160.457)"
+     id="use3223"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="830.32898"
+     y="158.457"
+     id="KaffeeSahne"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="837.32898"
+       dy="12"
+       id="tspan3228"
+       style="font-size:10px;fill:#ff1b1b">10 %–18 %</tspan>
+  </text>
+  <use
+     transform="translate(640.329,230.457)"
+     id="use3230"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="652.25201"
+     y="234.019"
+     id="Sauerrahm"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3233">Soured cream</tspan>
+  </text>
+  <use
+     transform="translate(700.329,160.457)"
+     id="use3235"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="721.02502"
+     y="158.019"
+     id="SaureSahne"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;text-align:start;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">Sour cream<tspan
+   x="733.02502"
+   dy="12"
+   id="tspan3240"
+   style="font-size:10px;text-align:start;text-anchor:start;fill:#ff1b1b">10 %–19 %</tspan>
+</text>
+  <use
+     transform="translate(580.329,160.457)"
+     id="use3242"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="607.32898"
+     y="158.457"
+     id="Schmand"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3245">Schmand</tspan>
+    <tspan
+       x="607.32898"
+       dy="12"
+       id="tspan3247"
+       style="font-size:10px;fill:#ff1b1b">20 %–29 %</tspan>
+  </text>
+  <use
+     transform="translate(470.329,160.457)"
+     id="use3249"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="480.32901"
+     y="158.457"
+     id="CremeFraiche"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3252">Crème Fraîche</tspan>
+    <tspan
+       x="497.32901"
+       dy="12"
+       id="tspan3254"
+       style="font-size:10px;fill:#ff1b1b">30 %–40 %</tspan>
+  </text>
+  <use
+     transform="translate(920.329,90.4574)"
+     id="use3256"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="944.20502"
+     y="95.163597"
+     id="Butter"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="955.20502"
+       dy="0 0 0 0 0 0"
+       id="tspan3261"
+       style="font-size:12px;fill:#000000">butter</tspan>
+  </text>
+  <use
+     transform="translate(1030.33,90.4574)"
+     id="use3265"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1038.51"
+     y="84.380096"
+     id="Milchfluessigkeit"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3268"
+       style="font-weight:normal">Liquid separated</tspan>
+  </text>
+  <use
+     transform="translate(920.329,30.4574)"
+     id="use3270"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="932.32898"
+     y="28.457399"
+     id="Schmalz"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="960.32898"
+       dy="12"
+       id="tspan3275"
+       style="font-size:10px;fill:#ff1b1b">100 %</tspan>
+  </text>
+  <use
+     transform="translate(470.329,90.4574)"
+     id="use3277"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="480.32901"
+     y="88.457397"
+     id="Molkenbutter"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="497.32901"
+       dy="12"
+       id="tspan3282"
+       style="font-size:10px;fill:#ff1b1b">80 %–90 %</tspan>
+  </text>
+  <use
+     transform="translate(640.329,90.4574)"
+     id="use3284"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="648.711"
+     y="92.704803"
+     id="Sauerrahmbutter"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       id="tspan3287">Cultured butter</tspan>
+  </text>
+  <use
+     transform="translate(760.329,90.4574)"
+     id="use3289"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3437">
+    <use
+       transform="translate(250,90)"
+       id="use3339"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="269"
+       y="88"
+       id="Mascarpone"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3342">Mascarpone</tspan>
+      <tspan
+         x="288"
+         dy="12"
+         id="tspan3344"
+         style="font-size:10px;fill:#ff1b1b">&gt; 70 %</tspan>
+    </text>
+  </g>
+  <use
+     transform="translate(360.329,240.457)"
+     id="use3367"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="383.396"
+     y="245.468"
+     id="Frischkaese"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="388.396"
+       dy="12"
+       id="tspan3372"
+       style="font-size:10px;fill:#ff1b1b">18 %–44 %</tspan>
+  </text>
+  <line
+     x1="706.32904"
+     y1="280.4574"
+     x2="962.32904"
+     y2="280.4574"
+     id="line3374"
+     style="stroke:#000000" />
+  <line
+     x1="962.32904"
+     y1="280.4574"
+     x2="972.32904"
+     y2="270.4574"
+     id="line3376"
+     style="stroke:#000000" />
+  <line
+     x1="972.32904"
+     y1="270.4574"
+     x2="972.32904"
+     y2="250.45738"
+     id="line3378"
+     style="stroke:#000000" />
+  <use
+     transform="translate(972.329,250.457)"
+     id="use3380"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="962.32904"
+     y1="280.4574"
+     x2="972.32904"
+     y2="290.4574"
+     id="line3382"
+     style="stroke:#000000" />
+  <line
+     x1="972.32904"
+     y1="290.4574"
+     x2="972.32904"
+     y2="310.4574"
+     id="line3384"
+     style="stroke:#000000" />
+  <use
+     transform="translate(972.329,310.457)"
+     id="use3386"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="1026.329"
+     y1="230.45738"
+     x2="1140.329"
+     y2="230.45738"
+     id="line3388"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1140.33,230.457)"
+     id="use3390"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="982.32904"
+     y1="210.45738"
+     x2="982.32904"
+     y2="205.45738"
+     id="line3392"
+     style="stroke:#000000" />
+  <line
+     x1="982.32904"
+     y1="205.45738"
+     x2="1193.329"
+     y2="205.45738"
+     id="line3394"
+     style="stroke:#000000" />
+  <line
+     x1="1193.329"
+     y1="205.45738"
+     x2="1193.329"
+     y2="180.45738"
+     id="line3396"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1193.33,180.457)"
+     id="use3398"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="977.32904"
+     y1="210.45738"
+     x2="977.32904"
+     y2="200.45738"
+     id="line3400"
+     style="stroke:#000000" />
+  <line
+     x1="977.32904"
+     y1="200.45738"
+     x2="1083.329"
+     y2="200.45738"
+     id="line3402"
+     style="stroke:#000000" />
+  <line
+     x1="1083.329"
+     y1="200.45738"
+     x2="1083.329"
+     y2="180.45738"
+     id="line3404"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1083.33,180.457)"
+     id="use3406"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="972.32904"
+     y1="210.45738"
+     x2="972.32904"
+     y2="180.45738"
+     id="line3408"
+     style="stroke:#000000" />
+  <use
+     transform="translate(972.329,180.457)"
+     id="use3410"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="967.32904"
+     y1="210.45738"
+     x2="967.32904"
+     y2="200.45738"
+     id="line3412"
+     style="stroke:#000000" />
+  <line
+     x1="967.32904"
+     y1="200.45738"
+     x2="862.32904"
+     y2="200.45738"
+     id="line3414"
+     style="stroke:#000000" />
+  <line
+     x1="862.32904"
+     y1="200.45738"
+     x2="862.32904"
+     y2="180.45738"
+     id="line3416"
+     style="stroke:#000000" />
+  <use
+     transform="translate(862.329,180.457)"
+     id="use3418"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="972.32904"
+     y1="140.45738"
+     x2="972.32904"
+     y2="110.45738"
+     id="line3420"
+     style="stroke:#000000" />
+  <use
+     transform="translate(972.329,110.457)"
+     id="use3422"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="972.32904"
+     y1="135.45738"
+     x2="982.32904"
+     y2="125.45738"
+     id="line3424"
+     style="stroke:#000000" />
+  <line
+     x1="982.32904"
+     y1="125.45738"
+     x2="1092.329"
+     y2="125.45738"
+     id="line3426"
+     style="stroke:#000000" />
+  <line
+     x1="1092.329"
+     y1="125.45738"
+     x2="1092.329"
+     y2="110.45738"
+     id="line3428"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1092.33,110.457)"
+     id="use3430"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="972.32904"
+     y1="70.457382"
+     x2="972.32904"
+     y2="50.457386"
+     id="line3432"
+     style="stroke:#000000" />
+  <use
+     transform="translate(972.329,50.4574)"
+     id="use3434"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="920.32904"
+     y1="90.457382"
+     x2="866.32904"
+     y2="90.457382"
+     id="line3436"
+     style="stroke:#000000" />
+  <use
+     transform="translate(866.329,90.4574)"
+     id="use3438"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="920.32904"
+     y1="230.45738"
+     x2="746.32904"
+     y2="230.45738"
+     id="line3440"
+     style="stroke:#000000" />
+  <use
+     transform="translate(746.329,230.457)"
+     id="use3442"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="698.32904"
+     y1="210.45738"
+     x2="698.32904"
+     y2="200.45738"
+     id="line3444"
+     style="stroke:#000000" />
+  <line
+     x1="698.32904"
+     y1="200.45738"
+     x2="752.32904"
+     y2="200.45738"
+     id="line3446"
+     style="stroke:#000000" />
+  <line
+     x1="752.32904"
+     y1="200.45738"
+     x2="752.32904"
+     y2="180.45738"
+     id="line3448"
+     style="stroke:#000000" />
+  <use
+     transform="translate(752.329,180.457)"
+     id="use3450"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="693.32904"
+     y1="210.45738"
+     x2="693.32904"
+     y2="110.45738"
+     id="line3452"
+     style="stroke:#000000" />
+  <use
+     transform="translate(693.329,110.457)"
+     id="use3454"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="688.32904"
+     y1="210.45738"
+     x2="688.32904"
+     y2="200.45738"
+     id="line3456"
+     style="stroke:#000000" />
+  <line
+     x1="688.32904"
+     y1="200.45738"
+     x2="632.32904"
+     y2="200.45738"
+     id="line3458"
+     style="stroke:#000000" />
+  <line
+     x1="632.32904"
+     y1="200.45738"
+     x2="632.32904"
+     y2="180.45738"
+     id="line3460"
+     style="stroke:#000000" />
+  <use
+     transform="translate(632.329,180.457)"
+     id="use3462"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="683.32904"
+     y1="210.45738"
+     x2="683.32904"
+     y2="205.45738"
+     id="line3464"
+     style="stroke:#000000" />
+  <line
+     x1="683.32904"
+     y1="205.45738"
+     x2="522.32904"
+     y2="205.45738"
+     id="line3466"
+     style="stroke:#000000" />
+  <line
+     x1="522.32904"
+     y1="205.45738"
+     x2="522.32904"
+     y2="180.45738"
+     id="line3468"
+     style="stroke:#000000" />
+  <use
+     transform="translate(522.329,180.457)"
+     id="use3470"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="620.32904"
+     y1="300.4574"
+     x2="620.32904"
+     y2="360.4574"
+     id="line3472"
+     style="stroke:#000000" />
+  <use
+     transform="translate(620.329,360.457)"
+     id="use3474"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="680.32904"
+     y1="300.4574"
+     x2="680.32904"
+     y2="330.4574"
+     id="line3476"
+     style="stroke:#000000" />
+  <line
+     x1="680.32904"
+     y1="330.4574"
+     x2="714.32904"
+     y2="330.4574"
+     id="line3478"
+     style="stroke:#000000" />
+  <use
+     transform="translate(714.329,330.457)"
+     id="use3480"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="675.32904"
+     y1="300.4574"
+     x2="675.32904"
+     y2="420.4574"
+     id="line3482"
+     style="stroke:#000000" />
+  <line
+     x1="675.32904"
+     y1="420.4574"
+     x2="714.32904"
+     y2="420.4574"
+     id="line3484"
+     style="stroke:#000000" />
+  <use
+     transform="translate(714.329,420.457)"
+     id="use3486"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="670.32904"
+     y1="300.4574"
+     x2="670.32904"
+     y2="470.4574"
+     id="line3488"
+     style="stroke:#000000" />
+  <line
+     x1="670.32904"
+     y1="470.4574"
+     x2="714.32904"
+     y2="470.4574"
+     id="line3490"
+     style="stroke:#000000" />
+  <use
+     transform="translate(714.329,470.457)"
+     id="use3492"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="665.32904"
+     y1="300.4574"
+     x2="665.32904"
+     y2="520.4574"
+     id="line3494"
+     style="stroke:#000000" />
+  <line
+     x1="665.32904"
+     y1="520.4574"
+     x2="714.32904"
+     y2="520.4574"
+     id="line3496"
+     style="stroke:#000000" />
+  <use
+     transform="translate(714.329,520.457)"
+     id="use3498"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="660.32904"
+     y1="300.4574"
+     x2="660.32904"
+     y2="570.4574"
+     id="line3500"
+     style="stroke:#000000" />
+  <line
+     x1="660.32904"
+     y1="570.4574"
+     x2="714.32904"
+     y2="570.4574"
+     id="line3502"
+     style="stroke:#000000" />
+  <use
+     transform="translate(714.329,570.457)"
+     id="use3504"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="967.32904"
+     y1="350.4574"
+     x2="967.32904"
+     y2="420.4574"
+     id="line3506"
+     style="stroke:#000000" />
+  <line
+     x1="967.32904"
+     y1="420.4574"
+     x2="946.32904"
+     y2="420.4574"
+     id="line3508"
+     style="stroke:#000000" />
+  <use
+     transform="translate(946.329,420.457)"
+     id="use3510"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="972.50946"
+     y1="351.33368"
+     x2="972.50946"
+     y2="421.33368"
+     id="line3518"
+     style="stroke:#000000" />
+  <line
+     x1="977.32904"
+     y1="420.4574"
+     x2="1000.329"
+     y2="420.4574"
+     id="line3520"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1000.33,420.457)"
+     id="use3522"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <use
+     transform="translate(614.207,578.485)"
+     id="use3526"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <use
+     transform="translate(892.329,630.457)"
+     id="use3530"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="1052.329"
+     y1="440.4574"
+     x2="1052.329"
+     y2="630.4574"
+     id="line3532"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1052.33,630.457)"
+     id="use3534"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <use
+     transform="translate(615.918,707.87)"
+     id="use3538"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="1052.329"
+     y1="670.4574"
+     x2="1052.329"
+     y2="710.4574"
+     id="line3540"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1052.33,710.457)"
+     id="use3542"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="540.32904"
+     y1="380.4574"
+     x2="506.32901"
+     y2="380.4574"
+     id="line3544"
+     style="stroke:#000000" />
+  <use
+     transform="translate(506.329,380.457)"
+     id="use3546"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="592.32904"
+     y1="400.4574"
+     x2="592.32904"
+     y2="430.4574"
+     id="line3548"
+     style="stroke:#000000" />
+  <line
+     x1="592.32904"
+     y1="430.4574"
+     x2="506.32901"
+     y2="430.4574"
+     id="line3550"
+     style="stroke:#000000" />
+  <use
+     transform="translate(506.329,430.457)"
+     id="use3552"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="597.32904"
+     y1="400.4574"
+     x2="597.32904"
+     y2="480.4574"
+     id="line3554"
+     style="stroke:#000000" />
+  <line
+     x1="597.32904"
+     y1="480.4574"
+     x2="506.32901"
+     y2="480.4574"
+     id="line3556"
+     style="stroke:#000000" />
+  <use
+     transform="translate(506.329,480.457)"
+     id="use3558"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="602.32904"
+     y1="400.4574"
+     x2="602.32904"
+     y2="530.4574"
+     id="line3560"
+     style="stroke:#000000" />
+  <line
+     x1="602.32904"
+     y1="530.4574"
+     x2="506.32901"
+     y2="530.4574"
+     id="line3562"
+     style="stroke:#000000" />
+  <use
+     transform="translate(506.329,530.457)"
+     id="use3564"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="452.32901"
+     y1="550.4574"
+     x2="452.32901"
+     y2="580.4574"
+     id="line3566"
+     style="stroke:#000000" />
+  <use
+     transform="translate(452.329,580.457)"
+     id="use3568"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="400.32901"
+     y1="380.4574"
+     x2="346.32901"
+     y2="380.4574"
+     id="line3570"
+     style="stroke:#000000" />
+  <use
+     transform="translate(346.329,380.457)"
+     id="use3572"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="240.32903"
+     y1="380.4574"
+     x2="196.32903"
+     y2="380.4574"
+     id="line3574"
+     style="stroke:#000000" />
+  <use
+     transform="translate(196.329,380.457)"
+     id="use3576"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="230.32904"
+     y1="380.4574"
+     x2="219.82903"
+     y2="369.9574"
+     id="line3578"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="220.32903"
+     y1="330.4574"
+     x2="230.32903"
+     y2="320.4574"
+     id="line3582"
+     style="stroke:#000000" />
+  <line
+     x1="230.32903"
+     y1="320.4574"
+     x2="240.32903"
+     y2="320.4574"
+     id="line3584"
+     style="stroke:#000000" />
+  <use
+     transform="translate(240.329,320.457)"
+     id="use3586"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="220.32903"
+     y1="150.45738"
+     x2="210.32903"
+     y2="140.45738"
+     id="line3588"
+     style="stroke:#000000" />
+  <line
+     x1="210.32903"
+     y1="140.45738"
+     x2="196.32903"
+     y2="140.45738"
+     id="line3590"
+     style="stroke:#000000" />
+  <use
+     transform="translate(196.329,140.457)"
+     id="use3592"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="220.32903"
+     y1="100.45738"
+     x2="210.32903"
+     y2="90.457382"
+     id="line3594"
+     style="stroke:#000000" />
+  <line
+     x1="210.32903"
+     y1="90.457382"
+     x2="196.32903"
+     y2="90.457382"
+     id="line3596"
+     style="stroke:#000000" />
+  <use
+     transform="translate(196.329,90.4574)"
+     id="use3598"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="220.32903"
+     y1="50.457386"
+     x2="210.32903"
+     y2="40.457386"
+     id="line3600"
+     style="stroke:#000000" />
+  <line
+     x1="210.32903"
+     y1="40.457386"
+     x2="196.32903"
+     y2="40.457386"
+     id="line3602"
+     style="stroke:#000000" />
+  <use
+     transform="translate(196.329,40.4574)"
+     id="use3604"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="580.32904"
+     y1="360.4574"
+     x2="580.32904"
+     y2="290.4574"
+     id="line3618"
+     style="stroke:#000000" />
+  <line
+     x1="580.32904"
+     y1="290.4574"
+     x2="570.32904"
+     y2="280.4574"
+     id="line3620"
+     style="stroke:#000000" />
+  <line
+     x1="600.32904"
+     y1="280.4574"
+     x2="422.32901"
+     y2="280.4574"
+     id="line3622"
+     style="stroke:#000000" />
+  <line
+     x1="422.32901"
+     y1="280.4574"
+     x2="412.32901"
+     y2="270.4574"
+     id="line3624"
+     style="stroke:#000000" />
+  <use
+     transform="translate(412.329,260.457)"
+     id="use3626"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="422.32901"
+     y1="280.4574"
+     x2="412.32901"
+     y2="290.4574"
+     id="line3628"
+     style="stroke:#000000" />
+  <use
+     transform="translate(412.329,300.457)"
+     id="use3630"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="962.32904"
+     y1="350.4574"
+     x2="962.32904"
+     y2="380.4574"
+     id="line3632"
+     style="stroke:#000000" />
+  <line
+     x1="962.32904"
+     y1="380.4574"
+     x2="646.32904"
+     y2="380.4574"
+     id="line3634"
+     style="stroke:#000000" />
+  <use
+     transform="translate(646.329,380.457)"
+     id="use3636"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="387.32901"
+     y1="340.4574"
+     x2="387.32901"
+     y2="710.4574"
+     id="line3638"
+     style="stroke:#000000" />
+  <use
+     transform="translate(387.329,710.457)"
+     id="use3640"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <line
+     x1="407.32901"
+     y1="220.45738"
+     x2="407.32901"
+     y2="190.45738"
+     id="line3642"
+     style="stroke:#000000" />
+  <line
+     x1="407.32901"
+     y1="190.45738"
+     x2="346.32901"
+     y2="190.45738"
+     id="line3644"
+     style="stroke:#000000" />
+  <use
+     transform="translate(346.329,190.457)"
+     id="use3646"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="412.32901"
+     y1="220.45738"
+     x2="412.32901"
+     y2="140.45738"
+     id="line3648"
+     style="stroke:#000000" />
+  <line
+     x1="412.32901"
+     y1="140.45738"
+     x2="346.32901"
+     y2="140.45738"
+     id="line3650"
+     style="stroke:#000000" />
+  <use
+     transform="translate(346.329,140.457)"
+     id="use3652"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="470.32901"
+     y1="160.45738"
+     x2="430.32901"
+     y2="160.45738"
+     id="line3654"
+     style="stroke:#000000" />
+  <line
+     x1="430.32901"
+     y1="160.45738"
+     x2="430.32901"
+     y2="90.457382"
+     id="line3656"
+     style="stroke:#000000" />
+  <line
+     x1="430.32901"
+     y1="90.457382"
+     x2="396.32901"
+     y2="90.457382"
+     id="line3658"
+     style="stroke:#000000" />
+  <use
+     transform="translate(396.329,90.4574)"
+     id="use3660"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <line
+     x1="90.329018"
+     y1="90.457382"
+     x2="70.329018"
+     y2="90.457382"
+     id="line3662"
+     style="stroke:#000000" />
+  <line
+     x1="70.329018"
+     y1="90.457382"
+     x2="70.329018"
+     y2="10.457385"
+     id="line3664"
+     style="stroke:#000000" />
+  <line
+     x1="70.329018"
+     y1="10.457385"
+     x2="250.32903"
+     y2="10.457385"
+     id="line3666"
+     style="stroke:#000000" />
+  <line
+     x1="250.32903"
+     y1="10.457385"
+     x2="250.32903"
+     y2="40.457386"
+     id="line3668"
+     style="stroke:#000000" />
+  <line
+     x1="250.32903"
+     y1="40.457386"
+     x2="290.32901"
+     y2="40.457386"
+     id="line3670"
+     style="stroke:#000000" />
+  <use
+     transform="translate(290.329,40.4574)"
+     id="use3672"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="466.32901"
+     y1="320.4574"
+     x2="490.32901"
+     y2="320.4574"
+     id="line3676"
+     style="stroke:#000000" />
+  <line
+     x1="490.32901"
+     y1="320.4574"
+     x2="490.32901"
+     y2="220.45738"
+     id="line3678"
+     style="stroke:#000000" />
+  <line
+     x1="490.32901"
+     y1="220.45738"
+     x2="450.32901"
+     y2="180.45738"
+     id="line3680"
+     style="stroke:#000000" />
+  <line
+     x1="450.32901"
+     y1="180.45738"
+     x2="450.32901"
+     y2="90.457382"
+     id="line3682"
+     style="stroke:#000000" />
+  <line
+     x1="450.32901"
+     y1="90.457382"
+     x2="470.32901"
+     y2="90.457382"
+     id="line3684"
+     style="stroke:#000000" />
+  <use
+     transform="translate(470.329,90.4574)"
+     id="use3686"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-r" />
+  <line
+     x1="1136.329"
+     y1="90.457382"
+     x2="1260.329"
+     y2="90.457382"
+     id="line3688"
+     style="stroke:#000000" />
+  <line
+     x1="1260.329"
+     y1="90.457382"
+     x2="1260.329"
+     y2="770.4574"
+     id="line3690"
+     style="stroke:#000000" />
+  <line
+     x1="1260.329"
+     y1="770.4574"
+     x2="452.32901"
+     y2="770.4574"
+     id="line3692"
+     style="stroke:#000000" />
+  <use
+     transform="translate(452.329,680.457)"
+     id="use3696"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <text
+     x="70.329002"
+     y="490.457"
+     id="text3698"
+     style="font-size:14px;font-weight:bold;fill:#000000;stroke:none;font-family:Tahoma">Legend</text>
+  <rect
+     width="120"
+     height="30"
+     x="70.329018"
+     y="500.4574"
+     id="LegendeKaese"
+     style="fill:#d73027;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="76.329002"
+     y="519.45697"
+     id="text3701"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Types of cheese</text>
+  <rect
+     width="120"
+     height="30"
+     x="190.32903"
+     y="500.4574"
+     id="LegendeButter"
+     style="fill:#ffffbf;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="196.32899"
+     y="519.45697"
+     id="text3704"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Butter products</text>
+  <rect
+     width="120"
+     height="30"
+     x="70.329018"
+     y="530.4574"
+     id="LegendeMolke"
+     style="fill:#fee090;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="76.329002"
+     y="549.45697"
+     id="text3707"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Whey products</text>
+  <rect
+     width="120"
+     height="30"
+     x="190.32903"
+     y="530.4574"
+     id="LegendeRahm"
+     style="fill:#4575b4;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="196.32899"
+     y="549.45697"
+     id="text3710"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Cream products</text>
+  <rect
+     width="120"
+     height="30"
+     x="70.329018"
+     y="560.4574"
+     id="LegendeSauermilch"
+     style="fill:#fc8d59;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="76.329002"
+     y="579.45697"
+     id="text3713"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Sour milk products</text>
+  <rect
+     width="120"
+     height="30"
+     x="190.32903"
+     y="560.4574"
+     id="LegendeMilch"
+     style="fill:#91bfdb;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="196.32899"
+     y="579.45697"
+     id="text3716"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Types of milk</text>
+  <rect
+     width="240"
+     height="30"
+     x="70.329018"
+     y="590.4574"
+     id="LegendePulver"
+     style="fill:#e0f3f8;stroke:#000000;stroke-width:2;stroke-opacity:1;fill-opacity:1" />
+  <text
+     x="76.329002"
+     y="609.45697"
+     id="text3719"
+     style="font-size:12px;fill:#000000;stroke:none;font-family:Tahoma">Powdered products</text>
+  <use
+     transform="translate(290.329,260.457)"
+     id="use2571"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <line
+     x1="290.32901"
+     y1="275.4574"
+     x2="290.32901"
+     y2="260.4574"
+     id="line2573"
+     style="stroke:#000000" />
+  <line
+     x1="385.32901"
+     y1="275.4574"
+     x2="290.32901"
+     y2="275.4574"
+     id="line2581"
+     style="stroke:#000000" />
+  <line
+     x1="385.32901"
+     y1="300.4574"
+     x2="385.32901"
+     y2="275.4574"
+     id="line2583"
+     style="stroke:#000000" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3491">
+    <use
+       transform="translate(359.293,479.293)"
+       id="use3136"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="363.806"
+       y="475.237"
+       id="text3060"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="363.806"
+         y="475.237"
+         id="tspan3064">Organic Yoghurt</tspan><tspan
+         x="363.806"
+         y="490.237"
+         id="tspan3068"> Mild yoghurt</tspan></text>
+  </g>
+  <text
+     x="545.90997"
+     y="382.70999"
+     id="text3070"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="545.90997"
+       y="382.70999"
+       id="tspan3072">Pasteurized milk</tspan></text>
+  <text
+     x="574.90198"
+     y="592.013"
+     id="text3074"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="574.90198"
+       y="592.013"
+       id="tspan3077">Condensed/</tspan></text>
+  <path
+     d="m 615.94118,619.83118 0.35356,89.09545"
+     id="path4253"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="563.23401"
+     y="602.26599"
+     id="text4257"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="563.23401"
+       y="602.26599"
+       id="tspan4259">Evaporated milk</tspan></text>
+  <text
+     x="767.94202"
+     y="460.845"
+     id="text4264"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:102.90299654%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="769.60602"
+       y="460.845"
+       id="tspan4266"
+       style="text-align:center;text-anchor:middle">Extended</tspan><tspan
+       x="767.94202"
+       y="473.194"
+       id="tspan4268"
+       style="text-align:center;text-anchor:middle">shelf-life milk</tspan><tspan
+       x="767.94202"
+       y="485.54199"
+       id="tspan4270"
+       style="text-align:center;text-anchor:middle">(ESL)</tspan></text>
+  <text
+     x="718.57397"
+     y="423.72198"
+     id="text4272"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="718.57397"
+       y="423.72198"
+       id="tspan4274">Fresh whole milk</tspan></text>
+  <text
+     x="940.27698"
+     y="159.16901"
+     id="text4276"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="940.27698"
+       y="159.16901"
+       id="tspan4278">Table cream</tspan></text>
+  <text
+     x="826.79797"
+     y="159.60699"
+     id="text4280"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="826.79797"
+       y="159.60699"
+       id="tspan4282">Half and half</tspan></text>
+  <text
+     x="1154.97"
+     y="158.29201"
+     id="text4284"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1154.97"
+       y="158.29201"
+       id="tspan4286">Double cream</tspan></text>
+  <text
+     x="1036.23"
+     y="159.60699"
+     id="text4288"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1036.23"
+       y="159.60699"
+       id="tspan4290">Whipping cream</tspan></text>
+  <text
+     x="947.28802"
+     y="27.2873"
+     id="text4292"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="947.28802"
+       y="27.2873"
+       id="tspan4294">Butterfat</tspan></text>
+  <text
+     x="946.84998"
+     y="106.591"
+     id="text4296"
+     xml:space="preserve"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="946.84998"
+       y="106.591"
+       id="tspan4298">80 %–85 %</tspan></text>
+  <text
+     x="513.52502"
+     y="57.0811"
+     id="text4300"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="513.52502"
+       y="57.0811"
+       id="tspan4302">and production relationships</tspan></text>
+  <text
+     x="938.08698"
+     y="83.807899"
+     id="text4308"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="938.08698"
+       y="83.807899"
+       id="tspan4310">Sweet cream</tspan></text>
+  <text
+     x="941.15399"
+     y="228.396"
+     id="text4312"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="941.15399"
+       y="228.396"
+       id="tspan4314">Pasteurized</tspan></text>
+  <text
+     x="128.396"
+     y="605.20001"
+     id="text4322"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="128.396"
+       y="605.20001"
+       id="tspan4324"> </tspan></text>
+  <text
+     x="214.71001"
+     y="609.58099"
+     id="text4326"
+     xml:space="preserve"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="214.71001"
+       y="609.58099"
+       id="tspan4383">% Fat Content</tspan></text>
+  <text
+     x="1049.38"
+     y="95.637802"
+     id="text4330"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1049.38"
+       y="95.637802"
+       id="tspan4332">during butter</tspan></text>
+  <text
+     x="1054.1899"
+     y="104.839"
+     id="text4334"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1054.1899"
+       y="104.839"
+       id="tspan4336">production</tspan></text>
+  <text
+     x="1026.15"
+     y="727.88"
+     id="text4346"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1026.15"
+       y="727.88"
+       id="tspan4348">Powdered</tspan></text>
+  <text
+     x="1015.64"
+     y="740.14801"
+     id="text4350"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1015.64"
+       y="740.14801"
+       id="tspan4352">skimmed milk</tspan></text>
+  <use
+     transform="translate(1032.37,30.3543)"
+     id="use4354"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="1043.24"
+     y="26.410999"
+     id="text4356"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1043.24"
+       y="26.410999"
+       id="tspan4358">Clarified butter</tspan></text>
+  <text
+     x="1045.15"
+     y="39.376202"
+     id="text4360"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="1073.15"
+       id="tspan4362"
+       style="font-size:10px;fill:#ff1b1b">99 %</tspan>
+  </text>
+  <path
+     d="m 1082.6744,51.38522 0.4381,-2.190722"
+     id="path4366"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
+  <line
+     x1="980.14868"
+     y1="70.843979"
+     x2="980.14868"
+     y2="60.843983"
+     id="line4370"
+     style="stroke:#000000" />
+  <line
+     x1="980.16406"
+     y1="61.46254"
+     x2="1086.1641"
+     y2="61.46254"
+     id="line4372"
+     style="stroke:#000000" />
+  <line
+     x1="1086.1794"
+     y1="61.204811"
+     x2="1086.1794"
+     y2="51.204811"
+     id="line4378"
+     style="stroke:#000000" />
+  <use
+     transform="translate(1086.62,50.7667)"
+     id="use4380"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <text
+     x="775.97302"
+     y="89.503799"
+     id="text4382"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="775.97302"
+       y="89.503799"
+       id="tspan4384">Mild cultured</tspan></text>
+  <text
+     x="796.12799"
+     y="100.457"
+     id="text4386"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="796.12799"
+       y="100.457"
+       id="tspan4388">butter</tspan></text>
+  <text
+     x="488.55099"
+     y="87.313103"
+     id="text4390"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="488.55099"
+       y="87.313103"
+       id="tspan4392">Whey butter</tspan></text>
+  <use
+     transform="translate(758.525,32.545)"
+     id="use4394"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <path
+     d="m 703.67954,273.5244 c 0,0 0,0 103.8402,0 0,0 0,0 0,-113.91753 -0.43814,-39.87113 -0.43814,-39.87113 -0.43814,-39.87113 -53.89176,-0.43814 -53.89176,-0.43814 -53.89176,-0.43814 0,-56.082483 0,-56.082483 0,-56.082483 59.58763,0 59.58763,0 59.58763,0"
+     id="path4418"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 812.77747,51.823364 0,11.829897 0,0"
+     id="path4420"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="translate(811.901,52.9574)"
+     id="use4422"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <text
+     x="778.164"
+     y="26.410999"
+     id="text4424"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="778.164"
+       y="26.410999"
+       id="tspan4426">Raw cream</tspan></text>
+  <text
+     x="793.06097"
+     y="37.364601"
+     id="text4428"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="793.06097"
+       y="37.364601"
+       id="tspan4430">butter</tspan></text>
+  <text
+     x="784.02399"
+     y="46.994701"
+     id="text4432"
+     xml:space="preserve"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="784.02399"
+       y="46.994701"
+       id="tspan4434">80 %–85 %</tspan></text>
+  <text
+     x="655.64001"
+     y="102.907"
+     id="text4436"
+     style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+    <tspan
+       x="683.64001"
+       id="tspan4438"
+       style="font-size:10px;fill:#ff1b1b">86 %</tspan>
+  </text>
+  <text
+     x="952.98401"
+     y="340.56"
+     id="text4443"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="952.98401"
+       y="340.56"
+       id="tspan4445">raw milk</tspan></text>
+  <text
+     x="970.948"
+     y="284.04001"
+     id="text4447"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="970.948"
+       y="284.04001"
+       id="tspan4449">Separation</tspan></text>
+  <text
+     x="1020.02"
+     y="647.26099"
+     id="text4454"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1020.02"
+       y="647.26099"
+       id="tspan4456">Condensed</tspan></text>
+  <text
+     x="1014.32"
+     y="658.21503"
+     id="text4458"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1014.32"
+       y="658.21503"
+       id="tspan4460">skimmed milk</tspan></text>
+  <path
+     d="m 893.39603,380.43162 c 0,19.27835 0,18.8402 0,18.8402"
+     id="path4462"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 962.18469,380.43161 c 91.13401,0 91.13401,0 91.13401,0 0,19.7165 0,19.7165 0,19.7165"
+     id="path4464"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="translate(893.396,399.452)"
+     id="use4466"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <use
+     transform="translate(1053.76,398.576)"
+     id="use4468"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-u" />
+  <text
+     x="860.97302"
+     y="417.67401"
+     id="text4470"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="860.97302"
+       y="417.67401"
+       id="tspan4472">Lowfat milk</tspan></text>
+  <text
+     x="864.91699"
+     y="642.00403"
+     id="text4482"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="864.91699"
+       y="642.00403"
+       id="tspan4484">Part-skim</tspan></text>
+  <text
+     x="848.26703"
+     y="653.83398"
+     id="text4486"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="848.26703"
+       y="653.83398"
+       id="tspan4488">condensed milk</tspan></text>
+  <text
+     x="1012.57"
+     y="418.54999"
+     id="text4494"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="1012.57"
+       y="418.54999"
+       id="tspan4496">Skimmed milk</tspan></text>
+  <text
+     x="742.42603"
+     y="335.30301"
+     id="text4498"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="742.42603"
+       y="335.30301"
+       id="tspan4500">raw milk</tspan></text>
+  <text
+     x="724.27197"
+     y="325.664"
+     id="text4502"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="724.27197"
+       y="325.664"
+       id="tspan4504">Cooled, filtered</tspan></text>
+  <text
+     x="743.41998"
+     y="345.629"
+     id="text4506"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="743.41998"
+       y="345.629"
+       id="tspan4508">for retail</tspan></text>
+  <path
+     d="m 612.45036,399.7019 1.41422,179.25157"
+     id="path4510"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 607.41689,400.3486 c 1.23012,156.63599 1.23012,156.63599 1.23012,156.63599 -68.06694,-0.41005 -68.06694,-0.41005 -68.06694,-0.41005 0.41004,103.74059 0.41004,103.74059 0.41004,103.74059 -34.03347,0 -34.03347,0 -34.03347,0"
+     id="path4512"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="translate(506.467,660.725)"
+     id="use4514"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <text
+     x="761.51501"
+     y="227.08099"
+     id="text4516"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="761.51501"
+       y="227.08099"
+       id="tspan4518">Lactobacillus</tspan></text>
+  <text
+     x="871.18298"
+     y="82.336601"
+     id="text4520"
+     xml:space="preserve"
+     style="font-size:8px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="871.18298"
+       y="82.336601"
+       id="tspan4522">Lactobacillus</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3481">
+    <use
+       transform="translate(360,380)"
+       id="use3124"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="381.186"
+       y="382.16501"
+       id="text4526"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="381.186"
+         y="382.16501"
+         id="tspan4528">Soured milk</tspan></text>
+  </g>
+  <text
+     x="485.73999"
+     y="357.66299"
+     id="text4530"
+     xml:space="preserve"
+     style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="485.73999"
+       y="357.66299"
+       id="tspan4532">Lactococcus lactis</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3518">
+    <line
+       id="line3694"
+       y2="680"
+       x2="412"
+       y1="770"
+       x1="412"
+       style="stroke:#000000" />
+    <text
+       x="415.49301"
+       y="766.69897"
+       id="text4538"
+       xml:space="preserve"
+       style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="415.49301"
+         y="766.69897"
+         id="tspan4540">Lactobacillus</tspan></text>
+  </g>
+  <text
+     x="542.13702"
+     y="566.48602"
+     id="text4542"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="542.13702"
+       y="566.48602"
+       id="tspan4544">Lactobacillus</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3471">
+    <text
+       x="382.95099"
+       y="290.702"
+       id="text4490"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="382.95099"
+         y="290.702"
+         id="tspan4492">Coagulation</tspan></text>
+    <g
+       id="g3464">
+      <use
+         transform="translate(320,320)"
+         id="use3167"
+         x="0"
+         y="0"
+         width="1240"
+         height="780"
+         xlink:href="#Oval" />
+      <text
+         x="340.87601"
+         y="323.01599"
+         id="text4551"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+           x="340.87601"
+           y="323.01599"
+           id="tspan4553">Sweet whey</tspan></text>
+      <text
+         x="361.03101"
+         y="332.216"
+         id="text4555"
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+           x="361.03101"
+           y="332.216"
+           id="tspan4557">0.4 %</tspan></text>
+    </g>
+  </g>
+  <text
+     x="515.27802"
+     y="290.612"
+     id="text4559"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="515.27802"
+       y="290.612"
+       id="tspan4561">rennet</tspan></text>
+  <text
+     x="343.57599"
+     y="364.259"
+     id="text4563"
+     xml:space="preserve"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="343.57599"
+       y="364.259"
+       id="tspan4565">Coagulation with</tspan></text>
+  <text
+     x="492.056"
+     y="290.612"
+     id="text4567"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="492.056"
+       y="290.612"
+       id="tspan4569">with</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3456">
+    <text
+       x="308.892"
+       y="372.08801"
+       id="text4571"
+       xml:space="preserve"
+       style="font-size:8px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="308.892"
+         y="372.08801"
+         id="tspan4573">Lactobacillus</tspan></text>
+    <g
+       id="g3404">
+      <use
+         transform="translate(200,380)"
+         id="use3155"
+         x="0"
+         y="0"
+         width="1240"
+         height="780"
+         xlink:href="#Oval" />
+      <text
+         x="218.196"
+         y="383.918"
+         id="text2688"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+           x="218.196"
+           y="383.918"
+           id="tspan2690">Cheese curd</tspan></text>
+    </g>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3414">
+    <use
+       transform="translate(200,240)"
+       id="use3360"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="214.25301"
+       y="232.32001"
+       id="text2692"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="214.25301"
+         y="232.32001"
+         id="tspan2694">Whey cheese</tspan></text>
+    <text
+       x="231.34"
+       y="255.979"
+       id="text2696"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="231.34"
+         y="255.979"
+         id="tspan2698">Brunost</tspan></text>
+    <text
+       x="222.13901"
+       y="244.149"
+       id="text2700"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="222.13901"
+         y="244.149"
+         id="tspan2702">e. g. Ricotta,</tspan></text>
+  </g>
+  <line
+     x1="220.57645"
+     y1="199.96768"
+     x2="210.57645"
+     y2="189.96768"
+     id="line2728"
+     style="stroke:#000000" />
+  <use
+     transform="translate(196.576,189.968)"
+     id="use2730"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <path
+     d="m 210.32902,190.27697 -5.69587,0 0,0"
+     id="path2732"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <line
+     x1="90.200157"
+     y1="139.45221"
+     x2="70.20015"
+     y2="139.45221"
+     id="line2734"
+     style="stroke:#000000" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3376">
+    <use
+       transform="translate(50,190)"
+       id="use3301"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <g
+       id="g3368">
+      <text
+         x="71.943298"
+         y="195.093"
+         id="Weichkaese"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;stroke:none;font-family:Arial">
+        <tspan
+           x="74.943298"
+           dy="10"
+           id="tspan3311"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;font-family:Arial">38 %–60 %</tspan>
+      </text>
+      <text
+         x="77.551498"
+         y="181.933"
+         id="text2716"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+           x="77.551498"
+           y="181.933"
+           id="tspan2718">Soft / Soft</tspan></text>
+      <text
+         x="56.520599"
+         y="192.88699"
+         id="text2738"
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+           x="56.520599"
+           y="192.88699"
+           id="tspan2740">ripened</tspan></text>
+    </g>
+  </g>
+  <path
+     d="m 70.122832,90.380053 c 0,49.072167 0,49.072167 0,49.072167"
+     id="path2742"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3448">
+    <g
+       id="g3443">
+      <use
+         transform="translate(250,40)"
+         id="use3333"
+         x="0"
+         y="0"
+         width="1240"
+         height="780"
+         xlink:href="#Oval" />
+      <text
+         x="252.418"
+         y="43.123699"
+         id="text3335"
+         style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+        <tspan
+           id="tspan3337">Blue vein (moldy)</tspan>
+      </text>
+    </g>
+    <text
+       x="191.123"
+       y="53.838001"
+       id="text2744"
+       xml:space="preserve"
+       style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="191.123"
+         y="53.838001"
+         id="tspan2746">Penicillium</tspan></text>
+  </g>
+  <text
+     x="522.72601"
+     y="426.875"
+     id="text2748"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="522.72601"
+       y="426.875"
+       id="tspan2750">Kefir culture</tspan></text>
+  <path
+     d="m 219.96821,48.963931 c 0,321.352529 0,321.352529 0,321.352529"
+     id="path2757"
+     style="fill:none;stroke:#000000;stroke-width:1.00000012px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3430">
+    <use
+       transform="translate(200,140)"
+       id="use3346"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="227.24699"
+       y="150.897"
+       id="Mozarella"
+       style="font-size:12px;font-weight:normal;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         x="213.24699"
+         id="tspan3351"
+         style="font-weight:normal">e. g. Mozzarella</tspan>
+    </text>
+    <text
+       x="220.825"
+       y="137.242"
+       id="text2761"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="220.825"
+         y="137.242"
+         id="tspan2763">Pasta filata</tspan></text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3423">
+    <use
+       transform="translate(200,190)"
+       id="use3353"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="212.80901"
+       y="198.26801"
+       id="Feta"
+       style="font-size:12px;font-weight:normal;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         x="226.80901"
+         id="tspan3358"
+         style="font-weight:normal">e. g. Feta</tspan>
+    </text>
+    <text
+       x="231.778"
+       y="185.87601"
+       id="text2765"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="231.778"
+         y="185.87601"
+         id="tspan2767">Brined</tspan></text>
+  </g>
+  <text
+     x="375.07101"
+     y="232.77699"
+     id="text2769"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="375.07101"
+       y="232.77699"
+       id="tspan2771">Fresh cheese</tspan></text>
+  <text
+     x="360.61301"
+     y="245.045"
+     id="text2773"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="360.61301"
+       y="245.045"
+       id="tspan2775">e. g. cottage cheese</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3341">
+    <use
+       transform="translate(50,40)"
+       id="use3324"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="81.371101"
+       y="45.5825"
+       id="Hartkaese"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;stroke:none;font-family:Arial">
+      <tspan
+         x="75.371101"
+         dy="10"
+         id="tspan3329"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;font-family:Arial">60 %–62 %</tspan>
+    </text>
+    <text
+       x="87.190697"
+       y="30.773199"
+       id="text2720"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="87.190697"
+         y="30.773199"
+         id="tspan2722">Hard</tspan></text>
+    <text
+       x="65.721703"
+       y="43.479401"
+       id="text2777"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="65.721703"
+         y="43.479401"
+         id="tspan2779">e. g. Parmesan</tspan></text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3350">
+    <use
+       transform="translate(50,90)"
+       id="use3315"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="78.572197"
+       y="95.144302"
+       id="Schnittkaese"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;stroke:none;font-family:Arial">
+      <tspan
+         x="75.572197"
+         dy="10"
+         id="tspan3320"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ff0000;font-family:Arial">42 %–61 %</tspan>
+    </text>
+    <text
+       x="72.2938"
+       y="81.5979"
+       id="text2712"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="72.2938"
+         y="81.5979"
+         id="tspan2714">Semi-hard</tspan></text>
+    <text
+       x="71.855698"
+       y="93.427803"
+       id="text2783"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="71.855698"
+         y="93.427803"
+         id="tspan2785">e. g. Gouda</tspan></text>
+  </g>
+  <text
+     x="142.855"
+     y="193.782"
+     id="text2793"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="142.855"
+       y="193.782"
+       id="tspan2795">e. g. Brie</tspan></text>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3359">
+    <use
+       transform="translate(50,140)"
+       id="use3306"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="76.237099"
+       y="131.54601"
+       id="text2724"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="76.237099"
+         y="131.54601"
+         id="tspan2726">Semi-soft</tspan></text>
+    <text
+       x="75.799004"
+       y="153.892"
+       id="text2797"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="75.799004"
+         y="153.892"
+         id="tspan2799">30 %–45 %</tspan></text>
+    <text
+       x="74.046402"
+       y="142.5"
+       id="text2801"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="74.046402"
+         y="142.5"
+         id="tspan2803">e. g. Havarti</tspan></text>
+  </g>
+  <text
+     x="496.875"
+     y="501.35901"
+     id="text2805"
+     xml:space="preserve"
+     style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="496.875"
+       y="501.35901"
+       id="tspan2807">Lactobacillus bulgaricus</tspan></text>
+  <text
+     x="495.561"
+     y="510.56"
+     id="text2809"
+     xml:space="preserve"
+     style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="495.561"
+       y="510.56"
+       id="tspan2811">Streptococcus thermophilus</tspan></text>
+  <rect
+     width="206.36015"
+     height="83.11264"
+     x="1"
+     y="268.16394"
+     id="rect2813"
+     style="fill:#d73027;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3393">
+    <use
+       transform="translate(51.4293,295.385)"
+       id="use3296"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="54.609699"
+       y="297.75101"
+       id="Sauermilchkäse"
+       style="font-size:12px;font-weight:bold;font-stretch:normal;fill:#000000;stroke:none;font-family:Arial">
+      <tspan
+         id="tspan3299">Sour milk cheese</tspan>
+    </text>
+  </g>
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3386">
+    <use
+       transform="translate(50.0515,242.23)"
+       id="use2823"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="63.603401"
+       y="242.94501"
+       id="text2825"
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="63.603401"
+         y="242.94501"
+         id="tspan2827">Cream cheese</tspan></text>
+    <text
+       x="86.472"
+       y="255.808"
+       id="text2829"
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+         x="86.472"
+         y="255.808"
+         id="tspan2831">&gt; 33 %</tspan></text>
+  </g>
+  <path
+     d="m 91,380.4574 -16,0 0,-140 15.72218,0"
+     id="path2833"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="matrix(-1,0,0,1,90.5,240.9574)"
+     id="use2835"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-l" />
+  <use
+     transform="translate(512.726,229.71)"
+     id="use2837"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Oval" />
+  <text
+     x="525.79303"
+     y="230.586"
+     id="text2839"
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="525.79303"
+       y="230.586"
+       id="tspan2841">Clotted cream</tspan></text>
+  <path
+     d="m 600.27747,274.83883 c -34.17525,0 -34.17525,0 -34.17525,0 0,-24.53608 0,-24.53608 0,-24.53608"
+     id="path2843"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="translate(566.102,251.437)"
+     id="use2845"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <text
+     x="551.64301"
+     y="240.664"
+     id="text2847"
+     xml:space="preserve"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="551.64301"
+       y="240.664"
+       id="tspan2849">&gt; 55 %</tspan></text>
+  <path
+     d="m 143.95245,360.96116 -0.35732,-45.37992"
+     id="path2821"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <use
+     transform="translate(143.758,316.557)"
+     id="use3608"
+     x="0"
+     y="0"
+     width="1240"
+     height="780"
+     xlink:href="#Pfeilspitze-o" />
+  <path
+     d="m 978.39603,420.74089 c -5.69588,0 -5.69588,0 -5.69588,0"
+     id="path2855"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="M 892.32902,625.45739 891.20531,440.89553"
+     id="path2859"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="569.60699"
+     y="271.772"
+     id="text2861"
+     xml:space="preserve"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"><tspan
+       x="569.60699"
+       y="271.772"
+       id="tspan2863">Heat</tspan></text>
+  <path
+     d="m 467.2034,0.5 0.0515,269.79079"
+     id="path3337"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 4;stroke-dashoffset:0" />
+  <path
+     d="m 1.4938573,351.28366 206.8503627,-0.14382 -1.00851,-80.71171 1113.25989,0"
+     id="path4111"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+  <path
+     d="M 1.3431805,687.86813 1322.2251,687.60448"
+     id="path4113"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+  <path
+     d="m 530.32902,686.69652 -0.004,-416.11253"
+     id="path4115"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+  <path
+     d="m 1322.5546,130.44186 -854.31369,0.0497"
+     id="path4117"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+  <g
+     transform="translate(40.329,0.457385)"
+     id="g3528">
+    <use
+       transform="translate(560,280)"
+       id="use2992"
+       x="0"
+       y="0"
+       width="1240"
+       height="780"
+       xlink:href="#Oval" />
+    <text
+       x="578"
+       y="279"
+       id="Rohmilch"
+       style="font-size:16px;font-weight:bold;font-stretch:normal;fill:#00007f;stroke:none;font-family:Arial">Raw milk<tspan
+   x="589"
+   dy="12"
+   id="tspan2997"
+   style="font-size:10px;fill:#ff1b1b">3.25 %–5 %</tspan>
+</text>
+  </g>
+  <text
+     x="-762.00897"
+     y="19.888599"
+     transform="matrix(0,-1,1,0,0,0)"
+     id="text3533"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="-762.00897"
+       y="19.888599"
+       id="tspan3537">Powdered</tspan><tspan
+       x="-762.00897"
+       y="31.888599"
+       id="tspan3539">products</tspan></text>
+  <text
+     x="-542.94098"
+     y="19.888599"
+     transform="matrix(0,-1,1,0,0,0)"
+     id="text3541"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="-542.94098"
+       y="19.888599"
+       id="tspan3605">Sour Milk Products</tspan></text>
+  <text
+     x="-224.739"
+     y="19.888599"
+     transform="matrix(0,-1,1,0,0,0)"
+     id="text3545"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="-224.739"
+       y="19.888599"
+       id="tspan3607">Types of cheese</tspan></text>
+  <text
+     x="285.32901"
+     y="291.457"
+     id="text3549"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="285.32901"
+       y="291.457"
+       id="tspan3555">Whey products</tspan></text>
+  <text
+     x="437.58801"
+     y="-1303.58"
+     transform="matrix(0,1,-1,0,0,0)"
+     id="text3557"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="437.58801"
+       y="-1303.58"
+       id="tspan3559">Types of milk</tspan></text>
+  <text
+     x="700.59497"
+     y="-1303.58"
+     transform="matrix(0,1,-1,0,0,0)"
+     id="text3533-1"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="700.59497"
+       y="-1303.58"
+       id="tspan3537-0">Powdered</tspan><tspan
+       x="700.59497"
+       y="-1291.58"
+       id="tspan3539-6">products</tspan></text>
+  <text
+     x="148.03101"
+     y="-1303.58"
+     transform="matrix(0,1,-1,0,0,0)"
+     id="text3597"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="148.03101"
+       y="-1303.58"
+       id="tspan3599">Cream products</tspan></text>
+  <text
+     x="16.120501"
+     y="-1303.58"
+     transform="matrix(0,1,-1,0,0,0)"
+     id="text3601"
+     xml:space="preserve"
+     style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif"><tspan
+       x="16.120501"
+       y="-1303.58"
+       id="tspan3603">Butter products</tspan></text>
+  <path
+     d="m 527.65086,350.44314 -319.0226,0.0179"
+     id="path3609"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 6;stroke-dashoffset:0" />
+</svg>

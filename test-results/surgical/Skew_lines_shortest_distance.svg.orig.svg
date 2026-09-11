@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-108 -180 232 290">
+ <title>Skew lines shortest distance</title>
+ <desc>PQ, the shortest distance between two skew lines AB and CD is perpendicular to both AB and CD, illustrated by CMG Lee.</desc>
+ <style type="text/css">
+.main   { font-family:Helvetica,Arial,sans-serif; font-size:16px;
+          fill:#000000; stroke:#000000; stroke-width:2; stroke-linejoin:bevel; stroke-linecap:round; }
+.back   { fill:#eeeeee; stroke:none; }
+.grid   { stroke-width:0.1; stroke:#999999; fill:url(#pattern_grid_10); }
+.view   { stroke-width:0.5; }
+.axis   { stroke-width:1; font-size:12px; marker-end:url(#marker_axis); }
+.lead   { stroke:#000000; stroke-width:0.3; stroke-dasharray:4,4; }
+.ab     { stroke:#0000ff; }
+.cd     { stroke:#cc0000; }
+.pq     { stroke:#cc66ff; marker-end:url(#marker_q); }
+.start  { text-anchor:start; }
+.middle { text-anchor:middle; }
+.end    { text-anchor:end; }
+text    { stroke-width:1; stroke-opacity:0.5; }
+ </style>
+ <defs>
+  <pattern id="pattern_grid_1" patternUnits="userSpaceOnUse" width="1" height="1">
+   <rect x="0" y="0" width="1" height="1" stroke="#cccccc" stroke-width="0.1" fill="none"/>
+  </pattern>
+  <pattern id="pattern_grid_5" patternUnits="userSpaceOnUse" width="5" height="5">
+   <rect x="0" y="0" width="5" height="5" stroke="#999999" stroke-width="0.1" fill="url(#pattern_grid_1)"/>
+  </pattern>
+  <pattern id="pattern_grid_10" patternUnits="userSpaceOnUse" width="10" height="10">
+   <rect x="0" y="0" width="10" height="10" stroke="#666666" stroke-width="0.1" fill="url(#pattern_grid_5)"/>
+  </pattern>
+  <circle id="point" cx="0" cy="0" r="1"/>
+  <rect id="top"    class="grid" x="0" y="0" width="18" height="18"/>
+  <rect id="right"  class="grid" x="0" y="0" width="18" height="9"/>
+  <rect id="left"   class="grid" x="0" y="0" width="18" height="9"/>
+  <path id="lead_x" class="lead" d="M  2,-1 L  44,-22"/>
+  <path id="lead_y" class="lead" d="M -2,-2 L -44,-44"/>
+  <path id="lead_z" class="lead" d="M  0, 4 V 100"/>
+  <marker id="marker_axis" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
+   <path d="M 2,2 l 4,2 l -4,2"/>
+  </marker>
+  <marker id="marker_q" markerWidth="4" markerHeight="4" refX="3.5" refY="2" orient="auto">
+   <path id="arrowhead_pq" d="M 1,0 L 3,2 L 1,4" fill="#cc66ff"/>
+  </marker>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g class="main">
+  <g class="view" transform="matrix( 4,-2 -3,-3 0,103)">
+   <rect class="back" x="-1" y="-1" width="20" height="20" rx="1" ry="1"/>
+   <use xlink:href="#top"/>
+   <path class="cd" d="M 0,0 V    18"/>
+   <path class="ab" d="M 0,0 L 18,18"/>
+   <path class="pq" d="M 4,4 L  0, 6"/>
+   <path class="pq" d="M 0,6 L  4, 4"/>
+  </g>
+  <g class="view" transform="matrix( 4,-2  0,-4 -100,-100)">
+   <rect class="back" x="-1" y="-1" width="20" height="11" rx="1" ry="1"/>
+   <use xlink:href="#right"/>
+   <path class="cd" d="M 0,0 V    9"/>
+   <path class="ab" d="M 0,0 L 18,9"/>
+   <path class="pq" d="M 4,2 L  0,6"/>
+   <path class="pq" d="M 0,6 L  4,2"/>
+  </g>
+  <g class="view" transform="matrix(-3,-3  0,-4 116,-58)">
+   <rect class="back" x="-1" y="-1" width="20" height="11" rx="1" ry="1"/>
+   <use xlink:href="#left"/>
+   <path class="cd" d="M 0,9 L 18,0"/>
+   <path class="ab" d="M 0,0 L 18,9"/>
+   <path class="pq" d="M 4,2 L  6,6"/>
+   <path class="pq" d="M 6,6 L  4,2"/>
+  </g>
+  <use xlink:href="#top"    transform="matrix( 4,-2 -3,-3 0,-36)"/>
+  <use xlink:href="#right"  transform="matrix( 4,-2  0,-4 0,0)"/>
+  <use xlink:href="#left"   transform="matrix(-3,-3  0,-4 0,0)"/>
+  <use xlink:href="#lead_x" transform="translate( 72,-36)"/>
+  <use xlink:href="#lead_x" transform="translate( 72,-72)"/>
+  <use xlink:href="#lead_x" transform="translate( 18,-126)"/>
+  <use xlink:href="#lead_y" transform="translate( 18,-126)"/>
+  <use xlink:href="#lead_y" transform="translate(-54,-90)"/>
+  <use xlink:href="#lead_y" transform="translate(-54,-54)"/>
+  <use xlink:href="#lead_z" transform="translate(-54,-54)"/>
+  <use xlink:href="#lead_z" transform="translate(  0,  0)"/>
+  <use xlink:href="#lead_z" transform="translate( 72,-36)"/>
+  <path class="cd" d="M 0,-39 V -75" stroke-width="0.5"/>
+  <path class="cd" d="M 0,-36 L -54,-54"/>
+  <path class="ab" d="M 0,0 L 18,-126"/>
+  <path class="pq" d="M 4,-28 L -18,-42"/>
+  <path class="pq" d="M -18,-42 L 4,-28"/>
+  <path class="axis" d="M 0,0 V -20"/>
+  <path class="axis" d="M 0,0 L  20,-10"/>
+  <path class="axis" d="M 0,0 L -15,-15"/>
+  <use class="pq" xlink:href="#point" transform="translate(  4, -28)"/><!-- 4*4-3*4-0*2, -2*4-3*4-4*2 -->
+  <use class="pq" xlink:href="#point" transform="translate(-18, -42)"/><!-- 4*0-3*6-0*6, -2*0-3*6-4*6 -->
+  <use class="cd" xlink:href="#point" transform="translate(  0, -36)"/>
+  <use class="cd" xlink:href="#point" transform="translate(-54, -54)"/>
+  <use class="ab" xlink:href="#point" transform="translate(  0,   0)"/>
+  <use class="ab" xlink:href="#point" transform="translate( 18,-126)"/><!-- 4*18-3*18-0*9, -2*18-3*18-4*9 -->
+  <text class="cd   end"    transform="translate(  9, -84)" x="0" y="0.7ex">C&#8202;(0,&#8202;0,&#8202;9)</text>
+  <text class="cd   end"    transform="translate(-35, -66)" x="0" y="0.7ex">D&#8202;(0,18,&#8202;0)</text>
+  <text class="ab   end"    transform="translate( -4,   5)" x="0" y="0.7ex">A&#8202;(0,&#8202;0,&#8202;0)</text>
+  <text class="ab   middle" transform="translate( 18,-138)" x="0" y="0.7ex">B&#8202;(18,18,&#8202;9)</text>
+  <text class="pq   start"  transform="translate(  9, -27)" x="0" y="0.7ex">P&#8202;(4,&#8202;4,&#8202;2)</text>
+  <text class="pq   end"    transform="translate(-24, -36)" x="0" y="0.7ex">Q&#8202;(0,&#8202;6,&#8202;6)</text>
+  <text class="pq   middle" transform="translate(-10, -27)" x="0" y="0.7ex">6</text>
+  <text class="axis middle" transform="translate( 26,  -4)" x="0" y="0.7ex">X</text>
+  <text class="axis middle" transform="translate(-22, -11)" x="0" y="0.7ex">Y</text>
+  <text class="axis middle" transform="translate(  8, -13)" x="0" y="0.7ex">Z</text>
+ </g>
+</svg>

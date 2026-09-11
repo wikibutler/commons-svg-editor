@@ -1,0 +1,880 @@
+[
+ {
+  "title": "File:T7792 Example of baseline-shift using explicit value.svg",
+  "stratum": "known-hard",
+  "bytes": 661,
+  "elements": 10,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:Xclamation blue 2.svg",
+  "stratum": "svg2-features",
+  "bytes": 807,
+  "elements": 5,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "a",
+   "tag": "linearGradient",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 1.8587,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Radar Mac black gradient.svg",
+  "stratum": "svg2-features",
+  "bytes": 1562,
+  "elements": 12,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "a",
+   "tag": "linearGradient",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.9603,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Oresundskraft rgb.svg",
+  "stratum": "icon/logo",
+  "bytes": 2921,
+  "elements": 16,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "Lager_1",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.5135,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Goomi nyarly.svg",
+  "stratum": "known-hard",
+  "bytes": 3692,
+  "elements": 22,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "j",
+   "tag": "filter",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.4063,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:No free image woman.svg",
+  "stratum": "multilingual",
+  "bytes": 5062,
+  "elements": 90,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:SystemLanguage MediaWiki internal code.svg",
+  "stratum": "multilingual",
+  "bytes": 6026,
+  "elements": 140,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:Skew lines shortest distance.svg",
+  "stratum": "known-hard",
+  "bytes": 6266,
+  "elements": 81,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "pattern_grid_1",
+   "tag": "pattern",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.2394,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:PayPa Plane Logo.svg",
+  "stratum": "icon/logo",
+  "bytes": 6814,
+  "elements": 16,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "clip0_1079_648",
+   "tag": "clipPath",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.2201,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Wikivoyage oversight draft 4.svg",
+  "stratum": "inkscape-native",
+  "bytes": 7549,
+  "elements": 41,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg10464",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.1987,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:PAES logo.svg",
+  "stratum": "icon/logo",
+  "bytes": 8377,
+  "elements": 28,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:PghLFilms profile.svg",
+  "stratum": "icon/logo",
+  "bytes": 8955,
+  "elements": 16,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:Types of Sentences-pa.svg",
+  "stratum": "inkscape-native",
+  "bytes": 10796,
+  "elements": 37,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg8",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.1389,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 218
+  }
+ },
+ {
+  "title": "File:MEITEI free-file(1)(1).svg",
+  "stratum": "icon/logo",
+  "bytes": 11325,
+  "elements": 17,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:Teilmengen R2.svg",
+  "stratum": "chart/graph",
+  "bytes": 12727,
+  "elements": 35,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "JtrisIXTkebw",
+   "tag": "clipPath",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.1179,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Intismeran-development-timeline.svg",
+  "stratum": "diagram",
+  "bytes": 13770,
+  "elements": 163,
+  "noopIdentical": true,
+  "patch": {
+   "ok": false,
+   "reason": "no id-bearing element to address"
+  }
+ },
+ {
+  "title": "File:Strateo-logo.svg",
+  "stratum": "embedded-raster",
+  "bytes": 15030,
+  "elements": 15,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "Layer_1",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0998,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Mittelwert- und Median Einkommen NE 1996-2017 EU-SILC.svg",
+  "stratum": "chart/graph",
+  "bytes": 16946,
+  "elements": 118,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "cpNTguOTA0Mnw0NzIuMjkzfDMwOS4yNzJ8NDIuNjg1NQ==",
+   "tag": "clipPath",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0885,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:ERB vs frequency deutsch.svg",
+  "stratum": "chart/graph",
+  "bytes": 27317,
+  "elements": 63,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "Layer_1",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0549,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:El Manchar logo.svg",
+  "stratum": "embedded-raster",
+  "bytes": 28066,
+  "elements": 132,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0534,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Photovoltaics Installed Capacity and Production in Brazil.svg",
+  "stratum": "multilingual",
+  "bytes": 29582,
+  "elements": 268,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "figure_1",
+   "tag": "g",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0507,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Comparison radiated field magnitude of hwd to esd.svg",
+  "stratum": "diagram",
+  "bytes": 30381,
+  "elements": 113,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg8",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0494,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 175
+  }
+ },
+ {
+  "title": "File:Tradex Logo Wiki Mesa de trabajo 1.svg",
+  "stratum": "svg2-features",
+  "bytes": 33328,
+  "elements": 83,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "b",
+   "tag": "linearGradient",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.045,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Australia.svg",
+  "stratum": "multilingual",
+  "bytes": 33450,
+  "elements": 357,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "figure_1",
+   "tag": "g",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0448,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Portugal.svg",
+  "stratum": "multilingual",
+  "bytes": 35886,
+  "elements": 359,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "figure_1",
+   "tag": "g",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0418,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Wind power installed capacity and generation in Finland.svg",
+  "stratum": "multilingual",
+  "bytes": 37254,
+  "elements": 376,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "figure_1",
+   "tag": "g",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0403,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Boerse.de Logo 10.2022.svg",
+  "stratum": "icon/logo",
+  "bytes": 52250,
+  "elements": 72,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "Ebene_1",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0287,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:How many Democratic positions do people take?.svg",
+  "stratum": "chart/graph",
+  "bytes": 68347,
+  "elements": 276,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg850",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0219,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Auftragung nach dem OWRK-Verfahren.svg",
+  "stratum": "chart/graph",
+  "bytes": 93344,
+  "elements": 234,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg8",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0161,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Milkproducts v2.svg",
+  "stratum": "diagram",
+  "bytes": 97560,
+  "elements": 585,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2960",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0154,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 97
+  }
+ },
+ {
+  "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+  "stratum": "chart/graph",
+  "bytes": 99900,
+  "elements": 750,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "figure_1",
+   "tag": "g",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.015,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:DistAmbDGT esquema.svg",
+  "stratum": "diagram",
+  "bytes": 107287,
+  "elements": 101,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg6357",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.014,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:GOZ structure diagram.svg",
+  "stratum": "diagram",
+  "bytes": 210491,
+  "elements": 757,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg1428",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0071,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Languages-Europe edit.svg",
+  "stratum": "known-hard",
+  "bytes": 240970,
+  "elements": 905,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg12180",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0062,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 93
+  }
+ },
+ {
+  "title": "File:BasePairing.svg",
+  "stratum": "inkscape-native",
+  "bytes": 277103,
+  "elements": 148,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "e",
+   "tag": "marker",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0054,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Krzyś development chart.svg",
+  "stratum": "diagram",
+  "bytes": 281026,
+  "elements": 168,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg5",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0053,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 161
+  }
+ },
+ {
+  "title": "File:Hidrografía Galicia Cunca Mariña Oriental gl.svg",
+  "stratum": "inkscape-native",
+  "bytes": 530740,
+  "elements": 433,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0028,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 124
+  }
+ },
+ {
+  "title": "File:Francisco Beltrao Localizacao.svg",
+  "stratum": "map",
+  "bytes": 836620,
+  "elements": 554,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2997",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0018,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
+  "stratum": "map",
+  "bytes": 1140445,
+  "elements": 2794,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg263",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0013,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Map of countries with Lindex stores.svg",
+  "stratum": "map",
+  "bytes": 1319446,
+  "elements": 2365,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0011,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Red Sea map TH.svg",
+  "stratum": "map",
+  "bytes": 1863599,
+  "elements": 3254,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0008,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 468
+  }
+ },
+ {
+  "title": "File:Vergleich zwischen Manga und Foto (nur Zeichnung).svg",
+  "stratum": "inkscape-native",
+  "bytes": 2084600,
+  "elements": 13073,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg2",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0007,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ },
+ {
+  "title": "File:Elección presidencial Chile 2017 por país.svg",
+  "stratum": "map",
+  "bytes": 2584366,
+  "elements": 3796,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "svg20681",
+   "tag": "svg",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0006,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true,
+  "textEdit": {
+   "changedBytes": 102
+  }
+ },
+ {
+  "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+  "stratum": "map",
+  "bytes": 2805294,
+  "elements": 3589,
+  "noopIdentical": true,
+  "patch": {
+   "ok": true,
+   "id": "Новый_образец_узора_9",
+   "tag": "pattern",
+   "hadFill": null,
+   "changedBytes": 15,
+   "changedLines": 1,
+   "diffPctOfFile": 0.0005,
+   "region": [
+    "",
+    " fill=\"#ff00aa\""
+   ]
+  },
+  "readdressable": true
+ }
+]

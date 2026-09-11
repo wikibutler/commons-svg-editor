@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Wikivoyage-logo-2.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   version="1.1"
+   id="svg10464"
+   height="192.5"
+   width="192.5" fill="#ff00aa">
+  <defs
+     id="defs10466">
+    <filter
+       id="filter1327"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Scattered cubes; adjust the Morphology primitive to vary size"
+       inkscape:menu="Scatter"
+       inkscape:label="Cubes">
+      <feTurbulence
+         id="feTurbulence1311"
+         type="fractalNoise"
+         numOctaves="1"
+         baseFrequency="0.14" />
+      <feColorMatrix
+         id="feColorMatrix1313"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -3.5 " />
+      <feComposite
+         id="feComposite1315"
+         result="result6"
+         in="SourceGraphic"
+         operator="in"
+         in2="result5" />
+      <feMorphology
+         id="feMorphology1317"
+         in="result6"
+         operator="dilate"
+         radius="5"
+         result="result3" />
+      <feDisplacementMap
+         id="feDisplacementMap1319"
+         in2="result3"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         scale="0"
+         result="result4" />
+      <feComposite
+         id="feComposite1321"
+         k3="1"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         in2="result4" />
+      <feBlend
+         id="feBlend1323"
+         in2="result2"
+         in="result2"
+         mode="darken" />
+      <feConvolveMatrix
+         id="feConvolveMatrix1325"
+         edgeMode="duplicate"
+         divisor="2"
+         targetY="1"
+         targetX="1"
+         kernelMatrix="2 0 0 0 1 0 0 0 -1 "
+         order="3 3" />
+    </filter>
+    <filter
+       id="filter1345"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Scattered cubes; adjust the Morphology primitive to vary size"
+       inkscape:menu="Scatter"
+       inkscape:label="Cubes">
+      <feTurbulence
+         id="feTurbulence1329"
+         type="fractalNoise"
+         numOctaves="1"
+         baseFrequency="0.14" />
+      <feColorMatrix
+         id="feColorMatrix1331"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -3.5 " />
+      <feComposite
+         id="feComposite1333"
+         result="result6"
+         in="SourceGraphic"
+         operator="in"
+         in2="result5" />
+      <feMorphology
+         id="feMorphology1335"
+         in="result6"
+         operator="dilate"
+         radius="5"
+         result="result3" />
+      <feDisplacementMap
+         id="feDisplacementMap1337"
+         in2="result3"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         scale="0"
+         result="result4" />
+      <feComposite
+         id="feComposite1339"
+         k3="1"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         in2="result4" />
+      <feBlend
+         id="feBlend1341"
+         in2="result2"
+         in="result2"
+         mode="darken" />
+      <feConvolveMatrix
+         id="feConvolveMatrix1343"
+         edgeMode="duplicate"
+         divisor="2"
+         targetY="1"
+         targetX="1"
+         kernelMatrix="2 0 0 0 1 0 0 0 -1 "
+         order="3 3" />
+    </filter>
+    <filter
+       id="filter1363"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:menu-tooltip="Scattered cubes; adjust the Morphology primitive to vary size"
+       inkscape:menu="Scatter"
+       inkscape:label="Cubes">
+      <feTurbulence
+         id="feTurbulence1347"
+         type="fractalNoise"
+         numOctaves="1"
+         baseFrequency="0.14" />
+      <feColorMatrix
+         id="feColorMatrix1349"
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -3.5 " />
+      <feComposite
+         id="feComposite1351"
+         result="result6"
+         in="SourceGraphic"
+         operator="in"
+         in2="result5" />
+      <feMorphology
+         id="feMorphology1353"
+         in="result6"
+         operator="dilate"
+         radius="5"
+         result="result3" />
+      <feDisplacementMap
+         id="feDisplacementMap1355"
+         in2="result3"
+         in="result3"
+         xChannelSelector="R"
+         yChannelSelector="A"
+         scale="0"
+         result="result4" />
+      <feComposite
+         id="feComposite1357"
+         k3="1"
+         k1="1"
+         result="result2"
+         operator="arithmetic"
+         in2="result4" />
+      <feBlend
+         id="feBlend1359"
+         in2="result2"
+         in="result2"
+         mode="darken" />
+      <feConvolveMatrix
+         id="feConvolveMatrix1361"
+         edgeMode="duplicate"
+         divisor="2"
+         targetY="1"
+         targetX="1"
+         kernelMatrix="2 0 0 0 1 0 0 0 -1 "
+         order="3 3" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="89"
+     inkscape:window-height="501"
+     inkscape:window-width="904"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:current-layer="g10459"
+     inkscape:document-units="px"
+     inkscape:cy="149.14777"
+     inkscape:cx="120.4286"
+     inkscape:zoom="0.98994949"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata10469">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-253.75,-436.11218)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <g
+       transform="translate(722.97145,-2916.4008)"
+       id="g10459">
+      <path
+         transform="matrix(0.5,0,0,0.5,-175.58816,1749.1651)"
+         inkscape:connector-curvature="0"
+         id="path10362"
+         d="m -404.3022,3439.994 95.83106,145.1426 10.4207,-173.6128 c -27.78874,27.7888 -68.29176,38.6416 -106.25176,28.4702 z"
+         style="fill:#339966;fill-opacity:1;stroke:none;stroke-width:2;filter:url(#filter1327)" />
+      <path
+         transform="matrix(0.5,0,0,0.5,-159.44598,1697.3418)"
+         style="fill:#990000;fill-opacity:1;stroke:none;stroke-width:2;filter:url(#filter1345)"
+         d="m -318.89197,3472.4654 77.78174,-155.5636 -155.56345,77.7818 c 37.96011,10.1714 67.61037,39.8216 77.78171,77.7818 z"
+         id="path10364"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0.5,0,0,0.5,-211.2693,1713.484)"
+         inkscape:connector-curvature="0"
+         id="path10366"
+         d="m -335.7322,3373.8421 -173.61282,10.4208 145.14276,95.831 c -10.17138,-37.96 0.68138,-78.463 28.47006,-106.2518 z"
+         style="fill:#006699;fill-opacity:1;stroke:none;stroke-width:2;filter:url(#filter1363)" />
+    </g>
+  </g>
+</svg>

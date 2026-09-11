@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>commons-svg-editor — board</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{--blue:#3366cc;--ink:#202122;--muted:#54595d;--line:#c8ccd1;--bg:#f8f9fa;--ok:#14866d;--warn:#ac6600;--err:#b32424}
+  *{box-sizing:border-box} body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+  header{background:#fff;border-bottom:1px solid var(--line);padding:14px 18px}
+  h1{margin:0 0 4px;font-size:17px} .dim{color:var(--muted);font-size:13px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;padding:10px 18px;background:#fff;border-bottom:1px solid var(--line)}
+  button{font:inherit;padding:4px 10px;border:1px solid var(--line);background:#fff;border-radius:2px;cursor:pointer}
+  button[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+  .board{display:flex;gap:14px;padding:16px 18px;align-items:flex-start;flex-wrap:wrap}
+  .col{flex:1 1 260px;min-width:250px;background:#fff;border:1px solid var(--line);border-radius:2px}
+  .col h2{margin:0;font-size:13px;text-transform:uppercase;letter-spacing:.04em;padding:8px 12px;border-bottom:1px solid var(--line);color:var(--muted)}
+  .col ul{list-style:none;margin:0;padding:8px}
+  .card{border:1px solid var(--line);border-left:3px solid var(--line);border-radius:2px;padding:8px 10px;margin-bottom:8px;background:#fff}
+  .card.a{border-left-color:var(--blue)} .card.c{border-left-color:var(--ok)} .card.blocked{border-left-color:var(--err)}
+  .card a{color:var(--blue);text-decoration:none;font-weight:600} .card .meta{margin-top:4px;font-size:12px;color:var(--muted)}
+  .tag{display:inline-block;font-size:11px;padding:1px 6px;border:1px solid var(--line);border-radius:2px;margin-right:4px;color:var(--muted)}
+  .legend{padding:0 18px 10px;font-size:12px;color:var(--muted)} .err{color:var(--err)}
+</style></head>
+<body>
+<header>
+  <h1>commons-svg-editor — work board</h1>
+  <div class="dim">Read live from the repository's issues and milestones (public API, read-only). Two epics:
+    <strong>A</strong> = surgical byte-preserving editor, <strong>C</strong> = review/diff/validation layer.</div>
+</header>
+<div class="bar" id="filters">
+  <button data-f="all" aria-pressed="true">All</button>
+  <button data-f="A">Epic A — editor</button>
+  <button data-f="C">Epic C — review</button>
+  <button data-f="blocked">Blocked</button>
+</div>
+<div class="legend" id="legend">loading…</div>
+<div class="board" id="board"></div>
+<script>
+const REPO = 'wikibutler/commons-svg-editor';
+const COLS = [
+  { id: 'blocked', title: 'Blocked on access', test: (i) => i.labels.some((l) => l.name === 'blocked') },
+  { id: 'todo',    title: 'To do',             test: (i) => i.state === 'open' && !i.labels.some((l) => l.name === 'blocked') },
+  { id: 'done',    title: 'Done',              test: (i) => i.state === 'closed' }
+];
+let ISSUES = []; let filter = 'all';
+function epicOf (i) { return i.labels.some((l) => l.name === 'epic-A') ? 'A' : i.labels.some((l) => l.name === 'epic-C') ? 'C' : '?'; }
+function matches (i) {
+  if (filter === 'all') return true;
+  if (filter === 'blocked') return i.labels.some((l) => l.name === 'blocked');
+  return epicOf(i) === filter;
+}
+function render () {
+  const board = document.getElementById('board'); board.innerHTML = '';
+  for (const col of COLS) {
+    const items = ISSUES.filter((i) => col.test(i) && matches(i)).sort((a, b) => a.number - b.number);
+    const el = document.createElement('section'); el.className = 'col';
+    el.innerHTML = `<h2>${col.title} <span class="dim">(${items.length})</span></h2>`;
+    const ul = document.createElement('ul');
+    for (const i of items) {
+      const e = epicOf(i);
+      ul.insertAdjacentHTML('beforeend',
+        `<li class="card ${e.toLowerCase()}${i.labels.some((l) => l.name === 'blocked') ? ' blocked' : ''}">
+           <a href="${i.html_url}" target="_blank" rel="noopener">#${i.number} — ${i.title.replace(/^[AC]\d+ /, '')}</a>
+           <div class="meta">${i.labels.filter((l) => l.name !== 'epic-A' && l.name !== 'epic-C').map((l) => `<span class="tag">${l.name}</span>`).join('')}
+             ${i.milestone ? `<span class="tag">${i.milestone.title.slice(0, 26)}</span>` : ''}</div></li>`);
+    }
+    el.appendChild(ul); board.appendChild(el);
+  }
+}
+async function load () {
+  const legend = document.getElementById('legend');
+  try {
+    const [mi, ii] = await Promise.all([
+      fetch(`https://api.github.com/repos/${REPO}/milestones`),
+      fetch(`https://api.github.com/repos/${REPO}/issues?state=all&per_page=100`)
+    ]);
+    if (ii.status === 403) throw new Error('GitHub API rate limit reached for this IP — try again later.');
+    const ms = await mi.json(); const is = await ii.json();
+    ISSUES = Array.isArray(is) ? is.filter((i) => !i.pull_request) : [];
+    legend.textContent = `${ISSUES.length} issues · ${ISSUES.filter((i) => i.state === 'closed').length} closed · ` +
+      ms.map((m) => `${m.title.split(' ')[1]}: ${m.open_issues} open`).join(' · ');
+    render();
+  } catch (e) { legend.innerHTML = '<span class="err">could not load the board: ' + e.message + '</span>'; }
+}
+document.getElementById('filters').addEventListener('click', (e) => {
+  if (e.target.tagName !== 'BUTTON') return;
+  filter = e.target.dataset.f;
+  for (const b of document.querySelectorAll('#filters button')) b.setAttribute('aria-pressed', String(b.dataset.f === filter));
+  render();
+});
+load();
+</script>
+</body></html>
