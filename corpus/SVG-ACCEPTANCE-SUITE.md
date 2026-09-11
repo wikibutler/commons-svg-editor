@@ -117,3 +117,38 @@ Worst load-and-save damage with **no user edits at all** (pixel diff, source vs 
 
 Also newly visible at sample scale: **5 of 36 files are not idempotent** (feeding the saved file back through
 the editor produces a different file), which a single-file test would never have surfaced.
+
+
+## 9. Fetch once, run forever (the 429 fix)
+
+The first harness fetched each file from Commons **twice per run** (once for the no-op test, once for the edit
+test). A 44-file run therefore made ~88 requests and hit HTTP 429 on 8 files — a defect in the harness, not in
+the tool under test. Fetching is now a separate, resumable step:
+
+```
+node tests/fetch-corpus.mjs --corpus corpus/sample.json      # network, once, paced 1.2 s, respects Retry-After
+node tests/corpus.mjs --corpus corpus/sample.json \
+     --local corpus/files-cache/index.json                   # offline, repeatable, zero Commons traffic
+```
+
+- Cache layout `corpus/files-cache/<sha1>/<basename>.svg`: a file that changes on-wiki lands in a *new*
+  directory rather than overwriting the old revision, so results stay attributable to a revision.
+- Commons media stays out of git; `corpus/files-cache/index.json` **is** committed, so the repo records which
+  revisions were tested.
+- Proof rather than assertion: in `--local` mode the runner blocks `*.wikimedia.org`/`*.wikipedia.org` in the
+  browser and counts attempts. The committed run reports **0 attempted, 44/44 scored**. Effect: median load
+  time fell from ~250 ms (network) to **45 ms**, and a full re-run costs no Commons traffic at all.
+
+### Two scoring defects this exposed (fixed)
+
+1. A fuzzy-matched patch had silently dropped an `await` in front of the per-file `page.evaluate`, so the runner
+   was scoring a Promise: every row printed the `FAIL` fallback while the underlying data was fine. This is why
+   the first run's log showed 44 FAILs.
+2. The verdict rule softened *any* pixel-only failure into a warning, which labelled a file with a **39%
+   destroyed render** as WARN. Pixel failures now soften to WARN only for near-misses (≤10%); above that they
+   are FAIL.
+
+**Open parity issue:** in `--local` mode the definition-repair layer does not run (41 files warn
+"C: definitions rewritten and not restored"), so offline runs currently under-report what the save path
+actually repairs. Until that is fixed, treat offline numbers as measuring *the editor*, and the online path as
+measuring *the editor plus the repair layer*.

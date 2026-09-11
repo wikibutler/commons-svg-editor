@@ -1,10 +1,11 @@
 {
- "startedAt": "2026-09-10T23:55:38.894Z",
+ "startedAt": "2026-09-11T00:12:26.356Z",
  "diffWidth": 500,
  "files": [
   {
    "title": "File:T7792 Example of baseline-shift using explicit value.svg",
-   "loadMs": 445,
+   "source": "cache",
+   "loadMs": 10,
    "integrity": true,
    "bytes": 661,
    "canvasElements": 11,
@@ -18,11 +19,8 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "width",
-     "height"
-    ],
-    "bytesOut": 707,
+    "framingRestored": [],
+    "bytesOut": 703,
     "pixelDiffPercent": 6.32
    },
    "idempotent": true,
@@ -38,18 +36,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 574,
-    "bytesOut": 722,
+    "exportMs": 438,
+    "bytesOut": 718,
     "editFootprintPercent": 0.69,
     "pixelDiffPercent": 6.88
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 6.32%"
+   ],
+   "warns": [
+    "K: edited diff 6.88%"
+   ],
+   "domain": "known-hard",
    "corpusBytes": 661,
-   "wallMs": 1664
+   "wallMs": 933
   },
   {
    "title": "File:Xclamation blue 2.svg",
-   "loadMs": 210,
+   "source": "cache",
+   "loadMs": 19,
    "integrity": true,
    "bytes": 807,
    "canvasElements": 6,
@@ -62,12 +70,10 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 879,
-    "pixelDiffPercent": 4.39
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 854,
+    "pixelDiffPercent": 3.29
    },
    "idempotent": true,
    "edit": {
@@ -82,18 +88,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 572,
-    "bytesOut": 879,
+    "exportMs": 477,
+    "bytesOut": 854,
     "editFootprintPercent": 66.63,
-    "pixelDiffPercent": 69.84
+    "pixelDiffPercent": 69.24
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [],
+   "warns": [
+    "K: no-op diff 3.29%",
+    "K: edited diff 69.24%",
+    "edit footprint 66.63% (larger than the edited shape suggests)",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "svg2-features",
    "corpusBytes": 807,
-   "wallMs": 1570
+   "wallMs": 1067
   },
   {
    "title": "File:Radar Mac black gradient.svg",
-   "loadMs": 224,
+   "source": "cache",
+   "loadMs": 18,
    "integrity": true,
    "bytes": 1562,
    "canvasElements": 13,
@@ -106,11 +123,9 @@
     "defsRewritten": 2,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 2,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 1754,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 1747,
     "pixelDiffPercent": 0.82
    },
    "idempotent": true,
@@ -126,18 +141,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 566,
-    "bytesOut": 1757,
+    "exportMs": 455,
+    "bytesOut": 1750,
     "editFootprintPercent": 2.44,
     "pixelDiffPercent": 3.26
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "svg2-features",
    "corpusBytes": 1562,
-   "wallMs": 1508
+   "wallMs": 990
   },
   {
    "title": "File:Oresundskraft rgb.svg",
-   "loadMs": 209,
+   "source": "cache",
+   "loadMs": 21,
    "integrity": true,
    "bytes": 2921,
    "canvasElements": 17,
@@ -151,10 +174,8 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 3228,
+    "framingRestored": [],
+    "bytesOut": 3202,
     "pixelDiffPercent": 0.65
    },
    "idempotent": true,
@@ -170,18 +191,24 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 550,
-    "bytesOut": 3243,
+    "exportMs": 434,
+    "bytesOut": 3217,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 0.65
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "PASS",
+   "fails": [],
+   "warns": [],
+   "domain": "icon/logo",
    "corpusBytes": 2921,
-   "wallMs": 1415
+   "wallMs": 890
   },
   {
    "title": "File:Goomi nyarly.svg",
-   "loadMs": 265,
+   "source": "cache",
+   "loadMs": 20,
    "integrity": true,
    "bytes": 3692,
    "canvasElements": 23,
@@ -194,14 +221,10 @@
     "defsRewritten": 5,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 5,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 4047,
-    "pixelDiffPercent": 0.75
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 3951,
+    "pixelDiffPercent": 10.82
    },
    "idempotent": true,
    "edit": {
@@ -216,18 +239,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 532,
-    "bytesOut": 4047,
+    "exportMs": 465,
+    "bytesOut": 3951,
     "editFootprintPercent": 0.11,
-    "pixelDiffPercent": 0.86
+    "pixelDiffPercent": 10.89
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 10.82%"
+   ],
+   "warns": [
+    "K: edited diff 10.89%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "known-hard",
    "corpusBytes": 3692,
-   "wallMs": 1544
+   "wallMs": 1021
   },
   {
    "title": "File:No free image woman.svg",
-   "loadMs": 290,
+   "source": "cache",
+   "loadMs": 25,
    "integrity": true,
    "bytes": 5062,
    "canvasElements": 91,
@@ -258,18 +292,27 @@
     "switchesBefore": 1,
     "switchesAfter": 1,
     "verdict": "overwrite-ok",
-    "exportMs": 585,
+    "exportMs": 448,
     "bytesOut": 6641,
     "editFootprintPercent": 60.66,
     "pixelDiffPercent": 60.66
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [],
+   "warns": [
+    "K: edited diff 60.66%",
+    "edit footprint 60.66% (larger than the edited shape suggests)"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 5162,
-   "wallMs": 1544
+   "wallMs": 958
   },
   {
    "title": "File:SystemLanguage MediaWiki internal code.svg",
-   "loadMs": 238,
+   "source": "cache",
+   "loadMs": 21,
    "integrity": true,
    "bytes": 6026,
    "canvasElements": 141,
@@ -283,11 +326,9 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 7532,
-    "pixelDiffPercent": 6.69
+    "framingRestored": [],
+    "bytesOut": 7505,
+    "pixelDiffPercent": 5.9
    },
    "idempotent": true,
    "edit": {
@@ -302,18 +343,28 @@
     "switchesBefore": 1,
     "switchesAfter": 1,
     "verdict": "overwrite-ok",
-    "exportMs": 515,
-    "bytesOut": 7547,
-    "editFootprintPercent": 0.31,
-    "pixelDiffPercent": 6.7
+    "exportMs": 454,
+    "bytesOut": 7520,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 5.9
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 5.9%"
+   ],
+   "warns": [
+    "K: edited diff 5.9%"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 6026,
-   "wallMs": 1425
+   "wallMs": 938
   },
   {
    "title": "File:Skew lines shortest distance.svg",
-   "loadMs": 236,
+   "source": "cache",
+   "loadMs": 25,
    "integrity": true,
    "bytes": 6266,
    "canvasElements": 78,
@@ -326,14 +377,10 @@
     "defsRewritten": 3,
     "defsCorrupted": 0,
     "defsMissing": 2,
-    "defsRestored": 3,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 6359,
-    "pixelDiffPercent": 0.19
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 6362,
+    "pixelDiffPercent": 32.48
    },
    "idempotent": true,
    "edit": {
@@ -348,18 +395,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 564,
-    "bytesOut": 6373,
-    "editFootprintPercent": 28.5,
-    "pixelDiffPercent": 28.52
+    "exportMs": 467,
+    "bytesOut": 6365,
+    "editFootprintPercent": 5.09,
+    "pixelDiffPercent": 33.99
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 32.48%"
+   ],
+   "warns": [
+    "K: edited diff 33.99%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "known-hard",
    "corpusBytes": 6266,
-   "wallMs": 1485
+   "wallMs": 1011
   },
   {
    "title": "File:PayPa Plane Logo.svg",
-   "loadMs": 257,
+   "source": "cache",
+   "loadMs": 8,
    "integrity": true,
    "bytes": 6814,
    "canvasElements": 17,
@@ -372,11 +430,9 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 5191,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 5182,
     "pixelDiffPercent": 0.05
    },
    "idempotent": true,
@@ -392,18 +448,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 501,
-    "bytesOut": 5191,
+    "exportMs": 427,
+    "bytesOut": 5182,
     "editFootprintPercent": 0.46,
     "pixelDiffPercent": 0.51
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "icon/logo",
    "corpusBytes": 6814,
-   "wallMs": 1310
+   "wallMs": 809
   },
   {
    "title": "File:Wikivoyage oversight draft 4.svg",
-   "loadMs": 375,
+   "source": "cache",
+   "loadMs": 25,
    "integrity": true,
    "bytes": 7549,
    "canvasElements": 36,
@@ -416,12 +480,12 @@
     "defsRewritten": 3,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 3,
+    "defsRestored": 0,
     "framingRestored": [],
-    "bytesOut": 5808,
-    "pixelDiffPercent": 0
+    "bytesOut": 3827,
+    "pixelDiffPercent": 17.75
    },
-   "idempotent": false,
+   "idempotent": true,
    "edit": {
     "edited": true,
     "fillBefore": "#339966",
@@ -434,18 +498,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 722,
-    "bytesOut": 5808,
-    "editFootprintPercent": 5.73,
-    "pixelDiffPercent": 5.73
+    "exportMs": 571,
+    "bytesOut": 3827,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 17.75
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 17.75%"
+   ],
+   "warns": [
+    "K: edited diff 17.75%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "inkscape-native",
    "corpusBytes": 7549,
-   "wallMs": 2350
+   "wallMs": 1231
   },
   {
    "title": "File:PAES logo.svg",
-   "loadMs": 234,
+   "source": "cache",
+   "loadMs": 25,
    "integrity": true,
    "bytes": 8377,
    "canvasElements": 29,
@@ -459,11 +534,9 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 7157,
-    "pixelDiffPercent": 27.65
+    "framingRestored": [],
+    "bytesOut": 7130,
+    "pixelDiffPercent": 38.94
    },
    "idempotent": true,
    "edit": {
@@ -478,18 +551,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 518,
-    "bytesOut": 7172,
-    "editFootprintPercent": 0.09,
-    "pixelDiffPercent": 27.65
+    "exportMs": 437,
+    "bytesOut": 7145,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 38.94
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 38.94%"
+   ],
+   "warns": [
+    "K: edited diff 38.94%"
+   ],
+   "domain": "icon/logo",
    "corpusBytes": 8377,
-   "wallMs": 1331
+   "wallMs": 903
   },
   {
    "title": "File:PghLFilms profile.svg",
-   "loadMs": 260,
+   "source": "cache",
+   "loadMs": 28,
    "integrity": true,
    "bytes": 8955,
    "canvasElements": 17,
@@ -503,12 +586,8 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 9088,
+    "framingRestored": [],
+    "bytesOut": 9062,
     "pixelDiffPercent": 0
    },
    "idempotent": true,
@@ -524,18 +603,24 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 537,
-    "bytesOut": 9103,
+    "exportMs": 442,
+    "bytesOut": 9077,
     "editFootprintPercent": 2.11,
     "pixelDiffPercent": 2.11
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "PASS",
+   "fails": [],
+   "warns": [],
+   "domain": "icon/logo",
    "corpusBytes": 8955,
-   "wallMs": 1401
+   "wallMs": 935
   },
   {
    "title": "File:Types of Sentences-pa.svg",
-   "loadMs": 309,
+   "source": "cache",
+   "loadMs": 44,
    "integrity": true,
    "bytes": 10796,
    "canvasElements": 32,
@@ -549,13 +634,9 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 4378,
-    "pixelDiffPercent": 0
+    "framingRestored": [],
+    "bytesOut": 4340,
+    "pixelDiffPercent": 3.8
    },
    "idempotent": true,
    "edit": {
@@ -570,18 +651,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 559,
-    "bytesOut": 4378,
+    "exportMs": 446,
+    "bytesOut": 4340,
     "editFootprintPercent": 0.59,
-    "pixelDiffPercent": 0.59
+    "pixelDiffPercent": 4.39
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "K: no-op diff 3.8%"
+   ],
+   "domain": "inkscape-native",
    "corpusBytes": 10898,
-   "wallMs": 1525
+   "wallMs": 944
   },
   {
    "title": "File:MEITEI free-file(1)(1).svg",
-   "loadMs": 232,
+   "source": "cache",
+   "loadMs": 35,
    "integrity": true,
    "bytes": 11325,
    "canvasElements": 18,
@@ -595,12 +684,8 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 11398,
+    "framingRestored": [],
+    "bytesOut": 11344,
     "pixelDiffPercent": 0
    },
    "idempotent": true,
@@ -616,18 +701,24 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 508,
-    "bytesOut": 11413,
+    "exportMs": 439,
+    "bytesOut": 11359,
     "editFootprintPercent": 0.26,
     "pixelDiffPercent": 0.26
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "PASS",
+   "fails": [],
+   "warns": [],
+   "domain": "icon/logo",
    "corpusBytes": 11325,
-   "wallMs": 1575
+   "wallMs": 940
   },
   {
    "title": "File:Teilmengen R2.svg",
-   "loadMs": 327,
+   "source": "cache",
+   "loadMs": 29,
    "integrity": true,
    "bytes": 12727,
    "canvasElements": 36,
@@ -640,9 +731,9 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
+    "defsRestored": 0,
     "framingRestored": [],
-    "bytesOut": 7814,
+    "bytesOut": 7809,
     "pixelDiffPercent": 0.16
    },
    "idempotent": true,
@@ -658,18 +749,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 538,
-    "bytesOut": 7811,
+    "exportMs": 442,
+    "bytesOut": 7806,
     "editFootprintPercent": 0.06,
     "pixelDiffPercent": 0.21
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "chart/graph",
    "corpusBytes": 12727,
-   "wallMs": 1526
+   "wallMs": 926
   },
   {
    "title": "File:Intismeran-development-timeline.svg",
-   "loadMs": 300,
+   "source": "cache",
+   "loadMs": 38,
    "integrity": true,
    "bytes": 13770,
    "canvasElements": 164,
@@ -683,10 +782,8 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 15599,
+    "framingRestored": [],
+    "bytesOut": 15576,
     "pixelDiffPercent": 5.42
    },
    "idempotent": true,
@@ -702,18 +799,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 558,
-    "bytesOut": 15599,
+    "exportMs": 469,
+    "bytesOut": 15576,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 5.43
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 5.42%"
+   ],
+   "warns": [
+    "K: edited diff 5.43%"
+   ],
+   "domain": "diagram",
    "corpusBytes": 13784,
-   "wallMs": 1588
+   "wallMs": 1028
   },
   {
    "title": "File:Strateo-logo.svg",
-   "loadMs": 349,
+   "source": "cache",
+   "loadMs": 54,
    "integrity": true,
    "bytes": 15030,
    "canvasElements": 16,
@@ -727,11 +834,9 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 15954,
-    "pixelDiffPercent": 3.93
+    "framingRestored": [],
+    "bytesOut": 15919,
+    "pixelDiffPercent": 13.73
    },
    "idempotent": true,
    "edit": {
@@ -746,18 +851,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 504,
-    "bytesOut": 15969,
+    "exportMs": 431,
+    "bytesOut": 15934,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 3.93
+    "pixelDiffPercent": 13.73
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 13.73%"
+   ],
+   "warns": [
+    "K: edited diff 13.73%"
+   ],
+   "domain": "embedded-raster",
    "corpusBytes": 15030,
-   "wallMs": 1480
+   "wallMs": 954
   },
   {
    "title": "File:Mittelwert- und Median Einkommen NE 1996-2017 EU-SILC.svg",
-   "loadMs": 281,
+   "source": "cache",
+   "loadMs": 30,
    "integrity": true,
    "bytes": 16946,
    "canvasElements": 119,
@@ -788,18 +903,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 552,
+    "exportMs": 454,
     "bytesOut": 16622,
     "editFootprintPercent": 0.05,
     "pixelDiffPercent": 14.9
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 14.85%"
+   ],
+   "warns": [
+    "K: edited diff 14.9%"
+   ],
+   "domain": "chart/graph",
    "corpusBytes": 16947,
-   "wallMs": 1534
+   "wallMs": 981
   },
   {
    "title": "File:ERB vs frequency deutsch.svg",
-   "loadMs": 224,
+   "source": "cache",
+   "loadMs": 20,
    "integrity": true,
    "bytes": 27317,
    "canvasElements": 64,
@@ -812,11 +937,9 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 27850,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 27784,
     "pixelDiffPercent": 0.04
    },
    "idempotent": true,
@@ -832,18 +955,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 597,
-    "bytesOut": 27865,
+    "exportMs": 451,
+    "bytesOut": 27799,
     "editFootprintPercent": 0.01,
     "pixelDiffPercent": 0.05
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "chart/graph",
    "corpusBytes": 27317,
-   "wallMs": 1557
+   "wallMs": 949
   },
   {
    "title": "File:El Manchar logo.svg",
-   "loadMs": 236,
+   "source": "cache",
+   "loadMs": 42,
    "integrity": true,
    "bytes": 28066,
    "canvasElements": 72,
@@ -856,14 +987,12 @@
     "defsRewritten": 9,
     "defsCorrupted": 0,
     "defsMissing": 9,
-    "defsRestored": 9,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 12353,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 9648,
     "pixelDiffPercent": 0.03
    },
-   "idempotent": false,
+   "idempotent": true,
    "edit": {
     "edited": true,
     "fillBefore": "#de0b25",
@@ -876,18 +1005,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 558,
-    "bytesOut": 12353,
+    "exportMs": 443,
+    "bytesOut": 9648,
     "editFootprintPercent": 4.2,
     "pixelDiffPercent": 4.23
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "embedded-raster",
    "corpusBytes": 28066,
-   "wallMs": 1458
+   "wallMs": 954
   },
   {
    "title": "File:Photovoltaics Installed Capacity and Production in Brazil.svg",
-   "loadMs": 351,
+   "source": "cache",
+   "loadMs": 52,
    "integrity": true,
    "bytes": 29582,
    "canvasElements": 261,
@@ -900,14 +1037,10 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 33277,
-    "pixelDiffPercent": 0.02
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 33256,
+    "pixelDiffPercent": 1.03
    },
    "idempotent": true,
    "edit": {
@@ -922,18 +1055,26 @@
     "switchesBefore": 5,
     "switchesAfter": 5,
     "verdict": "overwrite-ok",
-    "exportMs": 529,
-    "bytesOut": 33277,
+    "exportMs": 476,
+    "bytesOut": 33256,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 0.02
+    "pixelDiffPercent": 1.03
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 29603,
-   "wallMs": 1544
+   "wallMs": 1052
   },
   {
    "title": "File:Comparison radiated field magnitude of hwd to esd.svg",
-   "loadMs": 264,
+   "source": "cache",
+   "loadMs": 55,
    "integrity": true,
    "bytes": 30381,
    "canvasElements": 34,
@@ -946,16 +1087,12 @@
     "defsRewritten": 4,
     "defsCorrupted": 0,
     "defsMissing": 37,
-    "defsRestored": 4,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 6665,
-    "pixelDiffPercent": 0.45
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 5556,
+    "pixelDiffPercent": 0.54
    },
-   "idempotent": false,
+   "idempotent": true,
    "edit": {
     "edited": true,
     "fillBefore": "none",
@@ -968,18 +1105,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 566,
-    "bytesOut": 6668,
+    "exportMs": 448,
+    "bytesOut": 5559,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 0.45
+    "pixelDiffPercent": 0.54
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "diagram",
    "corpusBytes": 30381,
-   "wallMs": 1536
+   "wallMs": 1007
   },
   {
    "title": "File:Tradex Logo Wiki Mesa de trabajo 1.svg",
-   "loadMs": 276,
+   "source": "cache",
+   "loadMs": 41,
    "integrity": true,
    "bytes": 33328,
    "canvasElements": 84,
@@ -992,11 +1137,9 @@
     "defsRewritten": 2,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 2,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 36806,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 36704,
     "pixelDiffPercent": 89.68
    },
    "idempotent": true,
@@ -1012,18 +1155,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 564,
-    "bytesOut": 36809,
+    "exportMs": 464,
+    "bytesOut": 36707,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 89.68
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 89.68%"
+   ],
+   "warns": [
+    "K: edited diff 89.68%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "svg2-features",
    "corpusBytes": 33328,
-   "wallMs": 1546
+   "wallMs": 1050
   },
   {
    "title": "File:Wind power installed capacity and generation in Australia.svg",
-   "loadMs": 320,
+   "source": "cache",
+   "loadMs": 48,
    "integrity": true,
    "bytes": 33450,
    "canvasElements": 350,
@@ -1036,14 +1190,10 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 24423,
-    "pixelDiffPercent": 8.71
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 24402,
+    "pixelDiffPercent": 8.73
    },
    "idempotent": true,
    "edit": {
@@ -1058,18 +1208,29 @@
     "switchesBefore": 5,
     "switchesAfter": 5,
     "verdict": "overwrite-ok",
-    "exportMs": 575,
-    "bytesOut": 24423,
+    "exportMs": 483,
+    "bytesOut": 24402,
     "editFootprintPercent": 0.02,
-    "pixelDiffPercent": 8.73
+    "pixelDiffPercent": 8.75
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 8.73%"
+   ],
+   "warns": [
+    "K: edited diff 8.75%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 33460,
-   "wallMs": 1632
+   "wallMs": 1081
   },
   {
    "title": "File:Wind power installed capacity and generation in Portugal.svg",
-   "loadMs": 295,
+   "source": "cache",
+   "loadMs": 43,
    "integrity": true,
    "bytes": 35886,
    "canvasElements": 352,
@@ -1082,14 +1243,10 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 25141,
-    "pixelDiffPercent": 8.79
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 25120,
+    "pixelDiffPercent": 8.76
    },
    "idempotent": true,
    "edit": {
@@ -1104,18 +1261,29 @@
     "switchesBefore": 5,
     "switchesAfter": 5,
     "verdict": "overwrite-ok",
-    "exportMs": 594,
-    "bytesOut": 25156,
+    "exportMs": 486,
+    "bytesOut": 25135,
     "editFootprintPercent": 0.03,
-    "pixelDiffPercent": 8.79
+    "pixelDiffPercent": 8.76
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 8.76%"
+   ],
+   "warns": [
+    "K: edited diff 8.76%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 35909,
-   "wallMs": 1581
+   "wallMs": 1032
   },
   {
    "title": "File:Wind power installed capacity and generation in Finland.svg",
-   "loadMs": 294,
+   "source": "cache",
+   "loadMs": 46,
    "integrity": true,
    "bytes": 37254,
    "canvasElements": 369,
@@ -1128,13 +1296,9 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 26050,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 26029,
     "pixelDiffPercent": 7.58
    },
    "idempotent": true,
@@ -1150,18 +1314,29 @@
     "switchesBefore": 5,
     "switchesAfter": 5,
     "verdict": "overwrite-ok",
-    "exportMs": 571,
-    "bytesOut": 26050,
+    "exportMs": 477,
+    "bytesOut": 26029,
     "editFootprintPercent": 0.01,
-    "pixelDiffPercent": 7.59
+    "pixelDiffPercent": 7.58
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 7.58%"
+   ],
+   "warns": [
+    "K: edited diff 7.58%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "multilingual",
    "corpusBytes": 37276,
-   "wallMs": 1587
+   "wallMs": 1048
   },
   {
    "title": "File:Boerse.de Logo 10.2022.svg",
-   "loadMs": 307,
+   "source": "cache",
+   "loadMs": 40,
    "integrity": true,
    "bytes": 52250,
    "canvasElements": 72,
@@ -1174,12 +1349,9 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "height"
-    ],
-    "bytesOut": 32484,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 32447,
     "pixelDiffPercent": 0.15
    },
    "idempotent": true,
@@ -1195,64 +1367,37 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 542,
-    "bytesOut": 32499,
+    "exportMs": 446,
+    "bytesOut": 32462,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 0.15
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "icon/logo",
    "corpusBytes": 52250,
-   "wallMs": 1535
+   "wallMs": 919
   },
   {
    "title": "File:How many Democratic positions do people take?.svg",
-   "loadMs": 340,
-   "integrity": true,
-   "bytes": 68347,
-   "canvasElements": 267,
-   "noop": {
-    "editedNothing": true,
-    "saveButtonDisabled": true,
-    "checksOk": true,
-    "errors": [],
-    "warnings": 0,
-    "defsRewritten": 7,
-    "defsCorrupted": 0,
-    "defsMissing": 0,
-    "defsRestored": 7,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 47886,
-    "pixelDiffPercent": 0.13
-   },
-   "idempotent": true,
-   "edit": {
-    "edited": true,
-    "fillBefore": "none",
-    "fillAfter": "#ff00aa",
-    "present": true,
-    "checksOk": true,
-    "errors": [],
-    "elementChangePercent": 0,
-    "textRunsChanged": 0,
-    "switchesBefore": 0,
-    "switchesAfter": 0,
-    "verdict": "overwrite-ok",
-    "exportMs": 560,
-    "bytesOut": 47889,
-    "editFootprintPercent": 0.15,
-    "pixelDiffPercent": 0.28
-   },
-   "nonFinite": 0,
+   "fatal": "ENOENT: no such file or directory, open '/opt/data/prototypes/commons-svg-edit/corpus/files-cache/e2ce26f6bbe6326112ad11701c52637454bf621f/How many Democratic positions do people take'",
+   "domain": "chart/graph",
    "corpusBytes": 68347,
-   "wallMs": 1632
+   "wallMs": 0,
+   "verdict": "INFRA",
+   "fails": [
+    "not measurable — file could not be fetched/verified"
+   ]
   },
   {
    "title": "File:Auftragung nach dem OWRK-Verfahren.svg",
-   "loadMs": 364,
+   "source": "cache",
+   "loadMs": 67,
    "integrity": true,
    "bytes": 93344,
    "canvasElements": 229,
@@ -1265,16 +1410,12 @@
     "defsRewritten": 6,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 6,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 66785,
-    "pixelDiffPercent": 0.08
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 66201,
+    "pixelDiffPercent": 3.88
    },
-   "idempotent": false,
+   "idempotent": true,
    "edit": {
     "edited": true,
     "fillBefore": "#b9b9b9",
@@ -1287,18 +1428,27 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 560,
-    "bytesOut": 66785,
+    "exportMs": 489,
+    "bytesOut": 66201,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 0.08
+    "pixelDiffPercent": 3.88
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "K: no-op diff 3.88%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "chart/graph",
    "corpusBytes": 93344,
-   "wallMs": 1743
+   "wallMs": 1086
   },
   {
    "title": "File:Milkproducts v2.svg",
-   "loadMs": 328,
+   "source": "cache",
+   "loadMs": 55,
    "integrity": true,
    "bytes": 97560,
    "canvasElements": 580,
@@ -1311,9 +1461,9 @@
     "defsRewritten": 5,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 5,
+    "defsRestored": 0,
     "framingRestored": [],
-    "bytesOut": 67153,
+    "bytesOut": 66835,
     "pixelDiffPercent": 0.25
    },
    "idempotent": true,
@@ -1329,18 +1479,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 695,
-    "bytesOut": 67156,
+    "exportMs": 570,
+    "bytesOut": 66838,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 0.25
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "diagram",
    "corpusBytes": 97725,
-   "wallMs": 1977
+   "wallMs": 1283
   },
   {
-   "title": "File:HIV AIDS in Brazil \u2013 AIDS related mortality 1985\u20132023.svg",
-   "loadMs": 338,
+   "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+   "source": "cache",
+   "loadMs": 81,
    "integrity": true,
    "bytes": 99900,
    "canvasElements": 743,
@@ -1353,14 +1511,10 @@
     "defsRewritten": 1,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 1,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 90122,
-    "pixelDiffPercent": 0.03
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 90086,
+    "pixelDiffPercent": 5.38
    },
    "idempotent": true,
    "edit": {
@@ -1375,18 +1529,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 622,
-    "bytesOut": 90125,
+    "exportMs": 557,
+    "bytesOut": 90089,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 0.04
+    "pixelDiffPercent": 5.38
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 5.38%"
+   ],
+   "warns": [
+    "K: edited diff 5.38%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "chart/graph",
    "corpusBytes": 99911,
-   "wallMs": 1899
+   "wallMs": 1306
   },
   {
    "title": "File:DistAmbDGT esquema.svg",
-   "loadMs": 419,
+   "source": "cache",
+   "loadMs": 109,
    "integrity": true,
    "bytes": 107287,
    "canvasElements": 81,
@@ -1400,13 +1565,9 @@
     "defsCorrupted": 0,
     "defsMissing": 0,
     "defsRestored": 0,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 57161,
-    "pixelDiffPercent": 0.34
+    "framingRestored": [],
+    "bytesOut": 57127,
+    "pixelDiffPercent": 12.59
    },
    "idempotent": true,
    "edit": {
@@ -1421,18 +1582,28 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 582,
-    "bytesOut": 57176,
+    "exportMs": 470,
+    "bytesOut": 57142,
     "editFootprintPercent": 0.01,
-    "pixelDiffPercent": 0.35
+    "pixelDiffPercent": 12.59
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 12.59%"
+   ],
+   "warns": [
+    "K: edited diff 12.59%"
+   ],
+   "domain": "diagram",
    "corpusBytes": 107287,
-   "wallMs": 1684
+   "wallMs": 1097
   },
   {
    "title": "File:GOZ structure diagram.svg",
-   "loadMs": 381,
+   "source": "cache",
+   "loadMs": 97,
    "integrity": true,
    "bytes": 210491,
    "canvasElements": 758,
@@ -1445,13 +1616,9 @@
     "defsRewritten": 4,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 4,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 100213,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 99935,
     "pixelDiffPercent": 0.07
    },
    "idempotent": true,
@@ -1467,18 +1634,26 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 662,
-    "bytesOut": 100228,
+    "exportMs": 557,
+    "bytesOut": 99950,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 0.08
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "diagram",
    "corpusBytes": 210491,
-   "wallMs": 2009
+   "wallMs": 1351
   },
   {
    "title": "File:Languages-Europe edit.svg",
-   "loadMs": 615,
+   "source": "cache",
+   "loadMs": 185,
    "integrity": true,
    "bytes": 240970,
    "canvasElements": 905,
@@ -1491,11 +1666,9 @@
     "defsRewritten": 451,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 451,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 244810,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 233932,
     "pixelDiffPercent": 5.12
    },
    "idempotent": true,
@@ -1511,18 +1684,29 @@
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 841,
-    "bytesOut": 244813,
+    "exportMs": 768,
+    "bytesOut": 233935,
     "editFootprintPercent": 0,
     "pixelDiffPercent": 5.12
    },
    "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [
+    "K: no-op diff 5.12%"
+   ],
+   "warns": [
+    "K: edited diff 5.12%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "known-hard",
    "corpusBytes": 240970,
-   "wallMs": 2892
+   "wallMs": 2005
   },
   {
    "title": "File:BasePairing.svg",
-   "loadMs": 339,
+   "source": "cache",
+   "loadMs": 78,
    "integrity": true,
    "bytes": 277103,
    "canvasElements": 148,
@@ -1531,18 +1715,16 @@
     "saveButtonDisabled": true,
     "checksOk": false,
     "errors": [
-     "non-finite numeric value(s) in the markup \u2014 renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
     ],
     "warnings": 0,
     "defsRewritten": 8,
     "defsCorrupted": 0,
     "defsMissing": 0,
-    "defsRestored": 8,
-    "framingRestored": [
-     "viewBox"
-    ],
-    "bytesOut": 276791,
-    "pixelDiffPercent": 2.37
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 276765,
+    "pixelDiffPercent": 2.44
    },
    "idempotent": true,
    "edit": {
@@ -1552,153 +1734,515 @@
     "present": true,
     "checksOk": false,
     "errors": [
-     "non-finite numeric value(s) in the markup \u2014 renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
     ],
     "elementChangePercent": 1,
     "textRunsChanged": 0,
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 645,
-    "bytesOut": 276806,
+    "exportMs": 582,
+    "bytesOut": 276780,
     "editFootprintPercent": 0,
-    "pixelDiffPercent": 2.38
+    "pixelDiffPercent": 2.44
    },
    "nonFinite": 1,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "G: pre-flight errors on no-op export",
+    "G: 1 non-finite values"
+   ],
+   "warns": [
+    "K: no-op diff 2.44%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "inkscape-native",
    "corpusBytes": 277103,
-   "wallMs": 1930
+   "wallMs": 1336
   },
   {
-   "title": "File:Krzy\u015b development chart.svg",
-   "loadMs": 367,
+   "title": "File:Krzyś development chart.svg",
+   "source": "cache",
+   "loadMs": 90,
    "integrity": true,
    "bytes": 281026,
    "canvasElements": 164,
    "noop": {
     "editedNothing": true,
     "saveButtonDisabled": true,
-    "checksOk": true,
-    "errors": [],
+    "checksOk": false,
+    "errors": [
+     "non-finite numeric value(s) in the markup — renderers will fail on these: x1=\"-Infinity\", x2=\"Infinity\""
+    ],
     "warnings": 0,
     "defsRewritten": 4,
     "defsCorrupted": 5,
     "defsMissing": 2,
-    "defsRestored": 9,
-    "framingRestored": [
-     "viewBox",
-     "width",
-     "height"
-    ],
-    "bytesOut": 234181,
-    "pixelDiffPercent": 0.37
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 232751,
+    "pixelDiffPercent": 2.94
    },
-   "idempotent": false,
+   "idempotent": true,
    "edit": {
     "edited": true,
     "fillBefore": "context-stroke",
     "fillAfter": "#ff00aa",
     "present": true,
-    "checksOk": true,
-    "errors": [],
+    "checksOk": false,
+    "errors": [
+     "non-finite numeric value(s) in the markup — renderers will fail on these: x1=\"-Infinity\", x2=\"Infinity\""
+    ],
     "elementChangePercent": 1,
     "textRunsChanged": 0,
     "switchesBefore": 0,
     "switchesAfter": 0,
     "verdict": "overwrite-ok",
-    "exportMs": 643,
-    "bytesOut": 233945,
-    "editFootprintPercent": 0.57,
-    "pixelDiffPercent": 0.93
+    "exportMs": 612,
+    "bytesOut": 232744,
+    "editFootprintPercent": 0.01,
+    "pixelDiffPercent": 2.94
    },
-   "nonFinite": 0,
+   "nonFinite": 10,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "G: pre-flight errors on no-op export",
+    "G: 10 non-finite values",
+    "C: 5 definitions corrupted"
+   ],
+   "warns": [
+    "K: no-op diff 2.94%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "diagram",
    "corpusBytes": 281027,
-   "wallMs": 2035
+   "wallMs": 1483
   },
   {
-   "title": "File:Hidrograf\u00eda Galicia Cunca Mari\u00f1a Oriental gl.svg",
-   "fatal": "http-429: ",
+   "title": "File:Hidrografía Galicia Cunca Mariña Oriental gl.svg",
+   "source": "cache",
+   "loadMs": 327,
+   "integrity": true,
+   "bytes": 530740,
+   "canvasElements": 421,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 2,
+    "defsRewritten": 1,
+    "defsCorrupted": 0,
+    "defsMissing": 1,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 299946,
+    "pixelDiffPercent": 2.97
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#3fbfff",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 656,
+    "bytesOut": 299946,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 2.95
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "K: no-op diff 2.97%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "inkscape-native",
    "corpusBytes": 530771,
-   "wallMs": 29,
-   "verdict": "INFRA",
-   "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+   "wallMs": 2126
   },
   {
    "title": "File:Francisco Beltrao Localizacao.svg",
-   "fatal": "http-429: ",
+   "source": "cache",
+   "loadMs": 445,
+   "integrity": true,
+   "bytes": 836620,
+   "canvasElements": 550,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 0,
+    "defsRewritten": 1,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 830458,
+    "pixelDiffPercent": 0.25
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": true,
+    "fillBefore": null,
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 797,
+    "bytesOut": 830473,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 0.25
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "map",
    "corpusBytes": 836625,
-   "wallMs": 32,
-   "verdict": "INFRA",
-   "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+   "wallMs": 2888
   },
   {
    "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
-   "fatal": "http-429: ",
-   "corpusBytes": 1140447,
-   "wallMs": 29,
-   "verdict": "INFRA",
+   "source": "cache",
+   "loadMs": 436,
+   "integrity": true,
+   "bytes": 1140445,
+   "canvasElements": 2795,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 1,
+    "defsRewritten": 1,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 1008578,
+    "pixelDiffPercent": 6.72
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": true,
+    "fillBefore": null,
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 1034,
+    "bytesOut": 1008593,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 6.72
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
    "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+    "K: no-op diff 6.72%"
+   ],
+   "warns": [
+    "K: edited diff 6.72%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "map",
+   "corpusBytes": 1140447,
+   "wallMs": 3565
   },
   {
    "title": "File:Map of countries with Lindex stores.svg",
-   "fatal": "http-429: ",
-   "corpusBytes": 1319446,
-   "wallMs": 27,
-   "verdict": "INFRA",
+   "source": "cache",
+   "loadMs": 683,
+   "integrity": true,
+   "bytes": 1319446,
+   "canvasElements": 2360,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 1,
+    "defsRewritten": 1,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 964932,
+    "pixelDiffPercent": 39.01
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#e0e0e0",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 1036,
+    "bytesOut": 964932,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 39.01
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
    "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+    "K: no-op diff 39.01%"
+   ],
+   "warns": [
+    "K: edited diff 39.01%",
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "map",
+   "corpusBytes": 1319446,
+   "wallMs": 3927
   },
   {
    "title": "File:Red Sea map TH.svg",
-   "fatal": "http-429: ",
+   "source": "cache",
+   "loadMs": 941,
+   "integrity": true,
+   "bytes": 1863599,
+   "canvasElements": 3244,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 2,
+    "defsRewritten": 234,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 1244830,
+    "pixelDiffPercent": 0.32
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#e0e0e0",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 1491,
+    "bytesOut": 1244830,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 0.32
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "WARN",
+   "fails": [],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "map",
    "corpusBytes": 1863775,
-   "wallMs": 31,
-   "verdict": "INFRA",
-   "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+   "wallMs": 5594
   },
   {
    "title": "File:Vergleich zwischen Manga und Foto (nur Zeichnung).svg",
-   "fatal": "http-429: ",
+   "source": "cache",
+   "loadMs": 1150,
+   "integrity": true,
+   "bytes": 2084600,
+   "canvasElements": 1953,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 1,
+    "defsRewritten": 193,
+    "defsCorrupted": 0,
+    "defsMissing": 5538,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 692140,
+    "pixelDiffPercent": 0.05
+   },
+   "idempotent": false,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#000000",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 3924,
+    "bytesOut": 692140,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 0.05
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "idempotence: second pass differs"
+   ],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "inkscape-native",
    "corpusBytes": 2084600,
-   "wallMs": 26,
-   "verdict": "INFRA",
-   "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+   "wallMs": 10830
   },
   {
-   "title": "File:Elecci\u00f3n presidencial Chile 2017 por pa\u00eds.svg",
-   "fatal": "http-429: ",
+   "title": "File:Elección presidencial Chile 2017 por país.svg",
+   "source": "cache",
+   "loadMs": 950,
+   "integrity": true,
+   "bytes": 2584366,
+   "canvasElements": 3792,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": true,
+    "errors": [],
+    "warnings": 2,
+    "defsRewritten": 0,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 1474632,
+    "pixelDiffPercent": 25.23
+   },
+   "idempotent": false,
+   "edit": {
+    "edited": true,
+    "fillBefore": "#b9b9b9",
+    "fillAfter": "#ff00aa",
+    "present": true,
+    "checksOk": true,
+    "errors": [],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 0,
+    "switchesAfter": 0,
+    "verdict": "overwrite-ok",
+    "exportMs": 1433,
+    "bytesOut": 1474632,
+    "editFootprintPercent": 0,
+    "pixelDiffPercent": 25.23
+   },
+   "nonFinite": 0,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
+   "fails": [
+    "K: no-op diff 25.23%",
+    "idempotence: second pass differs"
+   ],
+   "warns": [
+    "K: edited diff 25.23%"
+   ],
+   "domain": "map",
    "corpusBytes": 2584366,
-   "wallMs": 25,
-   "verdict": "INFRA",
-   "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+   "wallMs": 5551
   },
   {
-   "title": "File:Chyhyryn-2-eng \u041c\u043e\u043d\u0442\u0430\u0436\u043d\u0430\u044f \u043e\u0431\u043b\u0430\u0441\u0442\u044c 1.svg",
-   "fatal": "http-429: ",
-   "corpusBytes": 2805845,
-   "wallMs": 27,
-   "verdict": "INFRA",
+   "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+   "source": "cache",
+   "loadMs": 672,
+   "integrity": true,
+   "bytes": 2805294,
+   "canvasElements": 3588,
+   "noop": {
+    "editedNothing": true,
+    "saveButtonDisabled": true,
+    "checksOk": false,
+    "errors": [
+     "1 <foreignObject> element(s) — not supported by the Commons renderer.",
+     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+    ],
+    "warnings": 0,
+    "defsRewritten": 99,
+    "defsCorrupted": 0,
+    "defsMissing": 0,
+    "defsRestored": 0,
+    "framingRestored": [],
+    "bytesOut": 2760843,
+    "pixelDiffPercent": "err:Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data."
+   },
+   "idempotent": true,
+   "edit": {
+    "edited": false,
+    "fillBefore": null,
+    "fillAfter": null,
+    "present": false,
+    "checksOk": false,
+    "errors": [
+     "1 <foreignObject> element(s) — not supported by the Commons renderer.",
+     "non-finite numeric value(s) in the markup — renderers will fail on these: href=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+    ],
+    "elementChangePercent": 0,
+    "textRunsChanged": 0,
+    "switchesBefore": 1,
+    "switchesAfter": 1,
+    "verdict": "overwrite-ok",
+    "exportMs": 1872,
+    "bytesOut": 2760843,
+    "editFootprintPercent": "err",
+    "pixelDiffPercent": "err:Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data."
+   },
+   "nonFinite": 7,
+   "noopGuard": "n/a — offline mode; saving to Commons is disabled by design",
+   "verdict": "FAIL",
    "fails": [
-    "HTTP 429 \u2014 the test burst was rate-limited, not a tool failure"
-   ]
+    "G: pre-flight errors on no-op export",
+    "G: 7 non-finite values",
+    "K: no-op render not measurable",
+    "edit lost in export"
+   ],
+   "warns": [
+    "C: definitions rewritten and not restored"
+   ],
+   "domain": "map",
+   "corpusBytes": 2805845,
+   "wallMs": 6215
   }
  ],
- "pageErrors": [],
- "note": "INFRA = the file could not be fetched during this run (HTTP 429 from our own burst). Excluded from tool PASS/WARN/FAIL.",
- "verdicts": {
-  "?": 36,
-  "INFRA": 8
- }
+ "pageErrors": []
 }

@@ -10,3 +10,4 @@ corpus/candidates.json
 # SVG-Edit's extension bundles carry their own vendored deps — commit them, don't ignore them
 !/docs/vendor/svgedit/extensions/node_modules/
 !/docs/vendor/svgedit/extensions/_virtual/
+corpus/files-cache/

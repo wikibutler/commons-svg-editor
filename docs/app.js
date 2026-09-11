@@ -124,9 +124,15 @@ async function enrichFileInfo (text) {
   } catch { /* non-fatal */ }
 }
 
-function loadLocalText (text, name = 'local file') {
-  state.file = { title: name, url: null, sha1: null, size: new Blob([text]).size, user: 'you',
-    timestamp: new Date().toISOString(), integrity: null, localOnly: true };
+async function loadLocalText (text, name = 'local file', expectedSha1 = null) {
+  // expectedSha1 lets an offline run over cached corpus files still prove which Commons revision was tested
+  let localSha1 = null; let integrity = null;
+  if (expectedSha1) {
+    localSha1 = await C.sha1Hex(new TextEncoder().encode(text));
+    integrity = localSha1 === expectedSha1;
+  }
+  state.file = { title: name, url: null, sha1: expectedSha1 || localSha1, size: new Blob([text]).size, user: 'you',
+    timestamp: new Date().toISOString(), integrity, localOnly: true, cached: Boolean(expectedSha1) };
   state.originalText = text;
   state.localOnly = true;
   return putSvgIntoEditor(text).then(() => {

@@ -24,6 +24,13 @@ const CORPUS = JSON.parse(readFileSync(corpusArg >= 0
   : fileURLToPath(new URL('../corpus/corpus.json', import.meta.url)), 'utf8'));
 
 const args = process.argv.slice(2);
+// --local <index.json>: run entirely from the on-disk corpus cache (tests/fetch-corpus.mjs), making zero
+// requests to Commons. Wikimedia hosts are then blocked in the browser, which is what makes this a test
+// rather than a claim: if the run still completes, it provably did not touch the network.
+const localArg = args.indexOf('--local');
+const LOCAL = localArg >= 0
+  ? JSON.parse(readFileSync(args[localArg + 1].startsWith('/') ? args[localArg + 1] : new URL('../' + args[localArg + 1], import.meta.url), 'utf8'))
+  : null;
 const limitArg = args.indexOf('--limit');
 const filesArg = args.indexOf('--files');
 const DIFF_W = args.includes('--diff-width') ? Number(args[args.indexOf('--diff-width') + 1]) : 500;
@@ -37,6 +44,14 @@ await new Promise((r) => setTimeout(r, 1200));
 process.env.PLAYWRIGHT_BROWSERS_PATH = '/opt/data/home/.cache/ms-playwright';
 const browser = await chromium.launch({ executablePath: '/opt/data/home/.cache/ms-playwright/chromium-1217/chrome-linux/chrome', args: ['--no-sandbox'] });
 const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+let blockedWikimedia = 0;
+if (LOCAL) {
+  await page.route('**/*', (route) => {
+    const u = route.request().url();
+    if (/wikimedia\.org|wikipedia\.org/.test(u)) { blockedWikimedia++; return route.abort(); }
+    return route.continue();
+  });
+}
 const pageErrors = [];
 page.on('pageerror', (e) => pageErrors.push(e.message.slice(0, 160)));
 await page.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
@@ -45,14 +60,23 @@ await page.waitForFunction(() => window.__cse?.ready, null, { timeout: 60000 });
 const results = { startedAt: new Date().toISOString(), diffWidth: DIFF_W, files: [], pageErrors };
 
 async function scoreOne (entry) {
-  const rec = page.evaluate(async ({ title, diffWidth }) => {
+  const loc = LOCAL?.files?.[entry.title] || null;
+  const cachedText = loc ? readFileSync(new URL('../' + loc.path, import.meta.url), 'utf8') : null;
+  const rec = await page.evaluate(async ({ title, diffWidth, cachedText, sha1, offline }) => {
     const n = window.__cse;
     const out = { title };
     try {
       // --- A: load + integrity
       let t0 = performance.now();
-      const info = await n.getFileInfo(title);
-      await n.loadFromCommons(title);
+      if (cachedText) {
+        // offline path: bytes from corpus/files-cache, integrity checked against the pinned Commons sha1
+        await n.loadLocalText(cachedText, title, sha1);
+        out.source = 'cache';
+      } else {
+        const info = await n.getFileInfo(title);
+        await n.loadFromCommons(title);
+        out.source = 'commons';
+      }
       out.loadMs = Math.round(performance.now() - t0);
       out.integrity = n.state.file?.integrity;
       out.bytes = n.state.originalText.length;
@@ -92,7 +116,9 @@ async function scoreOne (entry) {
       out.idempotent = norm(pass1) === norm(pass2);
 
       // --- edit pass: a real canvas edit must survive, and stay faithful
-      await n.loadFromCommons(title);
+      // (offline: reload from the cached bytes — this is what previously hit Commons once per file per run)
+      if (cachedText) await n.loadLocalText(cachedText, title, sha1);
+      else await n.loadFromCommons(title);
       const sc = n.editor().svgCanvas;
       const els = [...document.querySelectorAll('#svgcontent path,#svgcontent rect,#svgcontent polygon,#svgcontent circle,#svgcontent polyline,#svgcontent text')];
       let el = null; let bestArea = Infinity;
@@ -126,7 +152,7 @@ async function scoreOne (entry) {
       out.fatal = String(e.message || e).slice(0, 200);
     }
     return out;
-  }, { title: entry.title, diffWidth: DIFF_W });
+  }, { title: entry.title, diffWidth: DIFF_W, cachedText, sha1: loc?.sha1 || null, offline: Boolean(LOCAL) });
 
   const noopDiff = typeof rec.noop?.pixelDiffPercent === 'number' ? rec.noop.pixelDiffPercent : null;
   const editDiff = typeof rec.edit?.pixelDiffPercent === 'number' ? rec.edit.pixelDiffPercent : null;
@@ -140,13 +166,18 @@ async function scoreOne (entry) {
   else if (noopDiff > 5) fails.push(`K: no-op diff ${noopDiff}%`);
   if (rec.edit && !rec.edit.present) fails.push('edit lost in export');
   if (!rec.idempotent) fails.push('idempotence: second pass differs');
-  if (!rec.noop?.editedNothing || rec.noop?.saveButtonDisabled !== true) fails.push('J: no-op save not blocked');
+  if (rec.source === 'cache') rec.noopGuard = 'n/a — offline mode; saving to Commons is disabled by design'
+  else if (!rec.noop?.editedNothing || rec.noop?.saveButtonDisabled !== true) fails.push('J: no-op save not blocked');
   const warns = [];
   if (noopDiff !== null && noopDiff > 2 && noopDiff <= 5) warns.push(`K: no-op diff ${noopDiff}%`);
   if (editDiff !== null && editDiff > 5) warns.push(`K: edited diff ${editDiff}%`);
   if (rec.edit?.editFootprintPercent !== undefined && typeof rec.edit.editFootprintPercent === 'number' && rec.edit.editFootprintPercent > 25) warns.push(`edit footprint ${rec.edit.editFootprintPercent}% (larger than the edited shape suggests)`);
   if (rec.noop?.defsRewritten && !rec.noop?.defsRestored) warns.push('C: definitions rewritten and not restored');
-  rec.verdict = fails.length ? (fails.some((f) => !f.startsWith('K:')) ? 'FAIL' : 'WARN') : (warns.length ? 'WARN' : 'PASS');
+  // A pixel-diff failure only softens to a warning when it is a near-miss. The old rule treated ANY
+  // K-only failure as a warning, which labelled a 39% destroyed render as WARN.
+  const hardFails = fails.filter((f) => !f.startsWith('K:'));
+  const worstKDiff = Math.max(noopDiff ?? 0, editDiff ?? 0);
+  rec.verdict = (hardFails.length || worstKDiff > 10) ? 'FAIL' : (fails.length || warns.length) ? 'WARN' : 'PASS';
   rec.fails = fails; rec.warns = warns;
   return rec;
 }
@@ -173,5 +204,11 @@ const scored = results.files.filter((r) => r.verdict !== 'INFRA');
 const byStratum = scored.reduce((a, r) => { const k = r.domain || '?'; a[k] = a[k] || [0, 0]; a[k][0]++; if (r.verdict === 'PASS') a[k][1]++; return a; }, {});
 console.log('per stratum (scored: passed):', JSON.stringify(byStratum));
 console.log('\ntally:', tally);
+if (LOCAL) {
+  console.log(`offline mode: ${blockedWikimedia} request(s) to Wikimedia hosts were attempted and blocked`);
+  results.blockedWikimedia = blockedWikimedia;
+  results.mode = 'offline (local corpus cache)';
+}
+results.verdicts = tally;
 console.log('scorecard →', OUT + 'corpus-scorecard.json');
 await browser.close(); server.kill(); process.exit(0);

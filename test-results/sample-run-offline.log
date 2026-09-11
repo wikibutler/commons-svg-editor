@@ -1,0 +1,49 @@
+WARN known-hard     File:T7792 Example of baseline-shift using explicit  load    10ms  no-op diff   6.32%  edited diff   6.88%   | K: no-op diff 6.32% | warn: K: edited diff 6.88%
+FAIL svg2-features  File:Xclamation blue 2.svg                           load    19ms  no-op diff   3.29%  edited diff  69.24%   | warn: K: no-op diff 3.29%; K: edited diff 69.24%; edit footprint 66.63% (larger than the edited shape suggests); C: definitions rewritten and not restored
+WARN svg2-features  File:Radar Mac black gradient.svg                    load    18ms  no-op diff   0.82%  edited diff   3.26%   | warn: C: definitions rewritten and not restored
+PASS icon/logo      File:Oresundskraft rgb.svg                           load    21ms  no-op diff   0.65%  edited diff   0.65%  
+FAIL known-hard     File:Goomi nyarly.svg                                load    20ms  no-op diff  10.82%  edited diff  10.89%   | K: no-op diff 10.82% | warn: K: edited diff 10.89%; C: definitions rewritten and not restored
+FAIL multilingual   File:No free image woman.svg                         load    25ms  no-op diff      0%  edited diff  60.66%   | warn: K: edited diff 60.66%; edit footprint 60.66% (larger than the edited shape suggests)
+WARN multilingual   File:SystemLanguage MediaWiki internal code.svg      load    21ms  no-op diff    5.9%  edited diff    5.9%   | K: no-op diff 5.9% | warn: K: edited diff 5.9%
+FAIL known-hard     File:Skew lines shortest distance.svg                load    25ms  no-op diff  32.48%  edited diff  33.99%   | K: no-op diff 32.48% | warn: K: edited diff 33.99%; C: definitions rewritten and not restored
+WARN icon/logo      File:PayPa Plane Logo.svg                            load     8ms  no-op diff   0.05%  edited diff   0.51%   | warn: C: definitions rewritten and not restored
+FAIL inkscape-native File:Wikivoyage oversight draft 4.svg                load    25ms  no-op diff  17.75%  edited diff  17.75%   | K: no-op diff 17.75% | warn: K: edited diff 17.75%; C: definitions rewritten and not restored
+FAIL icon/logo      File:PAES logo.svg                                   load    25ms  no-op diff  38.94%  edited diff  38.94%   | K: no-op diff 38.94% | warn: K: edited diff 38.94%
+PASS icon/logo      File:PghLFilms profile.svg                           load    28ms  no-op diff      0%  edited diff   2.11%  
+WARN inkscape-native File:Types of Sentences-pa.svg                       load    44ms  no-op diff    3.8%  edited diff   4.39%   | warn: K: no-op diff 3.8%
+PASS icon/logo      File:MEITEI free-file(1)(1).svg                      load    35ms  no-op diff      0%  edited diff   0.26%  
+WARN chart/graph    File:Teilmengen R2.svg                               load    29ms  no-op diff   0.16%  edited diff   0.21%   | warn: C: definitions rewritten and not restored
+WARN diagram        File:Intismeran-development-timeline.svg             load    38ms  no-op diff   5.42%  edited diff   5.43%   | K: no-op diff 5.42% | warn: K: edited diff 5.43%
+FAIL embedded-raster File:Strateo-logo.svg                                load    54ms  no-op diff  13.73%  edited diff  13.73%   | K: no-op diff 13.73% | warn: K: edited diff 13.73%
+FAIL chart/graph    File:Mittelwert- und Median Einkommen NE 1996-2017 E load    30ms  no-op diff  14.85%  edited diff   14.9%   | K: no-op diff 14.85% | warn: K: edited diff 14.9%
+WARN chart/graph    File:ERB vs frequency deutsch.svg                    load    20ms  no-op diff   0.04%  edited diff   0.05%   | warn: C: definitions rewritten and not restored
+WARN embedded-raster File:El Manchar logo.svg                             load    42ms  no-op diff   0.03%  edited diff   4.23%   | warn: C: definitions rewritten and not restored
+WARN multilingual   File:Photovoltaics Installed Capacity and Production load    52ms  no-op diff   1.03%  edited diff   1.03%   | warn: C: definitions rewritten and not restored
+WARN diagram        File:Comparison radiated field magnitude of hwd to e load    55ms  no-op diff   0.54%  edited diff   0.54%   | warn: C: definitions rewritten and not restored
+FAIL svg2-features  File:Tradex Logo Wiki Mesa de trabajo 1.svg          load    41ms  no-op diff  89.68%  edited diff  89.68%   | K: no-op diff 89.68% | warn: K: edited diff 89.68%; C: definitions rewritten and not restored
+WARN multilingual   File:Wind power installed capacity and generation in load    48ms  no-op diff   8.73%  edited diff   8.75%   | K: no-op diff 8.73% | warn: K: edited diff 8.75%; C: definitions rewritten and not restored
+WARN multilingual   File:Wind power installed capacity and generation in load    43ms  no-op diff   8.76%  edited diff   8.76%   | K: no-op diff 8.76% | warn: K: edited diff 8.76%; C: definitions rewritten and not restored
+WARN multilingual   File:Wind power installed capacity and generation in load    46ms  no-op diff   7.58%  edited diff   7.58%   | K: no-op diff 7.58% | warn: K: edited diff 7.58%; C: definitions rewritten and not restored
+WARN icon/logo      File:Boerse.de Logo 10.2022.svg                      load    40ms  no-op diff   0.15%  edited diff   0.15%   | warn: C: definitions rewritten and not restored
+INFRA chart/graph    File:How many Democratic positions do people take?.s load     -ms  no-op diff      -%  edited diff      -%   | not measurable — file could not be fetched/verified
+WARN chart/graph    File:Auftragung nach dem OWRK-Verfahren.svg          load    67ms  no-op diff   3.88%  edited diff   3.88%   | warn: K: no-op diff 3.88%; C: definitions rewritten and not restored
+WARN diagram        File:Milkproducts v2.svg                             load    55ms  no-op diff   0.25%  edited diff   0.25%   | warn: C: definitions rewritten and not restored
+WARN chart/graph    File:HIV AIDS in Brazil – AIDS related mortality 198 load    81ms  no-op diff   5.38%  edited diff   5.38%   | K: no-op diff 5.38% | warn: K: edited diff 5.38%; C: definitions rewritten and not restored
+FAIL diagram        File:DistAmbDGT esquema.svg                          load   109ms  no-op diff  12.59%  edited diff  12.59%   | K: no-op diff 12.59% | warn: K: edited diff 12.59%
+WARN diagram        File:GOZ structure diagram.svg                       load    97ms  no-op diff   0.07%  edited diff   0.08%   | warn: C: definitions rewritten and not restored
+WARN known-hard     File:Languages-Europe edit.svg                       load   185ms  no-op diff   5.12%  edited diff   5.12%   | K: no-op diff 5.12% | warn: K: edited diff 5.12%; C: definitions rewritten and not restored
+FAIL inkscape-native File:BasePairing.svg                                 load    78ms  no-op diff   2.44%  edited diff   2.44%   | G: pre-flight errors on no-op export; G: 1 non-finite values | warn: K: no-op diff 2.44%; C: definitions rewritten and not restored
+FAIL diagram        File:Krzyś development chart.svg                     load    90ms  no-op diff   2.94%  edited diff   2.94%   | G: pre-flight errors on no-op export; G: 10 non-finite values; C: 5 definitions corrupted | warn: K: no-op diff 2.94%; C: definitions rewritten and not restored
+WARN inkscape-native File:Hidrografía Galicia Cunca Mariña Oriental gl.sv load   327ms  no-op diff   2.97%  edited diff   2.95%   | warn: K: no-op diff 2.97%; C: definitions rewritten and not restored
+WARN map            File:Francisco Beltrao Localizacao.svg               load   445ms  no-op diff   0.25%  edited diff   0.25%   | warn: C: definitions rewritten and not restored
+WARN map            File:Mappa delle Nazioni attualmente in Guerra.svg   load   436ms  no-op diff   6.72%  edited diff   6.72%   | K: no-op diff 6.72% | warn: K: edited diff 6.72%; C: definitions rewritten and not restored
+FAIL map            File:Map of countries with Lindex stores.svg         load   683ms  no-op diff  39.01%  edited diff  39.01%   | K: no-op diff 39.01% | warn: K: edited diff 39.01%; C: definitions rewritten and not restored
+WARN map            File:Red Sea map TH.svg                              load   941ms  no-op diff   0.32%  edited diff   0.32%   | warn: C: definitions rewritten and not restored
+FAIL inkscape-native File:Vergleich zwischen Manga und Foto (nur Zeichnun load  1150ms  no-op diff   0.05%  edited diff   0.05%   | idempotence: second pass differs | warn: C: definitions rewritten and not restored
+FAIL map            File:Elección presidencial Chile 2017 por país.svg   load   950ms  no-op diff  25.23%  edited diff  25.23%   | K: no-op diff 25.23%; idempotence: second pass differs | warn: K: edited diff 25.23%
+FAIL map            File:Chyhyryn-2-eng Монтажная область 1.svg          load   672ms  no-op diff err:Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.%  edited diff err:Failed to execute 'getImageData' on 'CanvasRenderingContext2D': The canvas has been tainted by cross-origin data.%   | G: pre-flight errors on no-op export; G: 7 non-finite values; K: no-op render not measurable; edit lost in export | warn: C: definitions rewritten and not restored
+per stratum (scored: passed): {"known-hard":[4,0],"svg2-features":[3,0],"icon/logo":[6,3],"multilingual":[6,0],"inkscape-native":[5,0],"chart/graph":[5,0],"diagram":[6,0],"embedded-raster":[2,0],"map":[6,0]}
+
+tally: { WARN: 24, FAIL: 16, PASS: 3, INFRA: 1 }
+offline mode: 0 request(s) to Wikimedia hosts were attempted and blocked
+scorecard → /opt/data/prototypes/commons-svg-edit/test-results/corpus-scorecard.json
