@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Commons SVG revision review</title>
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+ :root{--blue:#3366cc;--ink:#202122;--muted:#54595d;--line:#c8ccd1;--bg:#f8f9fa;--ok:#14866d;--warn:#ac6600;--err:#b32424}
+ *{box-sizing:border-box} body{margin:0;font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+ header{background:#fff;border-bottom:1px solid var(--line);padding:14px 18px} h1{margin:0 0 4px;font-size:18px}
+ main{padding:16px 18px;max-width:1100px} .card{background:#fff;border:1px solid var(--line);border-radius:2px;padding:12px 14px;margin-bottom:14px}
+ label{font-weight:600;font-size:13px} input[type=text]{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:2px;width:min(520px,100%)}
+ button{font:inherit;padding:6px 12px;border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:2px;cursor:pointer}
+ button.ghost{background:#fff;color:var(--blue)} .dim{color:var(--muted);font-size:13px}
+ table{border-collapse:collapse;width:100%;font-size:13px} th,td{text-align:left;padding:4px 8px;border-bottom:1px solid #eaecf0}
+ .badge{display:inline-block;padding:2px 8px;border-radius:2px;font-weight:600;font-size:13px}
+ .badge.ok{background:#e6f4ee;color:var(--ok)} .badge.warn{background:#fdf0e1;color:var(--warn)} .badge.err{background:#fbe9e9;color:var(--err)} .badge.info{background:#eaf3ff;color:var(--blue)}
+ ul.flags{list-style:none;margin:8px 0 0;padding:0} ul.flags li{padding:6px 8px;border-left:3px solid var(--line);margin-bottom:6px;background:#fff}
+ li.err{border-left-color:var(--err)} li.warn{border-left-color:var(--warn)} li.info{border-left-color:var(--blue)}
+ code{background:#f2f5f8;padding:1px 4px;border-radius:2px;font-size:12.5px} .revs{margin-top:8px} .pick{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+ select{font:inherit;padding:5px;border:1px solid var(--line);border-radius:2px;max-width:100%}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px} @media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header>
+  <h1>Commons SVG revision review</h1>
+  <div class="dim">Read-only. Fetches public files and their revision history anonymously from the Wikimedia API,
+  and describes what actually changed in the file — including whether an overwrite is a small edit or a whole-file
+  rewrite. Nothing is uploaded, no account is used. Tracks Epic C of
+  <a href="https://github.com/wikibutler/commons-svg-editor">commons-svg-editor</a>.</div>
+</header>
+<main>
+  <div class="card">
+    <label for="title">Commons file</label><br>
+    <input type="text" id="title" value="File:Steinwiesen in KC.svg" size="50">
+    <button id="load" class="ghost">Load revision history</button>
+    <span class="dim" id="status"></span>
+    <div class="revs" id="revs"></div>
+  </div>
+  <div id="out"></div>
+</main>
+<script type="module">
+import { reviewPair } from './lib/svg-diff.mjs';
+
+const API = 'https://commons.wikimedia.org/w/api.php';
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let REVS = []; let TITLE = '';
+
+const api = (params) => fetch(API + '?' + new URLSearchParams({ ...params, format: 'json', formatversion: '2', origin: '*' }))
+  .then((r) => r.json()).then((j) => { if (j.error) throw new Error(j.error.info || j.error.code); return j; });
+
+async function history (title) {
+  const j = await api({ action: 'query', prop: 'imageinfo', titles: title, iilimit: '20',
+    iiprop: 'url|size|sha1|user|timestamp|comment|mime' });
+  const p = j.query.pages[0];
+  if (!p || p.missing) throw new Error('no such file on Commons');
+  const ii = p.imageinfo || [];
+  if (!ii.length) throw new Error('no revisions found (is it an SVG?)');
+  return ii;
+}
+
+async function sha1 (bytes) {
+  const d = await crypto.subtle.digest('SHA-1', bytes);
+  return [...new Uint8Array(d)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function revBytes (rev) {
+  const res = await fetch(rev.url.split('?')[0], { mode: 'cors', credentials: 'omit' });
+  const buf = new Uint8Array(await res.arrayBuffer());
+  const got = await sha1(buf);
+  return { text: new TextDecoder().decode(buf), verified: got === rev.sha1, got };
+}
+
+function renderPickers () {
+  const opt = (r, i) => `<option value="${i}">${esc(r.timestamp.replace('T', ' ').replace('Z', ''))} · ${esc(r.user)} · ${(r.size / 1024).toFixed(1)} KB${r.comment ? ' · ' + esc(r.comment.slice(0, 44)) : ''}</option>`;
+  document.getElementById('revs').innerHTML = REVS.length < 2 ? '<div class="dim">Only one revision — nothing to review.</div>' : `
+    <div class="pick">
+      <div><label>Older revision</label><br><select id="older">${REVS.map(opt).join('')}</select></div>
+      <div><label>Newer revision</label><br><select id="newer">${REVS.map(opt).join('')}</select></div>
+      <button id="run">Review this change</button>
+    </div>`;
+  if (REVS.length >= 2) {
+    document.getElementById('older').value = '1';
+    document.getElementById('newer').value = '0';
+    document.getElementById('run').onclick = run;
+  }
+}
+
+function badgeClass (v) { return v === 'identical' ? 'ok' : v.startsWith('targeted') ? 'ok' : v.startsWith('moderate') ? 'warn' : 'err'; }
+
+function factsTable (a, b) {
+  const rows = [['bytes', a.bytes, b.bytes], ['elements', a.elements, b.elements], ['comments', a.comments, b.comments],
+    ['<switch> blocks', a.switch, b.switch], ['languages', a.systemLanguage, b.systemLanguage],
+    ['text elements', a.textNodes, b.textNodes], ['tspan runs', a.tspan, b.tspan],
+    ['gradients', a.gradients, b.gradients], ['defs ids', a.defsIds, b.defsIds], ['filters', a.filters, b.filters],
+    ['patterns', a.patterns, b.patterns], ['markers', a.markers, b.markers], ['embedded rasters', a.embeddedRaster, b.embeddedRaster],
+    ['style attributes', a.styleAttrs, b.styleAttrs], ['inkscape/sodipodi attrs', a.inkscape, b.inkscape],
+    ['namedview blocks', a.namedview, b.namedview], ['viewBox', a.viewBox || '—', b.viewBox || '—'],
+    ['width', a.width || '—', b.width || '—'], ['height', a.height || '—', b.height || '—']];
+  return '<table><tr><th>fact</th><th>older</th><th>newer</th></tr>' + rows.map(([k, x, y]) =>
+    `<tr><td>${esc(k)}</td><td${String(x) !== String(y) ? ' style="font-weight:700"' : ''}>${esc(String(x).slice(0, 30))}</td><td${String(x) !== String(y) ? ' style="font-weight:700"' : ''}>${esc(String(y).slice(0, 30))}</td></tr>`).join('') + '</table>';
+}
+
+function fileChecks (text, f) {
+  const checks = [];
+  const add = (lvl, msg) => checks.push({ lvl, msg });
+  if (!f.viewBox) add('warn', 'No viewBox: the file will not scale predictably and reviewers usually ask for one.');
+  if (/<script|on[a-z]+\s*=\s*"/i.test(text)) add('err', 'Contains a script or inline event handler — not acceptable in Commons SVG.');
+  if (/<flowRoot|<flowRegion/.test(text)) add('err', 'Contains flowRoot/flowRegion (Inkscape text frames): librsvg does not render these.');
+  if (f.embeddedRaster) add('warn', `${f.embeddedRaster} embedded raster image(s) — allowed but often better uploaded separately; they also break pixel-by-pixel diffing.`);
+  if (/\bhttps?:\/\//.test(text.replace(/xmlns[^"]*"[^"]*"/g, ''))) add('warn', 'Contains an external URL reference — Commons requires SVG to be self-contained.');
+  if (f.switch) add('info', `Uses <switch> for ${f.systemLanguage} language(s): live text can be translated, but any tool that flattens <switch> destroys the translations.`);
+  if (!checks.length) add('ok', 'No common Commons source problems detected by these preliminary checks.');
+  return checks;
+}
+
+function render (r, o, n, orev, nrev) {
+  const out = document.getElementById('out');
+  out.innerHTML = `
+    <div class="card">
+      <div><span class="badge ${badgeClass(r.verdict)}">${esc(r.verdict)}</span></div>
+      <p class="dim" style="margin:8px 0 0">Source churn <strong>${r.touchShare}%</strong> of elements ·
+      ${r.structural.added} added / ${r.structural.removed} removed / ${r.structural.realChanges} changed ·
+      ${r.structural.attrChanges} attribute changes · size ${r.sizeChangePercent}% ·
+      revision <strong>${esc(orev.timestamp.slice(0, 10))} → ${esc(nrev.timestamp.slice(0, 10))}</strong> by ${esc(nrev.user)}</p>
+      ${r.flags.length ? '<ul class="flags">' + r.flags.map((f) => `<li class="${f.level}">${esc(f.text)}</li>`).join('') + '</ul>' : '<p class="dim">No preservation problems detected.</p>'}
+    </div>
+    <div class="grid">
+      <div class="card"><h3 style="margin:0 0 6px;font-size:14px">What moved in the file</h3>${factsTable(r.factsOld, r.factsNew)}</div>
+      <div class="card"><h3 style="margin:0 0 6px;font-size:14px">Source checks (preliminary)</h3>
+        <ul class="flags">${fileChecks(n.text, r.factsNew).map((c) => `<li class="${c.lvl}">${esc(c.msg)}</li>`).join('')}</ul></div>
+    </div>
+    <div class="card"><h3 style="margin:0 0 6px;font-size:14px">Changed elements (sample)</h3>
+      ${r.sample.changed.length ? '<table><tr><th>element</th><th>what changed</th></tr>' + r.sample.changed.map((c) => `<tr><td><code>${esc(c.el)}</code></td><td>${esc(c.attrs.join('; ') || (c.text ? `text "${c.text[0]}" → "${c.text[1]}"` : 'moved'))}</td></tr>`).join('') + '</table>' : '<div class="dim">No element-level changes detected.</div>'}
+      ${r.sample.added.length ? `<p class="dim">Added: ${esc(r.sample.added.join(', '))}</p>` : ''}
+      ${r.sample.removed.length ? `<p class="dim">Removed: ${esc(r.sample.removed.join(', '))}</p>` : ''}
+    </div>
+    <div class="card dim">Both revisions were checked against the SHA-1 the API reports:
+      older ${o.verified ? '<strong>verified</strong>' : '<strong style="color:var(--err)">MISMATCH — do not trust the diff</strong>'},
+      newer ${n.verified ? '<strong>verified</strong>' : '<strong style="color:var(--err)">MISMATCH — do not trust the diff</strong>'}.
+      <br>See also <a href="https://commons.wikimedia.org/wiki/${encodeURIComponent(TITLE)}" target="_blank" rel="noopener">the file page</a>
+      and its <a href="https://commons.wikimedia.org/w/index.php?title=${encodeURIComponent(TITLE)}&amp;action=history" target="_blank" rel="noopener">file history</a>.
+      <br>Note: churn counts elements added, removed or actually changed — path reflow caused by inserting a group is not
+      counted as churn. A high churn figure means the file was regenerated rather than patched, which is a statement about
+      the file, not an accusation.</div>`;
+}
+
+async function run () {
+  const st = document.getElementById('status');
+  const oi = Number(document.getElementById('older').value); const ni = Number(document.getElementById('newer').value);
+  if (oi === ni) { st.textContent = 'Pick two different revisions.'; return; }
+  try {
+    st.textContent = ' fetching both revisions…';
+    const [o, n] = await Promise.all([revBytes(REVS[oi]), revBytes(REVS[ni])]);
+    render(reviewPair(o.text, n.text), o, n, REVS[oi], REVS[ni]);
+    st.textContent = '';
+  } catch (e) { st.innerHTML = ' <span style="color:var(--err)">' + esc(e.message) + '</span>'; }
+}
+
+document.getElementById('load').onclick = async () => {
+  const st = document.getElementById('status');
+  TITLE = document.getElementById('title').value.trim();
+  try { st.textContent = ' loading…'; REVS = await history(TITLE); renderPickers(); st.textContent = ` ${REVS.length} revisions`; }
+  catch (e) { st.innerHTML = ' <span style="color:var(--err)">' + esc(e.message) + '</span>'; }
+};
+document.getElementById('load').click();
+</script>
+</body></html>

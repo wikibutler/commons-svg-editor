@@ -3,7 +3,7 @@
 // that carries style="fill:..." changes the bytes and nothing else.
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { elements } from '../surgical/svg-patch.mjs';
+import { elements } from '../docs/review/lib/svg-patch.mjs';
 const R = fileURLToPath(new URL('..', import.meta.url));
 const idx = JSON.parse(readFileSync(R + 'corpus/files-cache/index.json', 'utf8')).files;
 let withStyleFill = 0; let withPresAttrOnly = 0; let container = 0; const examples = [];

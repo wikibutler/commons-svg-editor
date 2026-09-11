@@ -12,6 +12,9 @@ const MOUNT = (process.argv[3] || '/').replace(/\/?$/, '/');
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
+  // ES modules are refused by the browser unless the MIME type is JavaScript — .mjs must be listed
+  '.mjs': 'text/javascript; charset=utf-8',
+  '.md': 'text/markdown; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml',
   '.png': 'image/png', '.jpg': 'image/jpeg', '.gif': 'image/gif', '.ico': 'image/x-icon',
   '.woff': 'font/woff', '.woff2': 'font/woff2', '.map': 'application/json'

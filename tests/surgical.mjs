@@ -9,7 +9,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { elements, byId, setAttribute, setText, diffSummary } from '../surgical/svg-patch.mjs';
+import { elements, byId, setAttribute, setText, diffSummary } from '../docs/review/lib/svg-patch.mjs';
 
 const R = fileURLToPath(new URL('..', import.meta.url));
 const OUT = R + 'test-results/surgical/';

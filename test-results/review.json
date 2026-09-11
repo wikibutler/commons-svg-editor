@@ -1,0 +1,2676 @@
+[
+ {
+  "title": "File:Seal of Kansas.svg",
+  "older": "2008-02-26",
+  "newer": "2008-02-26",
+  "user": "Sagredo",
+  "comment": "|Description=The Great Seal of the State of Kansas\n|Source=http://www.governor.ks.gov/Facts/kansasseal.htm\n|Date=February 2008\n|Author= [[User:Sagredo|&#91;&#91;User:Sagredo&#124;&lt;b&gt;&lt;font color =&quot;#009933&quot;&gt;Sagredo&lt;/font&gt;&lt;/b&g",
+  "result": {
+   "structural": {
+    "added": 2,
+    "removed": 12,
+    "changed": 677,
+    "realChanges": 2,
+    "attrChanges": 7,
+    "moved": 675,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     402590,
+     472672,
+     17.4
+    ],
+    "elements": [
+     766,
+     756
+    ],
+    "comments": [
+     1,
+     1
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     4,
+     0
+    ],
+    "gradients": [
+     47,
+     47
+    ],
+    "defsIds": [
+     48,
+     48
+    ],
+    "filters": [
+     1,
+     1
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     700,
+     691
+    ],
+    "inkscape": [
+     498,
+     499
+    ],
+    "namedview": [
+     1,
+     1
+    ],
+    "namespaces": [
+     7,
+     7
+    ]
+   },
+   "framing": [
+    {
+     "attr": "width",
+     "from": "601",
+     "to": "599.99689"
+    },
+    {
+     "attr": "height",
+     "from": "601.37",
+     "to": "600.37427"
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Framing changed: width 601 → 599.99689; height 601.37 → 600.37427."
+    },
+    {
+     "level": "warn",
+     "text": "Text elements 4 → 0: text was converted to paths or removed. Converting text to outlines is accepted practice for font-independence, but it ends translatability (SVG Translate needs live text)."
+    },
+    {
+     "level": "info",
+     "text": "tspan runs 4 → 0."
+    }
+   ],
+   "verdict": "moderate edit — review the changed elements below",
+   "touchShare": 2.1,
+   "sizeChangePercent": 17.4,
+   "sample": {
+    "added": [
+     "g#g3593",
+     "path#path3589"
+    ],
+    "removed": [
+     "text#text5909",
+     "textPath#textPath27429",
+     "tspan#tspan5913",
+     "text#text14643",
+     "textPath#textPath16617",
+     "tspan#tspan14652",
+     "text#text3020",
+     "textPath#textPath3022"
+    ],
+    "changed": [
+     {
+      "el": "svg#svg2",
+      "attrs": [
+       "width: 601 → 599.99689",
+       "height: 601.37 → 600.37427"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "sodipodi:namedview#base",
+      "attrs": [
+       "inkscape:zoom: 0.62461038 → 0.62461039",
+       "inkscape:cx: 299.99844 → 299.99845",
+       "inkscape:cy: 160.7822 → 301.18286",
+       "showguides: undefined → true",
+       "inkscape:guide-bbox: undefined → true"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "g#g23934",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "a#a19133",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path15646",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path26426",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path26432",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path3264",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path6769",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path6783",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path14",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#path810",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 766,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 4,
+    "tspan": 4,
+    "gradients": 47,
+    "defsIds": 48,
+    "filters": 1,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 700,
+    "classAttrs": 0,
+    "inkscape": 498,
+    "namedview": 1,
+    "namespaces": 7,
+    "viewBox": null,
+    "width": "601",
+    "height": "601.37",
+    "preserveAspectRatio": null,
+    "bytes": 402590
+   },
+   "factsNew": {
+    "elements": 756,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 47,
+    "defsIds": 48,
+    "filters": 1,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 691,
+    "classAttrs": 0,
+    "inkscape": 499,
+    "namedview": 1,
+    "namespaces": 7,
+    "viewBox": null,
+    "width": "599.99689",
+    "height": "600.37427",
+    "preserveAspectRatio": null,
+    "bytes": 472672
+   }
+  }
+ },
+ {
+  "title": "File:Earth Seasons and Milky Way Visibility Shifts Over Time.svg",
+  "older": "2026-08-21",
+  "newer": "2026-09-11",
+  "user": "Unitfreak",
+  "comment": "Added a plot showing Galactic Latitude",
+  "result": {
+   "structural": {
+    "added": 464,
+    "removed": 274,
+    "changed": 207,
+    "realChanges": 105,
+    "attrChanges": 204,
+    "moved": 102,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     83168,
+     105469,
+     26.8
+    ],
+    "elements": [
+     691,
+     881
+    ],
+    "comments": [
+     28,
+     36
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     0,
+     0
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     80,
+     83
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     59,
+     104
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     4,
+     4
+    ]
+   },
+   "framing": [
+    {
+     "attr": "viewBox",
+     "from": "0 0 792 432",
+     "to": "0 0 792 576"
+    },
+    {
+     "attr": "height",
+     "from": "432pt",
+     "to": "576pt"
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 100% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Framing changed: viewBox 0 0 792 432 → 0 0 792 576; height 432pt → 576pt."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 100,
+   "sizeChangePercent": 26.8,
+   "sample": {
+    "added": [
+     "path#mc4c17d1bd3",
+     "path#me75fe81d39",
+     "defs",
+     "use",
+     "defs",
+     "use",
+     "defs",
+     "use"
+    ],
+    "removed": [
+     "path#mf46c291832",
+     "g",
+     "defs",
+     "use",
+     "use",
+     "use",
+     "use",
+     "use"
+    ],
+    "changed": [
+     {
+      "el": "svg",
+      "attrs": [
+       "height: 432pt → 576pt",
+       "viewBox: 0 0 792 432 → 0 0 792 576"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "dc:date",
+      "attrs": [],
+      "moved": false,
+      "text": [
+       "2026-08-14T17:09:18.124941",
+       "2026-09-11T08:03:41.105869"
+      ]
+     },
+     {
+      "el": "path",
+      "attrs": [
+       "d: M 0 432 \nL 792 432 \nL 79 → M 0 576 \nL 792 576 \nL 79"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path",
+      "attrs": [
+       "d: M 45.76 389.2 \nL 781.2 3 → M 54.4 344.266689 \nL 781"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path",
+      "attrs": [
+       "d: M 72.418642 389.2 \nL 72. → M 80.745455 344.266689 \n",
+       "clip-path: url(#pca3e0dfab1) → url(#p7358136c90)"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "use",
+      "attrs": [
+       "xlink:href: #mf46c291832 → #mc4c17d1bd3",
+       "x: 72.418642 → 80.745455",
+       "y: 389.2 → 344.266689"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "g#text_1",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#DejaVuSans-c9c",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#DejaVuSans-14",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#DejaVuSans-13",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path",
+      "attrs": [
+       "d: M 157.049252 389.2 \nL 15 → M 164.381818 344.266689 ",
+       "clip-path: url(#pca3e0dfab1) → url(#p7358136c90)"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "use",
+      "attrs": [
+       "xlink:href: #mf46c291832 → #mc4c17d1bd3",
+       "x: 157.049252 → 164.381818",
+       "y: 389.2 → 344.266689"
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 691,
+    "comments": 28,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 80,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 59,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 4,
+    "viewBox": "0 0 792 432",
+    "width": "792pt",
+    "height": "432pt",
+    "preserveAspectRatio": null,
+    "bytes": 83168
+   },
+   "factsNew": {
+    "elements": 881,
+    "comments": 36,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 83,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 104,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 4,
+    "viewBox": "0 0 792 576",
+    "width": "792pt",
+    "height": "576pt",
+    "preserveAspectRatio": null,
+    "bytes": 105469
+   }
+  }
+ },
+ {
+  "title": "File:Gold Star Medal of Azerbaijan.svg",
+  "older": "2025-03-24",
+  "newer": "2025-03-24",
+  "user": "Toghrul R",
+  "comment": "color update",
+  "result": {
+   "structural": {
+    "added": 0,
+    "removed": 0,
+    "changed": 1,
+    "realChanges": 1,
+    "attrChanges": 0,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     31854,
+     31854,
+     0
+    ],
+    "elements": [
+     166,
+     166
+    ],
+    "comments": [
+     1,
+     1
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     0,
+     0
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     1,
+     1
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     1,
+     1
+    ]
+   },
+   "framing": [],
+   "flags": [],
+   "verdict": "targeted edit — a small, reviewable change",
+   "touchShare": 0.6,
+   "sizeChangePercent": 0,
+   "sample": {
+    "added": [],
+    "removed": [],
+    "changed": [
+     {
+      "el": "style",
+      "attrs": [],
+      "moved": false,
+      "text": [
+       ".st0{fill:#FFDD55;stroke:#AA8800;stroke-width:10;stroke-mite",
+       ".st0{fill:#F7D163;stroke:#AA8800;stroke-width:10;stroke-mite"
+      ]
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 166,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 1,
+    "classAttrs": 161,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": "0 0 1949.3450928 3494.4086914",
+    "width": null,
+    "height": null,
+    "preserveAspectRatio": null,
+    "bytes": 31854
+   },
+   "factsNew": {
+    "elements": 166,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 1,
+    "classAttrs": 161,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": "0 0 1949.3450928 3494.4086914",
+    "width": null,
+    "height": null,
+    "preserveAspectRatio": null,
+    "bytes": 31854
+   }
+  }
+ },
+ {
+  "title": "File:Gold Star (with border).svg",
+  "older": "2020-07-14",
+  "newer": "2022-11-04",
+  "user": "Smasongarrison",
+  "comment": "slimmed down with svgomg // Editing SVG source code using [[c:User:Rillke/SVGedit.js]]",
+  "result": {
+   "structural": {
+    "added": 2,
+    "removed": 3,
+    "changed": 1,
+    "realChanges": 1,
+    "attrChanges": 10,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     1085,
+     767,
+     -29.3
+    ],
+    "elements": [
+     4,
+     3
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     0,
+     0
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     2,
+     0
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     2,
+     0
+    ]
+   },
+   "framing": [
+    {
+     "attr": "width",
+     "from": "100%",
+     "to": null
+    },
+    {
+     "attr": "height",
+     "from": "100%",
+     "to": null
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "File shrank 29.3% — an optimisation/minification pass (SVGO-style). COM:SVGOPT says mass minimisation is often buggy and does not justify reuploading on its own."
+    },
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 100% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Framing changed: width 100% → —; height 100% → —."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 100,
+   "sizeChangePercent": -29.3,
+   "sample": {
+    "added": [
+     "path",
+     "path"
+    ],
+    "removed": [
+     "g#path2987",
+     "path",
+     "path"
+    ],
+    "changed": [
+     {
+      "el": "svg",
+      "attrs": [
+       "width: 100% → undefined",
+       "height: 100% → undefined",
+       "version: 1.1 → undefined",
+       "xmlns:xlink: http://www.w3.org/1999/x → undefined",
+       "xmlns:serif: http://www.serif.com/ → undefined",
+       "style: fill-rule:evenodd;clip-r → undefined",
+       "fill-rule: undefined → evenodd",
+       "stroke-linejoin: undefined → round",
+       "stroke-miterlimit: undefined → 2",
+       "clip-rule: undefined → evenodd"
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 4,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 2,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 2,
+    "viewBox": "0 0 2000 2000",
+    "width": "100%",
+    "height": "100%",
+    "preserveAspectRatio": null,
+    "bytes": 1085
+   },
+   "factsNew": {
+    "elements": 3,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": "0 0 2000 2000",
+    "width": null,
+    "height": null,
+    "preserveAspectRatio": null,
+    "bytes": 767
+   }
+  }
+ },
+ {
+  "title": "File:Gold Spot Price per Gram from Jan 1971 to Jan 2012.svg",
+  "older": "2012-01-11",
+  "newer": "2012-01-11",
+  "user": "MDChaara",
+  "comment": "Resized and corrected legend",
+  "result": {
+   "structural": {
+    "added": 60,
+    "removed": 61,
+    "changed": 0,
+    "realChanges": 0,
+    "attrChanges": 0,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     170027,
+     176239,
+     3.7
+    ],
+    "elements": [
+     67,
+     66
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     36,
+     36
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     1,
+     1
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     54,
+     54
+    ],
+    "inkscape": [
+     31,
+     31
+    ],
+    "namedview": [
+     1,
+     1
+    ],
+    "namespaces": [
+     6,
+     6
+    ]
+   },
+   "framing": [
+    {
+     "attr": "width",
+     "from": "886.48798",
+     "to": "897.1748"
+    },
+    {
+     "attr": "height",
+     "from": "378.93921",
+     "to": "548.88721"
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 100% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Framing changed: width 886.48798 → 897.1748; height 378.93921 → 548.88721."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 100,
+   "sizeChangePercent": 3.7,
+   "sample": {
+    "added": [
+     "svg#svg3102",
+     "metadata#metadata3223",
+     "sodipodi:namedview#namedview3221",
+     "defs#defs3104",
+     "rect#rect3107",
+     "g#g3109",
+     "path#path3113",
+     "path#path3115"
+    ],
+    "removed": [
+     "svg#svg3109",
+     "metadata#metadata3230",
+     "sodipodi:namedview#namedview3228",
+     "defs#defs3111",
+     "rect#rect3114",
+     "g#g3310",
+     "path#path3120",
+     "path#path3122"
+    ],
+    "changed": []
+   },
+   "factsOld": {
+    "elements": 67,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 36,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 1,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 54,
+    "classAttrs": 0,
+    "inkscape": 31,
+    "namedview": 1,
+    "namespaces": 6,
+    "viewBox": null,
+    "width": "886.48798",
+    "height": "378.93921",
+    "preserveAspectRatio": null,
+    "bytes": 170027
+   },
+   "factsNew": {
+    "elements": 66,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 36,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 1,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 54,
+    "classAttrs": 0,
+    "inkscape": 31,
+    "namedview": 1,
+    "namespaces": 6,
+    "viewBox": null,
+    "width": "897.1748",
+    "height": "548.88721",
+    "preserveAspectRatio": null,
+    "bytes": 176239
+   }
+  }
+ },
+ {
+  "title": "File:Tuvalu Product Exports (2019).svg",
+  "older": "2021-07-15",
+  "newer": "2026-09-11",
+  "user": "PJ Geest",
+  "comment": "Improved readability: improve contrast and remove truncated and percentage-only labels",
+  "result": {
+   "structural": {
+    "added": 2,
+    "removed": 13,
+    "changed": 91,
+    "realChanges": 91,
+    "attrChanges": 112,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     54097,
+     47815,
+     -11.6
+    ],
+    "elements": [
+     118,
+     107
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     23,
+     12
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     45,
+     30
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     1,
+     0
+    ]
+   },
+   "framing": [],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 90% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Text elements 23 → 12: text was converted to paths or removed. Converting text to outlines is accepted practice for font-independence, but it ends translatability (SVG Translate needs live text)."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 89.8,
+   "sizeChangePercent": -11.6,
+   "sample": {
+    "added": [
+     "text",
+     "text"
+    ],
+    "removed": [
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text"
+    ],
+    "changed": [
+     {
+      "el": "svg",
+      "attrs": [
+       "xmlns:xlink: http://www.w3.org/1999/x → undefined"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(305.5 →          translate(305.5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(855,3 →          translate(855,3"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(809.5 →          translate(809.5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(879,6 →          translate(879,6"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(639,6 →          translate(639,6"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(1006. →          translate(1006."
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(639,6 →          translate(639,6"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(689,6 →          translate(689,6"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(922.5 →          translate(922.5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(728,6 →          translate(728,6"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(1053. →          translate(1053."
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 118,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 23,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 45,
+    "classAttrs": 95,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": null,
+    "width": "1100px",
+    "height": "715px",
+    "preserveAspectRatio": null,
+    "bytes": 54097
+   },
+   "factsNew": {
+    "elements": 107,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 12,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 30,
+    "classAttrs": 95,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": null,
+    "width": "1100px",
+    "height": "715px",
+    "preserveAspectRatio": null,
+    "bytes": 47815
+   }
+  }
+ },
+ {
+  "title": "File:U323fa.svg",
+  "older": "2026-06-22",
+  "newer": "2026-06-22",
+  "user": "Ekirahardian",
+  "comment": "broken file",
+  "result": {
+   "structural": {
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "realChanges": 0,
+    "attrChanges": 0,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     1836,
+     1831,
+     -0.3
+    ],
+    "elements": [
+     3,
+     3
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     0,
+     0
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     0,
+     0
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     1,
+     1
+    ]
+   },
+   "framing": [],
+   "flags": [],
+   "verdict": "targeted edit — a small, reviewable change",
+   "touchShare": 0,
+   "sizeChangePercent": -0.3,
+   "sample": {
+    "added": [],
+    "removed": [],
+    "changed": []
+   },
+   "factsOld": {
+    "elements": 3,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": "0 0 200 200",
+    "width": "200",
+    "height": "200",
+    "preserveAspectRatio": null,
+    "bytes": 1836
+   },
+   "factsNew": {
+    "elements": 3,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": "0 0 200 200",
+    "width": "200",
+    "height": "200",
+    "preserveAspectRatio": null,
+    "bytes": 1831
+   }
+  }
+ },
+ {
+  "title": "File:Too Many Losing Heroines! logo.svg",
+  "older": "2024-08-26",
+  "newer": "2025-09-27",
+  "user": "Momiji-Penguin",
+  "comment": "Change to original image",
+  "result": {
+   "structural": {
+    "added": 63,
+    "removed": 65,
+    "changed": 0,
+    "realChanges": 0,
+    "attrChanges": 0,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     19965,
+     20822,
+     4.3
+    ],
+    "elements": [
+     65,
+     63
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     0,
+     0
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     0,
+     0
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     0,
+     0
+    ]
+   },
+   "framing": [],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 100% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 100,
+   "sizeChangePercent": 4.3,
+   "sample": {
+    "added": [
+     "svg#_レイヤー_2",
+     "defs",
+     "style",
+     "g#Logo",
+     "path",
+     "path",
+     "path",
+     "path"
+    ],
+    "removed": [
+     "svg",
+     "g",
+     "path",
+     "path",
+     "path",
+     "path",
+     "path",
+     "path"
+    ],
+    "changed": []
+   },
+   "factsOld": {
+    "elements": 65,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": "0 0 335 170.08",
+    "width": null,
+    "height": null,
+    "preserveAspectRatio": null,
+    "bytes": 19965
+   },
+   "factsNew": {
+    "elements": 63,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 0,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 59,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": "0 0 335 170.08",
+    "width": null,
+    "height": null,
+    "preserveAspectRatio": null,
+    "bytes": 20822
+   }
+  }
+ },
+ {
+  "title": "File:Orderings; 6 choose 3; even sum.svg",
+  "older": "2012-03-28",
+  "newer": "2025-06-16",
+  "user": "Watchduck",
+  "comment": "lighter red (overwritten with [[c:Pywikibot|Pywikibot]])",
+  "result": {
+   "structural": {
+    "added": 0,
+    "removed": 0,
+    "changed": 96,
+    "realChanges": 96,
+    "attrChanges": 107,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     322344,
+     322601,
+     0.1
+    ],
+    "elements": [
+     859,
+     859
+    ],
+    "comments": [
+     1,
+     1
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     2,
+     2
+    ],
+    "gradients": [
+     11,
+     11
+    ],
+    "defsIds": [
+     368,
+     368
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     464,
+     466
+    ],
+    "inkscape": [
+     1928,
+     1931
+    ],
+    "namedview": [
+     1,
+     1
+    ],
+    "namespaces": [
+     7,
+     7
+    ]
+   },
+   "framing": [],
+   "flags": [],
+   "verdict": "moderate edit — review the changed elements below",
+   "touchShare": 11.2,
+   "sizeChangePercent": 0.1,
+   "sample": {
+    "added": [],
+    "removed": [],
+    "changed": [
+     {
+      "el": "svg#svg5004",
+      "attrs": [
+       "inkscape:version: 0.47 r22583 → 1.3.2 (1:1.3.2+202311252",
+       "sodipodi:docname: Orderings;_6_choose_3; e → Orderings; 6 choose 3; e"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "sodipodi:namedview#base",
+      "attrs": [
+       "inkscape:zoom: 0.64646863 → 2.1665117",
+       "inkscape:cx: 502.04036 → 275.78895",
+       "inkscape:cy: -34.874411 → 252.4796",
+       "inkscape:window-width: 1280 → 3440",
+       "inkscape:window-height: 949 → 1403",
+       "inkscape:window-x: 0 → 1920",
+       "inkscape:window-y: 24 → 0",
+       "inkscape:showpageshadow: undefined → 2",
+       "inkscape:pagecheckerboard: undefined → 0",
+       "inkscape:deskcolor: undefined → #d1d1d1"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "inkscape:grid#grid3389",
+      "attrs": [
+       "originx: undefined → 0",
+       "originy: undefined → 0"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "text#text10850",
+      "attrs": [
+       "style: font-size:10px;font-styl → color:#000000;font-style"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "tspan#tspan10852",
+      "attrs": [
+       "style: undefined → font-size:10px;line-heig"
+      ],
+      "moved": false,
+      "text": [
+       "</text>\n    <g\n       id=\"g5656\"\n       transform=\"matrix(1.",
+       ""
+      ]
+     },
+     {
+      "el": "path#path3973",
+      "attrs": [
+       "style: marker:none → marker:none;fill:#ff0000"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#path3975",
+      "attrs": [
+       "style: marker:none → marker:none;fill:#ff0000"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#path3977",
+      "attrs": [
+       "style: marker:none → marker:none;fill:#ff0000"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "text#text5086",
+      "attrs": [
+       "style: font-size:8px;font-style → color:#000000;font-style"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "tspan#tspan5088",
+      "attrs": [
+       "style: undefined → font-size:8px;line-heigh"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#path5340-9-0-2-502-21-7",
+      "attrs": [
+       "style: color:#000000;fill:#ff00 → color:#000000;fill:#f55;"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#path5340-9-0-2-502-47-3",
+      "attrs": [
+       "style: color:#000000;fill:#ff00 → color:#000000;fill:#f55;"
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 859,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 2,
+    "tspan": 2,
+    "gradients": 11,
+    "defsIds": 368,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 464,
+    "classAttrs": 0,
+    "inkscape": 1928,
+    "namedview": 1,
+    "namespaces": 7,
+    "viewBox": null,
+    "width": "509.13266",
+    "height": "490.53601",
+    "preserveAspectRatio": null,
+    "bytes": 322344
+   },
+   "factsNew": {
+    "elements": 859,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 2,
+    "tspan": 2,
+    "gradients": 11,
+    "defsIds": 368,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 466,
+    "classAttrs": 0,
+    "inkscape": 1931,
+    "namedview": 1,
+    "namespaces": 7,
+    "viewBox": null,
+    "width": "509.13266",
+    "height": "490.53601",
+    "preserveAspectRatio": null,
+    "bytes": 322601
+   }
+  }
+ },
+ {
+  "title": "File:Sweden Product Exports (2019).svg",
+  "older": "2021-07-15",
+  "newer": "2026-09-11",
+  "user": "PJ Geest",
+  "comment": "Improved readability: improve contrast and remove truncated and percentage-only labels",
+  "result": {
+   "structural": {
+    "added": 21,
+    "removed": 200,
+    "changed": 952,
+    "realChanges": 952,
+    "attrChanges": 1205,
+    "moved": 0,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     556341,
+     458846,
+     -17.5
+    ],
+    "elements": [
+     1266,
+     1087
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     362,
+     183
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     690,
+     466
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     1,
+     0
+    ]
+   },
+   "framing": [],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 93% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Text elements 362 → 183: text was converted to paths or removed. Converting text to outlines is accepted practice for font-independence, but it ends translatability (SVG Translate needs live text)."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 92.7,
+   "sizeChangePercent": -17.5,
+   "sample": {
+    "added": [
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text"
+    ],
+    "removed": [
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text",
+     "text"
+    ],
+    "changed": [
+     {
+      "el": "svg",
+      "attrs": [
+       "xmlns:xlink: http://www.w3.org/1999/x → undefined"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(106,5 →          translate(106,5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(577,7 →          translate(577,7"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(1005, →          translate(1005,"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(291,4 →          translate(291,4"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(69.5, →          translate(69.5,"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(952.5 →          translate(952.5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(776,4 →          translate(776,4"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(532,3 →          translate(532,3"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(412.5 →          translate(412.5"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(975,2 →          translate(975,2"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "rect",
+      "attrs": [
+       "transform: \n        translate(69.5, →          translate(69.5,"
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 1266,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 362,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 690,
+    "classAttrs": 904,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": null,
+    "width": "1100px",
+    "height": "715px",
+    "preserveAspectRatio": null,
+    "bytes": 556341
+   },
+   "factsNew": {
+    "elements": 1087,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 183,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 466,
+    "classAttrs": 904,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": null,
+    "width": "1100px",
+    "height": "715px",
+    "preserveAspectRatio": null,
+    "bytes": 458846
+   }
+  }
+ },
+ {
+  "title": "File:Steinwiesen in KC.svg",
+  "older": "2010-04-12",
+  "newer": "2025-12-30",
+  "user": "NordNordWest",
+  "comment": "upd",
+  "result": {
+   "structural": {
+    "added": 354,
+    "removed": 386,
+    "changed": 145,
+    "realChanges": 137,
+    "attrChanges": 142,
+    "moved": 144,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     1102847,
+     557280,
+     -49.5
+    ],
+    "elements": [
+     531,
+     499
+    ],
+    "comments": [
+     1,
+     1
+    ],
+    "switch": [
+     1,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     23,
+     38
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     0,
+     0
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     0,
+     0
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     0,
+     0
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     4,
+     1
+    ]
+   },
+   "framing": [
+    {
+     "attr": "viewBox",
+     "from": "2183.167 117.481 456.333 555",
+     "to": "0 0 456.333 555"
+    }
+   ],
+   "flags": [
+    {
+     "level": "err",
+     "text": "Translation blocks lost: <switch> 1 → 0."
+    },
+    {
+     "level": "warn",
+     "text": "File shrank 49.5% — an optimisation/minification pass (SVGO-style). COM:SVGOPT says mass minimisation is often buggy and does not justify reuploading on its own."
+    },
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 100% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    },
+    {
+     "level": "warn",
+     "text": "Framing changed: viewBox 2183.167 117.481 456.333 555 → 0 0 456.333 555."
+    },
+    {
+     "level": "info",
+     "text": "tspan runs 29 → 0."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 100,
+   "sizeChangePercent": -49.5,
+   "sample": {
+    "added": [
+     "polygon",
+     "polygon",
+     "polygon",
+     "polygon",
+     "polygon",
+     "polygon",
+     "polygon",
+     "polygon"
+    ],
+    "removed": [
+     "metadata",
+     "sfw",
+     "slices",
+     "sliceSourceBounds",
+     "switch",
+     "foreignObject",
+     "i:pgfRef",
+     "g"
+    ],
+    "changed": [
+     {
+      "el": "svg#Layer_1",
+      "attrs": [
+       "xmlns:x: &ns_extend; → undefined",
+       "xmlns:i: &ns_ai; → undefined",
+       "xmlns:graph: &ns_graphs; → undefined",
+       "viewBox: 2183.167 117.481 456.333 → 0 0 456.333 555",
+       "enable-background: new 2183.167 117.481 456 → new 0 0 456.333 555"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "g#Gemeinden",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "g#Gemfrei",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "g#Kreise",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "g#MiniKarte",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#rect9968_1_",
+      "attrs": [
+       "stroke-width: 12 → 8.5039",
+       "d: M7961.225-13817.224c149. → M-66.598-14247.123c149.6"
+      ],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "g#g8675",
+      "attrs": [],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#polygon8316",
+      "attrs": [
+       "d: M8921.952-13102.305\r\n\t\t\t → M894.129-13532.207\r\n\t\t\tc"
+      ],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#polygon8318",
+      "attrs": [
+       "d: M8938.438-13106.598\r\n\t\t\t → M910.615-13536.498\r\n\t\t\tc"
+      ],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#polygon8320",
+      "attrs": [
+       "d: M8873.084-13147.581\r\n\t\t\t → M845.261-13577.481\r\n\t\t\tc"
+      ],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#polygon8322",
+      "attrs": [
+       "d: M8879.417-13230.137\r\n\t\t\t → M851.594-13660.035\r\n\t\t\tc"
+      ],
+      "moved": true,
+      "text": null
+     },
+     {
+      "el": "path#polygon8324",
+      "attrs": [
+       "d: M8848.714-13209.708\r\n\t\t\t → M820.891-13639.607\r\n\t\t\tc"
+      ],
+      "moved": true,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 531,
+    "comments": 1,
+    "switch": 1,
+    "systemLanguage": 0,
+    "textNodes": 23,
+    "tspan": 29,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 4,
+    "viewBox": "2183.167 117.481 456.333 555",
+    "width": "456.333px",
+    "height": "555px",
+    "preserveAspectRatio": null,
+    "bytes": 1102847
+   },
+   "factsNew": {
+    "elements": 499,
+    "comments": 1,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 38,
+    "tspan": 0,
+    "gradients": 0,
+    "defsIds": 0,
+    "filters": 0,
+    "patterns": 0,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 0,
+    "classAttrs": 0,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 1,
+    "viewBox": "0 0 456.333 555",
+    "width": "456.333px",
+    "height": "555px",
+    "preserveAspectRatio": null,
+    "bytes": 557280
+   }
+  }
+ },
+ {
+  "title": "File:Tobacco production, Oceania, 1998.svg",
+  "older": "2025-11-04",
+  "newer": "2026-05-19",
+  "user": "Doc James",
+  "comment": "Importing from https://ourworldindata.org/grapher/tobacco-production",
+  "result": {
+   "structural": {
+    "added": 1,
+    "removed": 1,
+    "changed": 231,
+    "realChanges": 231,
+    "attrChanges": 446,
+    "moved": 15,
+    "reflowedNote": "path keying reflows when ancestors are inserted/removed; moves are only reported for elements with ids"
+   },
+   "factsDelta": {
+    "bytes": [
+     151099,
+     149853,
+     -0.8
+    ],
+    "elements": [
+     262,
+     262
+    ],
+    "comments": [
+     0,
+     0
+    ],
+    "switch": [
+     0,
+     0
+    ],
+    "systemLanguage": [
+     0,
+     0
+    ],
+    "textNodes": [
+     11,
+     11
+    ],
+    "gradients": [
+     0,
+     0
+    ],
+    "defsIds": [
+     3,
+     3
+    ],
+    "filters": [
+     0,
+     0
+    ],
+    "patterns": [
+     2,
+     2
+    ],
+    "embeddedRaster": [
+     0,
+     0
+    ],
+    "styleAttrs": [
+     6,
+     13
+    ],
+    "inkscape": [
+     0,
+     0
+    ],
+    "namedview": [
+     0,
+     0
+    ],
+    "namespaces": [
+     0,
+     0
+    ]
+   },
+   "framing": [],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "1 definition(s) rewritten (pattern)."
+    },
+    {
+     "level": "warn",
+     "text": "Whole-file churn: 89% of elements added, removed or changed. This cannot be reviewed as a small diff; under COM:OVERWRITE it is a new file, not a correction."
+    }
+   ],
+   "verdict": "whole-file rewrite — review for damage rather than for content",
+   "touchShare": 88.9,
+   "sizeChangePercent": -0.8,
+   "sample": {
+    "added": [
+     "clipPath#boundsClip-106"
+    ],
+    "removed": [
+     "clipPath#boundsClip-2"
+    ],
+    "changed": [
+     {
+      "el": "a#title",
+      "attrs": [
+       "href: https://ourworldindata.o → https://ourworldindata.o",
+       "rel: noopener → undefined"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "g",
+      "attrs": [
+       "clip-path: url(#boundsClip-2) → url(#boundsClip-106)"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "g#map",
+      "attrs": [
+       "transform: matrix(3.377001326807692 → matrix(3.377,0,0,3.377,-"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Afghanistan",
+      "attrs": [
+       "d: M300.5,166.2L303.3,166.1 → M300.5,166.2L303.3,166.1",
+       "fill: url(#noDataPattern) → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Albania",
+      "attrs": [
+       "d: M204.5,206.8L205.1,207.6 → M204.5,206.8L205.1,207.6",
+       "fill: #ffffd4 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Algeria",
+      "attrs": [
+       "d: M220.9,259.8L218.3,268.7 → M220.9,259.8L218.3,268.7",
+       "fill: #ffffd4 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Andorra",
+      "attrs": [
+       "d: M162.4,237.2L162.4,237L1 → M162.4,237.2L162.4,237L1",
+       "fill: url(#noDataPattern) → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Angola",
+      "attrs": [
+       "d: M287.2,299.6L287.7,300L2 → M287.2,299.6L287.7,300L2",
+       "fill: #ffffd4 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Antigua-and-Barbuda",
+      "attrs": [
+       "fill: url(#noDataPattern) → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Argentina",
+      "attrs": [
+       "d: M662.2,414L661.8,413.3L6 → M662.2,414L661.8,413.3L6",
+       "fill: #fe9929 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Armenia",
+      "attrs": [
+       "d: M252.2,172L255.1,169.6L2 → M252.2,172L255,169.6L256",
+       "fill: #ffffd4 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     },
+     {
+      "el": "path#Austria",
+      "attrs": [
+       "d: M178.5,192.6L179.4,194.1 → M178.5,192.7L179.4,194.1",
+       "fill: #ffffd4 → #fff"
+      ],
+      "moved": false,
+      "text": null
+     }
+    ]
+   },
+   "factsOld": {
+    "elements": 262,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 11,
+    "tspan": 4,
+    "gradients": 0,
+    "defsIds": 3,
+    "filters": 0,
+    "patterns": 2,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 6,
+    "classAttrs": 6,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": "0 0 850 600",
+    "width": "850",
+    "height": "600",
+    "preserveAspectRatio": null,
+    "bytes": 151099
+   },
+   "factsNew": {
+    "elements": 262,
+    "comments": 0,
+    "switch": 0,
+    "systemLanguage": 0,
+    "textNodes": 11,
+    "tspan": 4,
+    "gradients": 0,
+    "defsIds": 3,
+    "filters": 0,
+    "patterns": 2,
+    "markers": 0,
+    "images": 0,
+    "embeddedRaster": 0,
+    "styleAttrs": 13,
+    "classAttrs": 6,
+    "inkscape": 0,
+    "namedview": 0,
+    "namespaces": 0,
+    "viewBox": "0 0 850 600",
+    "width": "850",
+    "height": "600",
+    "preserveAspectRatio": null,
+    "bytes": 149853
+   }
+  }
+ }
+]
