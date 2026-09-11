@@ -14,6 +14,11 @@ See "Scope and provenance" below.
 495-word plain-language explainer written for experienced Wikipedia/Commons editors, with links to verify every
 claim.
 
+**Where the work is tracked:** [Epic A — surgical editor](https://github.com/wikibutler/commons-svg-editor/milestone/1)
+and [Epic C — review/diff layer](https://github.com/wikibutler/commons-svg-editor/milestone/2) are milestones; the
+kanban board is https://github.com/users/wikibutler/projects/1 (Andrew Lih has admin on it); a read-only HTML view
+of the same issues is served at **[`/board/`](https://wikibutler.github.io/commons-svg-editor/board/)**.
+
 ## Why a test suite is part of this repo
 
 Commons is strict about SVG because its thumbnails come from **librsvg**, not a browser, and because the
