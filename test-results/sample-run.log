@@ -1,0 +1,47 @@
+FAIL                File:T7792 Example of baseline-shift using explicit  load   445ms  no-op diff   6.32%  edited diff   6.88%  
+FAIL                File:Xclamation blue 2.svg                           load   210ms  no-op diff   4.39%  edited diff  69.84%  
+FAIL                File:Radar Mac black gradient.svg                    load   224ms  no-op diff   0.82%  edited diff   3.26%  
+FAIL                File:Oresundskraft rgb.svg                           load   209ms  no-op diff   0.65%  edited diff   0.65%  
+FAIL                File:Goomi nyarly.svg                                load   265ms  no-op diff   0.75%  edited diff   0.86%  
+FAIL                File:No free image woman.svg                         load   290ms  no-op diff      0%  edited diff  60.66%  
+FAIL                File:SystemLanguage MediaWiki internal code.svg      load   238ms  no-op diff   6.69%  edited diff    6.7%  
+FAIL                File:Skew lines shortest distance.svg                load   236ms  no-op diff   0.19%  edited diff  28.52%  
+FAIL                File:PayPa Plane Logo.svg                            load   257ms  no-op diff   0.05%  edited diff   0.51%  
+FAIL                File:Wikivoyage oversight draft 4.svg                load   375ms  no-op diff      0%  edited diff   5.73%  
+FAIL                File:PAES logo.svg                                   load   234ms  no-op diff  27.65%  edited diff  27.65%  
+FAIL                File:PghLFilms profile.svg                           load   260ms  no-op diff      0%  edited diff   2.11%  
+FAIL                File:Types of Sentences-pa.svg                       load   309ms  no-op diff      0%  edited diff   0.59%  
+FAIL                File:MEITEI free-file(1)(1).svg                      load   232ms  no-op diff      0%  edited diff   0.26%  
+FAIL                File:Teilmengen R2.svg                               load   327ms  no-op diff   0.16%  edited diff   0.21%  
+FAIL                File:Intismeran-development-timeline.svg             load   300ms  no-op diff   5.42%  edited diff   5.43%  
+FAIL                File:Strateo-logo.svg                                load   349ms  no-op diff   3.93%  edited diff   3.93%  
+FAIL                File:Mittelwert- und Median Einkommen NE 1996-2017 E load   281ms  no-op diff  14.85%  edited diff   14.9%  
+FAIL                File:ERB vs frequency deutsch.svg                    load   224ms  no-op diff   0.04%  edited diff   0.05%  
+FAIL                File:El Manchar logo.svg                             load   236ms  no-op diff   0.03%  edited diff   4.23%  
+FAIL                File:Photovoltaics Installed Capacity and Production load   351ms  no-op diff   0.02%  edited diff   0.02%  
+FAIL                File:Comparison radiated field magnitude of hwd to e load   264ms  no-op diff   0.45%  edited diff   0.45%  
+FAIL                File:Tradex Logo Wiki Mesa de trabajo 1.svg          load   276ms  no-op diff  89.68%  edited diff  89.68%  
+FAIL                File:Wind power installed capacity and generation in load   320ms  no-op diff   8.71%  edited diff   8.73%  
+FAIL                File:Wind power installed capacity and generation in load   295ms  no-op diff   8.79%  edited diff   8.79%  
+FAIL                File:Wind power installed capacity and generation in load   294ms  no-op diff   7.58%  edited diff   7.59%  
+FAIL                File:Boerse.de Logo 10.2022.svg                      load   307ms  no-op diff   0.15%  edited diff   0.15%  
+FAIL                File:How many Democratic positions do people take?.s load   340ms  no-op diff   0.13%  edited diff   0.28%  
+FAIL                File:Auftragung nach dem OWRK-Verfahren.svg          load   364ms  no-op diff   0.08%  edited diff   0.08%  
+FAIL                File:Milkproducts v2.svg                             load   328ms  no-op diff   0.25%  edited diff   0.25%  
+FAIL                File:HIV AIDS in Brazil – AIDS related mortality 198 load   338ms  no-op diff   0.03%  edited diff   0.04%  
+FAIL                File:DistAmbDGT esquema.svg                          load   419ms  no-op diff   0.34%  edited diff   0.35%  
+FAIL                File:GOZ structure diagram.svg                       load   381ms  no-op diff   0.07%  edited diff   0.08%  
+FAIL                File:Languages-Europe edit.svg                       load   615ms  no-op diff   5.12%  edited diff   5.12%  
+FAIL                File:BasePairing.svg                                 load   339ms  no-op diff   2.37%  edited diff   2.38%  
+FAIL                File:Krzyś development chart.svg                     load   367ms  no-op diff   0.37%  edited diff   0.93%  
+FAIL                File:Hidrografía Galicia Cunca Mariña Oriental gl.sv load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Francisco Beltrao Localizacao.svg               load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Mappa delle Nazioni attualmente in Guerra.svg   load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Map of countries with Lindex stores.svg         load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Red Sea map TH.svg                              load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Vergleich zwischen Manga und Foto (nur Zeichnun load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Elección presidencial Chile 2017 por país.svg   load     -ms  no-op diff      -%  edited diff      -%  
+FAIL                File:Chyhyryn-2-eng Монтажная область 1.svg          load     -ms  no-op diff      -%  edited diff      -%  
+
+tally: { FAIL: 44 }
+scorecard → /opt/data/prototypes/commons-svg-edit/test-results/corpus-scorecard.json

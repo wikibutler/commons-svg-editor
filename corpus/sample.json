@@ -1,0 +1,416 @@
+{
+ "generated": "2026-09-10T23:55:31.578Z",
+ "seed": 20260910,
+ "perStratum": 6,
+ "note": "Reproducible stratified sample of Wikimedia Commons SVG files. sha1 pins the revision the sample was drawn from — re-verify before comparing runs, because Commons files change.",
+ "strata": [
+  {
+   "id": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "poolSize": 500,
+   "picked": 6
+  },
+  {
+   "id": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "poolSize": 500,
+   "picked": 6
+  },
+  {
+   "id": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "poolSize": 74,
+   "picked": 6
+  },
+  {
+   "id": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "poolSize": 365,
+   "picked": 6
+  },
+  {
+   "id": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "poolSize": 80,
+   "picked": 6
+  },
+  {
+   "id": "embedded-raster",
+   "why": "data: URI bitmaps inside SVG",
+   "poolSize": 2,
+   "picked": 2
+  },
+  {
+   "id": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "poolSize": 18,
+   "picked": 6
+  },
+  {
+   "id": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "poolSize": 36,
+   "picked": 6
+  },
+  {
+   "id": "svg2-features",
+   "why": "files using post-1.1 features",
+   "poolSize": 22,
+   "picked": 6
+  }
+ ],
+ "corpus": [
+  {
+   "title": "File:T7792 Example of baseline-shift using explicit value.svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 661,
+   "sha1": "d999832905a11f25f37e4c418f6d018e70f351de",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/T7792_Example_of_baseline-shift_using_explicit_value.svg"
+  },
+  {
+   "title": "File:Xclamation blue 2.svg",
+   "stratum": "svg2-features",
+   "why": "files using post-1.1 features",
+   "bytes": 807,
+   "sha1": "671301a87e60ee80fdf35e3646b6df41a2dc821c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Xclamation_blue_2.svg"
+  },
+  {
+   "title": "File:Radar Mac black gradient.svg",
+   "stratum": "svg2-features",
+   "why": "files using post-1.1 features",
+   "bytes": 1562,
+   "sha1": "2454cae8ff60023ec6dd72654c5b43230acca654",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Radar_Mac_black_gradient.svg"
+  },
+  {
+   "title": "File:Oresundskraft rgb.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 2921,
+   "sha1": "d62cd1c048d71b95bbfbffacaf6d6dad3d2a1642",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Oresundskraft_rgb.svg"
+  },
+  {
+   "title": "File:Goomi nyarly.svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 3692,
+   "sha1": "c8c5531140c7470049db0ca85268d23b45ccae44",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Goomi_nyarly.svg"
+  },
+  {
+   "title": "File:No free image woman.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 5162,
+   "sha1": "f98d97212ac12cbfbcaeae9e412733ce79e96159",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/No_free_image_woman.svg"
+  },
+  {
+   "title": "File:SystemLanguage MediaWiki internal code.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 6026,
+   "sha1": "8505e21fe88634c80bd36a0dfbb4a0a6c6991782",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/SystemLanguage_MediaWiki_internal_code.svg"
+  },
+  {
+   "title": "File:Skew lines shortest distance.svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 6266,
+   "sha1": "76c0ea277eb40935abd86c0e9c617c7b9ff96754",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Skew_lines_shortest_distance.svg"
+  },
+  {
+   "title": "File:PayPa Plane Logo.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 6814,
+   "sha1": "27b72c912df6bf8bf5e215bafe6ca80898453c3b",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/PayPa_Plane_Logo.svg"
+  },
+  {
+   "title": "File:Wikivoyage oversight draft 4.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 7549,
+   "sha1": "513b559794b919906a573e7722be018be64cb5f7",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Wikivoyage_oversight_draft_4.svg"
+  },
+  {
+   "title": "File:PAES logo.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 8377,
+   "sha1": "99975cf46295f24577d6eab9560d3aadc9636dd0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/PAES_logo.svg"
+  },
+  {
+   "title": "File:PghLFilms profile.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 8955,
+   "sha1": "0c2d168109e734de11177c81bcdc5004d748de4a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/PghLFilms_profile.svg"
+  },
+  {
+   "title": "File:Types of Sentences-pa.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 10898,
+   "sha1": "79e594ba435843cee036c1ecc623839bd6faf689",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Types_of_Sentences-pa.svg"
+  },
+  {
+   "title": "File:MEITEI free-file(1)(1).svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 11325,
+   "sha1": "5348d6cd1fe15a2ec1001d696fb58288da235038",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/MEITEI_free-file%281%29%281%29.svg"
+  },
+  {
+   "title": "File:Teilmengen R2.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 12727,
+   "sha1": "0ffca692829d7b9a4a15a57608e681720a9490ee",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Teilmengen_R2.svg"
+  },
+  {
+   "title": "File:Intismeran-development-timeline.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 13784,
+   "sha1": "23e861d4b5d4fae23a86ad3dcea25a32f057214f",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Intismeran-development-timeline.svg"
+  },
+  {
+   "title": "File:Strateo-logo.svg",
+   "stratum": "embedded-raster",
+   "why": "data: URI bitmaps inside SVG",
+   "bytes": 15030,
+   "sha1": "a52a6adfaa7e80bd63c5061c26e78332a7e7518c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Strateo-logo.svg"
+  },
+  {
+   "title": "File:Mittelwert- und Median Einkommen NE 1996-2017 EU-SILC.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 16947,
+   "sha1": "fa256ea38017381c1b6736645fdff6f99f231e4e",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mittelwert-_und_Median_Einkommen_NE_1996-2017_EU-SILC.svg"
+  },
+  {
+   "title": "File:ERB vs frequency deutsch.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 27317,
+   "sha1": "08ec9dd9dfb22f9af9f1ad836d18d5f15fea13d9",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/ERB_vs_frequency_deutsch.svg"
+  },
+  {
+   "title": "File:El Manchar logo.svg",
+   "stratum": "embedded-raster",
+   "why": "data: URI bitmaps inside SVG",
+   "bytes": 28066,
+   "sha1": "e70f4deb5111f740a6fedd62001d50766bec7527",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/El_Manchar_logo.svg"
+  },
+  {
+   "title": "File:Photovoltaics Installed Capacity and Production in Brazil.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 29603,
+   "sha1": "bad4debac3b98d0502f02377e939e0f6acf8041c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Photovoltaics_Installed_Capacity_and_Production_in_Brazil.svg"
+  },
+  {
+   "title": "File:Comparison radiated field magnitude of hwd to esd.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 30381,
+   "sha1": "51e846b4437e6dfed33d3cd4a6246d180f2a6877",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Comparison_radiated_field_magnitude_of_hwd_to_esd.svg"
+  },
+  {
+   "title": "File:Tradex Logo Wiki Mesa de trabajo 1.svg",
+   "stratum": "svg2-features",
+   "why": "files using post-1.1 features",
+   "bytes": 33328,
+   "sha1": "cd5bcd36334649046d89a2016df764708f9190e8",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Tradex_Logo_Wiki_Mesa_de_trabajo_1.svg"
+  },
+  {
+   "title": "File:Wind power installed capacity and generation in Australia.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 33460,
+   "sha1": "e0086ca9ac1afca51bdf0a5b2be7b0387f446a2a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Wind_power_installed_capacity_and_generation_in_Australia.svg"
+  },
+  {
+   "title": "File:Wind power installed capacity and generation in Portugal.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 35909,
+   "sha1": "e939a4a1a3b59a23d3d6df3309213ca0d5fde945",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Wind_power_installed_capacity_and_generation_in_Portugal.svg"
+  },
+  {
+   "title": "File:Wind power installed capacity and generation in Finland.svg",
+   "stratum": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "bytes": 37276,
+   "sha1": "d826ed0cf63a20a8e3b76029f4b8bb7124356840",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Wind_power_installed_capacity_and_generation_in_Finland.svg"
+  },
+  {
+   "title": "File:Boerse.de Logo 10.2022.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 52250,
+   "sha1": "cd61d730a49877ccba5b9e390307fa0893a77935",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Boerse.de_Logo_10.2022.svg"
+  },
+  {
+   "title": "File:How many Democratic positions do people take?.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 68347,
+   "sha1": "e2ce26f6bbe6326112ad11701c52637454bf621f",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/How_many_Democratic_positions_do_people_take%3F.svg"
+  },
+  {
+   "title": "File:Auftragung nach dem OWRK-Verfahren.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 93344,
+   "sha1": "12295b921f33761fe560ba718e1dedc757dfc01a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Auftragung_nach_dem_OWRK-Verfahren.svg"
+  },
+  {
+   "title": "File:Milkproducts v2.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 97725,
+   "sha1": "73463f0a4d7180c2196012f534fce821c6f66a15",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Milkproducts_v2.svg"
+  },
+  {
+   "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 99911,
+   "sha1": "4daa7ac2d91a318897c1205603cf377c5f127755",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/HIV_AIDS_in_Brazil_%E2%80%93_AIDS_related_mortality_1985%E2%80%932023.svg"
+  },
+  {
+   "title": "File:DistAmbDGT esquema.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 107287,
+   "sha1": "b930f3d5f02f88ebe9b26d0b454ccbfcfc2177be",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/DistAmbDGT_esquema.svg"
+  },
+  {
+   "title": "File:GOZ structure diagram.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 210491,
+   "sha1": "335c017c8b3a3eed1b4a43c522cde9b5abf48103",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/GOZ_structure_diagram.svg"
+  },
+  {
+   "title": "File:Languages-Europe edit.svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 240970,
+   "sha1": "74b7dab6760e7cbee630b2cd696cc73312f7fe62",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Languages-Europe_edit.svg"
+  },
+  {
+   "title": "File:BasePairing.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 277103,
+   "sha1": "8a09482d5cf857754df6af52061f8f57d956890c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/BasePairing.svg"
+  },
+  {
+   "title": "File:Krzyś development chart.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 281027,
+   "sha1": "3f30a637cb23d460a17d2e484ca778e89522bf8d",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Krzy%C5%9B_development_chart.svg"
+  },
+  {
+   "title": "File:Hidrografía Galicia Cunca Mariña Oriental gl.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 530771,
+   "sha1": "8aa7edc591baf4fd349dc789b43aac1bfe07ad9f",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Hidrograf%C3%ADa_Galicia_Cunca_Mari%C3%B1a_Oriental_gl.svg"
+  },
+  {
+   "title": "File:Francisco Beltrao Localizacao.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 836625,
+   "sha1": "fd2c7ab9e497e3468ee0f3fb4222f41c7143dd31",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Francisco_Beltrao_Localizacao.svg"
+  },
+  {
+   "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1140447,
+   "sha1": "91cff8494d2b87f06ab6e1412f23e3124471d49c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mappa_delle_Nazioni_attualmente_in_Guerra.svg"
+  },
+  {
+   "title": "File:Map of countries with Lindex stores.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1319446,
+   "sha1": "f58963a70b472b9195326d6228db8b495b3e10f2",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Map_of_countries_with_Lindex_stores.svg"
+  },
+  {
+   "title": "File:Red Sea map TH.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1863775,
+   "sha1": "13ef600d0fd0260e9e47450cd397528cab3cc9a1",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Red_Sea_map_TH.svg"
+  },
+  {
+   "title": "File:Vergleich zwischen Manga und Foto (nur Zeichnung).svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 2084600,
+   "sha1": "e5030a7b0d6f95f0642c642d04d8ba03024de4f6",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Vergleich_zwischen_Manga_und_Foto_%28nur_Zeichnung%29.svg"
+  },
+  {
+   "title": "File:Elección presidencial Chile 2017 por país.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 2584366,
+   "sha1": "38884dce8da4a68ad81277f2d6b5ff42a36bf393",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Elecci%C3%B3n_presidencial_Chile_2017_por_pa%C3%ADs.svg"
+  },
+  {
+   "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 2805845,
+   "sha1": "4a3fe07e2cdc332b9c504657fb233eb12df376a4",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Chyhyryn-2-eng_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_1.svg"
+  }
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "generated": "2026-09-10T23:54:55.465Z",
+ "seed": 20260910,
+ "perStratum": 5,
+ "note": "Reproducible stratified sample of Wikimedia Commons SVG files. sha1 pins the revision the sample was drawn from — re-verify before comparing runs, because Commons files change.",
+ "strata": [
+  {
+   "id": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "poolSize": 500,
+   "picked": 5
+  },
+  {
+   "id": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "poolSize": 500,
+   "picked": 5
+  },
+  {
+   "id": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "poolSize": 74,
+   "picked": 5
+  },
+  {
+   "id": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "poolSize": 365,
+   "picked": 5
+  },
+  {
+   "id": "multilingual",
+   "why": "<switch>/systemLanguage translation layers",
+   "poolSize": 100,
+   "picked": 5
+  },
+  {
+   "id": "embedded-raster",
+   "why": "data: URI bitmaps inside SVG",
+   "poolSize": 2,
+   "picked": 2
+  },
+  {
+   "id": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "poolSize": 18,
+   "picked": 5
+  },
+  {
+   "id": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "poolSize": 18,
+   "picked": 5
+  },
+  {
+   "id": "svg2-features",
+   "why": "files using post-1.1 features",
+   "poolSize": 22,
+   "picked": 5
+  }
+ ],
+ "corpus": [
+  {
+   "title": "File:T194582 filter.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 2311,
+   "sha1": "8084d0b7671addfda6cb8a6f69d322c74991dab0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/T194582_filter.svg"
+  },
+  {
+   "title": "File:Radar Mac.svg",
+   "stratum": "svg2-features",
+   "why": "files using post-1.1 features",
+   "bytes": 2486,
+   "sha1": "53c9c0ee82f9c00b6791b34b488faf0819220595",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Radar_Mac.svg"
+  },
+  {
+   "title": "File:Oresundskraft rgb.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 2921,
+   "sha1": "d62cd1c048d71b95bbfbffacaf6d6dad3d2a1642",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Oresundskraft_rgb.svg"
+  },
+  {
+   "title": "File:Skew lines shortest distance.svg",
+   "stratum": "inkscape-native",
+   "why": "Inkscape-authored: sodipodi metadata, flowRoot, layers",
+   "bytes": 6266,
+   "sha1": "76c0ea277eb40935abd86c0e9c617c7b9ff96754",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Skew_lines_shortest_distance.svg"
+  },
+  {
+   "title": "File:PAES logo.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 8377,
+   "sha1": "99975cf46295f24577d6eab9560d3aadc9636dd0",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/PAES_logo.svg"
+  },
+  {
+   "title": "File:PghLFilms profile.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 8955,
+   "sha1": "0c2d168109e734de11177c81bcdc5004d748de4a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/PghLFilms_profile.svg"
+  },
+  {
+   "title": "File:Galileo's law of odd numbers.svg",
+   "stratum": "svg2-features",
+   "why": "files using post-1.1 features",
+   "bytes": 10041,
+   "sha1": "9e1cb88422b0588eef6f18c062d5aa66cc1d66da",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Galileo%27s_law_of_odd_numbers.svg"
+  },
+  {
+   "title": "File:MEITEI free-file(1)(1).svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 11325,
+   "sha1": "5348d6cd1fe15a2ec1001d696fb58288da235038",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/MEITEI_free-file%281%29%281%29.svg"
+  },
+  {
+   "title": "File:Mittelwert- und Median Einkommen NE 1996-2017 EU-SILC.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 16947,
+   "sha1": "fa256ea38017381c1b6736645fdff6f99f231e4e",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mittelwert-_und_Median_Einkommen_NE_1996-2017_EU-SILC.svg"
+  },
+  {
+   "title": "File:ERB vs frequency deutsch.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 27317,
+   "sha1": "08ec9dd9dfb22f9af9f1ad836d18d5f15fea13d9",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/ERB_vs_frequency_deutsch.svg"
+  },
+  {
+   "title": "File:Comparison radiated field magnitude of hwd to esd.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 30381,
+   "sha1": "51e846b4437e6dfed33d3cd4a6246d180f2a6877",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Comparison_radiated_field_magnitude_of_hwd_to_esd.svg"
+  },
+  {
+   "title": "File:Boerse.de Logo 10.2022.svg",
+   "stratum": "icon/logo",
+   "why": "tiny files, few elements: the cheap end of the space",
+   "bytes": 52250,
+   "sha1": "cd61d730a49877ccba5b9e390307fa0893a77935",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Boerse.de_Logo_10.2022.svg"
+  },
+  {
+   "title": "File:How many Democratic positions do people take?.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 68347,
+   "sha1": "e2ce26f6bbe6326112ad11701c52637454bf621f",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/How_many_Democratic_positions_do_people_take%3F.svg"
+  },
+  {
+   "title": "File:Auftragung nach dem OWRK-Verfahren.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 93344,
+   "sha1": "12295b921f33761fe560ba718e1dedc757dfc01a",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Auftragung_nach_dem_OWRK-Verfahren.svg"
+  },
+  {
+   "title": "File:Milkproducts v2.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 97725,
+   "sha1": "73463f0a4d7180c2196012f534fce821c6f66a15",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Milkproducts_v2.svg"
+  },
+  {
+   "title": "File:HIV AIDS in Brazil – AIDS related mortality 1985–2023.svg",
+   "stratum": "chart/graph",
+   "why": "numerical data graphics: patterns, filters, thin geometry",
+   "bytes": 99911,
+   "sha1": "4daa7ac2d91a318897c1205603cf377c5f127755",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/HIV_AIDS_in_Brazil_%E2%80%93_AIDS_related_mortality_1985%E2%80%932023.svg"
+  },
+  {
+   "title": "File:DistAmbDGT esquema.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 107287,
+   "sha1": "b930f3d5f02f88ebe9b26d0b454ccbfcfc2177be",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/DistAmbDGT_esquema.svg"
+  },
+  {
+   "title": "File:GOZ structure diagram.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 210491,
+   "sha1": "335c017c8b3a3eed1b4a43c522cde9b5abf48103",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/GOZ_structure_diagram.svg"
+  },
+  {
+   "title": "File:Krzyś development chart.svg",
+   "stratum": "diagram",
+   "why": "schematics — the most common editorial use of SVG",
+   "bytes": 281027,
+   "sha1": "3f30a637cb23d460a17d2e484ca778e89522bf8d",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Krzy%C5%9B_development_chart.svg"
+  },
+  {
+   "title": "File:KK1.svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 672447,
+   "sha1": "ce7b784643b00f6e804176688524c9d4403de11e",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/KK1.svg"
+  },
+  {
+   "title": "File:Francisco Beltrao Localizacao.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 836625,
+   "sha1": "fd2c7ab9e497e3468ee0f3fb4222f41c7143dd31",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Francisco_Beltrao_Localizacao.svg"
+  },
+  {
+   "title": "File:Mappa delle Nazioni attualmente in Guerra.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1140447,
+   "sha1": "91cff8494d2b87f06ab6e1412f23e3124471d49c",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mappa_delle_Nazioni_attualmente_in_Guerra.svg"
+  },
+  {
+   "title": "File:Map of countries with Lindex stores.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1319446,
+   "sha1": "f58963a70b472b9195326d6228db8b495b3e10f2",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Map_of_countries_with_Lindex_stores.svg"
+  },
+  {
+   "title": "File:Red Sea map TH.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 1863775,
+   "sha1": "13ef600d0fd0260e9e47450cd397528cab3cc9a1",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Red_Sea_map_TH.svg"
+  },
+  {
+   "title": "File:Chyhyryn-2-eng Монтажная область 1.svg",
+   "stratum": "map",
+   "why": "geography: many paths, often gradients and non-zero viewBox",
+   "bytes": 2805845,
+   "sha1": "4a3fe07e2cdc332b9c504657fb233eb12df376a4",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Chyhyryn-2-eng_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_1.svg"
+  },
+  {
+   "title": "File:Standard Time Zones of the World (August 2013).svg",
+   "stratum": "known-hard",
+   "why": "files the community has already filed as renderer bugs",
+   "bytes": 8351575,
+   "sha1": "81e4128f9c8b5ee718330638a5e2dc8b12fa7981",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Standard_Time_Zones_of_the_World_%28August_2013%29.svg"
+  }
+ ]
+}

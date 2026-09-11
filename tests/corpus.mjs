@@ -18,7 +18,10 @@ const require = createRequire('/opt/data/browser-test/x.js');
 const { chromium } = require('playwright');
 const PORT = 4191;
 const OUT = fileURLToPath(new URL('../test-results/', import.meta.url));
-const CORPUS = JSON.parse(readFileSync(fileURLToPath(new URL('../corpus/corpus.json', import.meta.url)), 'utf8'));
+const corpusArg = process.argv.indexOf('--corpus');
+const CORPUS = JSON.parse(readFileSync(corpusArg >= 0
+  ? process.argv[corpusArg + 1]
+  : fileURLToPath(new URL('../corpus/corpus.json', import.meta.url)), 'utf8'));
 
 const args = process.argv.slice(2);
 const limitArg = args.indexOf('--limit');
@@ -152,7 +155,11 @@ for (const entry of entries) {
   const started = Date.now();
   let rec;
   try { rec = await scoreOne(entry); } catch (e) { rec = { title: entry.title, fatal: String(e.message).slice(0, 200) }; }
-  rec.domain = entry.domain; rec.corpusBytes = entry.bytes; rec.wallMs = Date.now() - started;
+  rec.domain = entry.domain || entry.stratum; rec.corpusBytes = entry.bytes; rec.wallMs = Date.now() - started;
+  // Distinguish "the tool failed" from "we failed to fetch the file". A burst of 44 files tripped
+  // Wikimedia's rate limiting: those records show integrity !== true and no measurable no-op diff.
+  if (rec.integrity !== true || rec.fatal) { rec.verdict = 'INFRA'; rec.fails = ['not measurable — file could not be fetched/verified'] ; }
+  await page.waitForTimeout(900);
   results.files.push(rec);
   await writeFile(OUT + 'corpus-scorecard.json', JSON.stringify(results, null, 1)); // incremental
   const v = rec.verdict || 'FAIL';
@@ -162,6 +169,9 @@ for (const entry of entries) {
 }
 
 const tally = results.files.reduce((a, r) => (a[r.verdict || 'FAIL'] = (a[r.verdict || 'FAIL'] || 0) + 1, a), {});
+const scored = results.files.filter((r) => r.verdict !== 'INFRA');
+const byStratum = scored.reduce((a, r) => { const k = r.domain || '?'; a[k] = a[k] || [0, 0]; a[k][0]++; if (r.verdict === 'PASS') a[k][1]++; return a; }, {});
+console.log('per stratum (scored: passed):', JSON.stringify(byStratum));
 console.log('\ntally:', tally);
 console.log('scorecard →', OUT + 'corpus-scorecard.json');
 await browser.close(); server.kill(); process.exit(0);
