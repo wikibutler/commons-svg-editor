@@ -3,11 +3,10 @@
 *A plain-language explainer for experienced editors who know nothing about this corner of the problem.*
 
 **The setup.** Commons holds ~5.2 million SVG files. SVG isn't a picture — it's a text file (XML) describing one.
-Editing it is editing text, and reviewers judge the diff, not just the picture.
+Editing it is editing text — and reviewers judge the diff.
 
 **What we opened them with.** SVG-Edit 7.4.2 — the most widely used browser SVG editor, actively maintained,
-MIT-licensed, and the very tool Wikimedia's own 2012 task proposed deploying on-wiki. Not a straw man: among browser
-editors it had the most potential. It damaged the files anyway.
+MIT-licensed, and the very tool Wikimedia's own 2012 task proposed deploying on-wiki. Not a straw man: it had the most potential. It damaged the files anyway.
 
 **Where the files came from.** The hardest ones come from categories Commons editors maintain themselves —
 `Category:Pictures showing a librsvg bug` (75+ files) and `Category:Images with SVG 2.0 features` — plus a seeded,
